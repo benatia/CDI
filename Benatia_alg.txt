@@ -2,7 +2,7 @@
  #################################################################
 ####################### Algorithme 1 ############################
 
-PROCEDURE EchangerValeurs() 
+DEBUTPROCEDURE EchangerValeurs() 
 	PARAMETRES 
 	VARIABLES
 		a,b,c  REELS
@@ -21,36 +21,36 @@ FINPROCEDURE
 #################################################################
 ####################### Algorithme 2 ############################
 
-fontion CalculerCarre()
+DEBUTFONCTION CalculerCarre()
 	PARAMETRES a reel
 	VARIABLES
 	DEBUT
 		RENVOYER a*a
 	FIN
-FINONCTION 
+FINFONCTION 
 
 
 #################################################################
 ####################### Algorithme 3 ############################
 
 
-PROCEDURE DefinirMention()
+DEBUTPROCEDURE DefinirMention()
 	PARAMETRES 
 	VARIABLES
-		note :constante reel
+		NOTE :constante reel
 		note_eleve  reel
 	DEBUT  
-		note <- 10
+		NOTE <- 10
 		AFFICHER "entrer la note "
 		SAISIR note_eleve
 		SI (0<=note_eleve<=20) ALORS 
-			SI (note_eleve<note) ALORS
-				AFFICHER "AJURNEMENT"
+			SI (note_eleve<NOTE) ALORS
+				AFFICHER "AJOURNEMENT"
 			SINON
 				AFFICHER "FELICITATION"
 			FINSI
 		SINON
-			AFFICHER "VERIIER LA SAISIE"
+			AFFICHER "VERIFIER LA SAISIE"
 		FINSI 
 	FIN
 FINPROCEDURE 
@@ -62,10 +62,8 @@ FINPROCEDURE
 
 ###################### Algorithme 4.1 ############################
 
-PROCEDURE CalculerValeurAbsolue()
-	PARAMETRES 
-	VARIABLES
-		a,b reels
+DEBUTPROCEDURE CalculerValeurAbsolue()
+	VARIABLES a,b reels
 	DEBUT 
 		AFFICHIER "ENTRER 2 REELS"
 		SAISIR a
@@ -76,21 +74,18 @@ PROCEDURE CalculerValeurAbsolue()
 		SI (b<0)ALORS
 			b <- -b
 		FINSI
-		AFFICHER LES VALEURS ABSOLUES DE CES NOMBRE SONT " a , b
-	FIN
+		AFFICHER " LES VALEURS ABSOLUES DE CES NOMBRES SONT " a , b
+    FIN
 FINPROCEDURE 
 
 
 ####################### Algorithme 4.2 ############################
 
-FONCTION CalculerValeurAbsolue()
-	PARAMETRES a,b reels
+DEBUTFONCTION CalculerValeurAbsolue(a,b reels) :reel 
+	
 	VARIABLES
 		a,b reels
 	DEBUT 
-		AFFICHIER "ENTRER 2 REELS"
-		SAISIR a
-		SAISIR b
 		SI (a<0)ALORS
 			a <- -a
 		FINSI
@@ -102,12 +97,9 @@ FONCTION CalculerValeurAbsolue()
 FINFONCTION
  
 
-PROCEDURE Principal()
-        PARAMETRES  a b reels
-	VARIABLES
-	DEBUT 
-		AFFICHER("les valeurs absolues des nombres:  ", CalculerValeurAbsolue() PARAMETRES  a ,b )
-
+DEBUTPROCEDURE Principal(a ,b reels):reel
+    DEBUT 
+		AFFICHER("les valeurs absolues des nombres:  ", FONCTION CalculerValeurAbsolue(a,b reels) :reel  )
 	FIN
 FINPROCEDURE 
 
@@ -116,25 +108,26 @@ FINPROCEDURE
 #################################################################
 ####################### Algorithme 5 ############################
 
-FONCTION CalculerAireCercle()
-	PARAMETRES r reels
+DEBUTFONCTION CalculerAireCercle(r reels) :reel
+	 
 	VARIABLES  a reel
 	CONSTANTE P=3.14 reel 
-        DEBUT
+    DEBUT
 		a <- P*r*r
-        FIN
-	RETOURNER a
+		RETOURNER a
+	FIN
+	
 FINFONCTION
 
 
-FONCTION CalculerVolumeCylindre()
+DEBUTFONCTION CalculerVolumeCylindre()
 	PARAMETRES r,h reels
 	VARIABLES v reel
-        DEBUT
+    DEBUT
 		v <- ( CalculerAireCercle() PARAMETRE r )*h
-
-        FIN
-	RETOURNER v
+		RETOURNER v
+    FIN
+	
 FINFONCTION
 
 
@@ -145,24 +138,22 @@ FINFONCTION
 
 
 
-PROCDURE resoudreEquationPremierDegre()
-	PARAMETRES
-	VARIABLES a, b reels  resultat chaine de caractères 
+DEBUTPROCEDURE resoudreEquationPremierDegre()
+		VARIABLES a, b reels  resultat chaine de caractères 
         DEBUT
-		AFFICHER "ENTRER a et b"
-		SAISIR a
-		SAISIR b
-		SI (a=0 et b =0) alors
-			resultat <-"la solution est tous les nombres reels"
-		SINONSI(a=0 et b <> 0) alors
-			resultat <- "il n' y a pas de solutions "
-	        SINON(a<>0) alors
-			resultat <- "la solutin est ", b/a
+			AFFICHER "ENTRER a et b"
+			SAISIR a
+			SAISIR b
+			SI (a=0 et b =0) alors
+				resultat <-"la solution est tous les nombres reels"                      
+				resultat <- "il n' y a pas de solutions "
+			SINON(a<>0) alors
+				resultat <- "la solution est ", b/a
 
-		FINSI
+			FINSI
 		afficher (resultat)
         FIN
-FINFONCTION
+FINPROCEDURE
 
 
 
@@ -175,49 +166,49 @@ Equation du second degré : ax2+bx+c=0
 
 ####################### Algorithme 7.1 ############################
 
-FONCTION RsoudreEquationSecondDegre()
+DEBUTFONCTION RsoudreEquationSecondDegre()
 	VAARIABLE a,b c,d reels
         DEBUT
-		AFFICHER "ENTRER LES NOMBRE a , b et c )
-		SAISIR a
-		SAISIR b
-		SAISIR c
-		d <- b*b -4*a*c
-		SI (d<0) ALORS 
-			resultat <- " l'équation n'admet pas de solution réelle"
-		SINONSI(d=0) ALORS 
-			resultat <- "la solution est :  ",-b/2a
-		SINONSI (d>0) ALORS
-			resultat <- "l'equation a 2 solutions ",(-b-√d)/2*a ,(-b+√d)/2*a
-		SINON ALORS 
-			resultat<- "verifie la saisie"
-		FINSI
-		RETOURNER (resultat)
+			AFFICHER "ENTRER LES NOMBRE a , b et c" )
+			SAISIR a
+			SAISIR b
+			SAISIR c
+			d <- b*b -4*a*c
+			SI (d<0) ALORS 
+				resultat <- " l'équation n'admet pas de solution réelle"
+			SINONSI(d=0) ALORS 
+				resultat <- "la solution est :  ",-b/2a
+			SINONSI (d>0) ALORS
+				resultat <- "l'equation a 2 solutions ",(-b-√d)/2*a ,(-b+√d)/2*a
+			SINON ALORS 
+				resultat<- "verifie la saisie"
+			FINSI
+			RETOURNER (resultat)
 
         FIN
 FINFONCTION
 
 ####################### Algorithme 7.2 ############################
 
-FONCTION RsoudreEquationSecondDegre()
+DEBUTFONCTION ResoudreEquationSecondDegre()
 	VAARIABLE a,b c,d reels
         DEBUT
-		AFFICHER "ENTRER LES NOMBRE a , b et c )
-		SAISIR a
-		SAISIR b
-		SAISIR c
-		d <- b*b -4*a*c
-		SELON(d)
-		(d<0) ALORS 
-			resultat <- " l'équation n'admet pas de solution réelle"
-		(d=0) ALORS 
-			resultat <- "la solution est :  ",-b/2a
-	        (d>0) ALORS
-			resultat <- "l'equation a 2 solutions ",(-b-√d)/2*a ,(-b+√d)/2*a
-		DEAULT ALORS 
-			resultat<- "verifie la saisie"
-		FINSELON
-		RETOURNER  (resultat)
+			AFFICHER "ENTRER LES NOMBRE a , b et c ")
+			SAISIR a
+			SAISIR b
+			SAISIR c
+			d <- b*b -4*a*c
+			SELONQUE(d)
+			(d<0) ALORS 
+				resultat <- " L\'équation n'admet pas de solution réelle"
+			(d=0) ALORS 
+				resultat <- "la solution est :  ",-b/2a
+				(d>0) ALORS
+				resultat <- "l'equation a 2 solutions ",(-b-√d)/2*a ,(-b+√d)/2*a
+			DEAULT ALORS 
+				resultat<- "verifie la saisie"
+			FINSELON
+			RETOURNER  (resultat)
 
         FIN
 FINFONCTION
@@ -234,7 +225,7 @@ on considère que le départ et l’arrivée ont lieu le même jour.
 
 /c : h heure de départ h1 heure d'arrivé  m minute de départ m1 minute d'arrivé /
 
-PROCEDURE CalculerDureeVol() 
+DEBUTPROCEDURE CalculerDureeVol() 
 	PARAMETRES 
 	VARIABLES h ,m ,h1 ,m1 ,s ,s1   entiers duree chaine de caractère
         DEBUT
@@ -251,7 +242,7 @@ idem à l’algorithme 1 mais sans faire les conversions en minutes.
 
 /c : h heure de départ h1 heure d'arrivé  m minute de départ m1 minute d'arrivé /
 
-PROCEDURE CalculerDureeVol() 
+DEBUTPROCEDURE CalculerDureeVol() 
 	PARAMETRES 
 	VARIABLES h ,m ,h1 ,m1 ,s ,s1   entiers duree chaine de caractère
         DEBUT
@@ -273,7 +264,7 @@ que l’arrivée peut avoir lieu le lendemain.
 
 /c : h heure de départ h1 heure d'arrivé  m minute de départ m1 minute d'arrivé /
 
-PROCEDURE CalculerDureeVol() 
+DEBUTPROCEDURE CalculerDureeVol() 
 	PARAMETRES 
 	VARIABLES h ,m ,h1 ,m1 ,s ,s1   entiers duree chaine de caractère
         DEBUT
@@ -306,7 +297,7 @@ FINPROCEDURE
 Ecrire une fonction nommée CalculerMax3() qui retourne le
 maximum de trois entiers
 
-FONCTION CalculerMax3() 
+DEBUTFONCTION CalculerMax3() 
 	PARAMETRES
 	VARIABLES a , b, c ,d reels 
         DEBUT
@@ -317,7 +308,7 @@ FONCTION CalculerMax3()
 		
 		SI a<b
 			a <-b
-                FINSI
+        FINSI
 		SI (a <c)
 			a <- c
 		FINSI
@@ -328,14 +319,13 @@ FINFONCTION
 
 ####################### Algorithme 9.2  ###########################
 
-re une fonction nommée CalculerMin3() qui retourne le
+une fonction nommée CalculerMin3() qui retourne le
 minimum de trois entiers
 
 
-FONCTION CalculerMin3() 
-	PARAMETRES
+DEBUTFONCTION CalculerMin3() 
 	VARIABLES a , b, c  reels 
-        DEBUT
+    DEBUT
 		AFFICHER "ENTRER TROIS NOMBRES "
 		SAISIR a
 		SAISIR b
@@ -343,13 +333,13 @@ FONCTION CalculerMin3()
 		
 		SI a>b
 			a <-b
-                FINSI
+        FINSI
 		SI (a>c)
 			a <- c
 		FINSI
 		RETOURNER (a)
 			
-        FIN
+    FIN
 FINFONCTION
 
 ####################### Algorithme 9.3  ###########################
@@ -361,9 +351,9 @@ FONCTION CalculerMax2()
         DEBUT
 		
 		
-		SI a<b
-			a <-b
-                FINSI
+			SI a<b
+				a <-b
+			FINSI
 		RETOURNER (a)
 			
         FIN
@@ -384,7 +374,7 @@ FONCTION CalculerMax3()
 		
 		SI c < (calculerMax2() PARAMETRES a ,b)
 			c <- (calculerMax2() PARAMETRES a ,b)
-                FINSI
+        FINSI
 		RETOURNER (c)
 			
         FIN
@@ -493,7 +483,8 @@ FIN PROCEDURE
 
 ####################### Algorithme 13  ##########################
 
-Ecrire une procédure EffectuerSomme() qui affiche la somme d’une suite d’entierssaisie par l’utilisateur se terminant par zéro. Quand l’utilisateur saisit 0 la somme est arrêtée et le résultat est affiché.
+Ecrire une procédure EffectuerSomme() qui affiche la somme d’une suite d’entierssaisie par
+ l’utilisateur se terminant par zéro. Quand l’utilisateur saisit 0 la somme est arrêtée et le résultat est affiché.
 
 Exemple : l’utilisateur entre 1, puis 5, puis 2, puis 0
 La procédure doit afficher : 8
@@ -691,7 +682,7 @@ PROCEDURE CalculerSomme()
 FINPROCEDURE
 
 
-###################################ALGORITHME 19  ############################
+###################################  ALGORITHME 19  ############################
 Ecrire la procédure en comptant par pas de –1.
 
 PROCEDURE CalculerSomme()
