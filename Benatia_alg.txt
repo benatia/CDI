@@ -171,8 +171,8 @@ Equation du second degré : ax2+bx+c=0
 
 ####################### Algorithme 7.1 ############################
 
-DEBUTFONCTION RsoudreEquationSecondDegre(a,b,c :entiers):String
-	VAARIABLE resultat :String ,d :entier
+DEBUTFONCTION ResoudreEquationSecondDegre(a,b,c :entiers):String
+	VARIABLE resultat :String ,d :entier
         DEBUT
 			AFFICHER "ENTRER LES NOMBRE a , b et c" )
 			d <- b*b -(4*a*c)
