@@ -145,13 +145,13 @@ DEBUTPROCEDURE resoudreEquationPremierDegre()
 			SAISIR a
 			SAISIR b
 			SI (a=0 et b =0) alors
-<<<<<<< HEAD
+
 				resultat <-"la solution est tous les nombres reels"   
 			SINONSI(a=0 et b<>0 )
-=======
+
 				resultat <-"la solution est tous les nombres reels"
 			SINONSI (a=0 et b <>0)                      
->>>>>>> 08a4db80348135480d959db3afd4a3ac8941f095
+
 				resultat <- "il n' y a pas de solutions "
 			SINON(a<>0) alors
 				resultat <- "la solution est ", b/a
@@ -372,7 +372,7 @@ mention en fonction des critères suivants :
  n≥10 : Passable
  n<10 : Ajourné
 
-PROCEDURE DefinirMention() 
+DEBUTPROCEDURE DefinirMention() 
 	VARIABLE note entier 
 	DEBUT 
 		AFFICHER "ENTRER LA NOTE "
@@ -401,7 +401,7 @@ FINPROCEDURE
 
 
 
-PROCEDURE DefinirMention() 
+DEBUTPROCEDURE DefinirMention() 
 	VARIABLE note entier 
 	DEBUT 
 		AFFICHER "ENTRER LA NOTE "
@@ -435,7 +435,7 @@ l’opération.
 Attention à la division par zéro qui est impossible.
 
 
-PROCEDURE  EffectuerOperation()
+DEBUTPROCEDURE  EffectuerOperation()
 		VARIABLE a b entier  choix, res  chaine de caractère
 		DEBUT 
 			AFFICHER "ENTRER 2 NOMBRES ENTIERS"
@@ -478,11 +478,11 @@ DEBUTPROCEDURE  EffectuerSomme()
 		somme <- 0
 		AFFICHER "ENTRER LES NOMBRES"
 		SAISIR nombre_saisi
-		TANQUE (nombre_saisie <>0) FAIRE
+		TANTQUE (nombre_saisie <>0) FAIRE
 			somme <- somme +nombre_saisi
 			AFFICHER "ENTRER UN NOTRE NOMBRE"
 			SAISIR (nombre_saisi)
-		FINTANQUE
+		FINTANTQUE
 		AFFICHER (somme)
 	FIN
 FINPROCEDURE
@@ -505,12 +505,12 @@ DEBUTPROCEDURE  CalculerMoyenne()
 		somme <-0
 		AFFICHER "ENTRER LE NOMBRE "
 		SAISIR nombre_saisi
-		TANQUE (nombre_saisi <> 0) FAIRE
+		TANTQUE (nombre_saisi <> 0) FAIRE
 			i <- i+1
 			somme <- somme +nombre_saisie
 			AFFICHER "ENTRER UN AUTRE NOMBRE"
 			SAISIR nombre_saisi
-		FINTANQUE
+		FINTANTQUE
 		AFFICHER "LA MOYENNE EST " ,somme/i
 	FIN
 FINPROCEDURE
@@ -530,14 +530,14 @@ DEBUTPROCEDURE  VerifierSuiteEntiers()
 		SAISIR nombre_saisi 
 		comparer <- 0
 		ok <- vrai
-		TANQUE (nombre_saisi <> 0) FAIRE
+		TANTQUE (nombre_saisi <> 0) FAIRE
 			SI (nombre_saisi = comparer) ALORS
 				ok <- faux
 			FINSI
 			comparer <- nombre_saisi
 			AFFICHER "ENTRER UN AUTRENOMBRE"
 			SAISIR nombre_saisi
-		FINTANQUE
+		FINTANTQUE
 		SI (OK) ALORS 
 			AFFICHER " cette suite ne contient pas deux entiers consécutifs égaux"
 		SINON ALORS 
@@ -551,23 +551,23 @@ FINPROCEDURE
 
 /même procedure avec faire tanque /
 
-PROCEDURE  VerifierSuiteEntiers()
+DEBUTPROCEDURE  VerifierSuiteEntiers()
 	VARIABLE nombre_sasi comparer :entier ok booleene
 	DEBUT 
 		AFFICHER "ENTRER UN NOMBRE"
 		SAISIR nombre_saisi 
 		comparer <- 0
 		ok <- vrai
-	        FAIRE		
+	    FAIRE		
 			SI (nombre_saisi = comparer) ALORS
 				ok <- faux
 			FINSI
 			comparer <- nombre_saisi
-			AFFICHER "ENTRER UN AUTRENOMBRE 
+			AFFICHER "ENTRER UN AUTRENOMBRE" 
 			SAISIR nombre_saisi
-		TANQUE (nombre_saisi <> 0) FAIRE
+		TANTQUE (nombre_saisi <> 0) FAIRE
 		SI (OK) ALORS 
-			AFFICHER " cette suite ne contient pas deux entiers consécutifs égaux
+			AFFICHER " cette suite ne contient pas deux entiers consécutifs égaux"
 		SINON ALORS 
 
 			AFFICHER " cette suite contient deux entiers consécutifs égaux"
@@ -582,7 +582,7 @@ FINPROCEDURE
 Ecrire une procédure nommée CalculerMaxSuiteEntiers() qui affiche le maximum 
 d’une suite se terminant par zéro.Les entiers sont saisis par l’utilisateur.I
 
-PROCEDURE CalculerMaxSuiteEntiers()
+DEBUTPROCEDURE CalculerMaxSuiteEntiers()
 	VARIABLE nombre_sasi max :entier 
 	DEBUT
 		AFFICHER "ENTRER UN NOMBRE"
@@ -752,7 +752,7 @@ DEBUTPROCEDURE AfficherListe
 	FIN
 FINPROCEDUR 
 
-PROCEDURE AfficherListe
+DEBUTPROCEDURE AfficherListe
 	VARIABLE k, nb : entier
 	DEBUT 
 		k<-1
@@ -769,11 +769,11 @@ Ecrire une fonction nommée CalculerSommeIntervalle() qui fait la somme des enti
 compris dans un intervalle. Les 2 entiers composant l’intervalle sont passés en 
 paramètre de la fonction.
 
-FONCTION CalculerSommeIntervalle()
+DEBUTFONCTION CalculerSommeIntervalle()
 	PARAMETRES a ,b somme :entiers  
 	DEBUE
 		somme<-0
-		TANQUE (a<= b) FAIRE
+		TANTQUE (a<= b) FAIRE
 			somme <-somme +a
 			a<- a+1
 		FINTANQUE
@@ -786,7 +786,7 @@ FINFONCTION
 Ecrire une fonction nommée Multiplier() qui permet la multiplication de 2 entiers par 
 additions successives.Les 2 entiers sont passés en paramètre de la fonction.
 
-FONCTION Multiplier() 
+DEBUTFONCTION Multiplier() 
 	PARAMETRE a ,b :entiers
 	VARIABLE m,somme entiers
 	DEBUT
@@ -803,7 +803,7 @@ Ecrire une procédure nommée SaisirTableauCroissant() qui permet la saisie d’
  si T[k] < T[k+1] vous enregistrez
  si T[k] > T[k+1] vous redemandez la saisie d’un nombre plus grand
 
-PROCEDURE SaisirTableauCroissant()
+DEBUTPROCEDURE SaisirTableauCroissant()
 	VARIABLE ENTIER [] matable : table des entiers  nombr_saisi n j comparer entier
 	DEBUT
 		AFFICHER "ENTRER LE NOMBRE"
@@ -811,7 +811,7 @@ PROCEDURE SaisirTableauCroissant()
 		SAISIR nombre_saisi
 		i<-0
 		matable[i]<-nombr_saisi
-			TANQUE ((longueur(matable))< n ) FAIRE
+			TANTQUE ((longueur(matable))< n ) FAIRE
 				AFFICHER "ENTRER UN NOMBRE "
 				SAISIR nombre_saisi
 				SI(nombre_saisi> matable[i]) ALORS
@@ -820,8 +820,8 @@ PROCEDURE SaisirTableauCroissant()
 				SINON
 					AFFICHER "entrer un nombre plus grand "
 				FINSI
+			FINTANTQUE
 				j=j+1
-			FINTANQUE
 		
 	FIN
 FINPROCEDURE
@@ -832,7 +832,7 @@ FINPROCEDURE
  Ecrire une fonction nommée CalculerMaximum() retournant le maximum d’un tableau de taille n.
  Le tableau et la taille du tableau sont passés en paramètre de la fonction
  
-FONCTION  CalculerMaximum() 
+DEBUTFONCTION  CalculerMaximum() 
 	PARAMETRE entier[] matable : table des entiers  n ,i max  entiers 
 	DEBUT
 		i<-0
@@ -843,8 +843,8 @@ FONCTION  CalculerMaximum()
 				max <- matable[i+1]
 				i<-i+1
 			FINSI 
-		FINTANQUE
-		AFFICHER (max)
+		FINTANTQUE
+		RETOURNER (max)
 	FIN
 FINFONCTION
 
@@ -852,3 +852,77 @@ FINFONCTION
 Ecrire le même algorithme qui ne retourne que l’indice de la case du tableau 
 contenant le maximum du tableau.
 
+DEBUTFONCTION  CalculerMaximumIndice() 
+	PARAMETRE entier[] matable : table des entiers  n ,i max  entiers 
+	VARIABLE j
+	DEBUT
+		i<-0
+		max <- matable[i]
+		j <- i
+		TANQUE (i<=n) FAIRE	
+			i=i+1
+			SI (matable[i+1]>max
+				max <- matable[i+1]
+				j <- i+1
+				i<-i+1
+			FINSI 
+		FINTANTQUE
+		AFFICHER (j)
+	FIN
+FINFONCTION
+
+#################################Algorithme 25 ####################################################
+Ecrire une procédure nommée AfficherTableau() qui affiche à l’écran le contenu d’un tableau.
+Ecrire la procédure nommée Principale() qui remplit le tableau et appelle la procédure AfficherTableau() 
+pour afficher le contenu du tableau passé en paramètre.
+
+DEBUTPROCEDURE AfficherTableau(entier [] matable : tableau des entiers ,n : entier)
+	//n le longueur du tableau 
+	VARIABLE i entier
+	DEBUT
+		POUR i allant de 0 A n PAS DE 1  FAIRE 
+			AFFICHER matable[i]
+		FINPOUR
+	FIN
+FINPROCEDURE
+
+DEBUTPROCEDURE Principale (entiers [] matable:tableau des ENTIERS ,n  i ENTIER )
+	VARIABLE nombr_saisi ENTIER 
+	DEBUT
+		i <- 0
+		
+		TANTQUE(i<=n) FAIRE
+			AFFICHER "ENTRER UNE VALEUR"
+			SAISIR nombre-saisi
+			matable[i]<-nombr_saisi 
+			i <- i+1
+		FINTANTQUE
+		AfficherTableau(matable[n])
+		
+	FIN
+FINPROCEDURE 
+
+
+############################## Algorithme 26 #######################################
+Ecrire une procédure nommée SaisirTableau() qui permet la saisie d’un tableau. 
+Ecrire une procédure nommée Principale() qui permet :
+● dans un 1er temps d’accéder à la procédure SaisirTableau(),
+● dans un 2ème temps d’afficher le résultat à l’aide de la procédure AfficherTableau() de l’algorithme 25.
+
+DEBUTFONCTION SaisirTableau():TABLEAU DES ENTIER 
+	VARIABLE n :ENTIER ,entiers [] matable:tableau
+    DEBUT 
+		AFFICHER "ENTER LA LONGUEUR  DE VOTRE TABLEAU"
+		SAISIR n 
+		RETOURNER entiers[n]matable
+	FIN
+	
+	
+FINFONCTION
+
+FINPROCEDURE Principale()
+	SaisirTableau()
+	AfficherTableau(entier [] matable : tableau des entiers ,n : entier)
+	
+	
+	
