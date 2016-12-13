@@ -1,5 +1,9 @@
 
- #################################################################
+ #####################################################
+
+coucou git git git
+
+###########
 ####################### Algorithme 1 ############################
 
 DEBUTPROCEDURE EchangerValeurs() 
@@ -144,8 +148,13 @@ DEBUTPROCEDURE resoudreEquationPremierDegre()
 			SAISIR a
 			SAISIR b
 			SI (a=0 et b =0) alors
+<<<<<<< HEAD
 				resultat <-"la solution est tous les nombres reels"   
 			SINONSI(a=0 et b<>0 )
+=======
+				resultat <-"la solution est tous les nombres reels"
+			SINONSI (a=0 et b <>0)                      
+>>>>>>> 08a4db80348135480d959db3afd4a3ac8941f095
 				resultat <- "il n' y a pas de solutions "
 			SINON(a<>0) alors
 				resultat <- "la solution est ", b/a
@@ -166,14 +175,10 @@ Equation du second degré : ax2+bx+c=0
 
 ####################### Algorithme 7.1 ############################
 
-DEBUTFONCTION RsoudreEquationSecondDegre()
-	VAARIABLE a,b c,d reels
+DEBUTFONCTION ResoudreEquationSecondDegre(a,b,c :entiers):String
+	VARIABLE resultat :String ,d :entier
         DEBUT
-			AFFICHER "ENTRER LES NOMBRE a , b et c" )
-			SAISIR a
-			SAISIR b
-			SAISIR c
-			d <- b*b -4*a*c
+			d <- b*b -(4*a*c)
 			SI (d<0) ALORS 
 				resultat <- " l'équation n'admet pas de solution réelle"
 			SINONSI(d=0) ALORS 
@@ -190,20 +195,15 @@ FINFONCTION
 
 ####################### Algorithme 7.2 ############################
 
-DEBUTFONCTION ResoudreEquationSecondDegre()
-	VAARIABLE a,b c,d reels
+DEBUTFONCTION ResoudreEquationSecondDegre(a,b,c :entiers) String
         DEBUT
-			AFFICHER "ENTRER LES NOMBRE a , b et c ")
-			SAISIR a
-			SAISIR b
-			SAISIR c
 			d <- b*b -4*a*c
 			SELONQUE(d)
 			(d<0) ALORS 
 				resultat <- " L\'équation n'admet pas de solution réelle"
 			(d=0) ALORS 
 				resultat <- "la solution est :  ",-b/2a
-				(d>0) ALORS
+			(d>0) ALORS
 				resultat <- "l'equation a 2 solutions ",(-b-√d)/2*a ,(-b+√d)/2*a
 			DEAULT ALORS 
 				resultat<- "verifie la saisie"
@@ -223,38 +223,35 @@ heure et minute connaissant l’heure de départ et l’heure d’arrivée.
 ####################### Algorithme 8.1 ###########################
 on considère que le départ et l’arrivée ont lieu le même jour.
 
-/c : h heure de départ h1 heure d'arrivé  m minute de départ m1 minute d'arrivé /
 
 DEBUTPROCEDURE CalculerDureeVol() 
-	PARAMETRES 
-	VARIABLES h ,m ,h1 ,m1 ,s ,s1   entiers duree chaine de caractère
+	VARIABLES h_depart ,m_depart ,h_arrivee ,m_arrivee ,s ,s1   entiers duree chaine de caractère
         DEBUT
-		s<-(h*60)+m
-		s1<-(h1*60)+m1
+		s<-(h_depart*60)+m_depart
+		s1<-(h_depart*60)+m_depart
 		duree <- (s1-s)/60, "h" , (s1-s)%60 ,"min" 
-        FIN
-	AFFICHER "LA DUREE ET DE ", duree 
+        
+		AFFICHER "LA DUREE EST DE ", duree 
+	FIN
 FINPROCEDURE
 
 
 ####################### Algorithme 8.2 ###########################
 idem à l’algorithme 1 mais sans faire les conversions en minutes.
 
-/c : h heure de départ h1 heure d'arrivé  m minute de départ m1 minute d'arrivé /
 
 DEBUTPROCEDURE CalculerDureeVol() 
-	PARAMETRES 
-	VARIABLES h ,m ,h1 ,m1 ,s ,s1   entiers duree chaine de caractère
+	VARIABLES h_depart ,m_depart ,h_arrivee ,m_arrivee ,s ,s1   entiers duree chaine de caractère
         DEBUT
-		s<-(h1-h)
-		s1<-(m1-m)
-		SI (m1<m) ALORS
+		s<-(h_arrivee-h_depart)
+		s1<-(m_arrivee-m_depart)
+		SI (m_arrivee<m_depart) ALORS
 			s <- s-1
 	        	s1 <- s1+60
 		FINSI
 		duree <- s, "h" , s1 ,"min" 
-        FIN
-	AFFICHER "LA DUREE ET DE ", duree 
+		AFFICHER "LA DUREE ET DE ", duree 
+	FIN
 FINPROCEDURE
 
 
@@ -262,21 +259,19 @@ FINPROCEDURE
 on suppose que la durée de vol est inférieure à 24 heures mais
 que l’arrivée peut avoir lieu le lendemain.
 
-/c : h heure de départ h1 heure d'arrivé  m minute de départ m1 minute d'arrivé /
 
 DEBUTPROCEDURE CalculerDureeVol() 
-	PARAMETRES 
-	VARIABLES h ,m ,h1 ,m1 ,s ,s1   entiers duree chaine de caractère
+	VARIABLES h_depart ,m_depart ,h_arrivee ,m_arrivee ,s ,s1   entiers duree chaine de caractère
         DEBUT
 		
-		s <-h1-h
-		s1 <- m1-m 
-		SI (h1>h) ET (m1<m) ALORS
+		s <-h_arrivee-h_depart
+		s1 <- m_arrivee-m_depart 
+		SI (h_arrivee>h_depart) ET (m_depart<m_depart) ALORS
 			s <- s-1
 	        	s1 <- s1+60
-		SINONSI (h1<h) ET (m1>m) ALORS
+		SINONSI (h_arrivee<h_depart) ET (m_arrivee>m_depart) ALORS
 			s <- s+24
-		SINONSI (h1<h) ET (m1<m) ALORS
+		SINONSI (h_arrivee<h_depart) ET (m_arrivee<m_depart) ALORS
 			S <- S+23
 			S1 <- s1 +60
 		SINON  ALORS
@@ -284,8 +279,9 @@ DEBUTPROCEDURE CalculerDureeVol()
 			s1 <- s1
 		FINSI
 		duree <- s, "h" , s1 ,"min" 
-        FIN
-	AFFICHER "LA DUREE ET DE ", duree 
+        
+		AFFICHER "LA DUREE ET DE ", duree
+	FIN 
 FINPROCEDURE
 
 
@@ -297,18 +293,12 @@ FINPROCEDURE
 Ecrire une fonction nommée CalculerMax3() qui retourne le
 maximum de trois entiers
 
-DEBUTFONCTION CalculerMax3() 
-	PARAMETRES
-	VARIABLES a , b, c ,d reels 
+DEBUTFONCTION CalculerMax3(a,b,c :entiers) :entier
         DEBUT
-		AFFICHER "ENTRER TROIS NOMBRES "
-		SAISIR a
-		SAISIR b
-		SAISIR c
 		
 		SI a<b
 			a <-b
-        FINSI
+	        FINSI
 		SI (a <c)
 			a <- c
 		FINSI
@@ -323,17 +313,12 @@ une fonction nommée CalculerMin3() qui retourne le
 minimum de trois entiers
 
 
-DEBUTFONCTION CalculerMin3() 
-	VARIABLES a , b, c  reels 
+DEBUTFONCTION CalculerMin3(a,b,c :entiers) :entier
     DEBUT
-		AFFICHER "ENTRER TROIS NOMBRES "
-		SAISIR a
-		SAISIR b
-		SAISIR c
 		
 		SI a>b
 			a <-b
-        FINSI
+        	FINSI
 		SI (a>c)
 			a <- c
 		FINSI
@@ -346,14 +331,13 @@ FINFONCTION
 Ecrire une fonction nommée CalculerMax2() qui retourne le
 maximum de deux entiers
 
-FONCTION CalculerMax2() 
-	PARAMETRES a , b  reels 
+DEBUTFONCTION CalculerMax2(a,b:entiers):entier 
         DEBUT
 		
 		
-			SI a<b
-				a <-b
-			FINSI
+		SI a<b
+			a <-b
+		FINSI
 		RETOURNER (a)
 			
         FIN
@@ -367,15 +351,12 @@ maximum de trois entiers en faisant appel à CalculerMax2()
 
 
  
-FONCTION CalculerMax3() 
-	PARAMETRES a , b ,c  reels 
+DEBUTFONCTION CalculerMax3(a,b,c :entiers) :entier
+	
         DEBUT
 		
 		
-		SI c < (calculerMax2() PARAMETRES a ,b)
-			c <- (calculerMax2() PARAMETRES a ,b)
-        FINSI
-		RETOURNER (c)
+		RETOURNER (calculerMax2(calculerMaxMx2(a,b),c))
 			
         FIN
 FINFONCTION
