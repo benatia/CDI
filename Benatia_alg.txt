@@ -441,6 +441,7 @@ PROCEDURE  EffectuerOperation()
 			AFFICHER "ENTRER 2 NOMBRES ENTIERS"
 			SAISIR a 
 			SAISIR b
+			SAISIR choix
 			SELONQUE 
 				choix="+" ALORS
 					res<- "la somme est  : ",a+b 
@@ -471,7 +472,7 @@ Ecrire une procédure EffectuerSomme() qui affiche la somme d’une suite d’en
 Exemple : l’utilisateur entre 1, puis 5, puis 2, puis 0
 La procédure doit afficher : 8
 
-PROCEDURE  EffectuerSomme()
+DEBUTPROCEDURE  EffectuerSomme()
 	VARIABLES nombre_saisi  somme :entiers 
 	DEBUT
 		somme <- 0
@@ -497,7 +498,7 @@ suite d’entiers se terminant par zéro. Le zéro n’entre pas en compte dans 
 moyenne. Il permet d’indiquer la fin de saisie.
 Les entiers sont saisis par l’utilisateur.
 
-PROCEDURE  CalculerMoyenne()
+DEBUTPROCEDURE  CalculerMoyenne()
 	VARIABLE nombre_saisi ,i ,somme  :entiers
 	DEBUT
 		i <- 0
@@ -522,7 +523,7 @@ suite d’entiers se terminant par zéro et vérifier si cette suite contient de
  entiers consécutifs égaux en utilisant les structures TANTQUE...FINTANTQUE.
 Les entiers sont saisis par l’utilisateur.
 
-PROCEDURE  VerifierSuiteEntiers()
+DEBUTPROCEDURE  VerifierSuiteEntiers()
 	VARIABLE nombre_sasi comparer :entier ok booleene
 	DEBUT 
 		AFFICHER "ENTRER UN NOMBRE"
@@ -534,11 +535,11 @@ PROCEDURE  VerifierSuiteEntiers()
 				ok <- faux
 			FINSI
 			comparer <- nombre_saisi
-			AFFICHER "ENTRER UN AUTRENOMBRE 
+			AFFICHER "ENTRER UN AUTRENOMBRE"
 			SAISIR nombre_saisi
 		FINTANQUE
 		SI (OK) ALORS 
-			AFFICHER " cette suite ne contient pas deux entiers consécutifs égaux
+			AFFICHER " cette suite ne contient pas deux entiers consécutifs égaux"
 		SINON ALORS 
 
 			AFFICHER " cette suite contient deux entiers consécutifs égaux"
@@ -611,8 +612,8 @@ proposition.
  Un score indiquant le nombre de coups joués est mis à jour et affiché 
 lorsque l’entier est trouvé.
 
-PROCEDURE DevinerNombre() 
-	PARAMETRE  nombre_a_deviner entier
+DEBUTPROCEDURE DevinerNombre(nombre_a_deviner entier) 
+	
 	VARIABLE nombre_saisi, i entier 
 	DEBUT 
 		AFFICHER "ENTRER LE A DEVINER"
@@ -630,7 +631,7 @@ PROCEDURE DevinerNombre()
 			SAISI nombre_saisi
 			
 		FINTANQUE
-		AFFICHER "BRAVO VOUS AVEZ GAGNE APRE " ,i,"tentatives"
+		AFFICHER "BRAVO VOUS AVEZ GAGNE APRES " ,i,"tentatives"
 	FIN
 FINPROCEDURE
 
@@ -647,7 +648,7 @@ qui permet de faire la somme d’une suite de nombre entrée par l’utilisateur
 Ecrire la procédure en comptant par pas de 1.
 Algorithme 19.2 : Ecrire la procédure en comptant par pas de –1.
 
-PROCEDURE CalculerSomme()
+DEBUTPROCEDURE CalculerSomme()
 	VARIABLE  nombre_des_entier nombre_saisi i somme :entiers
 	
 	DEBUT 
