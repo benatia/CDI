@@ -83,8 +83,7 @@ FINPROCEDURE
 
 DEBUTFONCTION CalculerValeurAbsolue(a,b reels) :reel 
 	
-	VARIABLES
-		a,b reels
+	VARIABLES a,b reels
 	DEBUT 
 		SI (a<0)ALORS
 			a <- -a
@@ -145,7 +144,8 @@ DEBUTPROCEDURE resoudreEquationPremierDegre()
 			SAISIR a
 			SAISIR b
 			SI (a=0 et b =0) alors
-				resultat <-"la solution est tous les nombres reels"                      
+				resultat <-"la solution est tous les nombres reels"   
+			SINONSI(a=0 et b<>0 )
 				resultat <- "il n' y a pas de solutions "
 			SINON(a<>0) alors
 				resultat <- "la solution est ", b/a
