@@ -594,7 +594,7 @@ PROCEDURE CalculerMaxSuiteEntiers()
 			FINSI
 			AFFICHER "ENTRER UN NOMBRE"
 	                SAISIR nombre_saisi
-			FINTANQUE
+		FINTANQUE
 		AFFICHET "le maximum de cette suite est " ,max
 		
 	FIN
@@ -638,8 +638,64 @@ FINPROCEDURE
 
 
 
-################################### ALGORITHME 18 ############################
+################################### ALGORITHME 18.1 ############################
+Ecrire une procédure permettant de calculer le plus grand commun diviseur (PGCD) de deux nombres en utilisant l’astuce suivante :
+ soustraite le plus petit des deux entiers du plus grand jusqu'à ce qu’ils soient égaux'.
+ 
+ DEBUTPROCEDURE calculerPgcd()
+	VARIABLES  a,b entier 
+	DEBUT 
+		LIRE a ,b
+		TANTQUE (a-b !=0) FAIRE
+			SI (a>b) ALORS
+				a<- a-b
+			SINON
+				b <-b-a
+		FINTANTQUE 
+		AFFICHER (a-b)
+	FIN 
+FINPROCEDURE
 
+################################### ALGORITHME 18.2 ############################
+Même programme avec l’algorithme d’Euclide et une structure TANTQUE…FINTANTQUE.
+
+
+//TANTQUE…FAIRE
+ DEBUTPROCEDURE calculerPgcd()
+	VARIABLES  a,b r entier 
+	DEBUT
+		LIRE a ,b
+	    TANTQUE (b <>0) FAIRE 
+			r <- a modulo b
+			a <-  b
+			b <- r
+			
+		FINTANTQUE
+		AFFICHER (a)
+	FIN
+FINPROCEDURE
+################################### ALGORITHME 18.3 ############################
+
+//FAIRE.......... TANTQUE
+DEBUTPROCEDURE calculerPgcd()
+	VARIABLES  a,b r entier 
+	DEBUT
+		LIRE a ,b
+	    FAIRE 
+			r <- a modulo b
+			a <-  b
+			b <- r
+		TANTQUE (b <>0) 
+			
+	
+		AFFICHER (a)
+	FIN
+FINPROCEDURE
+
+
+
+ 
+ 
 ###################################ALGORITHME 19  ############################
 
 Ecrire avec la structure POUR...FINPOUR une procédure nommée CalculerSomme()
