@@ -1,3 +1,10 @@
+
+create user plsql identified by 1234;
+grant connect to plsql;
+grant resource to plsql;
+
+DROP TABLE RESULTAT;
+
 CREATE TABLE "AEROPORT"
 (	"COD_AER" CHAR(3) NOT NULL ENABLE, 
 	"LIB_AER" VARCHAR2(40) NOT NULL ENABLE, 
@@ -41,11 +48,11 @@ CREATE TABLE "RESULTAT"
 
 
 INSERT INTO AEROPORT (COD_AER, LIB_AER, VIL_AER) 
-VALUES ('CDG', 'Aéroport Charles de Gaulle', 'Capitaine1');
+VALUES ('CDG', 'Aï¿½roport Charles de Gaulle', 'Capitaine1');
 INSERT INTO AEROPORT (COD_AER, LIB_AER, VIL_AER) 
-VALUES ('ABL', 'Aéroport de Blagnac', 'Blagnac');
+VALUES ('ABL', 'Aï¿½roport de Blagnac', 'Blagnac');
 INSERT INTO AEROPORT (COD_AER, LIB_AER, VIL_AER) 
-VALUES ('AMG', 'Aéroport de Mérignac', 'Mérignac');
+VALUES ('AMG', 'Aï¿½roport de Mï¿½rignac', 'Mï¿½rignac');
 
 INSERT INTO VOL (NUM_VOL, COD_AER_DEP, COD_AER_ARR) 
 VALUES ('VOL001', 'CDG', 'ABL');
@@ -81,7 +88,7 @@ desc avion;
 desc voyage;
 desc resultat;
 
--------------------------Contenu des tables utilisées----------
+-------------------------Contenu des tables utilisï¿½es----------
 select * from aeroport ;
 select * from vol;
 select * from avion;
@@ -90,20 +97,52 @@ select * from voyage;
 
 -------------------------------Exercice 1 : multiplication--------------------------
 ------------------------Exercice 1.1
---Codez un bloc anonyme PL/SQL qui permet de calculer et d’afficher une table de multiplication.
---La table de multiplication à utiliser est demandée à l’utilisateur suite à
---l'exécution du bloc anonyme. Utilisez la table RESULTAT pour stocker les valeurs.
+--Codez un bloc anonyme PL/SQL qui permet de calculer et dï¿½afficher une table de multiplication.
+--La table de multiplication ï¿½ utiliser est demandï¿½e ï¿½ lï¿½utilisateur suite ï¿½
+--l'exï¿½cution du bloc anonyme. Utilisez la table RESULTAT pour stocker les valeurs.
 
 
-
+---------------------TEST---------------------------------
 DECLARE 
   nombre NUMBER ;
   nombre1 Number;
 BEGIN
-   DBMS_OUTPUT.PUT_LINE('Quelle table de multiplication ?');
-   nombre :=&saisir;
+   
+  nombre:= &nombre1;
+  nombre1:=&nombre;
 
-   DBMS_OUTPUT.PUT_LINE(nombre);
+   DBMS_OUTPUT.PUT_LINE('vous aver entrer   ' ||(nombre+nombre1));
 END;
 
+
+
+DECLARE 
+  V_VALEUR NUMBER ;
+  V_COMPTEUR NUMBER ;
+BEGIN
+ 
+  V_VALEUR :=&VALEUR;
+  V_COMPTEUR :=1;
+  FOR V_COMPTEUR IN 1..10 LOOP
+  INSERT INTO RESULTAT VALUES (NULL,V_COMPTEUR ||'*'||V_VALEUR,V_COMPTEUR * V_VALEUR);
+  END LOOP;
+END;
+
+
+SELECT LIBELLE,VALEUR FROM RESULTAT;
+
+
+-----------------------------------Exercice 1.2
+--Codez un bloc anonyme PL/SQL qui permet dâ€™effectuer une multiplication entre un
+--multiplicande et un multiplicateur et dâ€™afficher le rÃ©sultat obtenu. ExÃ©cutez le bloc anonyme.
+
+DECLARE 
+  V_NOMBRE1 NUMBER ;
+  V_NOMBRE2 NUMBER ;
+BEGIN
+  V_NOMBRE1 :=&V_NOMBRE1;
+  V_NOMBRE2 :=&V_NOMBRE2;
+   DBMS_OUTPUT.PUT_LINE('LA MULTIPLICATION' ||(V_NOMBRE1*V_NOMBRE2));
+ 
+END;
 
