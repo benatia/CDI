@@ -1,0 +1,584 @@
+@charset "iso-8859-1";
+/*
+  Feuille de style pour www.developpez.com. (article)
+  modifiée par LFE & request.
+  modifiée par jérôme le 25/04/2004
+*/
+
+/*************** Début partie document ***************/
+/*************** Fin partie spécifique à Developpez ***************/
+
+.summaryIndent0 {
+  color : #334878;
+  margin-left : 0px;
+  font-weight : bold;
+  font-size : 12px;
+  font-family : "Verdana";
+  text-decoration : none;
+  line-height : 200%;
+}
+
+.summaryIndent1 {
+  color : #335080;
+  margin-left : 15px;
+  font-weight : normal;
+  font-size : 11px;
+  font-family : "Verdana";
+  text-decoration : none;
+  line-height : 150%;
+}
+
+.summaryIndent2 {
+  color : #55A0C0;
+  margin-left : 30px;
+  font-weight : normal;
+  font-size : 11px;
+  font-family : "Verdana";
+  text-decoration : none;
+  line-height : 120%;
+}
+
+.summaryIndent3 {
+  color : #6699FF;
+  margin-left : 45px;
+  font-weight : normal;
+  font-size : 11px;
+  font-family : "Verdana";
+  text-decoration : none;
+}
+
+.summaryIndent4 {
+  color : #6699FF;
+  margin-left : 60px;
+  font-weight : normal;
+  font-size : 11px;
+  font-family : "Verdana";
+  text-decoration : none;
+}
+
+.summaryIndent5 {
+  color : #6699FF;
+  margin-left : 75px;
+  font-weight : normal;
+  font-size : 11px;
+  font-family : "Verdana";
+  text-decoration : none;
+}
+
+.summaryIndent6 {
+  color : #6699FF;
+  margin-left : 90px;
+  font-weight : normal;
+  font-size : 11px;
+  font-family : "Verdana";
+  text-decoration : none;
+}
+
+.auteurs {
+	text-align: center;
+}
+
+A.auteur {
+  color : #003366;
+  font-weight : bold;
+  text-align : center;
+  font-size : 11px;
+  font-family : "Verdana";
+}
+
+A.homepage {
+  color : #6699FF;
+  font-weight : bold;
+  text-align : center;
+  font-size : 11px;
+  font-family : "Verdana";
+}
+
+A.lienArticle {
+  color : #003366;
+  font-weight : bold;
+  text-align : center;
+  font-size : 11px;
+  font-family : "Verdana";
+}
+
+.licence {
+  color : #000000;
+  font-weight : normal;
+  text-align : center;
+  font-size : 10px;
+  font-family : "Verdana";
+  text-decoration : none;
+}
+
+.lecteur {
+  color : #6699FF;
+  font-weight : normal;
+  text-align : center;
+  font-size : 11px;
+  font-family : "Verdana";
+  text-decoration : none;
+}
+
+.cadrearticle {
+  color : #000000;
+  font-weight : normal;
+  font-size : 11px;
+  font-family : "Verdana";
+  text-decoration : none;
+  /*text-align: center; */
+  margin: auto;
+}
+
+.titreArticle {
+  color : #000000;
+  font-weight : bold;
+  text-align : center;
+  font-size : 18pt;
+  font-family : "Verdana";
+  text-decoration : none;
+}
+
+H1 {
+  color : #000000;
+  font-weight : bold;
+  text-align : center;
+  font-size : 18pt;
+  font-family : "Verdana";
+  text-decoration : none;
+  letter-spacing: 5px;
+}
+
+LI {
+  font-size : 11px;
+  font-family : "Verdana";
+}
+
+.dateArticle {
+  color : #FF0000;
+  font-weight : normal;
+  text-align : center;
+  font-size : 10px;
+  font-style : normal;
+
+  font-family : "Verdana";
+  text-decoration : none;
+}
+
+.paragraph {
+  margin-left:20px;
+  margin-right:15px;
+  color : #000000;
+  font-weight : normal;
+  text-align : justify;
+  font-size : 11px;
+  font-family : "Verdana";
+  text-decoration : none;
+  line-height : 130%;
+}
+
+.important {
+  margin-left:15px;
+  margin-right:15px;
+  color : #FF0000;
+  font-weight : bold;
+  text-align : justify;
+  font-size : 9pt;
+  font-family : "Verdana";
+  text-decoration : bold;
+  margin-left : 0px;
+}
+
+span.important {
+  margin-left:15px;
+  margin-right:15px;
+  color : #FF0000;
+  font-weight : bold;
+  text-align : justify;
+  font-size : 9pt;
+  font-family : "Verdana";
+  text-decoration : italic;
+  margin-left : 0px;
+}
+
+.liste {
+  margin-left: 15px;
+  margin-right: 15px;
+  color : #000000;
+  font-weight : normal;
+  text-align : justify;
+  font-size : 11px;
+  font-family : "Verdana";
+  text-decoration : none;
+}
+
+.TitreSection0 {
+  margin-top : 40px;
+  padding-left : 8px;
+  padding-top : 4px;
+  padding-bottom : 4px;
+  spacing-top : 4px;
+  color : white; 
+  background-color : #274E9C;
+  font-weight : bold;
+  text-align : left;
+  font-size : 15px;
+  font-family : "Verdana";
+  text-decoration : none;
+  letter-spacing: 1px;
+}
+
+.TitreSection1 {
+  margin-left : 20 px;
+  margin-top : 30 px;
+  padding-left : 8px;
+  padding-top : 3px;
+  padding-bottom : 3px;
+  spacing-top : 3px;
+  color : white;
+  background-color : #2076BD;
+  font-weight : bold;
+  text-align : left;
+  font-size : 13px;
+  font-family : "Verdana";
+  text-decoration : none;
+}
+
+.TitreSection2 {
+  margin-left : 40 px;
+  margin-top : 30px;
+  padding-left : 8px;
+  padding-top : 2px;
+  padding-bottom : 2px;
+  spacing-top : 2px;
+  color : white;
+  background-color : #6389d8;
+  font-weight : bold;
+  text-align : left;
+  font-size : 11px;
+  font-family : "Verdana";
+  text-decoration : none;
+}
+
+.TitreSection3 {
+  margin-left : 60 px;
+  padding-left : 8px;
+  padding-top : 2px;
+  padding-bottom : 2px;
+  spacing-top : 2px;
+  color : white;
+  background-color : #6699FF;
+  font-weight : bold;
+  text-align : left;
+  font-size : 11px;
+  font-family : "Verdana";
+  text-decoration : none;
+}
+
+.TitreSection4 {
+  margin-left : 60 px;
+  padding-left : 8px;
+  padding-top : 2px;
+  padding-bottom : 2px;
+  spacing-top : 2px;
+  color : black;
+  background-color : #DDEEFF;
+  font-weight : bold;
+  text-align : left;
+  font-size : 11px;
+  font-family : "Verdana";
+  text-decoration : none;
+}
+
+.TitreSection5 {
+  margin-left : 60 px;
+  padding-left : 8px;
+  padding-top : 2px;
+  padding-bottom : 2px;
+  spacing-top : 2px;
+  color : #666666; 
+  background-color : #DDEEFF; 
+  font-weight : bold;
+  text-align : left;
+  font-size : 11px;
+  font-family : "Verdana";
+  text-decoration : none;
+}
+
+.synopsis {
+  padding : 10px;
+  color : #6389d8;
+  background-color : #DDEEFF;
+  font-weight : bold;
+  text-align : center;
+  font-size : 12px;
+  font-family : "Verdana";
+  text-decoration : none;
+  border: #6699FF;
+  border-style: solid;
+  border-width: 1px;
+  margin-left : 50px;
+  margin-right : 50px;
+}
+
+.signetNoteBasPage {
+  font-color : #00FF00;
+  font-weight : normal;
+  font-size : 7pt;
+  font-family : "Verdana";
+  text-decoration : none;
+  vertical-align: text-top;
+}
+
+td.col1NoteBasPage {
+  width : 25 px;
+}
+
+td.col2NoteBasPage {
+}
+
+table.noteBasPage {
+  border-top : 1px, solid, #00FF00;
+  width : 75%;
+}
+
+a.noteBasPage {
+  font-color : #00FF00;
+  font-weight : normal;
+  font-size : 7pt;
+  font-family : "Verdana";
+  text-decoration : none;
+  vertical-align: text-top;
+}
+
+span.noteBasPage {
+  font-size : 9px;
+  font-family : "Verdana";
+  text-decoration : none;
+  vertical-align: baseline;
+}
+
+.noteBasPage {
+  font-color : #00FF00;
+  font-weight : normal;
+  text-align : justify;
+  font-size : 7pt;
+  font-family : "Verdana";
+  text-decoration : none;
+}
+
+.image {
+  margin : 10px;
+  text-align : center;
+}
+
+.image img {
+	border: 1px solid black;
+}
+
+.legimage {
+  text-align : center;
+}
+
+.tableau {
+  margin : 20px;
+}
+.colonne_entete {
+  padding: 3px;
+  background-color: #A6A5C2;
+  font-weight: bold;
+  font-size : 11px;
+  font-family : "Verdana";  
+}
+.colonne { 
+  padding: 3px;
+  font-size : 11px;
+  font-family : "Verdana";  
+}
+
+.entete {
+  background-color: #A6A5C2;
+  font-weight: bold;
+}
+
+.renvoiSignet {
+  font-color : #0000FF;
+  font-weight : normal;
+  font-size : 11px;
+  font-family : "Verdana";
+  text-decoration : none;
+}
+
+.tableref {
+  align : center;
+  width : 600;
+  padding-left : 10px;
+  padding-right : 10px;
+  color : #666666;
+  background-color : #DDEEFF;
+  font-size : 10px;
+  font-family : "Verdana";
+  text-decoration : none;
+  border: #6389D8;
+  border-style: solid;
+  border-width: 3px;
+  margin-left : 50px;
+  margin-right : 50px;
+}
+
+.trreftitle {
+  padding-top : 10px;
+  padding-left : 10px;
+  color : #6389D8;
+  font-weight : bold;
+}
+
+.trrefelem {
+  padding-left : 30px;
+  padding-top : 0;
+  padding-bottom : 0;
+  spacing-top : 0;
+  spacing-bottom : 0;
+}
+
+/*************** Début partie coloration syntaxique ***************/
+.code {
+  background-color : #FAFAFA;
+  margin-left : 30px;
+  margin-right : 30px;
+  border: #D1D7DC;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.titre_code {
+  padding : 2px;
+  background-color: #A6A5C2;
+  font-weight: bold;
+  font-size : 10px;
+  font-family : "Verdana";  
+}
+
+.ora_code, .java_code, .xml_code, .vb_code, .php_code,
+.bcb_code, .other_code, .csharp_code,
+.delphi_code, .vbnet_code, .c_code, .cpp_code, .css_code, .asp_code, .js_code, .as_code {
+  padding : 8px;
+  text-align : left;
+  font-size : 11px;
+  font-family : "Courier New", Courier, mono;
+  text-decoration : none;
+}
+
+span.java_kw, span.java_type, span.js_keyword, span.as_keyword {
+  font-weight : bold;
+  color: #7F0055;
+}
+
+span.java_ch, span.js_ch, span.as_ch {
+  color: #2a00ff;
+}
+
+span.java_comment, span.js_comment, span.as_comment {
+  color: #3f7f5f;
+}
+
+span.java_javadoc {
+  color: #3f5fbf;
+}
+
+span.bcb_keyword, span.php_keyword, span.csharp_keyword,
+span.vbnet_keyword, span.vb_keyword {
+  color: #0033FF;
+}
+
+span.bcb_type, span.php_type, span.csharp_type, span.vbnet_type, span.vb_type {
+  font-weight : bold;
+  color: #3366CC;
+}
+
+span.bcb_ch, span.php_ch, span.csharp_ch, span.vbnet_ch,
+span.vb_ch, span.css_keywordvalue {
+  color: #993399;
+}
+
+span.bcb_comment, span.php_comment, span.csharp_comment {
+  color: #999999;
+}
+
+span.delphi_comment, span.c_comment, span.cpp_comment {
+  font-style: italic;
+  color: #000080;
+}  
+
+span.bcb_define, span.csharp_define {
+  color: #339933;
+}
+
+span.xml_balise, span.ora_keyword, span.ora_type {
+  font-weight : bold;
+  color: #000080;
+}
+
+span.delphi_keyword, span.delphi_type, span.c_keyword, span.cpp_keyword, span.c_type, 
+span.cpp_type, span.css_keyword {
+  font-weight : bold;
+  color: #000000;
+}
+
+span.xml_ch, span.ora_ch {
+  color: #0000ff;
+}
+
+span.xml_comment, span.ora_comment, span.c_define, span.cpp_define, span.css_comment {
+  color: #008000;
+}
+
+span.xml_echap, span.c_code, span.cpp_code {
+  color: #00000;
+}
+
+span.ora_var {
+  color: #7F0055;
+}
+
+span.ora_define, span.delphi_ch, span.css_ch {
+  color: #000080;
+}
+
+
+span.vbnet_comment, span.vb_comment {
+  color: #669933;
+}
+
+span.asp_objects {
+   font-weight : bold;
+   color: #990000;
+}
+   
+span.asp_methods {
+   font-weight : bold;
+   color: #000099;
+}
+
+span.vbs_ch {
+   color: #006600;
+}
+
+span.vbs_comment {
+   color: #999999;
+}
+
+span.vbs_functions {
+   color: #996600;
+}
+
+span.vbs_statements {
+   color : #660099;
+}
+
+
+
+
+pre.code em {
+	background-color: #ccc;
+}

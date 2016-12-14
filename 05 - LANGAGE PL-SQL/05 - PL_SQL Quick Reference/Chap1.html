@@ -1,0 +1,1715 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <title>Guide PL/SQL - Club d'entraide des d&#233;veloppeurs francophones</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta name="generator" content="developpez-com" />
+  <link rel="stylesheet" type="text/css" href="./mainstyle.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="./printer.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./article.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./faq.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./source.css" />
+</head>
+<body>
+<table width="100%" cellspacing="4">
+	<tr>
+  	<td align="center">
+    	<table width="100%" cellspacing="0" cellpadding="0">
+     		<tr>
+     			<td>
+			      <table width="100%" cellspacing="11">
+    	  			<tr>
+        				<td>
+          				<a href="http://www.developpez.com"><img src="images/logo.gif" alt="Accueil" /></a>
+        				</td>
+      				</tr>
+      				<tr>
+      					<td></td>
+      				</tr>
+      			</table>
+    			</td>
+  			</tr>
+  			<tr>
+    			<td>
+						<table class="cachee" cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td class="iongl"><img src="images/bordg.gif" /></td>
+								<td class="bgongl"><a href="http://www.developpez.com" class="ntdrub">Accueil<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://club.developpez.com" class="ntdrub">Le<br />Club</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://delphi.developpez.com" class="ntdrub">Delphi<br />Kylix</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://c.developpez.com" class="ntdrub">C<br />C++</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://java.developpez.com" class="ntdrub">Java<br />J2EE</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://dotnet.developpez.com" class="ntdrub">DotNET<br />&amp; C#</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://vb.developpez.com" class="ntdrub">Visual<br />Basic</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://access.developpez.com" class="ntdrub">Access<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://pascal.developpez.com" class="ntdrub">Pascal<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://web.developpez.com" class="ntdrub">Dev<br />Web</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://php.developpez.com" class="ntdrub">PHP<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://asp.developpez.com" class="ntdrub">ASP<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://xml.developpez.com" class="ntdrub">XML<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://uml.developpez.com" class="ntdrub">UML<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://sgbd.developpez.com" class="ntdrub">SQL<br />SGBD</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://windows.developpez.com" class="ntdrub">Win<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://linux.developpez.com" class="ntdrub">Linux<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://www.developpez.com/cours/" class="ntdrub">Autres<br /></a></td>
+								<td class="iongl"><img src="images/bordd.gif" /></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="trbleu">
+					</td>
+				</tr>
+
+				<tr valign="top">
+					<td valign="top" class="fondart">
+						<table cellspacing="1" width="100%" class="tbnoir">
+							<tr>
+								<td class="fondart">
+									<table class="cadrearticle" width="90%" cellpadding="10" cellspacing="0">
+										<tr>
+											<td>
+
+        <br><h1>Oracle PL/SQL</h1><p class="dateArticle">
+        Date de publication : Avril 2004 , 
+        Date de mise a jour : Juillet 2004</p><hr><div class="barreNavigation"> [ <a class="barreNavigationTexte" href="Index.html">Précédent</a> ]  [ <a class="barreNavigationTexte" href="sommaire.html">Sommaire</a> ]  [ <a class="barreNavigationTexte" href="Chap2.html">Suivant</a> ] </div><hr>
+	
+	
+	
+	
+	
+	
+	<br /><a class="summaryIndent0" href="#L1">1. Le bloc PL/SQL</a>
+		
+		
+
+
+
+
+
+
+		
+
+		<br /><a class="summaryIndent1" href="#L1.1">1.1. La section d&eacute;clarative</a>
+			
+		
+								
+		<br /><a class="summaryIndent1" href="#L1.2">1.2. La section ex&eacute;cution</a>
+			
+
+		<br /><a class="summaryIndent2" href="#L1.2.1">1.2.1. Assignation</a>
+			
+
+		
+		<br /><a class="summaryIndent2" href="#L1.2.2">1.2.2. OPEN</a>
+			
+		
+
+
+				
+		<br /><a class="summaryIndent2" href="#L1.2.3">1.2.3. OPEN FOR</a>
+			
+		
+
+
+				
+		<br /><a class="summaryIndent2" href="#L1.2.4">1.2.4. CLOSE</a>
+			
+
+				
+		<br /><a class="summaryIndent2" href="#L1.2.5">1.2.5. COMMIT</a>
+			
+		
+
+
+										
+		<br /><a class="summaryIndent2" href="#L1.2.6">1.2.6. EXECUTE IMMEDIATE</a>
+			
+		
+
+
+										
+		<br /><a class="summaryIndent2" href="#L1.2.7">1.2.7. EXIT</a>
+			
+		
+
+
+										
+		<br /><a class="summaryIndent2" href="#L1.2.8">1.2.8. FETCH</a>
+			
+		
+
+
+																
+		<br /><a class="summaryIndent2" href="#L1.2.9">1.2.9. FORALL</a>
+			
+		
+
+
+		
+		<br /><a class="summaryIndent2" href="#L1.2.10">1.2.10. GOTO</a>
+			
+		
+
+
+		
+		<br /><a class="summaryIndent2" href="#L1.2.11">1.2.11. IF</a>
+			
+		
+
+
+				
+		<br /><a class="summaryIndent2" href="#L1.2.12">1.2.12. CASE</a>
+			
+
+												
+		<br /><a class="summaryIndent2" href="#L1.2.13">1.2.13. FOR (curseur)</a>
+			
+		
+
+
+		
+		<br /><a class="summaryIndent2" href="#L1.2.14">1.2.14. FOR, LOOP, WHILE</a>
+			
+		
+
+
+
+		
+		<br /><a class="summaryIndent2" href="#L1.2.15">1.2.15. NULL</a>
+			
+
+		
+		<br /><a class="summaryIndent2" href="#L1.2.16">1.2.16. RAISE</a>
+			
+		
+
+
+		
+		<br /><a class="summaryIndent2" href="#L1.2.17">1.2.17. RETURN</a>
+			
+		
+
+
+		
+		<br /><a class="summaryIndent2" href="#L1.2.18">1.2.18. SAVEPOINT</a>
+			
+
+										
+		<br /><a class="summaryIndent2" href="#L1.2.19">1.2.19. ROLLBACK</a>
+			
+		
+
+
+		
+		<br /><a class="summaryIndent2" href="#L1.2.20">1.2.20. SELECT INTO</a>
+			
+		
+
+
+						
+		<br /><a class="summaryIndent2" href="#L1.2.21">1.2.21. Instruction SQL</a>
+			
+
+		
+		<br /><a class="summaryIndent2" href="#L1.2.22">1.2.22. Les curseurs explicites</a>
+			
+		
+
+		
+
+		
+
+		
+
+		
+
+
+
+		
+		<br /><a class="summaryIndent2" href="#L1.2.23">1.2.23. Port&eacute;e des variables</a>
+			
+		
+								
+				
+		<br /><a class="summaryIndent1" href="#L1.3">1.3. La section de gestion des erreurs</a>
+			
+		
+
+
+
+
+
+
+
+
+												
+	
+	
+<br><br>
+	
+	
+	
+	
+	
+	
+	<br /><h2 class="TitreSection1"><a name="L1"></a>1. Le bloc PL/SQL</h2>
+		
+<div class="paragraph">
+PL/SQL est un langage structur&eacute; en blocs, constitu&eacute;s d'un ensemble d'instructions.
+<br /><br />
+Un bloc PL/SQL peut &ecirc;tre "externe", on dit alors qu'il est anonyme, ou alors stock&eacute; dans la base de donn&eacute;es sous forme de proc&eacute;dure, fonction ou trigger.
+<br /><br />
+un bloc PL/SQL est int&eacute;gralement envoy&eacute; au moteur PL/SQL, qui traite chaque instruction PL/SQL et sous-traite les instructions purement SQL au moteur SQL, afin de r&eacute;duire le trafic r&eacute;seau.
+<br />
+</div><br>		
+<div class="image"><img src="./images/pl_sql.gif"></div>
+<div class="paragraph">
+<b>Syntaxe d'un bloc PL/SQL</b>
+</div><br>
+<div class="image"><img src="./images/bloc_pl_sql.gif"></div>
+<div class="image"><img src="./images/Bloc_pl_sql_item.gif"></div>
+<div class="image"><img src="./images/Bloc_pl_sql_sql.gif"></div>
+<div class="image"><img src="./images/Bloc_pl_sql_pl_sqlsql.gif"></div>
+<div class="paragraph">
+Chaque bloc PL/SQL peut &ecirc;tre constitu&eacute; de 3 sections : <br />
+</div><br><ul type="">
+<li><b>Une section facultative de d&eacute;claration et initialisation de types, variables et constantes</b></li>
+<li><b>Une section obligatoire contenant les instructions d'ex&eacute;cution</b></li>
+<li><b>Une section facultative de gestion des erreurs</b></li>
+</ul><div class="paragraph">
+
+[<b>DECLARE</b><br />
+&#133; d&eacute;clarations et initialisation]<br />
+<b>BEGIN</b><br />
+   &#133; instructions ex&eacute;cutables<br />
+[<b>EXCEPTION</b><br />
+   &#133; interception des erreurs]<br />
+<b>END;</b><br />
+<br /><br />
+Un bloc PL/SQL minimum peut &ecirc;tre repr&eacute;sent&eacute; de la fa&ccedil;on suivante :
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">BEGIN</span>
+   <span class="ora_keyword">Null</span> ;
+<span class="ora_keyword">END</span> ;</div></pre><div class="paragraph">
+<br />
+Le mot cl&eacute; <b>BEGIN</b> d&eacute;termine le d&eacute;but de la section des instructions ex&eacute;cutables<br />
+Le mot cl&eacute; <b>END;</b> indique la fin de la section des instructions ex&eacute;cutables<br />
+Une seule instruction figure dans ce bloc : <b>Null;</b> qui ne g&eacute;n&egrave;re aucune action<br />
+Ce bloc PL/SQL ne fait donc absolument rien !<br />
+<br /><br />
+La section d&eacute;clarative (facultative) d'un bloc d&eacute;bute par le mot cl&eacute; <b>DECLARE</b><br />
+Elle contient toutes les d&eacute;clarations des variables qui seront utilis&eacute;es localement par la section ex&eacute;cutable, ainsi que leur &eacute;ventuelle initialisation.
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">DECLARE</span>
+   LC$Chaine	  <span class="ora_keyword">VARCHAR2</span>(15) := 'Salut Monde' ;
+<span class="ora_keyword">BEGIN</span>
+   <span class="ora_keyword">DBMS_OUTPUT</span>.<span class="ora_keyword">PUT_LINE</span>( LC$Chaine ) ;
+<span class="ora_keyword">END</span> ;</div></pre><div class="paragraph">
+Une variable LC$Chaine est d&eacute;clar&eacute;e de type VARCHAR2(15) et initialis&eacute;e avec la valeur 'Salut Monde' ;<br />
+Dans la section ex&eacute;cutable, cette variable est transmise &agrave; la fonction DBMS_OUTPUT() pour &ecirc;tre affich&eacute;e &agrave; l'&eacute;cran
+<br /><br />
+Cette section ne peut pas contenir d'instructions ex&eacute;cutables. Toutefois, il est possible de d&eacute;finir dans cette section des proc&eacute;dures ou des fonctions contenant une section ex&eacute;cutable.<br /><br />
+<span class="important">Toute variable doit avoir &eacute;t&eacute; d&eacute;clar&eacute;e avant de pouvoir &ecirc;tre utilis&eacute;e dans la section ex&eacute;cutable.</span>
+<br /><br />
+La section de gestion des erreurs (facultative) d&eacute;bute par le mot cl&eacute; <b>EXCEPTION</b><br />
+Elle contient le code ex&eacute;cutable mis en place pour la gestion des erreurs<br />
+Lorsqu'une erreur intervient dans l'ex&eacute;cution, le programme est stopp&eacute; et le code erreur est transmis &agrave; cette section
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">DECLARE</span>
+   LC$Chaine	  <span class="ora_keyword">VARCHAR2</span>(15) := 'Hello World' ;
+<span class="ora_keyword">BEGIN</span>
+   <span class="ora_keyword">DBMS_OUTPUT</span>.<span class="ora_keyword">PUT_LINE</span>( LC$Chaine ) ;
+<span class="ora_keyword">EXCEPTION</span>
+   <span class="ora_keyword">When</span> <span class="ora_keyword">OTHERS</span> <span class="ora_keyword">then</span>
+         <span class="ora_keyword">Null</span> ;
+<span class="ora_keyword">END</span> ;</div></pre><div class="paragraph">
+Les erreurs doivent &ecirc;tre intercept&eacute;es avec le mot cl&eacute; <b>WHEN</b> suivi du code erreur cibl&eacute;. Ici, le code <b>OTHERS</b> qui d&eacute;finit toutes les erreurs non intercept&eacute;es individuellement par les clauses <b>WHEN</b> pr&eacute;c&eacute;dentes.
+<br /><br />
+Cette section peut elle-m&ecirc;me contenir d'autres blocs PL/SQL
+<br /><br />
+<b>Les blocs PL/SQL peuvent &ecirc;tre imbriqu&eacute;s les uns dans les autres</b>
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">DECLARE</span>
+   &#133;
+<span class="ora_keyword">BEGIN</span>
+   <span class="ora_keyword">DECLARE</span>
+      &#133;..
+   <span class="ora_keyword">BEGIN</span>
+        &#133;&#133;
+        <span class="ora_keyword">BEGIN</span>
+            &#133;&#133;&#133;
+        <span class="ora_keyword">END</span> ;
+        &#133;&#133;&#133;
+   <span class="ora_keyword">END</span> ;
+
+   &#133;&#133;..
+<span class="ora_keyword">END</span> ;</div></pre><div class="paragraph">
+</div><br>		
+
+		<br /><h3 class="TitreSection2"><a name="L1.1"></a>1.1. La section d&eacute;clarative</h3>
+			
+<div class="paragraph">
+Vous pouvez d&eacute;clarer dans cette section tous les types, variables et constantes n&eacute;cessaires &agrave; l'ex&eacute;cution du bloc.<br />
+Ces variables peuvent &ecirc;tre de n'importe quel type SQL ou PL/SQL (<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap2#L2" class="lienArticle">voir le chapitre Variables, types et litt&eacute;raux</a>).<br />
+Leur initialisation, facultative, s'effectue avec l'op&eacute;rateur <b>:=</b>
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">DECLARE</span>
+   <span class="ora_keyword">LN</span>$Nbre   <span class="ora_keyword">NUMBER</span>(3) := 0 ;
+   LD$<span class="ora_keyword">Date</span>   <span class="ora_keyword">DATE</span> := <span class="ora_keyword">SYSDATE</span> ;
+   LC$Nom    <span class="ora_keyword">VARCHAR2</span>(10) := 'PL/<span class="ora_keyword">SQL</span>' ;</div></pre><div class="paragraph">
+Une constante est une variable dont l'initialisation est obligatoire et dont la valeur ne pourra pas &ecirc;tre modifi&eacute;e en cours d'ex&eacute;cution<br />
+Elle est d&eacute;clar&eacute;e avec le mot cl&eacute; : CONSTANT qui doit pr&eacute;c&eacute;der le type
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">DECLARE</span>
+   <span class="ora_keyword">LN</span>$Pi  <span class="ora_keyword">CONSTANT</span> <span class="ora_keyword">NUMBER</span> := 3. 1415926535 ;</div></pre><div class="paragraph">
+PL/SQL n'est pas sensible &agrave; la casse. Pour lui les expressions suivantes sont &eacute;quivalentes :
+<br /><br />
+NOM_VARIABLE NUMBER ;<br />
+Nom_Variable Number ;<br />
+nom_variable number ;<br />
+
+</div><br>		
+								
+		<br /><h3 class="TitreSection2"><a name="L1.2"></a>1.2. La section ex&eacute;cution</h3>
+			
+<div class="paragraph">
+D&eacute;limit&eacute;e par les mots cl&eacute; <b>BEGIN</b> et <b>END;</b> elle contient les instructions d'ex&eacute;cution du bloc PL/SQL, les instructions de contr&ocirc;le et d'it&eacute;ration,<br />
+l'appel des proc&eacute;dures et fonctions, l'utilisation des fonctions natives, les ordres SQL, etc.
+<br /><br />
+Chaque instruction doit &ecirc;tre suivi du terminateur d'instruction <b>;</b>
+<br /><br />
+Voici la liste des instructions que cette section peut contenir
+</div><br>
+		<br /><h4 class="TitreSection3"><a name="L1.2.1"></a>1.2.1. Assignation</h4>
+			
+<div class="paragraph">
+L'assignation d'une valeur &agrave; une variable peut &ecirc;tre faite de 2 fa&ccedil;ons diff&eacute;rentes
+</div><br><ul type=""><li>En utilisant l'op&eacute;rateur :=</li></ul><div class="paragraph">
+</div><br><pre class="code"><div class="ora_code">Ma_variable := 10 ;
+Ma_chaine   := 'Cha&icirc;ne de caract&egrave;res' ;</div></pre><div class="paragraph">
+</div><br><ul type=""><li>Par l'interm&eacute;diaire d'un ordre <b>SELECT &#133; INTO</b> ou <b>FETCH &#133; INTO</b></li></ul><div class="paragraph">
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">Declare</span>
+   LC$Nom_emp  EMP.ENAME%<span class="ora_keyword">Type</span> ;
+
+   <span class="ora_keyword">Cursor</span> C_EMP <span class="ora_keyword">Is</span>
+   <span class="ora_keyword">Select</span>
+	ename
+   <span class="ora_keyword">From</span>
+	EMP
+   <span class="ora_keyword">Where</span>
+	Empno = 1014
+   ;
+
+<span class="ora_keyword">Begin</span>
+   <span class="ora_keyword">Select</span>
+	ename
+   <span class="ora_keyword">Into</span>
+	LC$Nom_emp
+   <span class="ora_keyword">From</span>
+	EMP
+   <span class="ora_keyword">Where</span>
+	Empno = 1014
+   ;
+
+   <span class="ora_keyword">Open</span>  C_EMP ;
+   <span class="ora_keyword">Fetch</span> C_EMP <span class="ora_keyword">Into</span> LC$Nom_emp ;
+   <span class="ora_keyword">Close</span> C_EMP ;
+<span class="ora_keyword">End</span> ;</div></pre><div class="paragraph">
+</div><br>
+		
+		<br /><h4 class="TitreSection3"><a name="L1.2.2"></a>1.2.2. OPEN</h4>
+			
+<div class="paragraph">
+<b>Ouverture d'un curseur SQL</b>
+</div><br>		
+<div class="image"><img src="./images/open.gif"></div>
+<div class="paragraph">
+<b>nom curseur</b> repr&eacute;sente le nom donn&eacute; au curseur qui permettra de le r&eacute;f&eacute;rencer dans les instructions suivantes
+<br />
+<b>param&egrave;tres du curseur</b> repr&eacute;sente la liste des param&egrave;tres transmis au curseur
+<br /><br />
+<span class="important">le curseur doit avoir &eacute;t&eacute; pr&eacute;alablement d&eacute;fini dans la section d&eacute;clarative</span>
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">Declare</span>
+   LC$Nom_emp  EMP.ENAME%<span class="ora_keyword">Type</span> ;
+
+   <span class="ora_keyword">Cursor</span> C_EMP ( <span class="ora_keyword">LN</span>$Numemp <span class="ora_keyword">IN</span> EMP.EMPNO%<span class="ora_keyword">Type</span> ) <span class="ora_keyword">Is</span>
+   <span class="ora_keyword">Select</span>
+	ename
+   <span class="ora_keyword">From</span>
+	EMP
+   <span class="ora_keyword">Where</span>
+	Empno = <span class="ora_keyword">LN</span>$Numemp
+   ;
+
+<span class="ora_keyword">Begin</span>
+   <span class="ora_keyword">Open</span>  C_EMP ( 1024 );
+   <span class="ora_keyword">Fetch</span> C_EMP <span class="ora_keyword">Into</span> LC$Nom_emp ;
+   <span class="ora_keyword">Close</span> C_EMP ;
+<span class="ora_keyword">End</span> ;</div></pre><div class="paragraph">
+</div><br>
+				
+		<br /><h4 class="TitreSection3"><a name="L1.2.3"></a>1.2.3. OPEN FOR</h4>
+			
+<div class="paragraph">
+<b>Ouverture d'un curseur SQL incluant l'ordre select correspondant.</b><br />
+La d&eacute;claration pr&eacute;alable du curseur dans la section d&eacute;clarative n'est pas n&eacute;cessaire
+</div><br>		
+<div class="image"><img src="./images/open_for.gif"></div>
+<div class="paragraph">
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">Declare</span>
+   LC$Nom_emp  EMP.ENAME%<span class="ora_keyword">Type</span> ;
+<span class="ora_keyword">Begin</span>
+   <span class="ora_keyword">Open</span>  C_EMP <span class="ora_keyword">For</span> '<span class="ora_keyword">Select</span> ename <span class="ora_keyword">From</span> EMP <span class="ora_keyword">Where</span> empno = 1024' ;
+   <span class="ora_keyword">Fetch</span> C_EMP <span class="ora_keyword">Into</span> LC$Nom_emp ;
+   <span class="ora_keyword">Close</span> C_EMP ;
+<span class="ora_keyword">End</span> ;</div></pre><div class="paragraph">
+</div><br>
+				
+		<br /><h4 class="TitreSection3"><a name="L1.2.4"></a>1.2.4. CLOSE</h4>
+			
+<div class="paragraph">
+<b>Cette instruction est utilis&eacute;e pour fermer un curseur pr&eacute;alablement ouvert avec l'instruction OPEN</b>
+<br /><br />
+<b>CLOSE(nom_curseur)</b>
+<br /><br />
+Apr&egrave;s cette instruction, le curseur n'est plus valide et toute instruction s'y reportant g&eacute;n&egrave;rera une erreur
+<br />
+(voir exemple pr&eacute;c&eacute;dent)
+</div><br>
+				
+		<br /><h4 class="TitreSection3"><a name="L1.2.5"></a>1.2.5. COMMIT</h4>
+			
+<div class="paragraph">
+<b>Cette instruction permet d'enregistrer en base toutes les modifications effectu&eacute;es au cours de la transaction</b>
+</div><br>		
+<div class="image"><img src="./images/commit.gif"></div>
+<div class="paragraph">
+Le mot cl&eacute; <b>WORK</b> est facultatif et n'a aucun effet particulier<br />
+Un commentaire d'un maximum de 50 caract&egrave;res peut appara&icirc;tre entre apostrophes derri&egrave;re le mot cl&eacute; <b>COMMENT</b>
+</div><br>
+										
+		<br /><h4 class="TitreSection3"><a name="L1.2.6"></a>1.2.6. EXECUTE IMMEDIATE</h4>
+			
+<div class="paragraph">
+<b>Cette instruction permet d'ex&eacute;cuter du SQL dynamique</b>
+</div><br>		
+<div class="image"><img src="./images/execute_immediate.gif"></div>
+<div class="paragraph">
+-&gt; Pour une explication d&eacute;taill&eacute;e de cette instruction, reportez-vous &agrave; l'article sur le <a href="http://sheikyerbouti.developpez.com/execute_immediate/" class="lienArticle">sql dynamique natif</a>
+</div><br>
+										
+		<br /><h4 class="TitreSection3"><a name="L1.2.7"></a>1.2.7. EXIT</h4>
+			
+<div class="paragraph">
+<b>Cette instruction permet de quitter une structure it&eacute;rative</b>
+</div><br>		
+<div class="image"><img src="./images/exit.gif"></div>
+<div class="paragraph">
+<b>label</b> facultatif permet de nommer pr&eacute;cis&eacute;ment la structure dont on veut sortir.<br />
+<b>expression bool&eacute;enne</b> permet de sp&eacute;cifier une condition de sortie<br /><br />
+Exit saute &agrave; l'instruction suivant le mot cl&eacute; <b>END LOOP;</b><br />
+Dans le cas de boucles imbriqu&eacute;es, l'indication d'un label permet de quitter tout ou partie des boucles imbriqu&eacute;es
+
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">LN</span>$Num <span class="ora_keyword">pls_integer</span> := 0 ;
+  3  <span class="ora_keyword">Begin</span>
+  4    <span class="ora_keyword">Loop</span>
+  5      <span class="ora_keyword">LN</span>$Num := <span class="ora_keyword">LN</span>$Num + 1 ;
+  6      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( <span class="ora_keyword">to_char</span>( <span class="ora_keyword">LN</span>$Num ) ) ;
+  7      <span class="ora_keyword">EXIT</span> <span class="ora_keyword">WHEN</span> <span class="ora_keyword">LN</span>$Num &gt; 3 ; <span class="ora_comment">-- sortie de la boucle lorsque LN$Num est sup&eacute;tieur &agrave; 3</span>
+  8    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+  9  <span class="ora_keyword">End</span> ;
+ 10  /
+1
+2
+3
+4
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+Lorsque le test effectu&eacute; (LN$Num &gt; 3) est v&eacute;rifi&eacute; (TRUE), la boucle Loop &#133; End loop est quitt&eacute;e
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">LN</span>$I <span class="ora_keyword">pls_integer</span> := 0 ;
+  3    <span class="ora_keyword">LN</span>$J <span class="ora_keyword">pls_integer</span> := 0 ;  
+  4  <span class="ora_keyword">Begin</span>
+  5    &lt;&lt;boucle1&gt;&gt;
+  6    <span class="ora_keyword">Loop</span>
+  7      <span class="ora_keyword">LN</span>$I := <span class="ora_keyword">LN</span>$I + 1 ;
+  8      <span class="ora_keyword">Loop</span>
+  9         <span class="ora_keyword">LN</span>$J := <span class="ora_keyword">LN</span>$J + 1 ;
+ 10         <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( <span class="ora_keyword">to_char</span>( <span class="ora_keyword">LN</span>$I ) || ',' || <span class="ora_keyword">to_char</span>( <span class="ora_keyword">LN</span>$J ) ) ;
+ 11         <span class="ora_keyword">EXIT</span> boucle1 <span class="ora_keyword">WHEN</span> <span class="ora_keyword">LN</span>$J &gt; 3 ;
+ 12      <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 13    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 14  <span class="ora_keyword">End</span> ;
+ 15  /
+1,1
+1,2
+1,3
+1,4
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+Dans cet exemple, l'instruction <b>EXIT</b> suivie du label boucle1 permet de quitter les deux boucles imbriqu&eacute;es
+</div><br>
+										
+		<br /><h4 class="TitreSection3"><a name="L1.2.8"></a>1.2.8. FETCH</h4>
+			
+<div class="paragraph">
+<b>Cette instruction permet de ramener une ligne d'un curseur pr&eacute;alablement ouvert avec l'instruction OPEN ou OPEN FOR</b>
+</div><br>		
+<div class="image"><img src="./images/fetch.gif"></div>
+<div class="paragraph">
+<b>nom curseur</b> repr&eacute;sente le nom d'un curseur pr&eacute;alablement ouvert avec l'instruction OPEN ou OPEN FOR<br />
+<b>nom variable curseur</b> repr&eacute;sente le nom d'une variable curseur<br />
+<b>nom variable curseur h&ocirc;te</b> repr&eacute;sente le nom d'une variable curseur transmise par un programme tiers (ex : Pro*C, Pro*Cobol, etc.)<br />
+<b>variable</b> repr&eacute;sente le nom d'une variable pr&eacute;alablement d&eacute;finie dans la section d&eacute;clarative, qui doit &ecirc;tre du m&ecirc;me type que la colonne ramen&eacute;e par l'instruction Select<br />
+<b>enregistrement</b> repr&eacute;sente le nom d'un enregistrement pr&eacute;alablement d&eacute;fini dans la section d&eacute;clarative qui doit &ecirc;tre du m&ecirc;me type que la ligne ramen&eacute;e par l'instruction Select<br />
+<b>nom collection</b> repr&eacute;sente le nom d'une collection pr&eacute;alablement d&eacute;finie dans la section d&eacute;clarative<br />
+<b>nom tableau h&ocirc;te</b> repr&eacute;sente le nom du tableau transmis par un programme tiers
+<br /><br />Si l'instruction <b>FETCH</b> ne ram&egrave;ne plus de ligne (fin du curseur) l'attribut %NOTFOUND prend la valeur TRUE et l'attribut %FOUND prend la valeur FALSE<br /><br />
+-&gt; Pour voir des exemples, reportez-vous &agrave; la section <a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.22" class="lienArticle">Les curseurs explicites</a> (1.2.22)
+</div><br>
+																
+		<br /><h4 class="TitreSection3"><a name="L1.2.9"></a>1.2.9. FORALL</h4>
+			
+<div class="paragraph">
+<b>Cette instruction permet de g&eacute;n&eacute;rer des ordres SQL de masse bas&eacute;s sur le contenu d'une collection</b>
+</div><br>		
+<div class="image"><img src="./images/forall.gif"></div>
+<div class="paragraph">
+<b>variable index</b> repr&eacute;sente l'indice de la collection sur laquelle porte l'instruction FORALL<br />
+<b>borne d&eacute;but</b> repr&eacute;sente la valeur d'indice de d&eacute;part<br />
+<b>borne fin</b> repr&eacute;sente la valeur d'indice de fin<br />
+<b>instruction sql</b> doit &ecirc;tre un ordre SQL de type INSERT, UPDATE ou DELETE
+<br /><br />
+<span class="important">(10g)</span><br />
+<span class="important">   FORALL i IN INDICES OF nom_collection</span><br /><br />
+<span class="important">permet de ne traiter que les indices valoris&eacute;s de la collection (non forc&eacute;ment cons&eacute;cutifs comme il &eacute;tait imp&eacute;ratif dans les versions pr&eacute;c&eacute;dentes)
+</span><br /><br />
+Pour voir des exemples, reportez-vous au <a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap5#L5.5" class="lienArticle">chapitre 5 Collections et enregistrements</a>
+</div><br>
+		
+		<br /><h4 class="TitreSection3"><a name="L1.2.10"></a>1.2.10. GOTO</h4>
+			
+<div class="paragraph">
+<b>Cette instruction permet d'ex&eacute;cuter un saut dans le code vers le label precis&eacute;</b>
+</div><br>		
+<div class="image"><img src="./images/goto.gif"></div>
+<div class="paragraph">
+<b>Une instruction valide doit suivre la d&eacute;claration du label</b>
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">LN</span>$I <span class="ora_keyword">pls_integer</span> := 0 ;
+  3    <span class="ora_keyword">LN</span>$J <span class="ora_keyword">pls_integer</span> := 0 ;  
+  4  <span class="ora_keyword">Begin</span>
+  5    <span class="ora_keyword">Loop</span>
+  6      <span class="ora_keyword">LN</span>$I := <span class="ora_keyword">LN</span>$I + 1 ;
+  7      <span class="ora_keyword">Loop</span>
+  8         <span class="ora_keyword">LN</span>$J := <span class="ora_keyword">LN</span>$J + 1 ;
+  9         <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( <span class="ora_keyword">to_char</span>( <span class="ora_keyword">LN</span>$I ) || ',' || <span class="ora_keyword">to_char</span>( <span class="ora_keyword">LN</span>$J ) ) ;
+ 10         <span class="ora_keyword">If</span> <span class="ora_keyword">LN</span>$J &gt; 3  <span class="ora_keyword">Then</span> <span class="ora_keyword">GOTO</span> sortie ; <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+ 11      <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 12    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 13    &lt;&lt;sortie&gt;&gt;
+ 14    <span class="ora_keyword">null</span> ;
+ 15  <span class="ora_keyword">End</span> ;
+ 16  /
+1,1
+1,2
+1,3
+1,4
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+</div><br>
+		
+		<br /><h4 class="TitreSection3"><a name="L1.2.11"></a>1.2.11. IF</h4>
+			
+<div class="paragraph">
+<b>Cette instruction permet de faire des tests conditionnels</b>
+</div><br>		
+<div class="image"><img src="./images/if.gif"></div>
+<div class="paragraph">
+<b>expression bool&eacute;enne</b> repr&eacute;sente un test g&eacute;n&eacute;rant un bool&eacute;en TRUE ou FALSE
+<br /><br />
+Seuls les mots cl&eacute; <b>IF</b> et <b>END IF;</b> sont obligatoires. Les clauses <b>ELSIF</b> et <b>ELSE</b> sont facultatives
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">LN</span>$I <span class="ora_keyword">pls_integer</span> := 0 ;
+  3    <span class="ora_keyword">LN</span>$J <span class="ora_keyword">pls_integer</span> := 0 ;  
+  4  <span class="ora_keyword">Begin</span>
+  5    <span class="ora_keyword">Loop</span>
+  6      <span class="ora_keyword">LN</span>$I := <span class="ora_keyword">LN</span>$I + 1 ;
+  7      <span class="ora_keyword">Loop</span>
+  8        <span class="ora_keyword">LN</span>$J := <span class="ora_keyword">LN</span>$J + 1 ;
+  9        <span class="ora_keyword">If</span> <span class="ora_keyword">LN</span>$J = 1 <span class="ora_keyword">Then</span>
+ 10           <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( '1' ) ;
+ 11        <span class="ora_keyword">Elsif</span> <span class="ora_keyword">LN</span>$J = 2 <span class="ora_keyword">Then</span>
+ 12           <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( '2' ) ;
+ 13        <span class="ora_keyword">Else</span>
+ 14           <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( '3' ) ;
+ 15           <span class="ora_keyword">goto</span> sortie ;
+ 16        <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+ 17      <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 18    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 19    &lt;&lt;sortie&gt;&gt;
+ 20    <span class="ora_keyword">null</span> ;
+ 21  <span class="ora_keyword">End</span> ;
+ 22  /
+1
+2
+3
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+</div><br>
+				
+		<br /><h4 class="TitreSection3"><a name="L1.2.12"></a>1.2.12. CASE</h4>
+			
+<div class="paragraph">
+<b>Cette instruction permet de mettre en place des structures de test conditionnel de type IF .. ELSE .. END IF,</b><br />
+<b>&agrave; la grande diff&eacute;rence qu'elle est utilisable dans les requ&ecirc;tes SQL</b>
+<br /><br />
+<b>2 syntaxes sont possibles</b>
+<br /><br />
+</div><br><ul type=""><li><b>CASE simple</b></li></ul><div class="paragraph">
+<b>[&lt;&lt;label&gt;&gt;]</b>
+<b>CASE op&eacute;rateur</b>
+<b>{ WHEN contenu_op&eacute;rateur THEN { instruction;} ... }...</b>
+<b>[ELSE { instruction;}...]</b>
+<b>END CASE [label];</b>
+<br /><br />
+</div><br><ul type=""><li><b>CASE de recherche</b></li></ul><div class="paragraph">
+<b>[&lt;&lt;label&gt;&gt;]</b>
+<b>CASE { WHEN expression_bool&eacute;enne THEN { instruction;} ... }...</b>
+<b>[ELSE { instruction;}...]</b>
+<b>END CASE [label];</b>
+<br /><br />
+op&eacute;rateur peut &ecirc;tre n'importe quel type PL/SQL &agrave; l'exception des objets suivants : 
+<br />
+</div><br><ul type="">
+<li>BLOB</li>
+<li>BFILE</li>
+<li>Type objet</li>
+<li>Enregistrement</li>
+<li>Collection (NESTED TABLE, INDEX-BY TABLE, VARRAY)</li>
+</ul><div class="paragraph">
+<br />
+Pour le CASE simple, chaque mot cl&eacute; <b>WHEN</b> v&eacute;rifie l'&eacute;galit&eacute; entre op&eacute;rateur et contenu_op&eacute;rateur. Dans l'affirmative, l'instruction suivant le mot cl&eacute; <b>THEN</b> est ex&eacute;cut&eacute;e, puis la structure <b>CASE</b> est quitt&eacute;e et l'ex&eacute;cution du programme est reprise apr&egrave;s le mot cl&eacute; <b>END CASE;</b>
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">LN</span>$Num <span class="ora_keyword">pls_integer</span> := 0 ;
+  3  <span class="ora_keyword">Begin</span>
+  4      <span class="ora_keyword">Loop</span>
+  5        <span class="ora_keyword">LN</span>$Num := <span class="ora_keyword">LN</span>$Num + 1 ;
+  6        <span class="ora_keyword">CASE</span> <span class="ora_keyword">LN</span>$Num
+  7          <span class="ora_keyword">WHEN</span> 1 <span class="ora_keyword">Then</span> <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( '1' ) ;
+  8          <span class="ora_keyword">WHEN</span> 2 <span class="ora_keyword">Then</span> <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( '2' ) ;
+  9          <span class="ora_keyword">WHEN</span> 3 <span class="ora_keyword">Then</span> <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( '3' ) ;
+ 10          <span class="ora_keyword">ELSE</span>      
+ 11             <span class="ora_keyword">EXIT</span> ;
+ 12        <span class="ora_keyword">END</span> <span class="ora_keyword">CASE</span> ;
+ 13      <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 14  <span class="ora_keyword">End</span> ;
+ 15  /
+1
+2
+3
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+<br />
+Exemple de CASE de recherche
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">LN</span>$Num <span class="ora_keyword">pls_integer</span> := 0 ;
+  3  <span class="ora_keyword">Begin</span>
+  4     <span class="ora_keyword">Loop</span>
+  5        <span class="ora_keyword">LN</span>$Num := <span class="ora_keyword">LN</span>$Num + 1 ;
+  6        <span class="ora_keyword">CASE</span>
+  7          <span class="ora_keyword">WHEN</span> <span class="ora_keyword">LN</span>$Num <span class="ora_keyword">between</span> 1 <span class="ora_keyword">and</span> 3  <span class="ora_keyword">Then</span> <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( <span class="ora_keyword">To_char</span>( <span class="ora_keyword">LN</span>$Num ) || ' -&gt; 1-3' ) ;
+  8          <span class="ora_keyword">WHEN</span> <span class="ora_keyword">LN</span>$Num &lt; 5  <span class="ora_keyword">Then</span> <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( <span class="ora_keyword">To_char</span>( <span class="ora_keyword">LN</span>$Num ) || ' &lt; 5' ) ;
+  9          <span class="ora_keyword">ELSE</span> <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( <span class="ora_keyword">To_char</span>( <span class="ora_keyword">LN</span>$Num ) || ' &gt;= 5' ) ;
+ 10        <span class="ora_keyword">END</span> <span class="ora_keyword">CASE</span> ;
+ 11        <span class="ora_keyword">exit</span> <span class="ora_keyword">when</span> <span class="ora_keyword">LN</span>$Num = 5 ;
+ 12      <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 13  <span class="ora_keyword">End</span> ;
+ 14  /
+1 -&gt; 1-3
+2 -&gt; 1-3
+3 -&gt; 1-3
+4 &lt; 5
+5 &gt;= 5
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+Cette fois l'op&eacute;rateur est pr&eacute;cis&eacute; sur chaque ligne <b>WHEN</b>
+<br /><br />
+Il ne s'agit alors plus d'un simple test d'&eacute;galit&eacute;, mais de n'importe quelle expression bool&eacute;enne restituant un r&eacute;sultat TRUE ou FALSE.
+<br /><br />
+On observe &eacute;galement que le d&eacute;branchement dans une clause <b>WHEN</b> est exclusif. En effet, dans chaque it&eacute;ration de boucle, la variable LN$Num est inf&eacute;rieure &agrave; 5, mais n'est prise en compte dans la deuxi&egrave;me clause <b>WHEN</b> que lorsque la premi&egrave;re n'est plus v&eacute;rifi&eacute;e
+<br /><br />
+<span class="important">Pour le CASE de recherche, l'omission de la clause ELSE provoque une erreur</span>
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">LN</span>$Num <span class="ora_keyword">pls_integer</span> := 0 ;
+  3  <span class="ora_keyword">Begin</span>
+  4     <span class="ora_keyword">Loop</span>
+  5        <span class="ora_keyword">LN</span>$Num := <span class="ora_keyword">LN</span>$Num + 1 ;
+  6        <span class="ora_keyword">CASE</span>
+  7          <span class="ora_keyword">WHEN</span> <span class="ora_keyword">LN</span>$Num <span class="ora_keyword">between</span> 1 <span class="ora_keyword">and</span> 3  <span class="ora_keyword">Then</span> <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( <span class="ora_keyword">To_char</span>( <span class="ora_keyword">LN</span>$Num ) || ' -&gt; 1-3' ) ;
+  8          <span class="ora_keyword">WHEN</span> <span class="ora_keyword">LN</span>$Num &lt; 5  <span class="ora_keyword">Then</span> <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( <span class="ora_keyword">To_char</span>( <span class="ora_keyword">LN</span>$Num ) || ' -&gt; &lt; 5' ) ;
+  9        <span class="ora_keyword">END</span> <span class="ora_keyword">CASE</span> ;
+ 10        <span class="ora_keyword">exit</span> <span class="ora_keyword">when</span> <span class="ora_keyword">LN</span>$Num = 5 ;
+ 11      <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 12  <span class="ora_keyword">End</span> ;
+ 13  /
+1 -&gt; 1-3
+2 -&gt; 1-3
+3 -&gt; 1-3
+4 -&gt; &lt; 5
+<span class="ora_keyword">Declare</span>
+*
+ERREUR &agrave; la ligne 1 :
+ORA-06592: <span class="ora_keyword">CASE</span> <span class="ora_keyword">not</span> <span class="ora_keyword">found</span> <span class="ora_keyword">while</span> executing <span class="ora_keyword">CASE</span> <span class="ora_keyword">statement</span>
+ORA-06512: <span class="ora_keyword">at</span> line 6</div></pre><div class="paragraph">
+</div><br>
+												
+		<br /><h4 class="TitreSection3"><a name="L1.2.13"></a>1.2.13. FOR (curseur)</h4>
+			
+<div class="paragraph">
+<b>Cette instruction permet de g&eacute;rer un curseur sans utiliser les ordres OPEN, FETCH et CLOSE</b>
+</div><br>		
+<div class="image"><img src="./images/for_curseur.gif"></div>
+<div class="paragraph">
+<b>enregistrement</b> repr&eacute;sente un nom de variable de type curseur implicite.<br />
+<b>nom curseur</b> repr&eacute;sente le nom d'un curseur pr&eacute;alablement d&eacute;fini dans la section d&eacute;clarative
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2     <span class="ora_comment">-- D&eacute;claration du curseur</span>
+  3     <span class="ora_keyword">CURSOR</span> C_EMP <span class="ora_keyword">IS</span>
+  4     <span class="ora_keyword">Select</span>
+  5        *
+  6     <span class="ora_keyword">From</span>
+  7        EMP
+  8     <span class="ora_keyword">Where</span>
+  9        job = 'CLERK'
+ 10     ;
+ 11  
+ 12  <span class="ora_keyword">Begin</span>
+ 13     <span class="ora_keyword">For</span> Cur <span class="ora_keyword">IN</span> C_EMP <span class="ora_keyword">Loop</span>
+ 14       <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( <span class="ora_keyword">To_char</span>( Cur.empno ) || ' - ' || Cur.ename ) ;
+ 15     <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 16  <span class="ora_keyword">End</span> ; 
+ 17  /
+7369 - SMITH
+7876 - ADAMS
+7900 - JAMES
+7934 - MILLER
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+La variable de curseur implicite <b>Cur</b>, non d&eacute;finie dans la section d&eacute;clarative, doit &ecirc;tre utilis&eacute;e pour manipuler dans la boucle,<br />
+les objets du curseur (To_char( Cur.empno ),Cur.ename)<br />
+Apr&egrave;s l'instruction <b>END LOOP;</b> l'utilisation de cette variable g&eacute;n&egrave;re une erreur
+<br /><br />
+<span class="important">Avec cette syntaxe, l'utilisation des instructions OPEN, FETCH et CLOSE est inutile</span>
+<br /><br />
+<b>Instruction FOR et curseur param&eacute;tr&eacute;</b>
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2     <span class="ora_comment">-- D&eacute;claration du curseur</span>
+  3     <span class="ora_keyword">CURSOR</span> C_EMP ( PC$Job <span class="ora_keyword">IN</span> EMP.job%<span class="ora_keyword">Type</span> ) <span class="ora_keyword">IS</span>
+  4     <span class="ora_keyword">Select</span>
+  5        *
+  6     <span class="ora_keyword">From</span>
+  7        EMP
+  8     <span class="ora_keyword">Where</span>
+  9        job = PC$Job
+ 10     ;
+ 11  
+ 12  <span class="ora_keyword">Begin</span>
+ 13     <span class="ora_keyword">For</span> Cur <span class="ora_keyword">IN</span> C_EMP( 'SALESMAN' ) <span class="ora_keyword">Loop</span>
+ 14       <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( <span class="ora_keyword">To_char</span>( Cur.empno ) || ' - ' || Cur.ename ) ;
+ 15     <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 16  <span class="ora_keyword">End</span> ;
+ 17  /
+7499 - ALLEN
+7521 - WARD
+7654 - MARTIN
+7844 - TURNER
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+<span class="important">Le passage des param&egrave;tres s'effectue sur le curseur d&eacute;clar&eacute; (C_EMP) et non sur la variable curseur (Cur)</span>
+</div><br>
+		
+		<br /><h4 class="TitreSection3"><a name="L1.2.14"></a>1.2.14. FOR, LOOP, WHILE</h4>
+			
+<div class="paragraph">
+<b>Ces instructions d&eacute;clarent une structure de type it&eacute;rative (boucle)</b>
+</div><br>		
+<div class="image"><img src="./images/loop.gif"></div>
+<div class="paragraph">
+<b>Trois syntaxes sont possibles</b>
+<br /><br />
+</div><br><ul type=""><li><b>LOOP instruction;[instruction;[...]] END LOOP;</b></li></ul><div class="paragraph">
+<br />
+Cette syntaxe met en place une boucle simple ou aucune condition de sortie n'est indiqu&eacute;e<br />
+Il faut donc une instruction <b>EXIT</b> pour sortir de ce type de boucle
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">LN</span>$I <span class="ora_keyword">pls_integer</span> := 0 ;
+  3  <span class="ora_keyword">Begin</span>
+  4    <span class="ora_keyword">Loop</span>
+  5      <span class="ora_keyword">LN</span>$I := <span class="ora_keyword">LN</span>$I + 1 ;
+  6      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( <span class="ora_keyword">to_char</span>( <span class="ora_keyword">LN</span>$I) ) ;
+  7      <span class="ora_keyword">exit</span> <span class="ora_keyword">when</span> <span class="ora_keyword">LN</span>$I &gt; 2 ;
+  8    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+  9  <span class="ora_keyword">End</span> ;
+ 10  /
+1
+2
+3</div></pre><div class="paragraph">
+</div><br><ul type=""><li><b>WHILE expression bool&eacute;enne LOOP instruction;[instruction;[...]] END LOOP;</b></li></ul><div class="paragraph">
+<br />
+Cette syntaxe permet de mettre en place une boucle dont la condition de test est &eacute;valu&eacute;e au d&eacute;but.<br />
+Si expression bool&eacute;enne donne le r&eacute;sultat FALSE, les instructions suivantes jusqu'au mot cl&eacute; <b>END LOOP;</b> ne seront pas ex&eacute;cut&eacute;es
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">LN</span>$I <span class="ora_keyword">pls_integer</span> := 0 ;
+  3  <span class="ora_keyword">Begin</span>
+  4    <span class="ora_keyword">While</span> <span class="ora_keyword">LN</span>$I &lt; 3
+  5    <span class="ora_keyword">Loop</span>
+  6      <span class="ora_keyword">LN</span>$I := <span class="ora_keyword">LN</span>$I + 1 ;
+  7      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( <span class="ora_keyword">to_char</span>( <span class="ora_keyword">LN</span>$I) ) ;
+  8    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+  9  <span class="ora_keyword">End</span> ;
+ 10  /
+1
+2
+3</div></pre><div class="paragraph">
+</div><br><ul type=""><li><b>FOR variable index IN [REVERSE] borne_d&eacute;but..borne_fin LOOP instruction;[instruction;[...]] END LOOP;</b></li></ul><div class="paragraph">
+<br />
+Cette syntaxe permet de mettre en place une boucle dont le nombre d'it&eacute;rations est fix&eacute; d&egrave;s l'entr&eacute;e<br />
+<b>Variable index</b> repr&eacute;sente le nom de la variable qui servira d'indice. Cette variable ne n&eacute;cessite pas de d&eacute;finition pr&eacute;alable dans la section d&eacute;clarative<br />
+<b>Reverse</b> permet de faire varier l'indice dans le sens contraire (d&eacute;cr&eacute;mentation)<br />
+<b>borne d&eacute;but</b> repr&eacute;sente l'indice de d&eacute;part<br />
+<b>borne fin</b> repr&eacute;sente l'indice de fin
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">LN</span>$I <span class="ora_keyword">pls_integer</span> := 0 ;
+  3  <span class="ora_keyword">Begin</span>
+  4    <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> 1..3
+  5    <span class="ora_keyword">Loop</span>
+  6      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( <span class="ora_keyword">to_char</span>( i ) ) ;
+  7    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+  8  <span class="ora_keyword">End</span> ;
+  9  /
+1
+2
+3</div></pre>
+<pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">LN</span>$I <span class="ora_keyword">pls_integer</span> := 0 ;
+  3  <span class="ora_keyword">Begin</span>
+  4    <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> <span class="ora_keyword">reverse</span> 1..3
+  5    <span class="ora_keyword">Loop</span>
+  6      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( <span class="ora_keyword">to_char</span>( i ) ) ;
+  7    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+  8  <span class="ora_keyword">End</span> ;
+  9  /
+3
+2
+1</div></pre><div class="paragraph">
+</div><br>
+		
+		<br /><h4 class="TitreSection3"><a name="L1.2.15"></a>1.2.15. NULL</h4>
+			
+<div class="paragraph">
+<b>Cette instruction n'ex&eacute;cute rien et n'a aucun effet</b>
+</div><br>
+		
+		<br /><h4 class="TitreSection3"><a name="L1.2.16"></a>1.2.16. RAISE</h4>
+			
+<div class="paragraph">
+<b>Cette instruction permet de g&eacute;n&eacute;rer une exception</b>
+</div><br>		
+<div class="image"><img src="./images/raise.gif"></div>
+<div class="paragraph">
+<b>nom exception</b> repr&eacute;sente soit le nom d'une exception pr&eacute;d&eacute;finie, soit une exception utilisateur d&eacute;finie dans la section d&eacute;clarative
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">LN</span>$I <span class="ora_keyword">pls_integer</span> := 0 ;
+  3    LE$Fin <span class="ora_keyword">exception</span> ;
+  4  <span class="ora_keyword">Begin</span>
+  5    <span class="ora_keyword">Loop</span>
+  6      <span class="ora_keyword">LN</span>$I := <span class="ora_keyword">LN</span>$I + 1 ;
+  7      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( <span class="ora_keyword">to_char</span>( <span class="ora_keyword">LN</span>$I) ) ;
+  8      <span class="ora_keyword">If</span> <span class="ora_keyword">LN</span>$I &gt; 2 <span class="ora_keyword">Then</span>
+  9         <span class="ora_keyword">RAISE</span> LE$Fin ;
+ 10      <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+ 11    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 12  <span class="ora_keyword">Exception</span>
+ 13     <span class="ora_keyword">When</span> LE$Fin <span class="ora_keyword">Then</span>
+ 14        <span class="ora_keyword">Null</span> ;  
+ 15  <span class="ora_keyword">End</span> ;
+ 16  /
+1
+2
+3</div></pre><div class="paragraph">
+Si la variable LN$I est &gt; 2, alors on provoque le saut dans la section EXCEPTION avec l'erreur utilisateur LE$Fin
+</div><br>
+		
+		<br /><h4 class="TitreSection3"><a name="L1.2.17"></a>1.2.17. RETURN</h4>
+			
+<div class="paragraph">
+<b>Cette instruction permet de sortir d'une proc&eacute;dure ou d'une fonction</b>
+</div><br>		
+<div class="image"><img src="./images/return.gif"></div>
+<div class="paragraph">
+<b>expression</b> repr&eacute;sente la valeur de retour d'une fonction. Cette valeur doit &ecirc;tre compatible avec le type d&eacute;fini dans la clause RETURN de la d&eacute;claration de fonction
+</div><br>
+		
+		<br /><h4 class="TitreSection3"><a name="L1.2.18"></a>1.2.18. SAVEPOINT</h4>
+			
+<div class="paragraph">
+<b>Cette instruction permet de placer une &eacute;tiquette savepoint dans le corps du code.</b>
+<br /><br />
+Elle permet au traitement d'annuler, avec l'instruction <b>ROLLBACK</b>, les modifications effectu&eacute;es &agrave; partir de cette &eacute;tiquette
+</div><br>
+										
+		<br /><h4 class="TitreSection3"><a name="L1.2.19"></a>1.2.19. ROLLBACK</h4>
+			
+<div class="paragraph">
+<b>Cette instruction permet d'annuler en base toutes les modifications effectu&eacute;es au cours de la transaction</b>
+</div><br>		
+<div class="image"><img src="./images/rollback.gif"></div>
+<div class="paragraph">
+<b>nom savepoint</b> repr&eacute;sente le nom d'une &eacute;tiquette savepoint pr&eacute;alablement d&eacute;finie dans le corps du code avec l'instruction <b>SAVEPOINT</b><br />
+Avec <b>TO SAVEPOINT</b> nom savepoint, l'annulation porte sur toutes les modifications effectu&eacute;es &agrave; partir de l'&eacute;tiquette nom savepoint
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Begin</span>
+  2     <span class="ora_keyword">Insert</span> <span class="ora_keyword">Into</span> EMP( empno, ename, job )
+  3       <span class="ora_keyword">values</span>( 9991, 'Dupontont', 'CLERK' ) ;
+  4     <span class="ora_keyword">Insert</span> <span class="ora_keyword">Into</span> EMP( empno, ename, job )
+  5       <span class="ora_keyword">values</span>( 9992, 'Duboudin', 'CLERK' ) ;
+  6    
+  7     <span class="ora_keyword">SAVEPOINT</span> mise_a_jour ;
+  8     
+  9     <span class="ora_keyword">Update</span> EMP <span class="ora_keyword">Set</span> sal = 2500 <span class="ora_keyword">Where</span> empno &gt; 9990 ;     
+ 10     <span class="ora_keyword">ROLLBACK</span> <span class="ora_keyword">TO</span> <span class="ora_keyword">SAVEPOINT</span> mise_a_jour ;
+ 11     
+ 12     <span class="ora_keyword">Commit</span> ;
+ 13  <span class="ora_keyword">End</span> ;
+ 14  /
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.
+
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Select</span> * <span class="ora_keyword">From</span> EMP <span class="ora_keyword">Where</span> empno &gt; 9990 ;
+
+     EMPNO ENAME      JOB              MGR HIREDATE        SAL       COMM     DEPTNO
+<span class="ora_comment">---------- ---------- --------- ---------- -------- ---------- ---------- ----------</span>
+      9991 Dupontont  CLERK
+      9992 Duboudin   CLERK</div></pre><div class="paragraph">
+Dans cet exemple, une &eacute;tiquette <b>SAVEPOINT</b> est plac&eacute;e apr&egrave;s les instructions d'insertion<br />
+Un <b>ROLLBACK TO SAVEPOINT</b> est ajout&eacute; apr&egrave;s l'instruction de mise &agrave; jour<br />
+puis un <b>COMMIT</b> est effectu&eacute;<br />
+<br />
+Les insertions sont bien enregistr&eacute;es en base mais pas la mise &agrave; jour
+</div><br>
+		
+		<br /><h4 class="TitreSection3"><a name="L1.2.20"></a>1.2.20. SELECT INTO</h4>
+			
+<div class="paragraph">
+<b>S&eacute;l&eacute;ction d'une ou de plusieurs lignes</b>
+</div><br>		
+<div class="image"><img src="./images/select_into.gif"></div>
+<div class="paragraph">
+Cette instruction permet d'ex&eacute;cuter un ordre Select implicite.<br />
+Cet ordre ne doit ramener qu'une ligne sous peine de g&eacute;n&eacute;rer l'exception NO_DATA_FOUND si aucune ligne n'est ramen&eacute;e<br />
+ou TOO_MANY_ROWS si plus d'une ligne sont ramen&eacute;es
+<br /><br />
+Utilis&eacute;e avec la clause <b>BULK COLLECT</b>, elle permet de charger une collection avec les lignes ramen&eacute;es
+<br /><br />
+<b>item</b> repr&eacute;sente un litt&eacute;rale ou un nom de colonne<br />
+<b>nom variable</b> repr&eacute;sente le nom d'une variable d'accueil. Son type doit &ecirc;tre identique &agrave; celui de item<br />
+<b>nom record</b> repr&eacute;sente le nom d'un enregistrement compos&eacute; de champs de m&ecirc;me type que les items ramen&eacute;s<br />
+<b>nom collection</b> repr&eacute;sente le nom d'une collection d'accueil<br />
+<b>nom tableau h&ocirc;te</b> repr&eacute;sente le nom de la variable tableau pass&eacute;e par un programme tiers<br />
+<b>r&eacute;f&eacute;rence table</b> repr&eacute;sente la liste des tables et/ou vues de l'ordre SQL<br />
+<b>sous-requ&ecirc;te</b> repr&eacute;sente le texte d'une sous-requ&ecirc;te SQL conforme<br />
+<b>suite instruction</b> repr&eacute;sente la suite de l'ordre Select (clauses Where, Group by, Order by, etc.)
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">LN</span>$Num EMP.empno%<span class="ora_keyword">Type</span> ;
+  3    LC$Nom EMP.ename%<span class="ora_keyword">Type</span> ;
+  4    LC$Job EMP.job%<span class="ora_keyword">Type</span> ;
+  5  <span class="ora_keyword">Begin</span>  
+  6    <span class="ora_keyword">Select</span>
+  7       empno
+  8      ,ename
+  9      ,job
+ 10    <span class="ora_keyword">Into</span>
+ 11       <span class="ora_keyword">LN</span>$Num
+ 12      ,LC$Nom
+ 13      ,LC$Job   
+ 14    <span class="ora_keyword">From</span> 
+ 15      EMP
+ 16    <span class="ora_keyword">Where</span> 
+ 17      empno = 7369
+ 18    ;
+ 19  <span class="ora_keyword">End</span> ; 
+ 20  /
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+Dans l'exemple suivant, aucun employ&eacute; ne porte le num&eacute;ro 1<br />
+la requ&ecirc;te ne ram&egrave;ne donc aucune ligne et g&eacute;n&egrave;re l'exception NO_DATA_FOUND
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">LN</span>$Num EMP.empno%<span class="ora_keyword">Type</span> ;
+  3    LC$Nom EMP.ename%<span class="ora_keyword">Type</span> ;
+  4    LC$Job EMP.job%<span class="ora_keyword">Type</span> ;
+  5  <span class="ora_keyword">Begin</span>  
+  6    <span class="ora_keyword">Select</span>
+  7       empno
+  8      ,ename
+  9      ,job
+ 10    <span class="ora_keyword">Into</span>
+ 11       <span class="ora_keyword">LN</span>$Num
+ 12      ,LC$Nom
+ 13      ,LC$Job   
+ 14    <span class="ora_keyword">From</span> 
+ 15      EMP
+ 16    <span class="ora_keyword">Where</span>
+ 17      empno = 1
+ 18    ;
+ 19  <span class="ora_keyword">End</span> ;
+ 20  /
+<span class="ora_keyword">Declare</span>
+*
+ERREUR &agrave; la ligne 1 :
+ORA-01403: Aucune donn&eacute;e trouv&eacute;e
+ORA-06512: &agrave; ligne 7</div></pre><div class="paragraph">
+Dans l'exemple suivant, la clause WHERE a &eacute;t&eacute; retir&eacute;e<br />
+la requ&ecirc;te ram&egrave;ne donc plusieurs lignes et g&eacute;n&egrave;re l'exception TOO_MANY_ROWS
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">LN</span>$Num EMP.empno%<span class="ora_keyword">Type</span> ;
+  3    LC$Nom EMP.ename%<span class="ora_keyword">Type</span> ;
+  4    LC$Job EMP.job%<span class="ora_keyword">Type</span> ;
+  5  <span class="ora_keyword">Begin</span>  
+  6    <span class="ora_keyword">Select</span>
+  7       empno
+  8      ,ename
+  9      ,job
+ 10    <span class="ora_keyword">Into</span>
+ 11       <span class="ora_keyword">LN</span>$Num
+ 12      ,LC$Nom
+ 13      ,LC$Job   
+ 14    <span class="ora_keyword">From</span> 
+ 15      EMP
+ 16    ;
+ 17  <span class="ora_keyword">End</span> ; 
+ 18  /
+<span class="ora_keyword">Declare</span>
+*
+ERREUR &agrave; la ligne 1 :
+ORA-01422: l'extraction exacte ram&egrave;ne plus que le nombre de lignes demand&eacute;
+ORA-06512: &agrave; ligne 7</div></pre><div class="paragraph">
+Dans l'exemple suivant toute une ligne de la table EMP est charg&eacute;e dans un enregistrement
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    LR$Emp EMP%<span class="ora_keyword">Rowtype</span> ;
+  3  <span class="ora_keyword">Begin</span>  
+  4    <span class="ora_keyword">Select</span>
+  5       *
+  6    <span class="ora_keyword">Into</span>
+  7       LR$Emp
+  8    <span class="ora_keyword">From</span> 
+  9      EMP
+ 10    <span class="ora_keyword">Where</span>
+ 11      empno = 7369
+ 12    ;
+ 13  <span class="ora_keyword">End</span> ; 
+ 14  /
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+Dans l'exemple suivant toutes les lignes de la table EMP sont charg&eacute;es dans une collection
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">TYPE</span> TYP_TAB_EMP <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> EMP%<span class="ora_keyword">Rowtype</span> ;
+  3    Tabemp TYP_TAB_EMP ;
+  4  <span class="ora_keyword">Begin</span>  
+  5    <span class="ora_keyword">Select</span>
+  6       *
+  7    BULK COLLECT
+  8    <span class="ora_keyword">Into</span>
+  9       Tabemp
+ 10    <span class="ora_keyword">From</span> 
+ 11      EMP
+ 12    ;
+ 13    <span class="ora_keyword">For</span> i <span class="ora_keyword">IN</span> Tabemp.first..Tabemp.last <span class="ora_keyword">Loop</span>
+ 14      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( <span class="ora_keyword">To_char</span>( Tabemp(i).empno ) || ' - ' || Tabemp(i).ename ) ;
+ 15    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 16  <span class="ora_keyword">End</span> ;
+ 17  /
+7369 - SMITH
+7499 - ALLEN
+7521 - WARD
+7566 - JONES
+7654 - MARTIN
+7698 - BLAKE
+7782 - CLARK
+7788 - SCOTT
+7839 - KING
+7844 - TURNER
+7876 - ADAMS
+7900 - JAMES
+7902 - FORD
+7934 - MILLER
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+</div><br>
+						
+		<br /><h4 class="TitreSection3"><a name="L1.2.21"></a>1.2.21. Instruction SQL</h4>
+			
+<div class="paragraph">
+<b>Repr&eacute;sente toute instruction SQL valide</b>
+<br /><br />
+</div><br><ul type="">
+<li><b>INSERT</b></li>
+<li><b>UPDATE</b></li>
+<li><b>DELETE</b></li>
+</ul><div class="paragraph">
+</div><br>
+		
+		<br /><h4 class="TitreSection3"><a name="L1.2.22"></a>1.2.22. Les curseurs explicites</h4>
+			
+<div class="paragraph">
+Un curseur est une zone m&eacute;moire de taille fixe, utilis&eacute;e par le moteur SQL pour analyser et interpr&eacute;ter un ordre SQL
+<br />
+Un curseur explicite, contrairement au curseur implicite (SELECT INTO) est g&eacute;r&eacute; par l'utilisateur<br />
+pour traiter un ordre Select qui ram&egrave;ne plusieurs lignes<br /><br />
+<span class="important">Tout curseur explicite g&eacute;r&eacute; dans la section ex&eacute;cution doit avoir &eacute;t&eacute; d&eacute;clar&eacute; dans la section d&eacute;clarative</span>
+<br />
+<br /><br />
+</div><br><ul type=""><li><b>D&eacute;claration</b></li></ul><div class="paragraph">
+</div><br>		
+<div class="image"><img src="./images/curseur_declaration.gif"></div>
+<div class="paragraph">
+
+<b>nom curseur</b> repr&eacute;sente le nom du curseur que l'on d&eacute;clare<br />
+<b>d&eacute;claration des param&egrave;tres</b>(facultatif) repr&eacute;sente la liste des param&egrave;tres transmis au curseur<br />
+<b>instruction select</b> repr&eacute;sente l'ordre SQL Select d'alimentation du curseur<br />
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_comment">-- d&eacute;claration du curseur</span>
+  3    <span class="ora_keyword">CURSOR</span> C_EMP <span class="ora_keyword">IS</span>
+  4    <span class="ora_keyword">Select</span>
+  5       empno
+  6      ,ename
+  7      ,job
+  8    <span class="ora_keyword">From</span>
+  9      EMP 
+ 10    ;
+ 11    <span class="ora_comment">-- variables d'accueil </span>
+ 12    <span class="ora_keyword">LN</span>$Num EMP.empno%<span class="ora_keyword">Type</span> ;
+ 13    LC$Nom EMP.ename%<span class="ora_keyword">Type</span> ;
+ 14    LC$Job EMP.job%<span class="ora_keyword">Type</span> ; 
+ 15  <span class="ora_keyword">Begin</span>  
+ 16    <span class="ora_keyword">Open</span> C_EMP ; <span class="ora_comment">-- ouverture du curseur</span>
+ 17    <span class="ora_keyword">Loop</span> <span class="ora_comment">-- boucle sur les lignes</span>
+ 18      <span class="ora_keyword">Fetch</span> C_EMP <span class="ora_keyword">Into</span> <span class="ora_keyword">LN</span>$Num, LC$Nom, LC$Job ; <span class="ora_comment">-- Lecture d'une ligne</span>
+ 19      <span class="ora_keyword">Exit</span> <span class="ora_keyword">When</span> C_EMP%<span class="ora_keyword">NOTFOUND</span> ; <span class="ora_comment">-- sortie lorsque le curseur ne ram&egrave;ne plus de ligne</span>
+ 20    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 21    <span class="ora_keyword">Close</span> C_EMP ; <span class="ora_comment">-- fermeture du curseur</span>
+ 22  <span class="ora_keyword">End</span> ;
+ 23  /
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+Un curseur nomm&eacute; C_EMP est d&eacute;clar&eacute; avec l'ordre Select correspondant (CURSOR C_EMP IS...)<br />
+Il est ouvert avec l'instruction <b>OPEN</b><br />
+lu avec l'instruction <b>FETCH</b><br />
+et ferm&eacute; avec l'instruction <b>CLOSE</b>
+</div><br><ul type=""><li><b>Param&egrave;tres du curseur</b></li></ul><div class="paragraph">
+Un curseur est param&eacute;trable. On peut donc utiliser le m&ecirc;me curseur pour obtenir diff&eacute;rents r&eacute;sultats
+</div><br>		
+<div class="image"><img src="./images/curseur_parametre_declaration.gif"></div>
+<div class="paragraph">
+<b>nom param&egrave;tre</b> repr&eacute;sente le nom de la variable param&egrave;tre<br />
+<b>datatype</b> repr&eacute;sente le type SQL de la variable param&egrave;tre (doit correspondre en type avec la colonne vis&eacute;e)<br />
+<b>expression</b> repr&eacute;sente la valeur par d&eacute;faut du param&egrave;tre (doit correspondre en type avec celui du param&egrave;tre)<br />
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_comment">-- d&eacute;claration du curseur</span>
+  3    <span class="ora_keyword">CURSOR</span> C_EMP ( PN$Num <span class="ora_keyword">IN</span> EMP.empno%<span class="ora_keyword">Type</span> )<span class="ora_keyword">IS</span>
+  4    <span class="ora_keyword">Select</span>
+  5       empno
+  6      ,ename
+  7      ,job
+  8    <span class="ora_keyword">From</span>
+  9      EMP 
+ 10    <span class="ora_keyword">Where</span>
+ 11      empno = PN$Num
+ 12    ;
+ 13    <span class="ora_comment">-- variables d'accueil </span>
+ 14    <span class="ora_keyword">LN</span>$Num EMP.empno%<span class="ora_keyword">Type</span> ;
+ 15    LC$Nom EMP.ename%<span class="ora_keyword">Type</span> ;
+ 16    LC$Job EMP.job%<span class="ora_keyword">Type</span> ; 
+ 17  <span class="ora_keyword">Begin</span>  
+ 18    <span class="ora_keyword">Open</span> C_EMP( 7369 ) ; <span class="ora_comment">-- ouverture du curseur avec passage du param&egrave;tre 7369</span>
+ 19    <span class="ora_keyword">Loop</span>
+ 20      <span class="ora_keyword">Fetch</span> C_EMP <span class="ora_keyword">Into</span> <span class="ora_keyword">LN</span>$Num, LC$Nom, LC$Job ; <span class="ora_comment">-- Lecture d'une ligne</span>
+ 21      <span class="ora_keyword">Exit</span> <span class="ora_keyword">When</span> C_EMP%<span class="ora_keyword">NOTFOUND</span> ; <span class="ora_comment">-- sortie lorsque le curseur ne ram&egrave;ne plus de ligne</span>
+ 22      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Employ&eacute; ' || <span class="ora_keyword">To_char</span>(<span class="ora_keyword">LN</span>$Num) || ' ' || LC$Nom ) ; 
+ 23    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 24    <span class="ora_keyword">Close</span> C_EMP ; <span class="ora_comment">-- fermeture du curseur</span>
+ 25    <span class="ora_keyword">Open</span> C_EMP( 7521 ) ; <span class="ora_comment">-- ouverture du curseur avec passage du param&egrave;tre 7521</span>
+ 26    <span class="ora_keyword">Loop</span>
+ 27      <span class="ora_keyword">Fetch</span> C_EMP <span class="ora_keyword">Into</span> <span class="ora_keyword">LN</span>$Num, LC$Nom, LC$Job ; <span class="ora_comment">-- Lecture d'une ligne</span>
+ 28      <span class="ora_keyword">Exit</span> <span class="ora_keyword">When</span> C_EMP%<span class="ora_keyword">NOTFOUND</span> ; <span class="ora_comment">-- sortie lorsque le curseur ne ram&egrave;ne plus de ligne</span>
+ 29      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Employ&eacute; ' || <span class="ora_keyword">To_char</span>(<span class="ora_keyword">LN</span>$Num) || ' ' || LC$Nom ) ; 
+ 30    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 31    <span class="ora_keyword">Close</span> C_EMP ; <span class="ora_comment">-- fermeture du curseur  </span>
+ 32  <span class="ora_keyword">End</span> ;  
+ 33  /
+Employ&eacute; 7369 SMITH
+Employ&eacute; 7521 WARD
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+</div><br><ul type=""><li><b>D&eacute;claration d'une variable curseur</b></li></ul><div class="paragraph">
+</div><br>		
+<div class="image"><img src="./images/curseur_variable_definition.gif"></div>
+<div class="paragraph">
+<b>nom variable curseur</b> repr&eacute;sente le nom de la variable curseur d&eacute;clar&eacute;e<br />
+<b>nom type</b> repr&eacute;sente le nom d'un type curseur<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2     <span class="ora_keyword">TYPE</span> TYP_REF_CUR <span class="ora_keyword">IS</span> <span class="ora_keyword">REF</span> <span class="ora_keyword">CURSOR</span> ;
+  3     <span class="ora_comment">-- variable curseur</span>
+  4     CEMP TYP_REF_CUR ;
+  5     <span class="ora_comment">-- variables d'accueil </span>
+  6     <span class="ora_keyword">LN</span>$Num EMP.empno%<span class="ora_keyword">Type</span> ;
+  7     LC$Nom EMP.ename%<span class="ora_keyword">Type</span> ;
+  8     LC$Job EMP.job%<span class="ora_keyword">Type</span> ; 
+  9  <span class="ora_keyword">Begin</span>  
+ 10     <span class="ora_keyword">Open</span> CEMP <span class="ora_keyword">For</span> '<span class="ora_keyword">Select</span> empno, ename, job <span class="ora_keyword">From</span> EMP'; <span class="ora_comment">-- ouverture du curseur</span>
+ 11     <span class="ora_keyword">Loop</span>
+ 12       <span class="ora_keyword">Fetch</span> CEMP <span class="ora_keyword">Into</span> <span class="ora_keyword">LN</span>$Num, LC$Nom, LC$Job ; <span class="ora_comment">-- Lecture d'une ligne</span>
+ 13       <span class="ora_keyword">Exit</span> <span class="ora_keyword">When</span> CEMP%<span class="ora_keyword">NOTFOUND</span> ; <span class="ora_comment">-- sortie lorsque le curseur ne ram&egrave;ne plus de ligne</span>
+ 14     <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 15     <span class="ora_keyword">Close</span> CEMP ; <span class="ora_comment">-- fermeture du curseur</span>
+ 16  <span class="ora_keyword">End</span> ;
+ 17  /
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+</div><br><ul type=""><li><b>Sp&eacute;cification d'un curseur</b></li></ul><div class="paragraph">
+</div><br>		
+<div class="image"><img src="./images/curseur_specification.gif"></div>
+<div class="paragraph">
+<br /><br />
+<b>Les attributs de curseur</b>
+</div><br>		
+<div class="image"><img src="./images/curseurs_attributs.gif"></div>
+<a name="%FOUND"></a>
+<div class="paragraph">
+Chaque curseur dispose de 4 attributs<br />
+<br />
+</div><br><ul type=""><li><b>%FOUND</b></li></ul><div class="paragraph">
+Cet attribut prend la valeur TRUE lorsque une ligne est ramen&eacute;e, sinon il prend la valeur FALSE
+<br />
+</div><br><ul type=""><li><b>%NOTFOUND</b></li></ul><div class="paragraph">
+Cet attribut prend la valeur FALSE lorsque une ligne est ramen&eacute;e, sinon il prend la valeur TRUE
+<br />
+</div><br><ul type=""><li><b>%ISOPEN</b></li></ul><div class="paragraph">
+Cet attribut prend la valeur TRUE lorsque le curseur indiqu&eacute; est ouvert, sinon il prend la valeur FALSE
+<br />
+</div><br><ul type=""><li><b>%ROWCOUNT</b></li></ul><div class="paragraph">
+Cet attribut retourne le nombre de lignes impact&eacute;es par la derni&egrave;re instruction SQL<br />
+</div><br>
+		
+		<br /><h4 class="TitreSection3"><a name="L1.2.23"></a>1.2.23. Port&eacute;e des variables</h4>
+			
+<div class="paragraph">
+<b>La port&eacute;e ou visibilit&eacute; d'une variable est limit&eacute;e au bloc PL/SQL dans laquelle elle est d&eacute;clar&eacute;e. Elle est donc locale au bloc PL/SQL</b>
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt;  <span class="ora_keyword">Begin</span>
+  2  
+  3     <span class="ora_keyword">Declare</span>
+  4       LC$Ch1    <span class="ora_keyword">varchar2</span>(10) := 'Phrase 2';
+  5     <span class="ora_keyword">Begin</span>
+  6        <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'LC$Ch1 = ' || LC$Ch1 ) ;
+  7     <span class="ora_keyword">End</span> ;
+  8  
+  9     <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'LC$Ch1 = ' || LC$Ch1 ) ;
+ 10     
+ 11   <span class="ora_keyword">End</span> ;
+ 12  /
+   <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'LC$Ch1 = ' || LC$Ch1 ) ;
+                                        *
+ERREUR &agrave; la ligne 9 :
+ORA-06550: line 9, <span class="ora_keyword">column</span> 41:
+PLS-00201: identifier 'LC$CH1' must be declared
+ORA-06550: line 9, <span class="ora_keyword">column</span> 4:
+PL/<span class="ora_keyword">SQL</span>: <span class="ora_keyword">Statement</span> ignored</div></pre><div class="paragraph">
+Dans cet exemple, la variable LC$Ch1 d&eacute;clar&eacute;e dans le sous-bloc, n'existe plus dans le bloc principal
+<br /><br />
+Dans le cas de blocs imbriqu&eacute;s ou une m&ecirc;me variable est d&eacute;clar&eacute;e dans chaque bloc, la visibilit&eacute; d'une variable se rapporte toujours &agrave; la plus proche d&eacute;claration
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt;  <span class="ora_keyword">Declare</span>
+  2     LC$Ch1    <span class="ora_keyword">varchar2</span>(10) := 'Phrase 1';
+  3   <span class="ora_keyword">Begin</span>
+  4  
+  5     <span class="ora_keyword">Declare</span>
+  6       LC$Ch1    <span class="ora_keyword">varchar2</span>(10) := 'Phrase 2';
+  7     <span class="ora_keyword">Begin</span>
+  8        <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'LC$Ch1 = ' || LC$Ch1 ) ;
+  9     <span class="ora_keyword">End</span> ;
+ 10  
+ 11     <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'LC$Ch1 = ' || LC$Ch1 ) ;
+ 12     
+ 13   <span class="ora_keyword">End</span> ;
+ 14  /
+LC$Ch1 = Phrase 2
+LC$Ch1 = Phrase 1
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+</div><br>		
+								
+				
+		<br /><h3 class="TitreSection2"><a name="L1.3"></a>1.3. La section de gestion des erreurs</h3>
+			
+<div class="paragraph">
+D&eacute;but&eacute;e par le mot cl&eacute; <b>EXCEPTION</b>, elle contient le code mis en oeuvre pour la gestion des erreurs g&eacute;n&eacute;r&eacute;es par la section d'ex&eacute;cution
+<br /><br />
+Une erreur survenue lors de l'ex&eacute;cution du code d&eacute;clenche ce que l'on nomme une exception. Le code erreur associ&eacute; est transmis &agrave; la section <b>EXCEPTION</b>, pour vous laisser la possibilit&eacute; de la g&eacute;rer et donc de ne pas mettre fin pr&eacute;matur&eacute;ment &agrave; l'application.
+<br /><br />
+Prenons l'exemple suivant : 
+<br /><br />
+Nous souhaitons retrouver la liste des employ&eacute;s dont la date d'entr&eacute;e est inf&eacute;rieure au premier janvier 1970
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    LC$Nom EMP.ename%<span class="ora_keyword">Type</span> ;
+  3  <span class="ora_keyword">Begin</span>
+  4   <span class="ora_keyword">Select</span> empno
+  5   <span class="ora_keyword">Into</span> LC$Nom
+  6   <span class="ora_keyword">From</span> EMP
+  7   <span class="ora_keyword">Where</span> hiredate &lt; <span class="ora_keyword">to_date</span>('01/01/1970','DD/MM/YYYY') ;
+  8  <span class="ora_keyword">End</span> ; 
+  9  /
+<span class="ora_keyword">Declare</span>
+*
+ERREUR &agrave; la ligne 1 :
+ORA-01403: Aucune donn&eacute;e trouv&eacute;e
+ORA-06512: &agrave; ligne 4</div></pre><div class="paragraph">
+Comme la requ&ecirc;te ne ram&egrave;ne aucune ligne, l'exception pr&eacute;d&eacute;finie NO_DATA_FOUND est g&eacute;n&eacute;r&eacute;e et transmise &agrave; la section <b>EXCEPTION</b> qui peut traiter le cas et poursuivre l'ex&eacute;cution de l'application.
+<br /><br />
+L'exception NO_DATA_FOUND (ORA_01403) correspond au code erreur num&eacute;rique +100.
+<br /><br />
+Il existe des milliers de code erreur Oracle et il serait vain de tous leur donner un libell&eacute;.<br />
+Voici la liste des exceptions pr&eacute;d&eacute;finies qui b&eacute;n&eacute;ficient de ce traitement de faveur : 
+</div><br>		
+<table class="tableau" cellspacing="0" border="1" align="center" width="60%">
+	<tr>
+	<th class="colonne_entete">Exception pr&eacute;d&eacute;finie</th>
+	<th class="colonne_entete">Erreur Oracle</th>	
+	<th class="colonne_entete">Valeur de SQLCODE</th>	
+	</tr>
+<tr>
+<td class="colonne">ACCESS_INTO_NULL</td>
+<td class="colonne">ORA-06530</td>
+<td class="colonne">-6530</td>
+</tr>
+<tr>
+<td class="colonne">CASE_NOT_FOUND</td>
+<td class="colonne">ORA-06592</td>
+<td class="colonne">-6592</td>
+</tr>
+<tr>
+<td class="colonne">COLLECTION_IS_NULL</td>
+<td class="colonne">ORA-06531</td>
+<td class="colonne">-6531</td>
+</tr>
+<tr>
+<td class="colonne">CURSOR_ALREADY_OPEN</td>
+<td class="colonne">ORA-06511</td>
+<td class="colonne">-6511</td>
+</tr>
+<tr>
+<td class="colonne">DUP_VAL_ON_INDEX</td>
+<td class="colonne">ORA-00001</td>
+<td class="colonne">-1</td>
+</tr>
+<tr>
+<td class="colonne">INVALID_CURSOR</td>
+<td class="colonne">ORA-01001</td>
+<td class="colonne">-1001</td>
+</tr>
+<tr>
+<td class="colonne">INVALID_NUMBER</td>
+<td class="colonne">ORA-01722</td>
+<td class="colonne">-1722</td>
+</tr>
+<tr>
+<td class="colonne">LOGIN_DENIED</td>
+<td class="colonne">ORA-01017</td>
+<td class="colonne">-1017</td>
+</tr>
+<tr>
+<td class="colonne">NO_DATA_FOUND</td>
+<td class="colonne">ORA-01403</td>
+<td class="colonne">+100</td>
+</tr>
+<tr>
+<td class="colonne">NOT_LOGGED_ON</td>
+<td class="colonne">ORA-01012</td>
+<td class="colonne">-1012</td>
+</tr>
+<tr>
+<td class="colonne">PROGRAM_ERROR</td>
+<td class="colonne">ORA-06501</td>
+<td class="colonne">-6501</td>
+</tr>
+<tr>
+<td class="colonne">ROWTYPE_MISMATCH</td>
+<td class="colonne">ORA-06504</td>
+<td class="colonne">-6504</td>
+</tr>
+<tr>
+<td class="colonne">SELF_IS_NULL</td>
+<td class="colonne">ORA-30625</td>
+<td class="colonne">-30625</td>
+</tr>
+<tr>
+<td class="colonne">STORAGE_ERROR</td>
+<td class="colonne">ORA-06500</td>
+<td class="colonne">-6500</td>
+</tr>
+<tr>
+<td class="colonne">SUBSCRIPT_BEYOND_COUNT</td>
+<td class="colonne">ORA-06533</td>
+<td class="colonne">-6533</td>
+</tr>
+<tr>
+<td class="colonne">SUBSCRIPT_OUTSIDE_LIMIT</td>
+<td class="colonne">ORA-06532</td>
+<td class="colonne">-6532</td>
+</tr>
+<tr>
+<td class="colonne">SYS_INVALID_ROWID</td>
+<td class="colonne">ORA-01410</td>
+<td class="colonne">-1410</td>
+</tr>
+<tr>
+<td class="colonne">TIMEOUT_ON_RESOURCE</td>
+<td class="colonne">ORA-00051</td>
+<td class="colonne">-51</td>
+</tr>
+<tr>
+<td class="colonne">TOO_MANY_ROWS</td>
+<td class="colonne">ORA-01422</td>
+<td class="colonne">-1422</td>
+</tr>
+<tr>
+<td class="colonne">VALUE_ERROR</td>
+<td class="colonne">ORA-06502</td>
+<td class="colonne">-6502</td>
+</tr>
+<tr>
+<td class="colonne">ZERO_DIVIDE</td>
+<td class="colonne">ORA-01476</td>
+<td class="colonne">-1476</td>
+</tr>
+</table>
+<div class="paragraph">
+<span class="important">Toutes les autres exceptions doivent &ecirc;tre intercept&eacute;es via leur code erreur num&eacute;rique.</span>
+<br /><br />
+En plus des erreurs Oracle, vous pouvez intercepter vos propres erreurs en d&eacute;clarant des variables dont le type est <b>exception</b> et en provoquant vous-m&ecirc;me le saut dans la section de gestion des erreurs &agrave; l'aide de l'instruction <b>RAISE</b>
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">DECLARE</span>
+   LE$Fin  <span class="ora_keyword">Exception</span> ;
+   &#133;
+<span class="ora_keyword">Begin</span>
+   &#133;..
+   <span class="ora_keyword">Raise</span> LE$Fin ;
+   &#133;
+<span class="ora_keyword">EXCEPTION</span>
+   <span class="ora_keyword">WHEN</span> LE$Fin <span class="ora_keyword">Then</span>
+       &#133;&#133;&#133;.
+<span class="ora_keyword">END</span> ;</div></pre><div class="paragraph">
+Il n'est pas possible de d&eacute;clarer la m&ecirc;me exception deux fois dans le m&ecirc;me bloc. Toutefois, dans le cas de blocs imbriqu&eacute;s, vous pouvez d&eacute;clarer la m&ecirc;me exception dans la section <b>EXCEPTION</b> de chaque bloc
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">DECLARE</span>
+   LE$Fin  <span class="ora_keyword">Exception</span> ;
+<span class="ora_keyword">BEGIN</span>
+   <span class="ora_keyword">DECLARE</span>
+      LE$Fin  <span class="ora_keyword">Exception</span> ;
+   <span class="ora_keyword">BEGIN</span>
+      ...
+   <span class="ora_keyword">EXCEPTION</span>
+      <span class="ora_keyword">WHEN</span> LE$Fin <span class="ora_keyword">Then</span>
+         ...
+   <span class="ora_keyword">END</span> ;
+<span class="ora_keyword">EXCEPTION</span>
+   <span class="ora_keyword">WHEN</span> LE$Fin <span class="ora_keyword">Then</span>
+       ...
+<span class="ora_keyword">END</span> ;</div></pre><div class="paragraph">
+<b>Le peu d'exceptions pr&eacute;d&eacute;finies vous oblige &agrave; traiter tous les autres cas dans la clause WHEN OTHERS en testant le code erreur SQL</b>
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">EXCEPTION</span>
+   <span class="ora_keyword">WHEN</span> <span class="ora_keyword">NO_DATA_FOUND</span> <span class="ora_keyword">Then</span>
+       ...
+   <span class="ora_keyword">WHEN</span> <span class="ora_keyword">OTHERS</span> <span class="ora_keyword">THEN</span>
+     <span class="ora_keyword">If</span> <span class="ora_keyword">SQLCODE</span> = &#133; <span class="ora_keyword">Then</span> &#133;
+     <span class="ora_keyword">Elsif</span> <span class="ora_keyword">SQLCODE</span> = &#133; <span class="ora_keyword">Then</span> &#133;
+        ...
+     <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+<span class="ora_keyword">END</span>;</div></pre><div class="paragraph">
+</div><br><a name="EXCEPTION_INIT"></a><div class="paragraph">
+Vous pouvez associer un code erreur Oracle &agrave; vos propres variables exception &agrave; l'aide du mot cl&eacute; <b>PRAGMA EXCEPTION_INIT</b>, dans le cadre de la section d&eacute;clarative de la fa&ccedil;on suivante : 
+<br /><br />
+<b>Nom_exception EXCEPTION ;</b><br />
+<b>PRAGMA EXCEPTION_INIT(nom_exception, -code_error_oracle);</b>
+<br /><br />
+Exemple :
+<br />
+Lorsque l'on tente d'ins&eacute;rer plus de caract&egrave;res dans une variable que sa d&eacute;claration ne le permet, Oracle d&eacute;clenche une erreur -6502. Nous allons "nommer" cette erreur en LE$trop_long et l'intercepter dans la section exception
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    LC$Chaine <span class="ora_keyword">varchar2</span>(10) ;
+  3    LE$trop_long <span class="ora_keyword">exception</span> ;
+  4    <span class="ora_keyword">pragma</span> <span class="ora_keyword">exception_init</span>( LE$trop_long, -6502 ) ;
+  5  <span class="ora_keyword">Begin</span>
+  6    LC$Chaine := <span class="ora_keyword">rpad</span>( ' ', 30) ;
+  7  <span class="ora_keyword">Exception</span>
+  8    <span class="ora_keyword">when</span> LE$trop_long <span class="ora_keyword">then</span>
+  9        <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Cha&icirc;ne de caract&egrave;res trop longue') ;
+ 10  <span class="ora_keyword">End</span> ; 
+ 11  /
+Cha&icirc;ne de caract&egrave;res trop longue
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.
+
+<span class="ora_keyword">SQL</span>&gt;</div></pre><div class="paragraph">
+</div><br><a name="SQLCODE"></a><div class="paragraph">
+Le code erreur num&eacute;rique Oracle ayant g&eacute;n&eacute;r&eacute; la plus r&eacute;cente erreur est  r&eacute;cup&eacute;rable en interrogeant la fonction <b>SQLCODE</b>.<br />
+Le libell&eacute; erreur associ&eacute; est r&eacute;cup&eacute;rable en interrogeant la fonction <b>SQLERRM</b>
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    LC$Chaine <span class="ora_keyword">varchar2</span>(10) ;
+  3  <span class="ora_keyword">Begin</span>
+  4    LC$Chaine := <span class="ora_keyword">rpad</span>( ' ', 30) ;
+  5  <span class="ora_keyword">Exception</span>
+  6    <span class="ora_keyword">when</span> <span class="ora_keyword">others</span> <span class="ora_keyword">then</span>
+  7       <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Code    erreur : ' || <span class="ora_keyword">to_char</span>( <span class="ora_keyword">SQLCODE</span> )) ;
+  8       <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'libell&eacute; erreur : ' || <span class="ora_keyword">to_char</span>( <span class="ora_keyword">SQLERRM</span> )) ; 
+  9  <span class="ora_keyword">End</span> ;
+ 10  /
+Code    erreur : -6502
+libell&eacute; erreur : ORA-06502: PL/<span class="ora_keyword">SQL</span>: <span class="ora_keyword">numeric</span> <span class="ora_keyword">or</span> value error: <span class="ora_keyword">character</span> string buffer too small
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+<br />
+<b>Poursuite de l'ex&eacute;cution apr&egrave;s l'interception d'une exception</b>
+<br /><br />
+Une fois dans la section <b>EXCEPTION</b>, il n'est pas possible de retourner dans la section ex&eacute;cution juste apr&egrave;s l'instruction qui a g&eacute;n&eacute;r&eacute; l'erreur.
+<br /><br />
+Par contre il est tout &agrave; fait possible d'encadrer chaque groupe d'instructions voire m&ecirc;me chaque instruction avec les mots cl&eacute;<br />
+<b>BEGIN &#133; EXCEPTION &#133; END;</b><br />
+Cela permet de traiter l'erreur et de continuer l'ex&eacute;cution
+</div><br><pre class="code"><div class="ora_code">  1   <span class="ora_keyword">Declare</span>
+  2     LC$Ch1    <span class="ora_keyword">varchar2</span>(20) := 'Phrase longue';
+  3     LC$Chaine <span class="ora_keyword">varchar2</span>(10) ;
+  4     LE$trop_long <span class="ora_keyword">exception</span> ;
+  5     <span class="ora_keyword">pragma</span> <span class="ora_keyword">exception_init</span>( LE$trop_long, -6502 ) ;
+  6   <span class="ora_keyword">Begin</span>
+  7     <span class="ora_keyword">Begin</span>
+  8        LC$Chaine := LC$Ch1;
+  9     <span class="ora_keyword">Exception</span>
+ 10       <span class="ora_keyword">when</span> LE$trop_long <span class="ora_keyword">then</span>
+ 11           LC$Chaine := <span class="ora_keyword">Substr</span>( LC$Ch1, 1, 10 ) ;
+ 12     <span class="ora_keyword">End</span> ;
+ 13     <span class="ora_comment">-- poursuite du traitement --</span>
+ 14     <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>(LC$Chaine ) ;
+ 15*  <span class="ora_keyword">End</span> ;
+ 16  /
+Phrase lon
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+<br />
+<b>Vous pouvez &eacute;galement d&eacute;finir vos propres messages d'erreur avec la proc&eacute;dure RAISE_APPLICATION_ERROR</b>
+<br /><br />
+<b>DBMS_STANDARD.raise_application_error(numero_erreur, message[, {TRUE | FALSE}])</b>
+<br /><br />
+<b>numero_erreur</b> repr&eacute;sente un entier n&eacute;gatif compris entre -20000 et -20999<br />
+<b>message</b> repr&eacute;sente le texte du message d'une longueur maximum de 2048 octets<br />
+<b>TRUE</b> indique que l'erreur est ajout&eacute;e &agrave; la pile des erreurs pr&eacute;cedentes<br />
+<b>FALSE</b> indique que l'erreur remplace toutes les erreurs pr&eacute;c&eacute;dentes
+<br /><br />
+Du fait que cette proc&eacute;dure appartienne a un paquetage standard, il n'est pas n&eacute;cessaire de pr&eacute;fixer cette proc&eacute;dure
+<br /><br />
+L'appel de la proc&eacute;dure raise_application_error ne peut &ecirc;tre ex&eacute;cut&eacute; que depuis une proc&eacute;dure stock&eacute;e, et d&eacute;clenche un retour imm&eacute;diat au programme appelant en lui transmettant le code et le libell&eacute; de l'erreur
+<br /><br />
+<b>Propagation des exceptions</b>
+<br /><br />
+Si une exception n'est pas trait&eacute;e au sein du bloc <b>BEGIN &#133; END;</b> dans lequel elle est g&eacute;n&eacute;r&eacute;e,<br />
+elle remonte de bloc en bloc jusqu'&agrave; ce qu'elle soit trait&eacute;e ou rende la main au programme appelant.
+</div><br>
+<div class="image"><img src="./images/exception_1.gif"></div>
+<div class="paragraph">
+Dans cet exemple, l'exception A est trait&eacute;e dans le bloc local.<br />
+Le traitement se poursuit dans le bloc parent
+</div><br>
+<div class="image"><img src="./images/exception_2.gif"></div>
+<div class="paragraph">
+Dans cet exemple, l'exception B n'est pas trait&eacute;e dans le bloc local.<br />
+Elle se propage dans le bloc parent dans lequel elle est trait&eacute;e<br />
+Puis la main est rendue au programme appelant
+</div><br>
+<div class="image"><img src="./images/exception_3.gif"></div>
+<div class="paragraph">
+Dans cet exemple, l'exception C n'est trait&eacute;e ni dans le bloc local ni dans les blocs parents<br />
+la main est rendue au programme appelant avec le code erreur
+<br /><br /><br />
+<b>Commentaires dans les blocs PL/SQL</b>
+<br /><br />
+Pour mettre une ligne unique en commentaire, il faut la faire pr&eacute;c&eacute;der d'un double tiret <b>--</b>
+<br /><br />
+-- cette ligne seule est un commentaire
+<br /><br />
+Pour mettre plusieurs lignes en commentaire, il faut les encadrer avec les symboles <b>/*</b> et <b>*/</b>
+<br /><br />
+/* toutes les lignes suivantes<br />
+    sont en commentaire<br />
+    elles ne seront ni compil&eacute;es<br />
+    ni ex&eacute;cut&eacute;es<br />
+*/
+
+</div><br>
+												
+	
+	
+<hr><div class="barreNavigation"> [ <a class="barreNavigationTexte" href="Index.html">Précédent</a> ]  [ <a class="barreNavigationTexte" href="sommaire.html">Sommaire</a> ]  [ <a class="barreNavigationTexte" href="Chap2.html">Suivant</a> ] </div><hr><p class="licence">Copyright &copy;2004&nbsp;SheikYerbouti.
+            Aucune reproduction, même partielle, ne peut être faite
+			de ce site et de l'ensemble de son contenu : textes, documents, images, etc
+            sans l'autorisation expresse de l'auteur. Sinon vous encourez selon la loi jusqu'à 3 ans de prison et jusqu'à 300 000 E
+			de dommages et intérets. Cette page est déposée à la <a href="http://www.sacd.fr/" target="_blank">SACD</a>.</p>
+       											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			<table width="100%" cellpadding="4" class="cachee">
+				<tr bgcolor="#DDEEFF">
+					<td align="center" class="titrepied">
+			  Vos questions techniques : <b><a href="http://www.developpez.net/forums/" target="_blank">forum d'entraide Accueil</a></b> - Publiez vos articles, tutoriels et cours<br />
+			  et rejoignez-nous dans l'&eacute;quipe de r&eacute;daction du club d'entraide des d&eacute;veloppeurs francophones <br /> <a href="http://club.developpez.com/contacts/">Nous contacter</a>
+	
+			  - Copyright 2000..2005 www.developpez.com
+					</td>
+					<td align="center">
+          
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
+
+	

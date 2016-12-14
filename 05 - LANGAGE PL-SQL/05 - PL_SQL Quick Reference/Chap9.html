@@ -1,0 +1,1711 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <title>Guide PL/SQL - Club d'entraide des d&#233;veloppeurs francophones</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta name="generator" content="developpez-com" />
+  <link rel="stylesheet" type="text/css" href="./mainstyle.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="./printer.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./article.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./faq.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./source.css" />
+</head>
+<body>
+<table width="100%" cellspacing="4">
+	<tr>
+  	<td align="center">
+    	<table width="100%" cellspacing="0" cellpadding="0">
+     		<tr>
+     			<td>
+			      <table width="100%" cellspacing="11">
+    	  			<tr>
+        				<td>
+          				<a href="http://www.developpez.com"><img src="images/logo.gif" alt="Accueil" /></a>
+        				</td>
+      				</tr>
+      				<tr>
+      					<td></td>
+      				</tr>
+      			</table>
+    			</td>
+  			</tr>
+  			<tr>
+    			<td>
+						<table class="cachee" cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td class="iongl"><img src="images/bordg.gif" /></td>
+								<td class="bgongl"><a href="http://www.developpez.com" class="ntdrub">Accueil<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://club.developpez.com" class="ntdrub">Le<br />Club</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://delphi.developpez.com" class="ntdrub">Delphi<br />Kylix</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://c.developpez.com" class="ntdrub">C<br />C++</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://java.developpez.com" class="ntdrub">Java<br />J2EE</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://dotnet.developpez.com" class="ntdrub">DotNET<br />&amp; C#</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://vb.developpez.com" class="ntdrub">Visual<br />Basic</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://access.developpez.com" class="ntdrub">Access<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://pascal.developpez.com" class="ntdrub">Pascal<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://web.developpez.com" class="ntdrub">Dev<br />Web</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://php.developpez.com" class="ntdrub">PHP<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://asp.developpez.com" class="ntdrub">ASP<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://xml.developpez.com" class="ntdrub">XML<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://uml.developpez.com" class="ntdrub">UML<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://sgbd.developpez.com" class="ntdrub">SQL<br />SGBD</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://windows.developpez.com" class="ntdrub">Win<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://linux.developpez.com" class="ntdrub">Linux<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://www.developpez.com/cours/" class="ntdrub">Autres<br /></a></td>
+								<td class="iongl"><img src="images/bordd.gif" /></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="trbleu">
+					</td>
+				</tr>
+
+				<tr valign="top">
+					<td valign="top" class="fondart">
+						<table cellspacing="1" width="100%" class="tbnoir">
+							<tr>
+								<td class="fondart">
+									<table class="cadrearticle" width="90%" cellpadding="10" cellspacing="0">
+										<tr>
+											<td>
+
+        <br><h1>Oracle PL/SQL</h1><p class="dateArticle">
+        Date de publication : Avril 2004 , 
+        Date de mise a jour : Juillet 2004</p><hr><div class="barreNavigation"> [ <a class="barreNavigationTexte" href="Chap8.html">Précédent</a> ]  [ <a class="barreNavigationTexte" href="sommaire.html">Sommaire</a> ]  [ <a class="barreNavigationTexte" href="Chap10.html">Suivant</a> ] </div><hr>
+	
+	
+	
+	
+	
+	
+	<br /><a class="summaryIndent0" href="#L9">9. Le paquetage DBMS_LOB</a>
+		
+
+	<br /><a class="summaryIndent1" href="#L9.1">9.1. Proc&eacute;dures et fonctions du paquetage</a>
+		
+	
+	<br /><a class="summaryIndent2" href="#L9.1.1">9.1.1. Proc&eacute;dures et fonctions des versions 8i et 9i</a>
+		
+	
+				
+	<br /><a class="summaryIndent2" href="#L9.1.2">9.1.2. Proc&eacute;dures de la version 9i</a>
+		
+	
+					
+	<br /><a class="summaryIndent2" href="#L9.1.3">9.1.3. Proc&eacute;dures de la version 10g</a>
+		
+	
+						
+			
+	<br /><a class="summaryIndent1" href="#L9.2">9.2. Syntaxe des proc&eacute;dures et fonctions</a>
+		
+	
+	<br /><a class="summaryIndent2" href="#L9.2.1">9.2.1. APPEND</a>
+		
+	
+					
+	<br /><a class="summaryIndent2" href="#L9.2.2">9.2.2. CLOSE</a>
+		
+	
+					
+	<br /><a class="summaryIndent2" href="#L9.2.3">9.2.3. COMPARE</a>
+		
+	
+							
+	<br /><a class="summaryIndent2" href="#L9.2.4">9.2.4. CONVERTTOBLOB</a>
+		
+	
+								
+	<br /><a class="summaryIndent2" href="#L9.2.5">9.2.5. CONVERTTOCLOB</a>
+		
+	
+		
+	<br /><a class="summaryIndent2" href="#L9.2.6">9.2.6. COPY</a>
+		
+	
+							
+	<br /><a class="summaryIndent2" href="#L9.2.7">9.2.7. CREATETEMPORARY</a>
+		
+	
+								
+	<br /><a class="summaryIndent2" href="#L9.2.8">9.2.8. ERASE</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L9.2.9">9.2.9. FILECLOSE</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L9.2.10">9.2.10. FILECLOSEALL</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L9.2.11">9.2.11. FILEEXISTS</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L9.2.12">9.2.12. FILEGETNAME</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L9.2.13">9.2.13. FILEISOPEN</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L9.2.14">9.2.14. FILEOPEN</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L9.2.15">9.2.15. FREETEMPORARY</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L9.2.16">9.2.16. GETCHUNKSIZE</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L9.2.17">9.2.17. GETLENGTH</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L9.2.18">9.2.18. INSTR</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L9.2.19">9.2.19. ISOPEN</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L9.2.20">9.2.20. ISTEMPORARY</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L9.2.21">9.2.21. LOADFROMFILE</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L9.2.22">9.2.22. LOADBLOBFROMFILE</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L9.2.23">9.2.23. LOADCLOBFROMFILE</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L9.2.24">9.2.24. OPEN</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L9.2.25">9.2.25. READ</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L9.2.26">9.2.26. SUBSTR</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L9.2.27">9.2.27. TRIM</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L9.2.28">9.2.28. WRITE</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L9.2.29">9.2.29. WRITEAPPEND</a>
+		
+	
+	
+				
+	<br /><a class="summaryIndent1" href="#L9.3">9.3. Exceptions g&eacute;n&eacute;r&eacute;es par le paquetage</a>
+		
+		
+				
+	<br /><a class="summaryIndent1" href="#L9.4">9.4. Exemples</a>
+		
+		
+
+
+		
+					
+	<br /><a class="summaryIndent1" href="#L9.5">9.5. Manipulations courantes des LOB de type caract&egrave;res (CLOB)</a>
+		
+		
+					
+	
+	
+<br><br>
+	
+	
+	
+	
+	
+	
+	<br /><h2 class="TitreSection1"><a name="L9"></a>9. Le paquetage DBMS_LOB</h2>
+		
+<div class="paragraph">
+<b>Ce paquetage permet de manipuler les grands objets Oracle (LOB) permanents ou temporaires</b>
+<br /><br />
+Il permet la lecture et l'&eacute;criture des grands objets de type
+</div><br><ul type="">
+<li>BLOB</li>
+<li>CLOB</li>
+<li>NCLOB</li>
+</ul><div class="paragraph">
+Il permet la lecture des grand objets de type 
+</div><br><ul type="">
+<li>BFILE</li>
+</ul><div class="paragraph">
+Une colonne de type BFILE ne stocke qu'un pointeur vers le fichier enregistr&eacute; au niveau du syst&egrave;me d'exploitation
+<br /><br />
+<u>Types utilis&eacute;s pour la gestion des LOB</u>
+</div><br><ul type="">
+<li><b>BLOB</b> LOB binaire source ou destination.</li>
+<li><b>RAW</b> Tampon de type RAW  source ou destination (utilis&eacute; avec un BLOB)</li>
+<li><b>CLOB</b> LOB caract&egrave;res source ou destination (incluant NCLOB)</li>
+<li><b>VARCHAR2</b> Tampon de type caract&egrave;res source ou destination (utilis&eacute; avec CLOB et NCLOB)</li>
+<li><b>INTEGER</b> Specifie la taille d'un tampon ou d'un LOB, le d&eacute;calage dans un LOB, ou la quantit&eacute; &agrave; lire ou &eacute;crire</li>
+<li><b>BFILE</b> Objet binaire stock&eacute; en dehors de la base</li>
+</ul><div class="paragraph">
+<u>constantes utilis&eacute;es pour la gestion des LOB</u><br />
+<span class="important">8i,9i</span>				
+</div><br><ul type="">
+<li><b>file_readonly</b> CONSTANT BINARY_INTEGER := 0;</li>
+<li><b>lob_readonly</b> CONSTANT BINARY_INTEGER := 0;</li>
+<li><b>lob_readwrite</b> CONSTANT BINARY_INTEGER := 1;</li>
+<li><b>lobmaxsize</b> CONSTANT INTEGER := 4294967295;</li>
+<li><b>call</b> CONSTANT PLS_INTEGER := 12;</li>
+<li><b>session</b> CONSTANT PLS_INTEGER := 10;</li>
+<li><b>warn_inconvertible_char</b> CONSTANT INTEGER := 1;</li>
+<li><b>default_csid</b> CONSTANT INTEGER := 0;</li>
+<li><b>default_lang_ctx</b> CONSTANT INTEGER := 0;</li>
+<li><b>no_warning</b> CONSTANT INTEGER := 0;</li>
+</ul><div class="paragraph">
+<span class="important">10g</span>
+</div><br><ul type="">
+<li><b>file_readonly</b> CONSTANT BINARY_INTEGER := 0;</li>
+<li><b>lob_readonly</b> CONSTANT BINARY_INTEGER := 0;</li>
+<li><b>lob_readwrite</b> CONSTANT BINARY_INTEGER := 1;</li>
+<li><b>lobmaxsize</b> CONSTANT INTEGER := 18446744073709551615;</li>
+<li><b>call</b> CONSTANT PLS_INTEGER := 12;</li>
+<li><b>session</b> CONSTANT PLS_INTEGER := 10;</li>
+<li><b>warn_inconvertible_char</b> CONSTANT INTEGER := 1;</li>
+<li><b>default_csid</b> CONSTANT INTEGER := 0;</li>
+<li><b>default_lang_ctx</b> CONSTANT INTEGER := 0;</li>
+<li><b>no_warning</b> CONSTANT INTEGER := 0;</li>
+</ul><div class="paragraph">
+En 10<i>g</i>, la taille maximum d'un objet LOB est &eacute;gale &agrave; la valeur du param&egrave;tre d'initialisation : <b>db_block_size</b> multipli&eacute; par <b>4294967295</b>.<br />
+Cette taille maximum peut donc &ecirc;tre comprise entre 8 et 128 teraoctets.				
+<br /><br />
+En 9<i>i</i>, la taille maximal d'un objet LOB est de 4 gigaoctets (2**32)
+<br /><br />
+Soit 4294967295 caract&egrave;res pour un BLOB ou CLOB mono-octet<br />
+Ou 4294967295 / 2 = 2147483647 caract&egrave;res pour un CLOB bi-octets
+<br /><br />
+Les LOBs temporaires sont stock&eacute;s dans le TABLESPACE temporaire et ne survivent pas &agrave; la fin de session.
+</div><br>
+	<br /><h3 class="TitreSection2"><a name="L9.1"></a>9.1. Proc&eacute;dures et fonctions du paquetage</h3>
+		
+<div class="paragraph">
+</div><br>	
+	<br /><h4 class="TitreSection3"><a name="L9.1.1"></a>9.1.1. Proc&eacute;dures et fonctions des versions 8i et 9i</h4>
+		
+<div class="paragraph">
+</div><br><ul type="">
+<li>Proc&eacute;dure <b>APPEND</b> </li>
+<li>Proc&eacute;dure <b>CLOSE</b> </li>
+<li>Fonction <b>COMPARE</b> </li>
+<li>Proc&eacute;dure <b>COPY</b> </li>
+<li>Proc&eacute;dure <b>CREATETEMPORARY</b> </li>
+<li>Proc&eacute;dure <b>ERASE</b> </li>
+<li>Proc&eacute;dure <b>FILECLOSE</b> </li>
+<li>Proc&eacute;dure <b>FILECLOSEALL</b> </li>
+<li>Fonction <b>FILEEXISTS</b> </li>
+<li>Proc&eacute;dure <b>FILEGETNAME</b> </li>
+<li>Fonction <b>FILEISOPEN</b> </li>
+<li>Proc&eacute;dure <b>FILEOPEN</b> </li>
+<li>Proc&eacute;dure <b>FREETEMPORARY</b> </li>
+<li>Fonction <b>GETCHUNKSIZE</b> </li>
+<li>Fonction <b>GETLENGTH</b> </li>
+<li>Fonction <b>INSTR</b> </li>
+<li>Fonction <b>ISOPEN</b> </li>
+<li>Fonction <b>ISTEMPORARY</b> </li>
+<li>Proc&eacute;dure <b>LOADFROMFILE</b> </li>
+<li>Proc&eacute;dure <b>OPEN</b> </li>
+<li>Proc&eacute;dure <b>READ</b> </li>
+<li>Fonction <b>SUBSTR</b> </li>
+<li>Proc&eacute;dure <b>TRIM</b> </li>
+<li>Proc&eacute;dure <b>WRITE</b> </li>
+<li>Proc&eacute;dure <b>WRITEAPPEND</b> </li>
+</ul><div class="paragraph">
+</div><br>	
+				
+	<br /><h4 class="TitreSection3"><a name="L9.1.2"></a>9.1.2. Proc&eacute;dures de la version 9i</h4>
+		
+<div class="paragraph">
+</div><br><ul type="">
+<li>Proc&eacute;dure  <b>LOADBLOBFROMFILE</b> </li>
+<li>Proc&eacute;dure <b>LOADCLOBFROMFILE</b> </li>
+</ul><div class="paragraph">
+</div><br>	
+					
+	<br /><h4 class="TitreSection3"><a name="L9.1.3"></a>9.1.3. Proc&eacute;dures de la version 10g</h4>
+		
+<div class="paragraph">
+</div><br><ul type="">
+<li>Proc&eacute;dure <b>CONVERTTOBLOB</b> </li>
+<li>Proc&eacute;dure <b>CONVERTTOCLOB</b> </li>
+</ul><div class="paragraph">
+</div><br>	
+						
+			
+	<br /><h3 class="TitreSection2"><a name="L9.2"></a>9.2. Syntaxe des proc&eacute;dures et fonctions</h3>
+		
+<div class="paragraph">
+</div><br>	
+	<br /><h4 class="TitreSection3"><a name="L9.2.1"></a>9.2.1. APPEND</h4>
+		
+<div class="paragraph">
+<b>Cette fonction permet d'ajouter le contenu d'un LOB &agrave; un autre</b>
+<br /><br />
+<b>DBMS_LOB.APPEND (</b><br />
+<b>dest_lob IN OUT NOCOPY BLOB,</b><br />
+<b>src_lob IN BLOB)</b>
+<br /><br />
+<b>DBMS_LOB.APPEND (</b><br />
+<b>dest_lob IN OUT NOCOPY CLOB CHARACTER SET ANY_CS,</b><br />
+<b>src_lob IN CLOB CHARACTER SET dest_lob%CHARSET)</b>
+<br /><br />
+<b>dest_lob</b> repr&eacute;sente le BLOB ou CLOB de destination<br />
+<b>src_lob</b> repr&eacute;sente le BLOB ou CLOB source
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+VALUE_ERROR Le LOB source ou destination est NULL.
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">DECLARE</span>
+  dest_lob <span class="ora_keyword">BLOB</span>;
+  src_lob <span class="ora_keyword">BLOB</span>;
+<span class="ora_keyword">BEGIN</span>
+  <span class="ora_comment">-- Initialisation des variables LOB --</span>
+  <span class="ora_keyword">SELECT</span> b_lob <span class="ora_keyword">INTO</span> dest_lob
+  <span class="ora_keyword">FROM</span> lob_table
+  <span class="ora_keyword">WHERE</span> key_value = 12 <span class="ora_keyword">FOR</span> <span class="ora_keyword">UPDATE</span>;
+  
+  <span class="ora_keyword">SELECT</span> b_lob <span class="ora_keyword">INTO</span> src_lob
+  <span class="ora_keyword">FROM</span> lob_table
+  <span class="ora_keyword">WHERE</span> key_value = 21;
+  
+  <span class="ora_comment">-- Ajout de src_lob en fin de dest_lob --</span>
+  DBMS_LOB.APPEND(dest_lob, src_lob);
+  <span class="ora_keyword">COMMIT</span>;
+
+<span class="ora_keyword">END</span>;</div></pre><div class="paragraph">
+</div><br>	
+					
+	<br /><h4 class="TitreSection3"><a name="L9.2.2"></a>9.2.2. CLOSE</h4>
+		
+<div class="paragraph">
+<b>Ferme un LOB pr&eacute;alablement ouvert</b>
+<br /><br />
+<b>DBMS_LOB.CLOSE (</b><br />
+<b>lob_loc IN OUT NOCOPY BLOB)</b>
+<br /><br />
+<b>DBMS_LOB.CLOSE (</b><br />
+<b>lob_loc IN OUT NOCOPY CLOB CHARACTER SET ANY_CS)</b>
+<br /><br />
+<b>DBMS_LOB.CLOSE (</b><br />
+<b>file_loc IN OUT NOCOPY BFILE)</b>
+</div><br>	
+					
+	<br /><h4 class="TitreSection3"><a name="L9.2.3"></a>9.2.3. COMPARE</h4>
+		
+<div class="paragraph">
+<b>Comparaison de tout ou partie de 2 LOBs</b><br />
+Les 2 LOBs doivent &ecirc;tre de m&ecirc;me type
+<br /><br />
+Cette fonction retourne 0 si les deux objets sont identiques, sinon une valeur diff&eacute;rente de 0<br /><br />
+Elle retourne NULL si 
+</div><br><ul type="">
+<li>amount &lt; 1</li>
+<li>amount &gt; LOBMAXSIZE</li>
+<li>d&eacute;placement_1 ou d&eacute;placement_2 &lt; 1</li>
+<li>d&eacute;placement_1 ou d&eacute;placement_2 &gt; LOBMAXSIZE</li>
+</ul><div class="paragraph">
+<b>DBMS_LOB.COMPARE (</b><br />
+<b>lob_1 IN BLOB,</b><br />
+<b>lob_2 IN BLOB,</b><br />
+<b>amount IN INTEGER := 4294967295,</b><br />
+<b>d&eacute;placement_1 IN INTEGER := 1,</b><br />
+<b>d&eacute;placement_2 IN INTEGER := 1)</b><br />
+<b>RETURN INTEGER</b>
+<br /><br />
+<b>DBMS_LOB.COMPARE (</b><br />
+<b>lob_1 IN CLOB CHARACTER SET ANY_CS,</b><br />
+<b>lob_2 IN CLOB CHARACTER SET lob_1%CHARSET,</b><br />
+<b>amount IN INTEGER := 4294967295,</b><br />
+<b>d&eacute;placement_1 IN INTEGER := 1,</b><br />
+<b>d&eacute;placement_2 IN INTEGER := 1)</b><br />
+<b>RETURN INTEGER</b>
+<br /><br />
+<b>DBMS_LOB.COMPARE (</b><br />
+<b>lob_1 IN BFILE,</b><br />
+<b>lob_2 IN BFILE,</b><br />
+<b>amount IN INTEGER,</b><br />
+<b>d&eacute;placement_1 IN INTEGER := 1,</b><br />
+<b>d&eacute;placement_2 IN INTEGER := 1)</b><br />
+<b>RETURN INTEGER</b>
+<br /><br />
+<b>lob_1</b> repr&eacute;sente le premier LOB<br />
+<b>lob_2</b> repr&eacute;sente le deuxi&egrave;me LOB<br />
+<b>amount</b> repr&eacute;sente le nombre d'octets (BLOB) ou de caract&egrave;res (CLOB) &agrave; comparer<br />
+<b>d&eacute;placement_1</b> repr&eacute;sente le d&eacute;calage en octets ou caract&egrave;res &agrave; partir du d&eacute;but (d&eacute;faut 1 ) du premier LOB<br />
+<b>d&eacute;placement_2</b> repr&eacute;sente le d&eacute;calage en octets ou caract&egrave;res &agrave; partir du d&eacute;but (d&eacute;faut 1 ) du deuxi&egrave;me LOB
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+UNOPENED_FILE Le fichier n'est pas ouvert<br />
+NOEXIST_DIRECTORY le r&eacute;pertoire n'existe pas<br />
+NOPRIV_DIRECTORY Privil&egrave;ges insuffisants sur le r&eacute;pertoire<br />
+INVALID_DIRECTORY le r&eacute;pertoire a &eacute;t&eacute; invalid&eacute; apr&egrave;s l'ouverture du fichier<br />
+INVALID_OPERATION Fichier inexistant ou privil&egrave;ges insuffisants
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">DECLARE</span>
+  lob_1 <span class="ora_keyword">BLOB</span>;
+  lob_2 <span class="ora_keyword">BLOB</span>;
+  retval <span class="ora_keyword">INTEGER</span>;
+<span class="ora_keyword">BEGIN</span>
+  <span class="ora_keyword">SELECT</span> b_col <span class="ora_keyword">INTO</span> lob_1 <span class="ora_keyword">FROM</span> lob_table
+  <span class="ora_keyword">WHERE</span> key_value = 45;
+  
+  <span class="ora_keyword">SELECT</span> b_col <span class="ora_keyword">INTO</span> lob_2 <span class="ora_keyword">FROM</span> lob_table
+  <span class="ora_keyword">WHERE</span> key_value = 54;
+  
+  retval := dbms_lob.compare(lob_1, lob_2, dbms_lob.lobmaxsize, 1, 1);
+  
+  <span class="ora_keyword">IF</span> retval = 0 <span class="ora_keyword">THEN</span>
+     <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'LOBs identiques' ) ;
+  <span class="ora_keyword">ELSE</span>
+     <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'LOBs diff&eacute;rents' ) ;
+  <span class="ora_keyword">END</span> <span class="ora_keyword">IF</span>;
+<span class="ora_keyword">END</span>;</div></pre><div class="paragraph">
+</div><br>	
+							
+	<br /><h4 class="TitreSection3"><a name="L9.2.4"></a>9.2.4. CONVERTTOBLOB</h4>
+		
+<div class="paragraph">
+<span class="important">(10g)</span> <b>Convertion d'une source CLOB ou NCLOB en format binaire BLOB</b><br /><br />
+<b>DBMS_LOB.CONVERTTOBLOB(</b><br />
+<b>dest_lob       IN OUT     NOCOPY  BLOB,</b><br />
+<b>scr_clob       IN         CLOB CHARACTER SET ANY_CS,</b><br />
+<b>amount         IN         INTEGER,</b><br />
+<b>dest_offset    IN OUT     INTEGER,</b><br />
+<b>src_offset     IN OUT     INTEGER,</b><br />
+<b>blob_csid      IN         NUMBER,</b><br />
+<b>lang_context   IN OUT     INTEGER,</b><br />
+<b>warning        OUT        INTEGER)</b>
+<br /><br />
+<b>dest_lob</b> repr&eacute;sente le BLOB de destination<br />
+<b>src_clob</b> repr&eacute;sente le CLOB ou NCLOB source<br />
+<b>amount</b> repr&eacute;sente le nombre de caract&egrave;res &agrave; convertir (d&eacute;faut lobmaxsize)<br />
+<b>dest_offset</b> repr&eacute;sente le d&eacute;calage en octets ou caract&egrave;res &agrave; partir du d&eacute;but (d&eacute;faut 1 ) du BLOB destination<br />
+<b>src_offset</b> repr&eacute;sente le d&eacute;calage en octets ou caract&egrave;res &agrave; partir du d&eacute;but (d&eacute;faut 1 ) du CLOB source<br />
+<b>blob_csid</b> ID du jeu de caract&egrave;res (d&eacute;faut default_csid ) du BLOB destination<br />
+<b>lang_context</b> repr&eacute;sente le contexte de language (d&eacute;faut default_lang_ctx ) du BLOB destination<br />
+<b>warning</b> repr&eacute;sente le code avertissement retourn&eacute; par la fonction
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+VALUE_ERROR L'un des param&egrave;tres est NULL ou invalide<br />
+INVALID_ARGVAL si
+					</div><br><ul type="">
+						<li>src_offset ou dest_offset &lt; 1. </li>
+						<li>src_offset ou dest_offset &gt; LOBMAXSIZE. </li>
+						<li>amount &lt; 1. </li>
+						<li>amount &gt; LOBMAXSIZE</li>
+					</ul><div class="paragraph">
+</div><br>	
+								
+	<br /><h4 class="TitreSection3"><a name="L9.2.5"></a>9.2.5. CONVERTTOCLOB</h4>
+		
+<div class="paragraph">
+<span class="important">(10g)</span> <b>Convertion d'une source binaire BLOB en format CLOB</b><br /><br />
+<b>DBMS_LOB.CONVERTTOCLOB(</b><br />
+<b>dest_lob       IN OUT NOCOPY  CLOB CHARACTER SET ANY_CS,</b><br />
+<b>src_blob       IN             BLOB,</b><br />
+<b>amount         IN             INTEGER,</b><br />
+<b>dest_offset    IN OUT         INTEGER,</b><br />
+<b>src_offset     IN OUT         INTEGER,</b><br />
+<b>blob_csid      IN             NUMBER,</b><br />
+<b>lang_context   IN OUT         INTEGER,</b><br />
+<b>warning        OUT            INTEGER)</b>
+<br /><br />
+<b>dest_lob</b> repr&eacute;sente le CLOB de destination<br />
+<b>src_clob</b> repr&eacute;sente le BLOB source<br />
+<b>amount</b> repr&eacute;sente le nombre de caract&egrave;res &agrave; convertir (d&eacute;faut lobmaxsize)<br />
+<b>dest_offset</b> repr&eacute;sente le d&eacute;calage en octets ou caract&egrave;res &agrave; partir du d&eacute;but (d&eacute;faut 1 ) du BLOB destination<br />
+<b>src_offset</b> repr&eacute;sente le d&eacute;calage en octets ou caract&egrave;res &agrave; partir du d&eacute;but (d&eacute;faut 1 ) du CLOB source<br />
+<b>blob_csid</b> ID du jeu de caract&egrave;res (d&eacute;faut default_csid ) du BLOB destination<br />
+<b>lang_context</b> repr&eacute;sente le contexte de language (d&eacute;faut default_lang_ctx ) du BLOB destination<br />
+<b>warning</b> repr&eacute;sente le code avertissement retourn&eacute; par la fonction
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+VALUE_ERROR L'un des param&egrave;tres est NULL ou invalide<br />
+INVALID_ARGVAL si
+					</div><br><ul type="">
+						<li>src_offset ou dest_offset &lt; 1. </li>
+						<li>src_offset ou dest_offset &gt; LOBMAXSIZE. </li>
+						<li>amount &lt; 1. </li>
+						<li>amount &gt; LOBMAXSIZE</li>
+					</ul><div class="paragraph">
+</div><br>	
+		
+	<br /><h4 class="TitreSection3"><a name="L9.2.6"></a>9.2.6. COPY</h4>
+		
+<div class="paragraph">
+<b>Copie de tout ou partie d'un LOB dans un autre</b>
+<br /><br />
+<b>DBMS_LOB.COPY (</b><br />
+<b>dest_lob IN OUT NOCOPY BLOB,</b><br />
+<b>src_lob IN BLOB,</b><br />
+<b>amount IN INTEGER,</b><br />
+<b>dest_d&eacute;placement IN INTEGER := 1,</b><br />
+<b>src_d&eacute;placement IN INTEGER := 1)</b>
+<br /><br />
+<b>DBMS_LOB.COPY (</b><br />
+<b>dest_lob IN OUT NOCOPY CLOB CHARACTER SET ANY_CS,</b><br />
+<b>src_lob IN CLOB CHARACTER SET dest_lob%CHARSET,</b><br />
+<b>amount IN INTEGER,</b><br />
+<b>dest_d&eacute;placement IN INTEGER := 1,</b><br />
+<b>src_d&eacute;placement IN INTEGER := 1)</b>
+<br /><br />
+<b>dest_lob</b> repr&eacute;sente le LOB destination<br />
+<b>src_lob</b> repr&eacute;sente le LOB source<br />
+<b>amout</b> repr&eacute;sente le nombre d'octets (BLOB) ou de caract&egrave;res (CLOB) que l'on souhaite copier<br />
+<b>dest_d&eacute;placement</b> repr&eacute;sente le d&eacute;placement par rapport au d&eacute;but du LOB destination<br />
+<b>src_d&eacute;placement</b> repr&eacute;sente le d&eacute;placement par rapport au d&eacute;but du LOB source<br />
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+VALUE_ERROR l'un des param&egrave;tres en entr&eacute;e est NULL ou invalide<br />
+INVALID_ARGVAL si:<br />
+- src_d&eacute;placement ou dest_d&eacute;placement &lt; 1<br />
+- src_d&eacute;placement ou dest_d&eacute;placement &gt; LOBMAXSIZE<br />
+- amount &lt; 1<br />
+- amount &gt; LOBMAXSIZE
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">DECLARE</span>
+  lobd <span class="ora_keyword">BLOB</span>;
+  lobs <span class="ora_keyword">BLOB</span>;
+  dest_d&eacute;placement <span class="ora_keyword">INTEGER</span> := 1
+  src_d&eacute;placement <span class="ora_keyword">INTEGER</span> := 1
+  amt <span class="ora_keyword">INTEGER</span> := 3000;
+<span class="ora_keyword">BEGIN</span>
+  <span class="ora_keyword">SELECT</span> b_col <span class="ora_keyword">INTO</span> lobd
+  <span class="ora_keyword">FROM</span> lob_table
+  <span class="ora_keyword">WHERE</span> key_value = 12 <span class="ora_keyword">FOR</span> <span class="ora_keyword">UPDATE</span>;
+  
+  <span class="ora_keyword">SELECT</span> b_col <span class="ora_keyword">INTO</span> lobs
+  <span class="ora_keyword">FROM</span> lob_table
+  <span class="ora_keyword">WHERE</span> key_value = 21;
+  
+  DBMS_LOB.COPY(lobd, lobs, amt, dest_d&eacute;placement, src_d&eacute;placement);
+  <span class="ora_keyword">COMMIT</span>;
+  
+<span class="ora_keyword">END</span>;</div></pre><div class="paragraph">
+</div><br>	
+							
+	<br /><h4 class="TitreSection3"><a name="L9.2.7"></a>9.2.7. CREATETEMPORARY</h4>
+		
+<div class="paragraph">
+<b>Cr&eacute;ation d'un LOB temporaire dans le TABLESPACE temporaire</b>
+<br /><br />
+<b>DBMS_LOB.CREATETEMPORARY (</b><br />
+<b>lob_loc IN OUT NOCOPY BLOB,</b><br />
+<b>cache IN BOOLEAN,</b><br />
+<b>dur&eacute;e IN PLS_INTEGER := 10)</b>
+<br /><br />
+<b>DBMS_LOB.CREATETEMPORARY (</b><br />
+<b>lob_loc IN OUT NOCOPY CLOB CHARACTER SET ANY_CS,</b><br />
+<b>cache IN BOOLEAN,</b><br />
+<b>duree IN PLS_INTEGER := 10)</b>
+<br /><br />
+<b>cache</b> sp&eacute;cifie si le lob doit &ecirc;tre lu en cache<br />
+<b>dur&eacute;e</b> sp&eacute;cifie le moment ou le LOB est vid&eacute; (10 = SESSION (d&eacute;faut), 12 = CALL)
+</div><br>	
+								
+	<br /><h4 class="TitreSection3"><a name="L9.2.8"></a>9.2.8. ERASE</h4>
+		
+<div class="paragraph">
+<b>Effacement de tout ou partie d'un LOB</b>
+<br /><br />
+La taille du LOB n'est pas affect&eacute;e par cette fonction. La partie effac&eacute;e est en fait remplac&eacute;e par des CHR(0) pour les BLOB et CHR(32) pour les CLOB
+<br /><br />
+<b>DBMS_LOB.ERASE (</b><br />
+<b>lob_loc IN OUT NOCOPY BLOB,</b><br />
+<b>amount IN OUT NOCOPY INTEGER,</b><br />
+<b>d&eacute;placement IN INTEGER := 1)</b>
+<br /><br />
+<b>DBMS_LOB.ERASE (</b><br />
+<b>lob_loc IN OUT NOCOPY CLOB CHARACTER SET ANY_CS,</b><br />
+<b>amount IN OUT NOCOPY INTEGER,</b><br />
+<b>d&eacute;placement IN INTEGER := 1)</b>
+<br /><br />
+<b>amout</b> repr&eacute;sente le nombre d'octets (BLOB) ou de caract&egrave;res (CLOB) a effacer<br />
+<b>d&eacute;placement</b> repr&eacute;sente le d&eacute;placement par rapport au d&eacute;but du LOB
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+VALUE_ERROR L'un des param&egrave;tres est NULL<br />
+INVALID_ARGVAL si:<br />
+- amount &lt; 1 ou amount &gt; LOBMAXSIZE<br />
+- d&eacute;placement &lt; 1 ou d&eacute;placement &gt; LOBMAXSIZE<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">DECLARE</span>
+  lobd <span class="ora_keyword">BLOB</span>;
+  amt <span class="ora_keyword">INTEGER</span> := 3000;
+<span class="ora_keyword">BEGIN</span>
+  <span class="ora_keyword">SELECT</span> b_col <span class="ora_keyword">INTO</span> lobd
+  <span class="ora_keyword">FROM</span> lob_table
+  <span class="ora_keyword">WHERE</span> key_value = 12 <span class="ora_keyword">FOR</span> <span class="ora_keyword">UPDATE</span>;
+  
+  dbms_lob.erase(dest_lob, amt, 2000);
+  
+  <span class="ora_keyword">COMMIT</span>;
+<span class="ora_keyword">END</span>;</div></pre><div class="paragraph">
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L9.2.9"></a>9.2.9. FILECLOSE</h4>
+		
+<div class="paragraph">
+<b>Fermeture d'un objet BFILE pr&eacute;alablement ouvert</b>
+<br /><br />
+<b>DBMS_LOB.FILECLOSE (</b><br />
+<b>file_loc IN OUT NOCOPY BFILE)</b>
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+VALUE_ERROR Le param&egrave;tre en entr&eacute;e file_loc est NULL<br />
+UNOPENED_FILE Le fichier n'&eacute;tait pas ouvert<br />
+NOEXIST_DIRECTORY le r&eacute;pertoire n'existe pas<br />
+NOPRIV_DIRECTORY Privil&egrave;ges insuffisants sur le r&eacute;pertoire<br />
+INVALID_DIRECTORY le r&eacute;pertoire a &eacute;t&eacute; invalid&eacute; apr&egrave;s l'ouverture du fichier<br />
+INVALID_OPERATION Fichier inexistant ou privil&egrave;ges insuffisants
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L9.2.10"></a>9.2.10. FILECLOSEALL</h4>
+		
+<div class="paragraph">
+<b>Fermeture de tous les objet BFILE pr&eacute;alablement ouvert dans la session</b>
+<br /><br />
+<b>DBMS_LOB.FILECLOSEALL</b>
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+UNOPENED_FILE Aucun fichier ouvert dans la session
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L9.2.11"></a>9.2.11. FILEEXISTS</h4>
+		
+<div class="paragraph">
+<b>V&eacute;rifie que le pointeur stock&eacute; dans le BFILE correspond &agrave; un fichier existant du syst&egrave;me de fichiers</b>
+<br /><br />
+Cette fonction retourne 1 si le fichier physique existe, sinon elle retourne 0
+<br /><br />
+<b>DBMS_LOB.FILEEXISTS (</b><br />
+<b>file_loc IN BFILE)</b><br />
+<b>RETURN INTEGER</b>
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+NOEXIST_DIRECTORY le r&eacute;pertoire n'existe pas<br />
+NOPRIV_DIRECTORY Privil&egrave;ges insuffisants sur le r&eacute;pertoire<br />
+INVALID_DIRECTORY le r&eacute;pertoire a &eacute;t&eacute; invalid&eacute; apr&egrave;s l'ouverture du fichier<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">DECLARE</span>
+  fil <span class="ora_keyword">BFILE</span>;
+<span class="ora_keyword">BEGIN</span>
+  <span class="ora_keyword">SELECT</span> f_lob <span class="ora_keyword">INTO</span> fil <span class="ora_keyword">FROM</span> lob_table <span class="ora_keyword">WHERE</span> key_value = 12;
+  <span class="ora_keyword">IF</span> (dbms_lob.fileexists(fil)) <span class="ora_keyword">THEN</span>
+      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'fichier existant' ) ;
+  <span class="ora_keyword">ELSE</span>
+      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'fichier inexistant' ) ;
+  <span class="ora_keyword">END</span> <span class="ora_keyword">IF</span>;
+
+<span class="ora_keyword">END</span>;</div></pre><div class="paragraph">
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L9.2.12"></a>9.2.12. FILEGETNAME</h4>
+		
+<div class="paragraph">
+<b>Retourne le r&eacute;pertoire et le nom de fichier point&eacute; par l'objet BFILE</b>
+<br /><br />
+En aucun cas elle ne teste l'existence physique du fichier
+<br /><br />
+<b>DBMS_LOB.FILEGETNAME (</b><br />
+<b>file_loc IN BFILE,</b><br />
+<b>repertoire OUT VARCHAR2,</b><br />
+<b>fichier OUT VARCHAR2)</b>
+<br /><br />
+<b>repertoire</b> indique le r&eacute;pertoire Oracle<br />
+<b>fichier</b> indique le nom du fichier
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+VALUE_ERROR L'un des param&egrave;tres en entr&eacute;e est NULL ou invalide<br />
+INVALID_ARGVAL Le param&egrave;tre repertoire ou fichier est NULL<br />
+<br />
+Voir l'exemple 3 en fin de chapitre
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L9.2.13"></a>9.2.13. FILEISOPEN</h4>
+		
+<div class="paragraph">
+<b>V&eacute;rifie si le BFILE a &eacute;t&eacute; ouvert</b>
+<br /><br />
+Cette fonction retourne 1 si le fichier est ouvert, sinon elle retourne 0
+<br /><br />
+<b>DBMS_LOB.FILEISOPEN (</b><br />
+<b>file_loc IN BFILE)</b><br />
+<b>RETURN INTEGER</b>
+<br /><br />
+<u>Exceptions g&eacute;r&eacute;es</u><br />
+NOEXIST_DIRECTORY le r&eacute;pertoire n'existe pas<br />
+NOPRIV_DIRECTORY Privil&egrave;ges insuffisants sur la  Directory<br />
+INVALID_DIRECTORY le r&eacute;pertoire a &eacute;t&eacute; invalid&eacute; apr&egrave;s l'ouverture du fichier
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">DECLARE</span>
+  fil <span class="ora_keyword">BFILE</span>;
+  pos <span class="ora_keyword">INTEGER</span>;
+  pattern <span class="ora_keyword">VARCHAR2</span>(20);
+<span class="ora_keyword">BEGIN</span>
+  <span class="ora_keyword">SELECT</span> f_lob <span class="ora_keyword">INTO</span> fil <span class="ora_keyword">FROM</span> lob_table
+  <span class="ora_keyword">WHERE</span> key_value = 12;
+
+  <span class="ora_comment">-- ouverture du fichier --</span>
+  ...
+  <span class="ora_keyword">IF</span> (dbms_lob.fileisopen(fil)) <span class="ora_keyword">THEN</span>
+    <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'fichier ouvert' ) ;
+    dbms_lob.fileclose(fil);
+  <span class="ora_keyword">ELSE</span>
+    <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'fichier non ouvert' ) ;
+  <span class="ora_keyword">END</span> <span class="ora_keyword">IF</span>;
+<span class="ora_keyword">END</span>;</div></pre><div class="paragraph">
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L9.2.14"></a>9.2.14. FILEOPEN</h4>
+		
+<div class="paragraph">
+<b>Ouverture d'un BFILE en lecture seule</b>
+<br /><br />
+<b>DBMS_LOB.FILEOPEN (</b><br />
+<b>file_loc IN OUT NOCOPY BFILE,</b><br />
+<b>open_mode IN BINARY_INTEGER := file_readonly)</b>
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+VALUE_ERROR Le param&egrave;tre file_loc ou open_mode est NULL<br />
+INVALID_ARGVAL open_mode diff&eacute;rent de FILE_READONLY<br />
+OPEN_TOOMANY Trop de fichiers ouverts dans la session<br />
+NOEXIST_DIRECTORY le r&eacute;pertoire n'existe pas<br />
+INVALID_DIRECTORY le r&eacute;pertoire a &eacute;t&eacute; invalid&eacute; apr&egrave;s l'ouverture du fichier<br />
+INVALID_OPERATION Fichier inexistant ou privil&egrave;ges insuffisants<br />
+<br /><br />
+Voir les exemples 1 et 2 en fin de chapitre
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L9.2.15"></a>9.2.15. FREETEMPORARY</h4>
+		
+<div class="paragraph">
+<b>Lib&eacute;ration d'un BLOB ou CLOB du TABLESPACE temporaire</b>
+<br /><br />
+<b>DBMS_LOB.FREETEMPORARY (</b><br />
+<b>lob_loc IN OUT NOCOPY BLOB)</b>
+<br /><br />
+<b>DBMS_LOB.FREETEMPORARY (</b><br />
+<b>lob_loc IN OUT NOCOPY CLOB CHARACTER SET ANY_CS)</b>
+<br /><br /><br />
+Voir l'exemple 2 en fin de chapitre
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L9.2.16"></a>9.2.16. GETCHUNKSIZE</h4>
+		
+<div class="paragraph">
+<b>Retourne la place utilis&eacute;e dans le chunk pour stocker le LOB</b>
+<br /><br />
+Lorsqu'une table contenant une colonne LOB est cr&eacute;&eacute;e, l'on peut indiquer le facteur de "chunking" qui doit &ecirc;tre un multiple d'un bloc Oracle<br />
+Cet espace (chunk) est utilis&eacute; pour acc&eacute;der ou modifier la valeur du LOB. Une partie de cet espace est r&eacute;serv&eacute; au syst&egrave;me, l'autre au stockage de la valeur
+<br /><br />
+La valeur retourn&eacute;e pour un BLOB est exprim&eacute;e en octets, et en caract&egrave;res pour un CLOB
+<br /><br />
+<b>DBMS_LOB.GETCHUNKSIZE (</b><br />
+<b>lob_loc IN BLOB)</b><br />
+<b>RETURN INTEGER</b>
+<br /><br />
+<b>DBMS_LOB.GETCHUNKSIZE (</b><br />
+<b>lob_loc IN CLOB CHARACTER SET ANY_CS)</b><br />
+<b>RETURN INTEGER</b>
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L9.2.17"></a>9.2.17. GETLENGTH</h4>
+		
+<div class="paragraph">
+<b>Retourne la longueur en octets d'un BLOB et en caract&egrave;res d'un CLOB et la taille du fichier physique pour un BFILE</b>
+<br /><br />
+La valeur retourn&eacute;e est NULL si le LOB est NULL  ou si le lob_loc est NULL
+<br /><br />
+<b>DBMS_LOB.GETLENGTH (</b><br />
+<b>lob_loc IN BLOB)</b><br />
+<b>RETURN INTEGER</b>
+<br /><br />
+<b>DBMS_LOB.GETLENGTH (</b><br />
+<b>lob_loc IN CLOB CHARACTER SET ANY_CS)</b><br />
+<b>RETURN INTEGER</b>
+<br /><br />
+<b>DBMS_LOB.GETLENGTH (</b><br />
+<b>file_loc IN BFILE)</b><br />
+<b>RETURN INTEGER</b>
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">DECLARE</span>
+  lobd <span class="ora_keyword">BLOB</span>;
+  <span class="ora_keyword">length</span> <span class="ora_keyword">INTEGER</span>;
+<span class="ora_keyword">BEGIN</span>
+  <span class="ora_comment">-- Initialisation du LOB</span>
+  <span class="ora_keyword">SELECT</span> b_lob <span class="ora_keyword">INTO</span> lobd <span class="ora_keyword">FROM</span> lob_table
+  <span class="ora_keyword">WHERE</span> key_value = 42;
+  
+  <span class="ora_keyword">length</span> := dbms_lob.getlength(lobd);
+  
+  <span class="ora_keyword">IF</span> <span class="ora_keyword">length</span> <span class="ora_keyword">IS</span> <span class="ora_keyword">NULL</span> <span class="ora_keyword">THEN</span>
+     <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>('<span class="ora_keyword">LOB</span> <span class="ora_keyword">NULL</span>');
+  <span class="ora_keyword">ELSE</span>
+     <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>('Taile du <span class="ora_keyword">LOB</span> : ' || <span class="ora_keyword">length</span>);
+  <span class="ora_keyword">END</span> <span class="ora_keyword">IF</span>;
+<span class="ora_keyword">END</span>;</div></pre><div class="paragraph">
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L9.2.18"></a>9.2.18. INSTR</h4>
+		
+<div class="paragraph">
+<b>Indication de la position d'un caract&egrave;re ou d'une cha&icirc;ne dans un LOB</b>
+<br /><br />
+<b>DBMS_LOB.INSTR (</b><br />
+<b>lob_loc IN BLOB,</b><br />
+<b>pattern IN RAW,</b><br />
+<b>d&eacute;placement IN INTEGER := 1,</b><br />
+<b>nth IN INTEGER := 1)</b><br />
+<b>RETURN INTEGER</b>
+<br /><br />
+<b>DBMS_LOB.INSTR (</b><br />
+<b>lob_loc IN CLOB CHARACTER SET ANY_CS,</b><br />
+<b>pattern IN VARCHAR2 CHARACTER SET lob_loc%CHARSET,</b><br />
+<b>d&eacute;placement IN INTEGER := 1,</b><br />
+<b>nth IN INTEGER := 1)</b><br />
+<b>RETURN INTEGER</b>
+<br /><br />
+<b>DBMS_LOB.INSTR (</b><br />
+<b>file_loc IN BFILE,</b><br />
+<b>pattern IN RAW,</b><br />
+<b>d&eacute;placement IN INTEGER := 1,</b><br />
+<b>nth IN INTEGER := 1)</b><br />
+<b>RETURN INTEGER</b>
+<br /><br />
+<b>pattern</b> repr&eacute;sente une variable de type RAW pour les BLOB et BFILE  ou une variable de type VARCHAR2 pour les CLOB<br />
+<b>d&eacute;placement</b> repr&eacute;sente l'octet de d&eacute;part (BLOB) ou le caract&egrave;re de d&eacute;part (CLOB) de la recherche (d&eacute;faut 1)<br />
+<b>nth</b> repr&eacute;sente le num&eacute;ro d'occurrence &agrave; rechercher (d&eacute;faut 1)
+<br /><br />
+Cette fonction retourne la position du premier octet ou caract&egrave;re recherch&eacute;, ou retourne la valeur 0 si pattern n'est pas trouv&eacute;<br /><br />
+Elle retourne NULL pour les conditions suivantes :
+</div><br><ul type="">
+<li>Un ou plusieurs param&egrave;tres en entr&eacute;e sont NULL ou invalides</li>
+<li>d&eacute;placement &lt; 1 ou d&eacute;placement &gt; LOBMAXSIZE</li>
+<li>nth &lt; 1</li>
+<li>nth &gt; LOBMAXSIZE</li>
+</ul><div class="paragraph">
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+UNOPENED_FILE Fichier non ouvert<br />
+NOEXIST_DIRECTORY le r&eacute;pertoire n'existe pas<br />
+NOPRIV_DIRECTORY Privil&egrave;ges insuffisants sur le r&eacute;pertoire<br />
+INVALID_DIRECTORY le r&eacute;pertoire a &eacute;t&eacute; invalid&eacute; apr&egrave;s l'ouverture du fichier<br />
+INVALID_OPERATION Fichier inexistant ou privil&egrave;ges insuffisants<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">DECLARE</span>
+  lobd <span class="ora_keyword">CLOB</span>;
+  pattern <span class="ora_keyword">VARCHAR2</span> := 'abcde';
+  position <span class="ora_keyword">INTEGER</span> := 10000;
+<span class="ora_keyword">BEGIN</span>
+  <span class="ora_comment">-- Initialisation du LOB</span>
+  <span class="ora_keyword">SELECT</span> b_col <span class="ora_keyword">INTO</span> lobd
+  <span class="ora_keyword">FROM</span> lob_table
+  <span class="ora_keyword">WHERE</span> key_value = 21;
+  
+  position := DBMS_LOB.<span class="ora_keyword">INSTR</span>(lobd,pattern, 1, 1);
+  
+  <span class="ora_keyword">IF</span> position = 0 <span class="ora_keyword">THEN</span>
+     <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>('Pattern non trouv&eacute;e');
+  <span class="ora_keyword">ELSE</span>
+     <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>('Pattern trouv&eacute;e en position ' || position);
+  <span class="ora_keyword">END</span> <span class="ora_keyword">IF</span>;
+<span class="ora_keyword">END</span>;</div></pre><div class="paragraph">
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L9.2.19"></a>9.2.19. ISOPEN</h4>
+		
+<div class="paragraph">
+<b>V&eacute;rification de l'&eacute;tat d'ouverture d'un LOB</b>
+<br /><br />
+Cette fonction retourne la valeur TRUE si le LOB est temporaire, sinon elle retourne la valeur FALSE
+<br /><br />
+<b>DBMS_LOB.ISOPEN (</b><br />
+<b>lob_loc IN BLOB)</b><br />
+<b>RETURN INTEGER</b>
+<br /><br />
+<b>DBMS_LOB.ISOPEN (</b><br />
+<b>lob_loc IN CLOB CHARACTER SET ANY_CS)</b><br />
+<b>RETURN INTEGER</b>
+<br /><br />
+<b>DBMS_LOB.ISOPEN (</b><br />
+<b>file_loc IN BFILE)</b>
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L9.2.20"></a>9.2.20. ISTEMPORARY</h4>
+		
+<div class="paragraph">
+<b>V&eacute;rifie si le LOB est temporaire</b>
+<br /><br />
+<b>DBMS_LOB.ISTEMPORARY (</b><br />
+<b>lob_loc IN BLOB)</b><br />
+<b>RETURN INTEGER</b>
+<br /><br />
+<b>DBMS_LOB.ISTEMPORARY (</b><br />
+<b>lob_loc IN CLOB CHARACTER SET ANY_CS)</b><br />
+<b>RETURN INTEGER</b>
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L9.2.21"></a>9.2.21. LOADFROMFILE</h4>
+		
+<div class="paragraph">
+<b>Copie de tout ou partie d'un fichier externe dans un LOB</b>
+<br /><br />
+<b>DBMS_LOB.LOADFROMFILE (</b><br />
+<b>dest_lob IN OUT NOCOPY BLOB,</b><br />
+<b>src_file IN BFILE,</b><br />
+<b>amount IN INTEGER,</b><br />
+<b>dest_d&eacute;placement IN INTEGER := 1,</b><br />
+<b>src_d&eacute;placement IN INTEGER := 1)</b>
+<br /><br />
+<b>dest_lob</b> repr&eacute;sente le LOB de destination<br />
+<b>src_file</b> repr&eacute;sente le BFILE source<br />
+<b>amount</b> repr&eacute;sente le nombre d'octets &agrave; lire<br />
+<b>dest_d&eacute;placement</b> repr&eacute;sente le d&eacute;calage d'&eacute;criture dans le LOB destinataire (d&eacute;faut 1)<br />
+<b>src_d&eacute;placement</b> repr&eacute;sente le d&eacute;calage de lecture depuis le fichier externe (d&eacute;faut 1)
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+VALUE_ERROR L'un des param&egrave;tres en entr&eacute; est NULL ou invalide<br />
+INVALID_ARGVAL si:
+</div><br><ul type="">
+<li>src_d&eacute;placement ou dest_d&eacute;placement &lt; 1</li>
+<li>src_d&eacute;placement ou dest_d&eacute;placement &gt; LOBMAXSIZE</li>
+<li>amount &lt; 1</li>
+<li>amount &gt; LOBMAXSIZE</li>
+</ul><div class="paragraph">
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">DECLARE</span>
+  lobd <span class="ora_keyword">BLOB</span>;
+  fils <span class="ora_keyword">BFILE</span> := <span class="ora_keyword">BFILENAME</span>('SOME_DIR_OBJ','some_file');
+  amt <span class="ora_keyword">INTEGER</span> := 4000;
+<span class="ora_keyword">BEGIN</span>
+  <span class="ora_keyword">SELECT</span> b_lob <span class="ora_keyword">INTO</span> lobd <span class="ora_keyword">FROM</span> lob_table <span class="ora_keyword">WHERE</span> key_value = 42 <span class="ora_keyword">FOR</span> <span class="ora_keyword">UPDATE</span>;
+  dbms_lob.fileopen(fils, dbms_lob.file_readonly);
+  dbms_lob.loadfromfile(lobd, fils, amt);
+  <span class="ora_keyword">COMMIT</span>;
+  dbms_lob.fileclose(fils);
+<span class="ora_keyword">END</span>;</div></pre><div class="paragraph">
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L9.2.22"></a>9.2.22. LOADBLOBFROMFILE</h4>
+		
+<div class="paragraph">
+<b>Copie de tout ou partie d'un fichier externe dans un BLOB</b>
+<br /><br />
+<b>DBMS_LOB.LOADBLOBFROMFILE (</b><br />
+<b>dest_lob IN OUT NOCOPY BLOB,</b><br />
+<b>src_bfile IN BFILE,</b><br />
+<b>amount IN INTEGER,</b><br />
+<b>dest_d&eacute;placement IN OUT INTEGER,</b><br />
+<b>src_d&eacute;placement IN OUT INTEGER)</b>
+<br /><br />
+les valeurs pour <b>amount</b>, <b>dest_d&eacute;placement</b> et <b>src_d&eacute;placement</b> sont exprim&eacute;es en octets
+<br /><br /><br />
+Voir les exemples 1 et 2 en fin de chapitre
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L9.2.23"></a>9.2.23. LOADCLOBFROMFILE</h4>
+		
+<div class="paragraph">
+<b>Copie de tout ou partie d'un fichier externe dans un CLOB</b>
+<br /><br />
+<b>DBMS_LOB.LOADCLOBFROMFILE (</b><br />
+<b>dest_lob IN OUT NOCOPY BLOB,</b><br />
+<b>src_bfile IN BFILE,</b><br />
+<b>amount IN INTEGER,</b><br />
+<b>dest_d&eacute;placement IN OUT INTEGER,</b><br />
+<b>src_d&eacute;placement IN OUT INTEGER,</b><br />
+<b>src_csid IN NUMBER,</b><br />
+<b>lang_context IN OUT INTEGER,</b><br />
+<b>warning OUT INTEGER)</b>
+<br /><br />
+les valeurs pour <b>amount</b> et <b>src_d&eacute;placement</b> sont exprim&eacute;es en octets
+<br /><br />
+<b>dest_d&eacute;placement</b> repr&eacute;sente le d&eacute;calage en caract&egrave;res d'&eacute;criture dans le CLOB<br />
+<b>src_d&eacute;placement</b> repr&eacute;sente le d&eacute;calage en octets de lecture depuis le fichier externe<br />
+<b>src_csid</b> repr&eacute;sente le jeu de caract&egrave;res du fichier externe<br />
+<b>lang_context</b> repr&eacute;sente le code de la langue<br />
+<b>warning</b> repr&eacute;sente l'&eacute;ventuel code d'erreur
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+VALUE_ERROR L'un des param&egrave;tres en entr&eacute;e est NULL ou invalide <br />
+INVALID_ARGVAL si:
+</div><br><ul type="">
+<li>src_d&eacute;placement ou dest_d&eacute;placement &lt; 1</li>
+<li>src_d&eacute;placement ou dest_d&eacute;placement &gt; LOBMAXSIZE</li>
+<li>amount &lt; 1</li>
+<li>amount &gt; LOBMAXSIZE</li>
+</ul><div class="paragraph">
+<br /><br />
+Voir les exemples 1 et 2 en fin de chapitre
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L9.2.24"></a>9.2.24. OPEN</h4>
+		
+<div class="paragraph">
+<b>Ouverture d'un LOB</b>
+<br /><br />
+<b>DBMS_LOB.OPEN (</b><br />
+<b>lob_loc IN OUT NOCOPY BLOB,</b><br />
+<b>mode IN BINARY_INTEGER);</b>
+<br /><br />
+<b>DBMS_LOB.OPEN (</b><br />
+<b>lob_loc IN OUT NOCOPY CLOB CHARACTER SET ANY_CS,</b><br />
+<b>mode IN BINARY_INTEGER);</b>
+<br /><br />
+<b>DBMS_LOB.OPEN (</b><br />
+<b>file_loc IN OUT NOCOPY BFILE,</b><br />
+<b>mode IN BINARY_INTEGER := file_readonly);</b>
+<br /><br />
+<b>mode</b> repr&eacute;sente l'une des valeurs suivantes
+</div><br><ul type="">
+<li>file_readonly</li>
+<li>lob_readonly</li>
+<li>lob_readwrite</li>
+</ul><div class="paragraph">
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L9.2.25"></a>9.2.25. READ</h4>
+		
+<div class="paragraph">
+<b>Lecture de tout ou partie d'un LOB</b>
+<br /><br />
+<b>DBMS_LOB.READ (</b><br />
+<b>lob_loc IN BLOB,</b><br />
+<b>amount IN OUT NOCOPY BINARY_INTEGER,</b><br />
+<b>d&eacute;placement IN INTEGER,</b><br />
+<b>tampon OUT RAW)</b>
+<br /><br />
+<b>DBMS_LOB.READ (</b><br />
+<b>lob_loc IN CLOB CHARACTER SET ANY_CS,</b><br />
+<b>amount IN OUT NOCOPY BINARY_INTEGER,</b><br />
+<b>d&eacute;placement IN INTEGER,</b><br />
+<b>tampon OUT VARCHAR2 CHARACTER SET lob_loc%CHARSET)</b>
+<br /><br />
+<b>DBMS_LOB.READ (</b><br />
+<b>file_loc IN BFILE,</b><br />
+<b>amount IN OUT NOCOPY BINARY_INTEGER,</b><br />
+<b>d&eacute;placement IN INTEGER,</b><br />
+<b>tampon OUT RAW)</b>
+<br /><br />
+<b>amount</b> repr&eacute;sente le nombre d'octets (BLOB) ou de caract&egrave;re (CLOB) &agrave; lire<br />
+<b>d&eacute;placement</b> repr&eacute;sente le d&eacute;calage en octets (BLOB) ou en caract&egrave;res (CLOB)<br />
+<b>tampon</b> re&ccedil;oit les octets (BLOB) ou caract&egrave;res (CLOB) lus
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+VALUE_ERROR Le ou les param&egrave;tres lob_loc, amount, ou d&eacute;placement sont NULL<br />
+INVALID_ARGVAL si:
+</div><br><ul type="">
+<li>amount &lt; 1</li>
+<li>amount &gt; MAXBUFSIZE</li>
+<li>d&eacute;placement &lt; 1</li>
+<li>d&eacute;placement &gt; LOBMAXSIZE</li>
+<li>amount sup&eacute;rieur, en octets ou caract&egrave;res, &agrave; la capacit&eacute; du tampon</li>
+</ul><div class="paragraph">
+NO_DATA_FOUND D&eacute;tection de fin de LOB
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es pour BFILE</u><br />
+UNOPENED_FILE Fichier non ouvert<br />
+NOEXIST_DIRECTORY le r&eacute;pertoire n'existe pas<br />
+NOPRIV_DIRECTORY Privil&egrave;ges insuffisants sur le r&eacute;pertoire<br />
+INVALID_DIRECTORY le r&eacute;pertoire a &eacute;t&eacute; invalid&eacute; apr&egrave;s l'ouverture du fichier<br />
+INVALID_OPERATION Fichier inexistant ou privil&egrave;ges insuffisants<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">DECLARE</span>
+  src_lob <span class="ora_keyword">BLOB</span>;
+  buffer <span class="ora_keyword">RAW</span>(32767);
+  amt <span class="ora_keyword">BINARY_INTEGER</span> := 32767;
+  pos <span class="ora_keyword">INTEGER</span> := 2147483647;
+<span class="ora_keyword">BEGIN</span>
+  <span class="ora_keyword">SELECT</span> b_col <span class="ora_keyword">INTO</span> src_lob
+  <span class="ora_keyword">FROM</span> lob_table
+  <span class="ora_keyword">WHERE</span> key_value = 21;
+  <span class="ora_keyword">LOOP</span>
+     dbms_lob.<span class="ora_keyword">read</span> (src_lob, amt, pos, buffer); 
+     <span class="ora_comment">-- traitement du tampon</span>
+     <span class="ora_comment">-- .....</span>
+     pos := pos + amt;
+  <span class="ora_keyword">END</span> <span class="ora_keyword">LOOP</span>;
+<span class="ora_keyword">EXCEPTION</span>
+  <span class="ora_keyword">WHEN</span> <span class="ora_keyword">NO_DATA_FOUND</span> <span class="ora_keyword">THEN</span>
+    <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>('Fin des donn&eacute;es');
+<span class="ora_keyword">END</span>;</div></pre><div class="paragraph">
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L9.2.26"></a>9.2.26. SUBSTR</h4>
+		
+<div class="paragraph">
+<b>Extraction d'une partie d'un LOB</b>
+<br /><br />
+<b>DBMS_LOB.SUBSTR (</b><br />
+<b>lob_loc IN BLOB,</b><br />
+<b>amount IN INTEGER := 32767,</b><br />
+<b>d&eacute;placement IN INTEGER := 1)</b><br />
+<b>RETURN RAW</b>
+<br /><br />
+<b>DBMS_LOB.SUBSTR (</b><br />
+<b>lob_loc IN CLOB CHARACTER SET ANY_CS,</b><br />
+<b>amount IN INTEGER := 32767,</b><br />
+<b>d&eacute;placement IN INTEGER := 1)</b><br />
+<b>RETURN VARCHAR2 CHARACTER SET lob_loc%CHARSET</b>
+<br /><br />
+<b>DBMS_LOB.SUBSTR (</b><br />
+<b>file_loc IN BFILE,</b><br />
+<b>amount IN INTEGER := 32767,</b><br />
+<b>d&eacute;placement IN INTEGER := 1)</b><br />
+<b>RETURN RAW</b>
+<br /><br />
+<b>amount</b> repr&eacute;sente le nombre d'octets (BLOB) ou de caract&egrave;res (CLOB) &agrave; lire<br />
+<b>d&eacute;placement</b> repr&eacute;sente le d&eacute;calage en octets (BLOB) ou en caract&egrave;res (CLOB) depuis le d&eacute;but du LOB
+<br /><br />
+<u>Les valeurs retourn&eacute;es sont </u>
+<br /><br />
+RAW pour les BLOB ou BFILE
+<br /><br />
+VARCHAR2 pour les CLOB
+<br /><br />
+NULL si:
+</div><br><ul type="">
+<li>Un param&egrave;tre en entr&eacute;e est NULL</li>
+<li>amount &lt; 1</li>
+<li>amount &gt; 32767</li>
+<li>d&eacute;placement &lt; 1</li>
+<li>d&eacute;placement &gt; LOBMAXSIZE</li>
+</ul><div class="paragraph">
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+UNOPENED_FILE Fichier non ouvert<br />
+NOEXIST_DIRECTORY le r&eacute;pertoire n'existe pas<br />
+NOPRIV_DIRECTORY Privil&egrave;ges insuffisants sur le r&eacute;pertoire<br />
+INVALID_DIRECTORY le r&eacute;pertoire a &eacute;t&eacute; invalid&eacute; apr&egrave;s l'ouverture du fichier<br />
+INVALID_OPERATION Fichier inexistant ou privil&egrave;ges insuffisants<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">DECLARE</span>
+  src_lob <span class="ora_keyword">CLOB</span>;
+  pos <span class="ora_keyword">INTEGER</span> := 2147483647;
+  buf <span class="ora_keyword">VARCHAR2</span>(32000);
+<span class="ora_keyword">BEGIN</span>
+  <span class="ora_keyword">SELECT</span> c_lob <span class="ora_keyword">INTO</span> src_lob <span class="ora_keyword">FROM</span> lob_table
+  <span class="ora_keyword">WHERE</span> key_value = 21;
+  
+  buf := DBMS_LOB.<span class="ora_keyword">SUBSTR</span>(src_lob, 32767, pos);
+  <span class="ora_comment">-- Traitement</span>
+  <span class="ora_comment">-- ...</span>
+  
+<span class="ora_keyword">END</span>;</div></pre><div class="paragraph">
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L9.2.27"></a>9.2.27. TRIM</h4>
+		
+<div class="paragraph">
+<b>R&eacute;duction de la taille d'un LOB</b>
+<br /><br />
+<b>DBMS_LOB.TRIM (</b><br />
+<b>lob_loc IN OUT NOCOPY BLOB,</b><br />
+<b>newlen IN INTEGER)</b>
+<br /><br />
+<b>DBMS_LOB.TRIM (</b><br />
+<b>lob_loc IN OUT NOCOPY CLOB CHARACTER SET ANY_CS,</b><br />
+<b>newlen IN INTEGER)</b>
+<br /><br />
+<b>newlen</b> repr&eacute;sente la taille finale d&eacute;sir&eacute;e exprim&eacute;e en octets (BLOB) ou en caract&egrave;res (CLOB)
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+VALUE_ERROR Le param&egrave;tre lob_loc est NULL<br />
+INVALID_ARGVAL si:
+</div><br><ul type="">
+<li>new_len &lt; 0</li>
+<li>new_len &gt; LOBMAXSIZE</li>
+</ul><div class="paragraph">
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">DECLARE</span>
+  lob_loc <span class="ora_keyword">BLOB</span>;
+<span class="ora_keyword">BEGIN</span>
+  <span class="ora_comment">-- Initialisation du LOB</span>
+  <span class="ora_keyword">SELECT</span> b_col <span class="ora_keyword">INTO</span> lob_loc
+  <span class="ora_keyword">FROM</span> lob_table
+  <span class="ora_keyword">WHERE</span> key_value = 42 <span class="ora_keyword">FOR</span> <span class="ora_keyword">UPDATE</span>;
+  
+  <span class="ora_comment">-- r&eacute;duction du LOB &agrave; 4000 octets --</span>
+  dbms_lob.trim(lob_loc, 4000);
+  
+  <span class="ora_keyword">COMMIT</span>;
+<span class="ora_keyword">END</span>;</div></pre><div class="paragraph">
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L9.2.28"></a>9.2.28. WRITE</h4>
+		
+<div class="paragraph">
+<b>Ecriture dans un LOB</b>
+<br /><br />
+<b>DBMS_LOB.WRITE (</b><br />
+<b>lob_loc IN OUT NOCOPY BLOB,</b><br />
+<b>amount IN BINARY_INTEGER,</b><br />
+<b>d&eacute;placement IN INTEGER,</b><br />
+<b>tampon IN RAW)</b>
+<br /><br />
+<b>DBMS_LOB.WRITE (</b><br />
+<b>lob_loc IN OUT NOCOPY CLOB CHARACTER SET ANY_CS,</b><br />
+<b>amount IN BINARY_INTEGER,</b><br />
+<b>d&eacute;placement IN INTEGER,</b><br />
+<b>tampon IN VARCHAR2 CHARACTER SET lob_loc%CHARSET)</b>
+<br /><br />
+<b>amount</b> repr&eacute;sente le nombre d'octets (BLOB) ou de caract&egrave;res (CLOB) &agrave; &eacute;crire<br />
+<b>d&eacute;placement</b> repr&eacute;sente le d&eacute;calage en octets (BLOB) ou en caract&egrave;res (CLOB) depuis le d&eacute;but du LOB<br />
+<b>tampon</b> repr&eacute;sente la variable contenant les donn&eacute;es &agrave; &eacute;crire
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+VALUE_ERROR L'un des param&egrave;tres en entr&eacute;e lob_loc, amount, ou d&eacute;placement sont NULL, hors plage, ou invalides<br />
+INVALID_ARGVAL si:
+</div><br><ul type="">
+<li>amount &lt; 1</li>
+<li>amount &gt; MAXBUFSIZE</li>
+<li>d&eacute;placement &lt; 1</li>
+<li>d&eacute;placement &gt; LOBMAXSIZE</li>
+</ul><div class="paragraph">
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">DECLARE</span>
+  lob_loc <span class="ora_keyword">BLOB</span>;
+  buffer <span class="ora_keyword">RAW</span>;
+  amt <span class="ora_keyword">BINARY_INTEGER</span> := 32767;
+  pos <span class="ora_keyword">INTEGER</span> := 2147483647;
+  i <span class="ora_keyword">INTEGER</span>;
+<span class="ora_keyword">BEGIN</span>
+  <span class="ora_keyword">SELECT</span> b_col <span class="ora_keyword">INTO</span> lob_loc
+  <span class="ora_keyword">FROM</span> lob_table
+  <span class="ora_keyword">WHERE</span> key_value = 12 <span class="ora_keyword">FOR</span> <span class="ora_keyword">UPDATE</span>;
+  
+  <span class="ora_keyword">FOR</span> i <span class="ora_keyword">IN</span> 1..3 <span class="ora_keyword">LOOP</span>
+    dbms_lob.<span class="ora_keyword">write</span> (lob_loc, amt, pos, buffer);
+    <span class="ora_comment">-- ...</span>
+    pos := pos + amt;
+  <span class="ora_keyword">END</span> <span class="ora_keyword">LOOP</span>;
+
+<span class="ora_keyword">END</span>;</div></pre><div class="paragraph">
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L9.2.29"></a>9.2.29. WRITEAPPEND</h4>
+		
+<div class="paragraph">
+<b>Ajout de donn&eacute;es &agrave; la fin d'un LOB</b>
+<br /><br />
+<b>DBMS_LOB.WRITEAPPEND (</b><br />
+<b>lob_loc IN OUT NOCOPY BLOB,</b><br />
+<b>amount IN BINARY_INTEGER,</b><br />
+<b>tampon IN RAW)</b>
+<br /><br />
+<b>DBMS_LOB.WRITEAPPEND (</b><br />
+<b>lob_loc IN OUT NOCOPY CLOB CHARACTER SET ANY_CS,</b><br />
+<b>amount IN BINARY_INTEGER,</b><br />
+<b>tampon IN VARCHAR2 CHARACTER SET lob_loc%CHARSET)</b>
+<br /><br />
+<b>amount</b> repr&eacute;sente le nombre d'octets (BLOB) ou de caract&egrave;res (CLOB) &agrave; &eacute;crire<br />
+<b>tampon</b> repr&eacute;sente la variable contenant les donn&eacute;es &agrave; &eacute;crire
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;s</u><br />
+VALUE_ERROR L'un des param&egrave;tres en entr&eacute;e lob_loc, amount, ou d&eacute;placement sont NULL, hors plage, ou invalides<br />
+INVALID_ARGVAL si:
+</div><br><ul type="">
+<li>amount &lt; 1</li>
+<li>amount &gt; MAXBUFSIZE</li>
+</ul><div class="paragraph">
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">DECLARE</span>
+  lob_loc <span class="ora_keyword">BLOB</span>;
+  buffer <span class="ora_keyword">RAW</span>;
+  amt <span class="ora_keyword">BINARY_INTEGER</span> := 32767;
+  i <span class="ora_keyword">INTEGER</span>;
+<span class="ora_keyword">BEGIN</span>
+  <span class="ora_keyword">SELECT</span> b_col <span class="ora_keyword">INTO</span> lob_loc
+  <span class="ora_keyword">FROM</span> lob_table
+  <span class="ora_keyword">WHERE</span> key_value = 12 <span class="ora_keyword">FOR</span> <span class="ora_keyword">UPDATE</span>;
+  
+  <span class="ora_keyword">FOR</span> i <span class="ora_keyword">IN</span> 1..3 <span class="ora_keyword">LOOP</span>
+     <span class="ora_comment">-- Alimentation du tampon &agrave; ajouter au LOB</span>
+     <span class="ora_comment">-- ....</span>
+     dbms_lob.writeappend (lob_loc, amt, buffer);
+  <span class="ora_keyword">END</span> <span class="ora_keyword">LOOP</span>;
+  
+<span class="ora_keyword">END</span>;</div></pre><div class="paragraph">
+</div><br>	
+	
+				
+	<br /><h3 class="TitreSection2"><a name="L9.3"></a>9.3. Exceptions g&eacute;n&eacute;r&eacute;es par le paquetage</h3>
+		
+<div class="paragraph">
+</div><br><ul type="">
+<li><b>invalid_argval 21560</b> Argument NULL invalide ou hors plage d'utilisation</li>
+<li><b>access_error 22925</b> Tentative d'&eacute;criture de trop de donn&eacute;es dans le LOB. La taille maxi est limit&eacute;e &agrave; 4 gigabytes</li>
+<li><b>noexist_directory 22285</b> Le r&eacute;pertoire d&eacute;sign&eacute; n'existe pas</li>
+<li><b>nopriv_directory 22286</b> Privil&egrave;ges insuffisants sur le r&eacute;pertoire ou sur le fichier</li>
+<li><b>invalid_directory 22287</b> Le r&eacute;pertoire sp&eacute;cifi&eacute; n'est pas valide ou a &eacute;t&eacute; modifi&eacute;e par le DBA en cours d'utilisation</li>
+<li><b>operation_failed 22288</b> L'op&eacute;ration demand&eacute;e sur le fichier a &eacute;chou&eacute;</li>
+<li><b>unopened_file 22289</b> Tentative d'op&eacute;ration sur un fichier non ouvert</li>
+<li><b>open_toomany 22290</b> Le nombre maximum de fichiers ouverts est atteint</li>
+</ul><div class="paragraph">
+</div><br>		
+				
+	<br /><h3 class="TitreSection2"><a name="L9.4"></a>9.4. Exemples</h3>
+		
+<div class="paragraph">
+</div><br><ul type=""><li>Exemple 1</li></ul><div class="paragraph">
+Voici une proc&eacute;dure permettant de charger en table diverses colonnes LOB
+<br /><br />
+Description de la table
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">CREATE</span> <span class="ora_keyword">TABLE</span> DOCUMENT ( 
+  ID           <span class="ora_keyword">NUMBER</span> (5) <span class="ora_keyword">PRIMARY</span> <span class="ora_keyword">KEY</span>, 
+  TYP          <span class="ora_keyword">VARCHAR2</span> (20), 
+  UTILISE      <span class="ora_keyword">VARCHAR2</span> (30), 
+  LOB_TEXTE    <span class="ora_keyword">CLOB</span>, 
+  LOB_DATA     <span class="ora_keyword">BLOB</span>, 
+  LOB_FICHIER  <span class="ora_keyword">BFILE</span>, 
+  NOM_DOC      <span class="ora_keyword">VARCHAR2</span> (100))</div></pre><div class="paragraph">
+La colonne ID stocke le num&eacute;ro unique du document<br />
+La colonne TYP stocke le type du document<br />
+La colonne UTILISE stocke l'utilisateur qui modifie le document<br />
+La colonne LOB_TEXTE stocke un texte long<br />
+La colonne LOB_DATA stocke une image<br />
+La colonne LOB_FICHIER stocke un pointeur vers le fichier natif externe<br />
+<br /><br />
+Ainsi que les fichiers externes suivants
+</div><br>		
+<div class="image"><img src="./images/dbms_lob_liste_fichiers.gif"></div>
+<div class="paragraph">
+<br />
+La proc&eacute;dure Insert_document() permet d'ins&eacute;rer une ligne dans la table et d'alimenter les colonnes LOB
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">CREATE</span> <span class="ora_keyword">OR</span> <span class="ora_keyword">REPLACE</span> <span class="ora_keyword">PROCEDURE</span> Insert_document
+  2   (
+  3     PC$<span class="ora_keyword">Type</span> <span class="ora_keyword">IN</span> DOCUMENT.TYP%<span class="ora_keyword">TYPE</span>
+  4    ,PC$Nom <span class="ora_keyword">IN</span> DOCUMENT.NOM_DOC%<span class="ora_keyword">TYPE</span>
+  5    ,PC$Texte <span class="ora_keyword">IN</span> <span class="ora_keyword">VARCHAR2</span>
+  6    ,PC$Image <span class="ora_keyword">IN</span> <span class="ora_keyword">VARCHAR2</span>  
+  7    ,PC$Fichier <span class="ora_keyword">IN</span> <span class="ora_keyword">VARCHAR2</span>
+  8   ) <span class="ora_keyword">IS</span>
+  9  L$<span class="ora_keyword">Blob</span> BLOB;
+ 10  L$<span class="ora_keyword">Clob</span> CLOB;
+ 11  L$<span class="ora_keyword">Bfile</span> BFILE;
+ 12  <span class="ora_keyword">LN</span>$Len <span class="ora_keyword">NUMBER</span> := dbms_lob.lobmaxsize;
+ 13  <span class="ora_keyword">LN</span>$Num <span class="ora_keyword">NUMBER</span> ;
+ 14  <span class="ora_keyword">LN</span>$src_off <span class="ora_keyword">PLS_INTEGER</span> := 1 ;
+ 15  <span class="ora_keyword">LN</span>$dst_off <span class="ora_keyword">PLS_INTEGER</span> := 1 ;
+ 16  <span class="ora_keyword">LN</span>$Langctx <span class="ora_keyword">NUMBER</span> := dbms_lob.default_lang_ctx ;
+ 17  <span class="ora_keyword">LN</span>$Warn <span class="ora_keyword">NUMBER</span>;
+ 18  <span class="ora_keyword">BEGIN</span>
+ 19    <span class="ora_comment">-- Cr&eacute;ation d'une nouvelle ligne --</span>
+ 20    <span class="ora_keyword">If</span> PC$Fichier <span class="ora_keyword">is</span> <span class="ora_keyword">not</span> <span class="ora_keyword">null</span> <span class="ora_keyword">Then</span>
+ 21       L$<span class="ora_keyword">Bfile</span> := <span class="ora_keyword">BFILENAME</span>( 'FICHIERS_IN', PC$Fichier );
+ 22    <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+ 23    <span class="ora_keyword">Select</span> SEQ_DOCUMENT.<span class="ora_keyword">NEXTVAL</span> <span class="ora_keyword">Into</span> <span class="ora_keyword">LN</span>$Num <span class="ora_keyword">From</span> DUAL ;
+ 24    <span class="ora_keyword">Insert</span> <span class="ora_keyword">into</span> DOCUMENT (ID, NOM_DOC, TYP, UTILISE, LOB_TEXTE, LOB_DATA, LOB_FICHIER)
+ 25           <span class="ora_keyword">Values</span>( <span class="ora_keyword">LN</span>$Num, PC$Nom, PC$<span class="ora_keyword">Type</span>, <span class="ora_keyword">NULL</span>, <span class="ora_keyword">EMPTY_CLOB</span>(), <span class="ora_keyword">EMPTY_BLOB</span>(), L$<span class="ora_keyword">Bfile</span> ) ;
+ 26    <span class="ora_keyword">Select</span> 
+ 27      LOB_TEXTE
+ 28     ,LOB_DATA
+ 29    <span class="ora_keyword">Into</span>
+ 30      L$<span class="ora_keyword">Clob</span>
+ 31     ,L$<span class="ora_keyword">Blob</span>
+ 32    <span class="ora_keyword">From</span>
+ 33      DOCUMENT
+ 34    <span class="ora_keyword">Where</span>
+ 35      ID = <span class="ora_keyword">LN</span>$Num
+ 36    ;
+ 37    <span class="ora_comment">-- Chargement du texte dans la colonne CLOB --</span>
+ 38    <span class="ora_keyword">If</span> PC$Texte <span class="ora_keyword">is</span> <span class="ora_keyword">not</span> <span class="ora_keyword">null</span> <span class="ora_keyword">Then</span>
+ 39       L$<span class="ora_keyword">Bfile</span> := <span class="ora_keyword">BFILENAME</span>( 'FICHIERS_IN', PC$Texte );
+ 40       dbms_lob.fileopen(L$<span class="ora_keyword">Bfile</span>, dbms_lob.file_readonly);
+ 41       <span class="ora_keyword">If</span> dbms_lob.fileexists( L$<span class="ora_keyword">Bfile</span> ) = 1 <span class="ora_keyword">Then</span>
+ 42         <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>(PC$Texte || ' ouvert' ) ;
+ 43         dbms_lob.loadclobfromfile(
+ 44                                   L$<span class="ora_keyword">Clob</span>,                <span class="ora_comment">-- CLOB de destination</span>
+ 45                                   L$<span class="ora_keyword">Bfile</span>,               <span class="ora_comment">-- Pointeur fichier en entr&eacute;e</span>
+ 46                                   <span class="ora_keyword">LN</span>$Len,                <span class="ora_comment">-- Nombre d'octets &agrave; lire</span>
+ 47                                   <span class="ora_keyword">LN</span>$src_off,            <span class="ora_comment">-- Position source de d&eacute;part</span>
+ 48                                   <span class="ora_keyword">LN</span>$dst_off,            <span class="ora_comment">-- Position destination de d&eacute;part</span>
+ 49                                   dbms_lob.default_csid, <span class="ora_comment">-- CSID</span>
+ 50                                   <span class="ora_keyword">LN</span>$Langctx,            <span class="ora_comment">-- Contexte langue</span>
+ 51                                   <span class="ora_keyword">LN</span>$Warn);              <span class="ora_comment">-- Message d'avertissement</span>
+ 52         dbms_lob.fileclose(L$<span class="ora_keyword">Bfile</span>);
+ 53      <span class="ora_keyword">Else</span>
+ 54         <span class="ora_keyword"><span class="ora_keyword">raise_application_error</span></span>( -20100, 'Erreur ouverture ' || PC$Texte ) ;
+ 55      <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+ 56    <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+ 57    
+ 58    <span class="ora_comment">-- Chargement de l'image dans la colonne BLOB --</span>
+ 59    <span class="ora_keyword">If</span> PC$Image <span class="ora_keyword">is</span> <span class="ora_keyword">not</span> <span class="ora_keyword">null</span> <span class="ora_keyword">Then</span>
+ 60       L$<span class="ora_keyword">Bfile</span> := <span class="ora_keyword">BFILENAME</span>( 'FICHIERS_IN', PC$Image );
+ 61       dbms_lob.fileopen(L$<span class="ora_keyword">Bfile</span>, dbms_lob.file_readonly);
+ 62       dbms_lob.loadblobfromfile(
+ 63                                 L$<span class="ora_keyword">Blob</span>,       <span class="ora_comment">-- BLOB de destination</span>
+ 64                                 L$<span class="ora_keyword">Bfile</span>,      <span class="ora_comment">-- Pointeur de fichier en entr&eacute;e</span>
+ 65                                 <span class="ora_keyword">LN</span>$Len,       <span class="ora_comment">-- Nombre d'octets &agrave; lire</span>
+ 66                                 <span class="ora_keyword">LN</span>$src_off,   <span class="ora_comment">-- Position source de d&eacute;part</span>
+ 67                                 <span class="ora_keyword">LN</span>$dst_off);  <span class="ora_comment">-- Position destination de d&eacute;part</span>
+ 68       dbms_lob.fileclose(L$<span class="ora_keyword">Bfile</span>);
+ 69    <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;  
+ 70    
+ 71    <span class="ora_comment">-- Enregistrement --</span>
+ 72    <span class="ora_keyword">Update</span> DOCUMENT
+ 73    <span class="ora_keyword">Set</span> 
+ 74       LOB_TEXTE = L$<span class="ora_keyword">Clob</span>
+ 75       ,LOB_DATA = L$<span class="ora_keyword">Blob</span>
+ 76    <span class="ora_keyword">Where</span>
+ 77      ID = <span class="ora_keyword">LN</span>$Num ;
+ 78  
+ 79  <span class="ora_keyword">END</span>;
+ 80  /
+
+Proc&eacute;dure cr&eacute;&eacute;e.
+
+<span class="ora_keyword">SQL</span>&gt;</div></pre><div class="paragraph">
+Ins&eacute;rons une ligne dans la table
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt;  <span class="ora_keyword"><span class="ora_keyword">execute</span></span> Insert_document( 'Word','Document : <span class="ora_keyword">CASE</span>','<span class="ora_keyword">CASE</span>.txt','image1.gif','<span class="ora_keyword">CASE</span>.doc' ) ;
+<span class="ora_keyword">CASE</span>.txt ouvert
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Select</span> ID, NOM_DOC, TYP, LOB_TEXTE <span class="ora_keyword">From</span> DOCUMENT ;
+
+        ID NOM_DOC                                                                                              TYP
+<span class="ora_comment">---------- ---------------------------------------------------------------------------------------------------- ----</span>
+LOB_TEXTE
+<span class="ora_comment">--------------------------------------------------------------------------------</span>
+         6 Document : <span class="ora_keyword">CASE</span>                                                                                      Word
+<span class="ora_keyword">CASE</span>
+
+Cette instruction permet de mettre en place des structures de test condi</div></pre><div class="paragraph">
+Dans cet exemple, nous initialisons les variables LOB par un select en table, qui implique que l'enregistrement existe, d'o&ugrave; l'instruction d'insertion en d&eacute;but de proc&eacute;dure
+<br /><br />
+Nous pourrions tout aussi bien n'effectuer l'insertion en table qu'en fin de chargement des colonnes LOB<br />
+Dans ce cas, les variables LOB doivent avoir &eacute;t&eacute; pr&eacute;alablement initialis&eacute;es avec la fonction CREATETEMPORARY comme dans l'exemple suivant
+</div><br><ul type=""><li>Exemple 2</li></ul><div class="paragraph">
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">CREATE</span> <span class="ora_keyword">OR</span> <span class="ora_keyword">REPLACE</span> <span class="ora_keyword">PROCEDURE</span> Insert_document2
+  2   (
+  3     PC$<span class="ora_keyword">Type</span> <span class="ora_keyword">IN</span> DOCUMENT.TYP%<span class="ora_keyword">TYPE</span>
+  4    ,PC$Nom <span class="ora_keyword">IN</span> DOCUMENT.NOM_DOC%<span class="ora_keyword">TYPE</span>
+  5    ,PC$Texte <span class="ora_keyword">IN</span> <span class="ora_keyword">VARCHAR2</span>
+  6    ,PC$Image <span class="ora_keyword">IN</span> <span class="ora_keyword">VARCHAR2</span>  
+  7    ,PC$Fichier <span class="ora_keyword">IN</span> <span class="ora_keyword">VARCHAR2</span>
+  8   ) <span class="ora_keyword">IS</span>
+  9  L$<span class="ora_keyword">Blob</span> BLOB;
+ 10  L$<span class="ora_keyword">Clob</span> CLOB;
+ 11  L$<span class="ora_keyword">Bfile</span> BFILE;
+ 12  <span class="ora_keyword">LN</span>$Len <span class="ora_keyword">NUMBER</span> := dbms_lob.lobmaxsize;
+ 13  <span class="ora_keyword">LN</span>$Num <span class="ora_keyword">NUMBER</span> ;
+ 14  <span class="ora_keyword">LN</span>$src_off <span class="ora_keyword">PLS_INTEGER</span> := 1 ;
+ 15  <span class="ora_keyword">LN</span>$dst_off <span class="ora_keyword">PLS_INTEGER</span> := 1 ;
+ 16  <span class="ora_keyword">LN</span>$Langctx <span class="ora_keyword">NUMBER</span> := dbms_lob.default_lang_ctx ;
+ 17  <span class="ora_keyword">LN</span>$Warn <span class="ora_keyword">NUMBER</span>;
+ 18  <span class="ora_keyword">BEGIN</span>
+ 19    <span class="ora_comment">-- Cr&eacute;ation d'une nouvelle ligne --</span>
+ 20    <span class="ora_keyword">If</span> PC$Fichier <span class="ora_keyword">is</span> <span class="ora_keyword">not</span> <span class="ora_keyword">null</span> <span class="ora_keyword">Then</span>
+ 21       L$<span class="ora_keyword">Bfile</span> := <span class="ora_keyword">BFILENAME</span>( 'FICHIERS_IN', PC$Fichier );
+ 22    <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+ 23    <span class="ora_comment">-- Cr&eacute;ation des objets temporaires --</span>
+ 24    dbms_lob.createtemporary( L$<span class="ora_keyword">Clob</span>, <span class="ora_keyword">TRUE</span> ) ;
+ 25    dbms_lob.createtemporary( L$<span class="ora_keyword">Blob</span>, <span class="ora_keyword">TRUE</span> ) ;  
+ 26  
+ 27    <span class="ora_comment">-- Chargement du texte dans la colonne CLOB --</span>
+ 28    <span class="ora_keyword">If</span> PC$Texte <span class="ora_keyword">is</span> <span class="ora_keyword">not</span> <span class="ora_keyword">null</span> <span class="ora_keyword">Then</span>
+ 29       L$<span class="ora_keyword">Bfile</span> := <span class="ora_keyword">BFILENAME</span>( 'FICHIERS_IN', PC$Texte );
+ 30       dbms_lob.fileopen(L$<span class="ora_keyword">Bfile</span>, dbms_lob.file_readonly);
+ 31       <span class="ora_keyword">If</span> dbms_lob.fileexists( L$<span class="ora_keyword">Bfile</span> ) = 1 <span class="ora_keyword">Then</span>
+ 32         <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>(PC$Texte || ' ouvert' ) ;
+ 33         dbms_lob.loadclobfromfile(
+ 34                                   L$<span class="ora_keyword">Clob</span>,                <span class="ora_comment">-- CLOB de destination</span>
+ 35                                   L$<span class="ora_keyword">Bfile</span>,               <span class="ora_comment">-- Pointeur fichier en entr&eacute;e</span>
+ 36                                   <span class="ora_keyword">LN</span>$Len,                <span class="ora_comment">-- Nombre d'octets &agrave; lire</span>
+ 37                                   <span class="ora_keyword">LN</span>$src_off,            <span class="ora_comment">-- Position source de d&eacute;part</span>
+ 38                                   <span class="ora_keyword">LN</span>$dst_off,            <span class="ora_comment">-- Position destination de d&eacute;part</span>
+ 39                                   dbms_lob.default_csid, <span class="ora_comment">-- CSID</span>
+ 40                                   <span class="ora_keyword">LN</span>$Langctx,            <span class="ora_comment">-- Contexte langue</span>
+ 41                                   <span class="ora_keyword">LN</span>$Warn);              <span class="ora_comment">-- Message d'avertissement</span>
+ 42         dbms_lob.fileclose(L$<span class="ora_keyword">Bfile</span>);
+ 43      <span class="ora_keyword">Else</span>
+ 44         <span class="ora_keyword"><span class="ora_keyword">raise_application_error</span></span>( -20100, 'Erreur ouverture ' || PC$Texte ) ;
+ 45      <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+ 46    <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+ 47    
+ 48    <span class="ora_comment">-- Chargement de l'image dans la colonne BLOB --</span>
+ 49    <span class="ora_keyword">If</span> PC$Image <span class="ora_keyword">is</span> <span class="ora_keyword">not</span> <span class="ora_keyword">null</span> <span class="ora_keyword">Then</span>
+ 50       L$<span class="ora_keyword">Bfile</span> := <span class="ora_keyword">BFILENAME</span>( 'FICHIERS_IN', PC$Image );
+ 51       dbms_lob.fileopen(L$<span class="ora_keyword">Bfile</span>, dbms_lob.file_readonly);
+ 52       dbms_lob.loadblobfromfile(
+ 53                                 L$<span class="ora_keyword">Blob</span>,       <span class="ora_comment">-- BLOB de destination</span>
+ 54                                 L$<span class="ora_keyword">Bfile</span>,      <span class="ora_comment">-- Pointeur de fichier en entr&eacute;e</span>
+ 55                                 <span class="ora_keyword">LN</span>$Len,       <span class="ora_comment">-- Nombre d'octets &agrave; lire</span>
+ 56                                 <span class="ora_keyword">LN</span>$src_off,   <span class="ora_comment">-- Position source de d&eacute;part</span>
+ 57                                 <span class="ora_keyword">LN</span>$dst_off);  <span class="ora_comment">-- Position destination de d&eacute;part</span>
+ 58       dbms_lob.fileclose(L$<span class="ora_keyword">Bfile</span>);
+ 59    <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;  
+ 60    
+ 61    <span class="ora_comment">-- Enregistrement --</span>
+ 62    <span class="ora_keyword">Insert</span> <span class="ora_keyword">into</span> DOCUMENT (ID, NOM_DOC, TYP, UTILISE, LOB_TEXTE, LOB_DATA, LOB_FICHIER)
+ 63           <span class="ora_keyword">Values</span>( SEQ_DOCUMENT.<span class="ora_keyword">NEXTVAL</span>, PC$Nom, PC$<span class="ora_keyword">Type</span>, <span class="ora_keyword">NULL</span>, L$<span class="ora_keyword">Clob</span>, L$<span class="ora_keyword">Blob</span>, L$<span class="ora_keyword">Bfile</span> ) ;  
+ 64    <span class="ora_comment">-- Lib&eacute;ration des objets temporaires --</span>
+ 65    dbms_lob.freetemporary( L$<span class="ora_keyword">Clob</span> ) ;
+ 66    dbms_lob.freetemporary( L$<span class="ora_keyword">Blob</span> ) ;  
+ 67  
+ 68  <span class="ora_keyword">END</span>;
+ 69  /
+
+Proc&eacute;dure cr&eacute;&eacute;e.
+
+<span class="ora_keyword">SQL</span>&gt;</div></pre><div class="paragraph">
+<br />
+</div><br><ul type=""><li>Exemple 3</li></ul><div class="paragraph">
+Utilisation de la proc&eacute;dure FILEGETNAME pour afficher la directorie et le nom du fichier point&eacute;s par la colonne BFILE
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">CREATE</span> <span class="ora_keyword">OR</span> <span class="ora_keyword">REPLACE</span> <span class="ora_keyword">PROCEDURE</span> Affiche_Infos_Fichier
+  2  (
+  3    PN$Id <span class="ora_keyword">IN</span> DOCUMENT.ID%<span class="ora_keyword">TYPE</span>
+  4  )
+  5  <span class="ora_keyword">Is</span>
+  6  LC$Rep <span class="ora_keyword">VARCHAR</span>(100);
+  7  LC$Fic <span class="ora_keyword">VARCHAR2</span>(100) ;
+  8  L$<span class="ora_keyword">Bfile</span> BFILE;
+  9  <span class="ora_keyword">Begin</span>
+ 10    <span class="ora_keyword">Select</span> LOB_FICHIER
+ 11    <span class="ora_keyword">Into</span>   L$<span class="ora_keyword">Bfile</span>
+ 12    <span class="ora_keyword">From</span>   DOCUMENT
+ 13    <span class="ora_keyword">Where</span>  ID = PN$Id
+ 14    ;
+ 15  
+ 16    DBMS_LOB.FILEGETNAME (L$<span class="ora_keyword">Bfile</span>, LC$Rep, LC$Fic) ;
+ 17    <span class="ora_keyword">Dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Dir=' || LC$Rep || '  Fic=' || LC$Fic ) ;
+ 18  <span class="ora_keyword">End</span> ;
+ 19  /
+
+Proc&eacute;dure cr&eacute;&eacute;e.</div></pre>
+<pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">set</span> serveroutput <span class="ora_keyword">on</span>
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">select</span> ID <span class="ora_keyword">from</span> DOCUMENT ;
+
+        ID
+<span class="ora_comment">----------</span>
+         6
+
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword"><span class="ora_keyword">execute</span></span> Affiche_Infos_Fichier( 6 ) ;
+Dir=FICHIERS_IN  Fic=<span class="ora_keyword">CASE</span>.doc
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+</div><br>		
+					
+	<br /><h3 class="TitreSection2"><a name="L9.5"></a>9.5. Manipulations courantes des LOB de type caract&egrave;res (CLOB)</h3>
+		
+<div class="paragraph">
+<b>La plupart des manipulations courantes sur les objets CLOB peuvent &ecirc;tre effectu&eacute;es avec les fonctions SQL</b>
+<br /><br />
+LENGTH
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">select</span> <span class="ora_keyword">length</span>(lob_texte), <span class="ora_keyword">length</span>(lob_data) <span class="ora_keyword">from</span> document;
+
+<span class="ora_keyword">LENGTH</span>(LOB_TEXTE) <span class="ora_keyword">LENGTH</span>(LOB_DATA)
+<span class="ora_comment">----------------- ----------------</span>
+3131	8748</div></pre><div class="paragraph">
+SUBSTR
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt;  <span class="ora_keyword">select</span> <span class="ora_keyword">substr</span>(lob_texte,2000, 100) <span class="ora_keyword">from</span> document;
+
+<span class="ora_keyword">SUBSTR</span>(LOB_TEXTE,2000,100)
+<span class="ora_comment">-------------------------------------------------------</span>
+/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.
+
+
+
+Cette fois l'op&eacute;rateur est pr&eacute;cis&eacute; sur chaque lign</div></pre><div class="paragraph">
+INSTR
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">select</span> <span class="ora_keyword">instr</span>(lob_texte, 'op&eacute;rateur') <span class="ora_keyword">from</span> document;
+
+<span class="ora_keyword">INSTR</span>(LOB_TEXTE,'OP&Eacute;RATEUR')
+<span class="ora_comment">----------------------------</span>
+                         256</div></pre><div class="paragraph">
+UPPER
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">select</span> <span class="ora_keyword">upper</span>( <span class="ora_keyword">substr</span>( lob_texte, 1, 40 ) ) <span class="ora_keyword">from</span> document;
+
+<span class="ora_keyword">UPPER</span>(<span class="ora_keyword">SUBSTR</span>(LOB_TEXTE,1,40))
+<span class="ora_comment">---------------------------------------------------------------</span>
+<span class="ora_keyword">CASE</span>
+
+
+
+CETTE INSTRUCTION PERMET DE METT</div></pre><div class="paragraph">
+LIKE
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">select</span> id, nom_doc <span class="ora_keyword">from</span> document <span class="ora_keyword">where</span> lob_texte <span class="ora_keyword">like</span> '%op&eacute;rateur%';
+
+        ID NOM_DOC
+<span class="ora_comment">---------- --------------------------------------------------------------</span>
+         6 Document : <span class="ora_keyword">CASE</span></div></pre><div class="paragraph">
+<br /><br /><br />
+<b>Compl&eacute;ment d'information</b>
+<br /><br />
+Vous pouvez &eacute;galement consulter l'article <a href="http://helyos.developpez.com/lob/" class="lienArticle"> Les LOB par Helyos</a>
+</div><br>		
+					
+	
+	
+<hr><div class="barreNavigation"> [ <a class="barreNavigationTexte" href="Chap8.html">Précédent</a> ]  [ <a class="barreNavigationTexte" href="sommaire.html">Sommaire</a> ]  [ <a class="barreNavigationTexte" href="Chap10.html">Suivant</a> ] </div><hr><p class="licence">Copyright &copy;2004&nbsp;SheikYerbouti.
+            Aucune reproduction, même partielle, ne peut être faite
+			de ce site et de l'ensemble de son contenu : textes, documents, images, etc
+            sans l'autorisation expresse de l'auteur. Sinon vous encourez selon la loi jusqu'à 3 ans de prison et jusqu'à 300 000 E
+			de dommages et intérets. Cette page est déposée à la <a href="http://www.sacd.fr/" target="_blank">SACD</a>.</p>
+       											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			<table width="100%" cellpadding="4" class="cachee">
+				<tr bgcolor="#DDEEFF">
+					<td align="center" class="titrepied">
+			  Vos questions techniques : <b><a href="http://www.developpez.net/forums/" target="_blank">forum d'entraide Accueil</a></b> - Publiez vos articles, tutoriels et cours<br />
+			  et rejoignez-nous dans l'&eacute;quipe de r&eacute;daction du club d'entraide des d&eacute;veloppeurs francophones <br /> <a href="http://club.developpez.com/contacts/">Nous contacter</a>
+	
+			  - Copyright 2000..2005 www.developpez.com
+					</td>
+					<td align="center">
+          
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
+
+	

@@ -1,0 +1,815 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <title>Guide PL/SQL - Club d'entraide des d&#233;veloppeurs francophones</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta name="generator" content="developpez-com" />
+  <link rel="stylesheet" type="text/css" href="./mainstyle.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="./printer.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./article.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./faq.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./source.css" />
+</head>
+<body>
+<table width="100%" cellspacing="4">
+	<tr>
+  	<td align="center">
+    	<table width="100%" cellspacing="0" cellpadding="0">
+     		<tr>
+     			<td>
+			      <table width="100%" cellspacing="11">
+    	  			<tr>
+        				<td>
+          				<a href="http://www.developpez.com"><img src="images/logo.gif" alt="Accueil" /></a>
+        				</td>
+      				</tr>
+      				<tr>
+      					<td></td>
+      				</tr>
+      			</table>
+    			</td>
+  			</tr>
+  			<tr>
+    			<td>
+						<table class="cachee" cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td class="iongl"><img src="images/bordg.gif" /></td>
+								<td class="bgongl"><a href="http://www.developpez.com" class="ntdrub">Accueil<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://club.developpez.com" class="ntdrub">Le<br />Club</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://delphi.developpez.com" class="ntdrub">Delphi<br />Kylix</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://c.developpez.com" class="ntdrub">C<br />C++</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://java.developpez.com" class="ntdrub">Java<br />J2EE</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://dotnet.developpez.com" class="ntdrub">DotNET<br />&amp; C#</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://vb.developpez.com" class="ntdrub">Visual<br />Basic</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://access.developpez.com" class="ntdrub">Access<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://pascal.developpez.com" class="ntdrub">Pascal<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://web.developpez.com" class="ntdrub">Dev<br />Web</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://php.developpez.com" class="ntdrub">PHP<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://asp.developpez.com" class="ntdrub">ASP<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://xml.developpez.com" class="ntdrub">XML<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://uml.developpez.com" class="ntdrub">UML<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://sgbd.developpez.com" class="ntdrub">SQL<br />SGBD</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://windows.developpez.com" class="ntdrub">Win<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://linux.developpez.com" class="ntdrub">Linux<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://www.developpez.com/cours/" class="ntdrub">Autres<br /></a></td>
+								<td class="iongl"><img src="images/bordd.gif" /></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="trbleu">
+					</td>
+				</tr>
+
+				<tr valign="top">
+					<td valign="top" class="fondart">
+						<table cellspacing="1" width="100%" class="tbnoir">
+							<tr>
+								<td class="fondart">
+									<table class="cadrearticle" width="90%" cellpadding="10" cellspacing="0">
+										<tr>
+											<td>
+
+        <br><h1>Oracle PL/SQL</h1><p class="dateArticle">
+        Date de publication : Avril 2004 , 
+        Date de mise a jour : Juillet 2004</p><hr><div class="barreNavigation"> [ <a class="barreNavigationTexte" href="Chap3.html">Précédent</a> ]  [ <a class="barreNavigationTexte" href="sommaire.html">Sommaire</a> ]  [ <a class="barreNavigationTexte" href="Chap5.html">Suivant</a> ] </div><hr>
+	
+	
+	
+	
+	
+	
+	<br /><a class="summaryIndent0" href="#L4">4. Proc&eacute;dures, Fonctions et paquetages</a>
+		
+		
+		<br /><a class="summaryIndent1" href="#L4.1">4.1. Les Proc&eacute;dures</a>
+			
+		
+
+		
+
+
+
+		
+								
+		<br /><a class="summaryIndent1" href="#L4.2">4.2. Les Fonctions</a>
+			
+		
+
+
+		
+								
+		
+		<br /><a class="summaryIndent1" href="#L4.3">4.3. Les Paquetages</a>
+			
+		
+
+
+
+		
+												
+		<br /><a class="summaryIndent1" href="#L4.4">4.4. Fonctions sur des ensembles de lignes (PIPELINED) (9i)</a>
+			
+
+
+		
+												
+		<br /><a class="summaryIndent1" href="#L4.5">4.5. Maintenance des objets proc&eacute;duraux</a>
+			
+		
+												
+	
+	
+<br><br>
+	
+	
+	
+	
+	
+	
+	<br /><h2 class="TitreSection1"><a name="L4"></a>4. Proc&eacute;dures, Fonctions et paquetages</h2>
+		
+<div class="paragraph">
+Une proc&eacute;dure est un ensemble de code PL/SQL nomm&eacute;, d&eacute;fini par l'utilisateur et g&eacute;n&eacute;ralement stock&eacute; dans la BDD<br /><br />
+Une fonction est identique &agrave; une proc&eacute;dure &agrave; la diff&eacute;rence qu'elle retourne une valeur<br /><br />
+Un paquetage est le regroupement de plusieurs proc&eacute;dures et fonctions dans un objet distinct<br /><br />
+
+Ces ensembles nomm&eacute;s sont stock&eacute;s dans la base de donn&eacute;es, offrant les avantages suivants :<br />
+</div><br><ul type=""><li>
+Le code relatif aux r&egrave;gles de gestion est centralis&eacute;. Cela permet de dissocier les fonctions au sein d'une &eacute;quipe<br />
+La partie traitement des r&egrave;gles de gestion est confi&eacute;e &agrave; une partie de l'&eacute;quipe et la conception des interfaces<br />
+est confi&eacute;e &agrave; l'autre partie</li>
+<li>
+Ces traitements stock&eacute;s sont donc d&eacute;port&eacute;s des interfaces clientes, permettant le partage du code entre plusieurs applications<br />
+ainsi qu'une am&eacute;lioration des performances, car le code stock&eacute; est pr&eacute;-compil&eacute;</li>
+<li>
+Ces traitements sont accessibles par toute application tierce supportant l'appel des proc&eacute;dures stock&eacute;es (Sql*Plus, Forms, Reports, Pro*C, Pro*Cobol, etc.)</li>
+<li>
+Cela permet &eacute;galement de tirer parti de la r&eacute;utilisation des requ&ecirc;tes dans la base qui se trouvent dans le pool partag&eacute; de la zone SGA(System Global Area)</li>
+</ul><div class="paragraph">
+<span class="important">Pour cr&eacute;er un objet proc&eacute;dural, vous devez disposer du privil&egrave;ge syst&egrave;me CREATE PROCEDURE pour votre sch&eacute;ma</span>
+<span class="important">ou du privil&egrave;ge syst&egrave;me CREATE ANY PROCEDURE pour la cr&eacute;ation dans un autre sch&eacute;ma</span>
+<br /><br /><br />
+<span class="important">Pour autoriser un autre sch&eacute;ma &agrave; ex&eacute;cuter une proc&eacute;dure de votre sch&eacute;ma, vous devez lui octroyer le privil&egrave;ge EXECUTE</span><br />
+<br /><b>GRANT EXECUTE ON ma_procedure TO autre_sch&eacute;ma</b>
+</div><br>		
+		<br /><h3 class="TitreSection2"><a name="L4.1"></a>4.1. Les Proc&eacute;dures</h3>
+			
+<div class="paragraph">
+Une proc&eacute;dure est un ensemble de code PL/SQL nomm&eacute;, d&eacute;fini par l'utilisateur et g&eacute;n&eacute;ralement stock&eacute; dans la BDD<br />
+<br />
+Une proc&eacute;dure est param&eacute;trable afin d'en faciliter la r&eacute;utilisation
+<br />
+</div><br>		
+<div class="image"><img src="./images/procedure_declaration.gif"></div>
+<div class="paragraph">
+<b>CREATE</b> indique que l'on veut cr&eacute;er une proc&eacute;dure stock&eacute;e dans la base<br />
+La clause facultative <b>OR REPLACE</b> permet d'&eacute;craser une proc&eacute;dure existante portant le m&ecirc;me nom<br />
+<b>nom proc&eacute;dure</b> est le nom donn&eacute; par l'utilisateur &agrave; la proc&eacute;dure<br />
+<b>AUTHID</b> indique sur quel sch&eacute;ma la proc&eacute;dure s'applique :
+</div><br><ul type=""><li><b>CURRENT_USER</b></li></ul><div class="paragraph">
+Indique que la proc&eacute;dure utilise les objets du sch&eacute;ma de l'utilisateur qui appelle la proc&eacute;dure
+</div><br><ul type=""><li><b>DEFINER</b>(d&eacute;faut)</li></ul><div class="paragraph">
+Indique que la proc&eacute;dure utilise les objets du sch&eacute;ma de cr&eacute;ation de la proc&eacute;dure<br /><br /><br />
+</div><br>		
+<div class="image"><img src="./images/procedure_parametre.gif"></div>
+<div class="paragraph">
+<br />
+<b>nom param&egrave;tre</b> est le nom donn&eacute; par l'utilisateur au param&egrave;tre transmis<br />
+<b>IN</b>(valeur par d&eacute;faut) indique que le param&egrave;tre transmis par le programme appelant n'est pas modifiable par la proc&eacute;dure<br />
+<b>OUT</b> indique que le param&egrave;tre est modifiable par la proc&eacute;dure<br />
+<b>IN OUT</b> indique que le param&egrave;tre est transmis par le programme appelant et renseign&eacute; par la proc&eacute;dure<br />
+<b>NOCOPY</b> indique que le param&egrave;tre est transmis par r&eacute;f&eacute;rence (pointeur) et non par copie de la valeur<br />
+Par d&eacute;faut, les param&egrave;tres sont transmis par copie, c'est &agrave; dire qu'un espace m&eacute;moire est cr&eacute;&eacute; pour recevoir une copie de la valeur<br />
+avec la clause NOCOPY, aucun espace m&eacute;moire suppl&eacute;mentaire n'est cr&eacute;&eacute;, c'est donc l'adresse de l'espace m&eacute;moire initial qui est transmise, permettant d'une part de ne pas gaspiller la m&eacute;moire disponible (surtout lorsqu'il s'agit de grands objets (LOB) et &eacute;galement
+d'&eacute;viter le temps n&eacute;cessaire &agrave; la gestion de ces nouveaux espace m&eacute;moire (empilement, d&eacute;pilement, etc.)<br />
+<b>datatype</b> repr&eacute;sente le type SQL ou PL/SQL du param&egrave;tre<br />
+<b>:=</b> repr&eacute;sente le symbole d'assignation d'une valeur par d&eacute;faut<br />
+<b>DEFAULT</b> identique &agrave; :=<br />
+<b>expression</b> repr&eacute;sente la valeur par d&eacute;faut du param&egrave;tre (doit &ecirc;tre conforme au type du param&egrave;tre)<br />
+<br />
+Cr&eacute;ons une proc&eacute;dure permettant d'augmenter le salaire d'un employ&eacute;
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">CREATE</span> <span class="ora_keyword">OR</span> <span class="ora_keyword">REPLACE</span> <span class="ora_keyword">PROCEDURE</span> Augmentation
+  2   (
+  3     PN$Numemp <span class="ora_keyword">IN</span> EMP.empno%<span class="ora_keyword">Type</span> <span class="ora_comment">-- num&eacute;ro de l'employ&eacute;</span>
+  4    ,PN$Pourcent <span class="ora_keyword">IN</span> <span class="ora_keyword">NUMBER</span>       <span class="ora_comment">-- pourcentage d'augmentation</span>
+  5   ) <span class="ora_keyword">IS</span>
+  6  <span class="ora_keyword">BEGIN</span>
+  7    <span class="ora_comment">-- augmentation de l'employ&eacute;</span>
+  8    <span class="ora_keyword">Update</span> EMP <span class="ora_keyword">Set</span> sal = sal * PN$Pourcent
+  9    <span class="ora_keyword">Where</span> empno = PN$Numemp ; 
+ 10  <span class="ora_keyword">END</span>;
+ 11  /
+
+Proc&eacute;dure cr&eacute;&eacute;e.</div></pre><div class="paragraph">
+La proc&eacute;dure Augmentation re&ccedil;oit deux param&egrave;tres<br /><br />
+<b>PN$Numemp</b> en entr&eacute;e (IN) de m&ecirc;me type que la colonne empno de la table EMP qui re&ccedil;oit le num&eacute;ro d'employ&eacute;<br />
+<b>PN$Pourcent</b> en entr&eacute;e (IN) de type NUMBER qui re&ccedil;oit le pourcentage d'augmentation<br /><br />
+Faisons maintenant appel &agrave; cette proc&eacute;dure dans un bloc PL/SQL anonyme
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    LR$Emp EMP%<span class="ora_keyword">Rowtype</span> ;
+  3  <span class="ora_keyword">Begin</span>   
+  4    <span class="ora_keyword">Select</span> * <span class="ora_keyword">Into</span> LR$Emp <span class="ora_keyword">From</span> EMP <span class="ora_keyword">Where</span> empno = 7369 ; <span class="ora_comment">-- lecture ligne avant mise &agrave; jour</span>
+  5    <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Avant augmentation ' || <span class="ora_keyword">To_char</span>( LR$Emp.empno )
+  6      || ' ' || LR$EMp.ename || ' <span class="ora_comment">--&gt; ' || To_char( LR$Emp.sal ) ) ;</span>
+  7    Augmentation( 7369, 1.1 ) ; <span class="ora_comment">-- appel de la proc&eacute;dure</span>
+  8    <span class="ora_keyword">Select</span> * <span class="ora_keyword">Into</span> LR$Emp <span class="ora_keyword">From</span> EMP <span class="ora_keyword">Where</span> empno = 7369 ; <span class="ora_comment">-- lecture ligne apr&egrave;s mise &agrave; jour </span>
+  9    <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Apr&egrave;s augmentation ' || <span class="ora_keyword">To_char</span>( LR$Emp.empno )
+ 10      || ' ' || LR$EMp.ename || ' <span class="ora_comment">--&gt; ' || To_char( LR$Emp.sal ) ) ;</span>
+ 11  <span class="ora_keyword">End</span> ;
+ 12  /
+Avant augmentation 7369 SMITH <span class="ora_comment">--&gt; 880</span>
+Apr&egrave;s augmentation 7369 SMITH <span class="ora_comment">--&gt; 968</span>
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+<b>Les param&egrave;tres sont pass&eacute;s lors de l'appel de la fonction</b><br /><br />
+<span class="important">
+D'une fa&ccedil;on g&eacute;n&eacute;rale, les proc&eacute;dures ne devraient pas ex&eacute;cuter d'instruction de fin de transaction (COMMIT, ROLLBACK, Ordre DDL)
+</span><br />
+<span class="important">
+La d&eacute;cision d'enregistrer ou annuler la transaction en cours rel&egrave;ve du programme appelant
+</span>
+</div><br>
+<a name="AUTONOMOUS_TRANSACTION"></a>
+<div class="paragraph">
+<br /><br />
+Si toutefois, le traitement impose un enregistrement en base, la proc&eacute;dure peut &ecirc;tre d&eacute;clar&eacute;e Autonome,<br />
+via la directive de compilation <b>PRAGMA AUTONOMOUS_TRANSACTION</b>
+<br /><br />
+Imaginons que vous ayez besoin d'une proc&eacute;dure de trace qui utilise l'instruction INSERT pour enregistrer vos messages dans une table d'erreurs<br /><br />
+Afin de d&eacute;pister correctement la trace d&eacute;sir&eacute;e, cette proc&eacute;dure doit enregistrer chaque insertion avec l'instruction <b>COMMIT</b>
+<br /><br />
+Cependant, nous voulons que cet enregistrement ne valide <u>que</u> les instructions de notre proc&eacute;dure de trace<br /><br />
+Pour atteindre cet objectif, nous allons donc cr&eacute;er une proc&eacute;dure autonome
+<br /><br />
+Nous avons besoin d'une table de trace
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">CREATE</span> <span class="ora_keyword">TABLE</span> TRACE(
+  2      UTI <span class="ora_keyword">Varchar2</span>(30) <span class="ora_keyword">DEFAULT</span> <span class="ora_keyword">USER</span>
+  3     ,DDATE <span class="ora_keyword">Date</span> <span class="ora_keyword">DEFAULT</span> <span class="ora_keyword">SYSDATE</span>
+  4     ,LIGNE <span class="ora_keyword">Varchar2</span>(4000) ) ;
+
+<span class="ora_keyword">Table</span> cr&eacute;&eacute;e.</div></pre><div class="paragraph">
+Cette table permettra de stocker l'utilisateur, la date et la ligne de trace
+<br /><br />
+Nous allons cr&eacute;er maintenant notre proc&eacute;dure<br /><br />
+Celle-ci pourra utiliser au choix la sortie du message sur &eacute;cran avec la fonction DBMS_OUTPUT.PUT_LINE,<br />
+ou bien l'insertion dans la table de trace<br /><br />
+<b>Au passage nous allons augmenter les possibilit&eacute; natives</b><br />
+<b>En effet la fonction DBMS_OUTPUT.PUT_LINE est limit&eacute;e &agrave; 255 caract&egrave;res, et une colonne VARCHAR2 &agrave; 4000</b><br /><br />
+<b>Qu'&agrave; cela ne tienne, nous allons contourner le probl&egrave;me en d&eacute;coupant le message en tranches, permettant d'afficher quelque soit la m&eacute;thode jusqu'&agrave; 32767 caract&egrave;res</b><br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">CREATE</span> <span class="ora_keyword">OR</span> <span class="ora_keyword">REPLACE</span> <span class="ora_keyword">procedure</span> DEBUG ( PC$Message <span class="ora_keyword">in</span> <span class="ora_keyword">VARCHAR2</span>, PC$Output <span class="ora_keyword">in</span> <span class="ora_keyword">VARCHAR2</span> <span class="ora_keyword">DEFAULT</span> 'E' )
+  2  <span class="ora_keyword">Is</span>
+  3  <span class="ora_keyword">PRAGMA</span> AUTONOMOUS_TRANSACTION ;
+  4    LC$Chaine <span class="ora_keyword">Varchar2</span>(4000) ;
+  5    <span class="ora_keyword">LN</span>$Tranches <span class="ora_keyword">PLS_INTEGER</span> ;
+  6    <span class="ora_keyword">LN</span>$Reste  <span class="ora_keyword">PLS_INTEGER</span> ;
+  7    <span class="ora_keyword">LN</span>$Pos <span class="ora_keyword">PLS_INTEGER</span> := 1 ;
+  8    <span class="ora_keyword">LN</span>$Inc <span class="ora_keyword">PLS_INTEGER</span> ;
+  9  <span class="ora_keyword">Begin</span>
+ 10    
+ 11    <span class="ora_keyword">If</span> PC$Output = 'E' <span class="ora_keyword">Then</span>
+ 12       <span class="ora_comment">-- Sortie sur ecran (DBMS_OUTPUT) --</span>
+ 13       <span class="ora_keyword">LN</span>$Inc := 255 ;
+ 14       <span class="ora_keyword">LN</span>$Tranches := <span class="ora_keyword">Length</span>( PC$Message ) / <span class="ora_keyword">LN</span>$Inc ;
+ 15       <span class="ora_keyword">LN</span>$Reste    := <span class="ora_keyword">MOD</span>( <span class="ora_keyword">Length</span>( PC$Message ), <span class="ora_keyword">LN</span>$Inc ) ;
+ 16       <span class="ora_keyword">If</span> <span class="ora_keyword">LN</span>$Reste &gt; 0 <span class="ora_keyword">Then</span> <span class="ora_keyword">LN</span>$Tranches := <span class="ora_keyword">LN</span>$Tranches + 1 ; <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+ 17  
+ 18       <span class="ora_comment">-- Sortie --</span>
+ 19       <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> 1..<span class="ora_keyword">LN</span>$Tranches <span class="ora_keyword">Loop</span>
+ 20          LC$Chaine := <span class="ora_keyword">Substr</span>( PC$Message, <span class="ora_keyword">LN</span>$Pos, <span class="ora_keyword">LN</span>$Inc ) ;
+ 21          <span class="ora_keyword">DBMS_OUTPUT</span>.<span class="ora_keyword">PUT_LINE</span>( LC$Chaine ) ;
+ 22          <span class="ora_keyword">LN</span>$Pos := <span class="ora_keyword">LN</span>$Pos + <span class="ora_keyword">LN</span>$Inc ;  
+ 23       <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 24    
+ 25    <span class="ora_keyword">Else</span>
+ 26       <span class="ora_comment">-- Sortie sur table (INSERT) --</span>
+ 27       <span class="ora_keyword">LN</span>$Inc := 4000 ;
+ 28       <span class="ora_keyword">LN</span>$Tranches := <span class="ora_keyword">Length</span>( PC$Message ) / <span class="ora_keyword">LN</span>$Inc ;
+ 29       <span class="ora_keyword">LN</span>$Reste    := <span class="ora_keyword">MOD</span>( <span class="ora_keyword">Length</span>( PC$Message ), <span class="ora_keyword">LN</span>$Inc ) ;
+ 30       <span class="ora_keyword">If</span> <span class="ora_keyword">LN</span>$Reste &gt; 0 <span class="ora_keyword">Then</span> <span class="ora_keyword">LN</span>$Tranches := <span class="ora_keyword">LN</span>$Tranches + 1 ; <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+ 31    
+ 32       <span class="ora_comment">-- Sortie --</span>
+ 33       <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> 1..<span class="ora_keyword">LN</span>$Tranches <span class="ora_keyword">Loop</span>
+ 34          LC$Chaine := <span class="ora_keyword">Substr</span>( PC$Message, <span class="ora_keyword">LN</span>$Pos, <span class="ora_keyword">LN</span>$Inc ) ;
+ 35          <span class="ora_keyword">Insert</span> <span class="ora_keyword">into</span> TRACE (LIGNE) <span class="ora_keyword">Values</span> ( LC$Chaine ) ;
+ 36          <span class="ora_keyword">Commit</span> ; <span class="ora_comment">-- enregistrement de la ligne</span>
+ 37          <span class="ora_keyword">LN</span>$Pos := <span class="ora_keyword">LN</span>$Pos + <span class="ora_keyword">LN</span>$Inc ;  
+ 38       <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;    
+ 39    <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+ 40    
+ 41  <span class="ora_keyword">End</span>;
+ 42  /
+
+Proc&eacute;dure cr&eacute;&eacute;e.</div></pre><div class="paragraph">
+Cette proc&eacute;dure accepte en premier param&egrave;tre la cha&icirc;ne de caract&egrave;res de trace (max 32767 caract&egrave;res)<br />
+et en deuxi&egrave;me param&egrave;tre (facultatif) le type de sortie d&eacute;sir&eacute; <b>E</b> pour &eacute;cran (d&eacute;faut), diff&eacute;rent de <b>E</b> pour table<br /><br />
+La directive de compilation <b>PRAGMA AUTONOMOUS_TRANSACTION</b> en ent&ecirc;te de la section d&eacute;clarative indique<br />
+que cette proc&eacute;dure s'ex&eacute;cute dans sa propre transaction.<br /><br />
+Utilisons maintenant cette proc&eacute;dure pour notre syst&egrave;me de trace sur &eacute;cran
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">set</span> linesize 100
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    LC$Ch <span class="ora_keyword">Varchar2</span>(32767) ;
+  3  <span class="ora_keyword">Begin</span>
+  4    LC$Ch := <span class="ora_keyword">Rpad</span>( '1', 300, '1' ) || <span class="ora_keyword">Rpad</span>( '2', 300, '2' ) ; <span class="ora_comment">-- trace de 600 caract&egrave;res</span>
+  5    Debug( LC$Ch ) ;
+  6  <span class="ora_keyword">End</span> ;     
+  7  /
+1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+1111111111111111111111111111111111111111111111111111111
+1111111111111111111111111111111111111111111112222222222222222222222222222222222222222222222222222222
+2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+2222222222222222222222222222222222222222222222222222222
+222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+Puis sur table
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    LC$Ch <span class="ora_keyword">Varchar2</span>(32767) ;
+  3  <span class="ora_keyword">Begin</span>
+  4    LC$Ch := <span class="ora_keyword">Rpad</span>( '1', 2100, '1' ) || <span class="ora_keyword">Rpad</span>( '2', 2100, '2' ) ; <span class="ora_comment">-- trace de 4200 caract&egrave;res</span>
+  5    Debug( LC$Ch, 'T' ) ;
+  6  <span class="ora_keyword">End</span> ;
+  7  /
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">select</span> * <span class="ora_keyword">from</span> trace ;
+
+UTI                            DDATE
+<span class="ora_comment">------------------------------ --------</span>
+LIGNE
+<span class="ora_comment">-----------------------------------------------------------------------------------------------------------</span>
+SCOTT                          13/03/04
+11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111112222222
+
+SCOTT                          13/03/04
+22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+etc...</div></pre><div class="paragraph">
+<br />
+Lorsqu'un param&egrave;tre est pass&eacute; en mode <b>OUT</b>, la proc&eacute;dure peut le modifier.<br />
+Le programme appelant doit avoir d&eacute;fini une variable correspondante dans sa section d&eacute;clarative
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">CREATE</span> <span class="ora_keyword">OR</span> <span class="ora_keyword">REPLACE</span> <span class="ora_keyword">PROCEDURE</span> Test_Augmentation
+  2     (
+  3       PN$Numemp <span class="ora_keyword">IN</span> EMP.empno%<span class="ora_keyword">Type</span>
+  4      ,PN$Pourcent <span class="ora_keyword">IN</span> <span class="ora_keyword">OUT</span> <span class="ora_keyword">NUMBER</span>
+  5     ) <span class="ora_keyword">IS</span>
+  6     <span class="ora_keyword">LN</span>$Salaire EMP.sal%<span class="ora_keyword">Type</span> ;
+  7  <span class="ora_keyword">BEGIN</span>
+  8      <span class="ora_keyword">Select</span> sal <span class="ora_keyword">Into</span> <span class="ora_keyword">LN</span>$Salaire <span class="ora_keyword">From</span> EMP <span class="ora_keyword">Where</span> empno = PN$Numemp ;
+  9      <span class="ora_comment">-- augmentation virtuelle de l'employ&eacute;</span>
+ 10      PN$Pourcent := <span class="ora_keyword">LN</span>$Salaire * PN$Pourcent ;
+ 11  <span class="ora_keyword">END</span>;
+ 12  /
+
+Proc&eacute;dure cr&eacute;&eacute;e.
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">select</span> empno, sal <span class="ora_keyword">from</span> emp <span class="ora_keyword">where</span> empno = 7369 ;
+
+     EMPNO        SAL
+<span class="ora_comment">---------- ----------</span>
+      7369        880
+
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">LN</span>$Pourcent <span class="ora_keyword">NUMBER</span> := 1.1 ;
+  3  <span class="ora_keyword">Begin</span>
+  4    Test_Augmentation( 7369, <span class="ora_keyword">LN</span>$Pourcent ) ;
+  5    <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Employ&eacute; 7369 apr&egrave;s augmentation : ' || <span class="ora_keyword">To_char</span>( <span class="ora_keyword">LN</span>$Pourcent ) ) ;
+  6  <span class="ora_keyword">End</span> ; 
+  7  /
+Employ&eacute; 7369 apr&egrave;s augmentation : 968</div></pre><div class="paragraph">
+</div><br>		
+								
+		<br /><h3 class="TitreSection2"><a name="L4.2"></a>4.2. Les Fonctions</h3>
+			
+<div class="paragraph">
+Une fonction est identique &agrave; une proc&eacute;dure &agrave; la diff&eacute;rence qu'elle retourne obligatoirement une valeur<br />
+d'o&ugrave; le mot cl&eacute; obligatoire <b>RETURN</b><br />
+<br />
+</div><br>		
+<div class="image"><img src="./images/function_body.gif"></div>
+<div class="image"><img src="./images/function_declaration.gif"></div>
+<div class="paragraph">
+<b>CREATE</b> indique que l'on veut cr&eacute;er une fonction stock&eacute;e dans la base<br />
+La clause facultative <b>OR REPLACE</b> permet d'&eacute;craser une fonction existante portant le m&ecirc;me nom<br />
+<b>nom fonction</b> est le nom donn&eacute; par l'utilisateur &agrave; la fonction<br />
+<b>AUTHID</b> indique sur quel sch&eacute;ma la fonction s'applique :
+</div><br><ul type=""><li><b>CURRENT_USER</b></li></ul><div class="paragraph">
+Indique que la fonction utilise les objets du sch&eacute;ma de l'utilisateur qui appelle la fonction
+</div><br><ul type=""><li><b>DEFINER</b>(d&eacute;faut)</li></ul><div class="paragraph">
+Indique que la fonction utilise les objets du sch&eacute;ma de cr&eacute;ation de la fonction<br /><br /><br />
+<b>nom param&egrave;tre</b> est le nom donn&eacute; par l'utilisateur au param&egrave;tre transmis<br />
+<b>IN</b>(valeur par d&eacute;faut) indique que le param&egrave;tre transmis par le programme appelant n'est pas modifiable par la fonction<br />
+<b>OUT</b> indique que le param&egrave;tre est modifiable par la proc&eacute;dure<br />
+<b>IN OUT</b> indique que le param&egrave;tre est transmis par le programme appelant et renseign&eacute; par la fonction<br />
+<b>NOCOPY</b> indique que le param&egrave;tre est transmis par r&eacute;f&eacute;rence (pointeur) et non par copie de la valeur<br />
+<b>datatype</b> repr&eacute;sente le type SQL ou PL/SQL du param&egrave;tre<br />
+<b>:=</b> repr&eacute;sente le symbole d'assignation d'une valeur par d&eacute;faut<br />
+<b>DEFAULT</b> identique &agrave; :=<br />
+<b>expression</b> repr&eacute;sente la valeur par d&eacute;faut du param&egrave;tre (doit &ecirc;tre conforme au type du param&egrave;tre)<br />
+<b>PRAGMA AUTONOMOUS_TRANSACTION</b> indique que la fonction sera ex&eacute;cut&eacute;e dans une transaction autonome
+<br /><br />
+Au chapitre sur les proc&eacute;dures, nous avons vu la proc&eacute;dure permettant de simuler une augmentation<br />
+en retournant le nouveau salaire th&eacute;orique dans une variable IN OUT<br />
+<br />
+Transformons cette proc&eacute;dure en fonction
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">CREATE</span> <span class="ora_keyword">OR</span> <span class="ora_keyword">REPLACE</span> <span class="ora_keyword">FUNCTION</span> F_Test_Augmentation
+  2      (
+  3        PN$Numemp <span class="ora_keyword">IN</span> EMP.empno%<span class="ora_keyword">Type</span>
+  4       ,PN$Pourcent <span class="ora_keyword">IN</span> <span class="ora_keyword">NUMBER</span>
+  5      ) <span class="ora_keyword">Return</span> <span class="ora_keyword">NUMBER</span>
+  6  <span class="ora_keyword">IS</span>
+  7      <span class="ora_keyword">LN</span>$Salaire EMP.sal%<span class="ora_keyword">Type</span> ;
+  8  <span class="ora_keyword">BEGIN</span>
+  9       <span class="ora_keyword">Select</span> sal <span class="ora_keyword">Into</span> <span class="ora_keyword">LN</span>$Salaire <span class="ora_keyword">From</span> EMP <span class="ora_keyword">Where</span> empno = PN$Numemp ;
+ 10       <span class="ora_comment">-- augmentation virtuelle de l'employ&eacute;</span>
+ 11       <span class="ora_keyword">LN</span>$Salaire := <span class="ora_keyword">LN</span>$Salaire * PN$Pourcent ;
+ 12    <span class="ora_keyword">Return</span>( <span class="ora_keyword">LN</span>$Salaire ) ; <span class="ora_comment">-- retour de la valeur</span>
+ 13  <span class="ora_keyword">END</span>;
+ 14  /
+
+Fonction cr&eacute;&eacute;e.</div></pre><div class="paragraph">
+La valeur de retour de la fonction est directement utilisable, m&ecirc;me sans d&eacute;claration d'une variable d'accueil
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">LN</span>$Salaire emp.sal%<span class="ora_keyword">Type</span> ; 
+  3  <span class="ora_keyword">Begin</span>
+  4    <span class="ora_keyword">Select</span> sal <span class="ora_keyword">Into</span> <span class="ora_keyword">LN</span>$Salaire <span class="ora_keyword">From</span> EMP <span class="ora_keyword">Where</span> empno = 7369 ;
+  5    <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Salaire de 7369 avant augmentation ' || <span class="ora_keyword">To_char</span>( <span class="ora_keyword">LN</span>$Salaire ) ) ;
+  6    <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Salaire de 7369 apr&egrave;s augmentation ' || <span class="ora_keyword">To_char</span>( F_Test_Augmentation( 7369, 1.1 ) ) ) ;
+  7  <span class="ora_keyword">End</span> ;
+  8  /
+Salaire de 7369 avant augmentation 880
+Salaire de 7369 apr&egrave;s augmentation 968
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+</div><br>		
+								
+		
+		<br /><h3 class="TitreSection2"><a name="L4.3"></a>4.3. Les Paquetages</h3>
+			
+<div class="paragraph">
+<b>Un paquetage est un ensemble de proc&eacute;dures et fonctions regroup&eacute;es dans un objet nomm&eacute;</b><br /><br />
+Par exemple le paquetage Oracle DBMS_LOB regroupe toutes les fonctions et proc&eacute;dures manipulant les grands objets (LOBs)<br />
+Le paquetage UTL_FILE regroupe les proc&eacute;dures et fonctions permettant de lire et &eacute;crire des fichiers du syst&egrave;me d'exploitation
+<br /><br />
+<b>Un paquetage est organis&eacute; en deux parties distinctes</b>
+</div><br><ul type=""><li>
+<b>Une partie sp&eacute;cification</b><br />
+qui permet de sp&eacute;cifier &agrave; la fois les fonctions et proc&eacute;dures publiques ainsi que les d&eacute;clarations des types, variables, constantes, exceptions et curseurs utilis&eacute;s dans le paquetage et visibles par le programme appelant
+</li><li>
+<b>Une partie corps</b><br />
+qui contient les blocs et les sp&eacute;cifications de tous les objets publics list&eacute;s dans la partie sp&eacute;cification<br />
+Cette partie peut inclure des objets qui ne sont pas list&eacute;s dans la partie sp&eacute;cification, et sont donc priv&eacute;s<br />
+Cette partie peut &eacute;galement contenir du code qui sera ex&eacute;cut&eacute; &agrave; chaque invocation du paquetage par l'utilisateur
+</li></ul><div class="paragraph">
+</div><br>		
+<div class="image"><img src="./images/package_spec.gif"></div>
+<div class="image"><img src="./images/package_body.gif"></div>
+<div class="paragraph">
+<br />
+La d&eacute;claration de la partie sp&eacute;cification d'un paquetage s'effectue avec l'instruction <b>CREATE [OR REPLACE] PACKAGE</b><br />
+<br />
+Celle de la partie corps avec l'instruction <b>CREATE [OR REPLACE] PACKAGE BODY</b><br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">CREATE</span> <span class="ora_keyword">OR</span> <span class="ora_keyword">REPLACE</span> <span class="ora_keyword">PACKAGE</span> Pkg_Finance
+  2  <span class="ora_keyword">IS</span>
+  3    <span class="ora_comment">-- Variables globales et publiques</span>
+  4    GN$Salaire EMP.sal%<span class="ora_keyword">Type</span> ;
+  5  
+  6    <span class="ora_comment">-- Fonctions publiques</span>
+  7    <span class="ora_keyword">FUNCTION</span> F_Test_Augmentation
+  8          (
+  9            PN$Numemp <span class="ora_keyword">IN</span> EMP.empno%<span class="ora_keyword">Type</span>
+ 10           ,PN$Pourcent <span class="ora_keyword">IN</span> <span class="ora_keyword">NUMBER</span>
+ 11          ) <span class="ora_keyword">Return</span> <span class="ora_keyword">NUMBER</span> ;
+ 12  
+ 13    <span class="ora_comment">-- Proc&eacute;dures publiques</span>
+ 14    <span class="ora_keyword">PROCEDURE</span> Test_Augmentation
+ 15       (
+ 16         PN$Numemp <span class="ora_keyword">IN</span> EMP.empno%<span class="ora_keyword">Type</span> <span class="ora_comment">-- num&eacute;ro de l'employ&eacute;</span>
+ 17        ,PN$Pourcent <span class="ora_keyword">IN</span> <span class="ora_keyword">OUT</span> <span class="ora_keyword">NUMBER</span>       <span class="ora_comment">-- pourcentage d'augmentation</span>
+ 18       ) ;
+ 19  
+ 20  <span class="ora_keyword">End</span> Pkg_Finance ;
+ 21  /
+
+<span class="ora_keyword">Package</span> cr&eacute;&eacute;.</div></pre>
+<pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">CREATE</span> <span class="ora_keyword">OR</span> <span class="ora_keyword">REPLACE</span> <span class="ora_keyword">PACKAGE</span> <span class="ora_keyword">BODY</span> Pkg_Finance <span class="ora_keyword">IS</span>
+  2  
+  3     <span class="ora_comment">-- Variables globales priv&eacute;es</span>
+  4     GR$Emp EMP%<span class="ora_keyword">Rowtype</span> ;
+  5     
+  6     <span class="ora_comment">-- Proc&eacute;dure priv&eacute;es </span>
+  7     <span class="ora_keyword">PROCEDURE</span> Affiche_Salaires
+  8     <span class="ora_keyword">IS</span>
+  9       <span class="ora_keyword">CURSOR</span> C_EMP <span class="ora_keyword">IS</span> <span class="ora_keyword">select</span> * <span class="ora_keyword">from</span> EMP ;
+ 10     <span class="ora_keyword">BEGIN</span>
+ 11       <span class="ora_keyword">OPEN</span> C_EMP ;
+ 12       <span class="ora_keyword">Loop</span>
+ 13         <span class="ora_keyword">FETCH</span> C_EMP <span class="ora_keyword">Into</span> GR$Emp ;
+ 14         <span class="ora_keyword">Exit</span> <span class="ora_keyword">when</span> C_EMP%<span class="ora_keyword">NOTFOUND</span> ;
+ 15         <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Employ&eacute; ' || GR$Emp.ename || ' <span class="ora_comment">--&gt; ' || Lpad( To_char( GR$Emp.sal ), 10 ) ) ;</span>
+ 16       <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 17       <span class="ora_keyword">CLOSE</span> C_EMP ;
+ 18     <span class="ora_keyword">END</span> Affiche_Salaires ;   
+ 19     
+ 20     <span class="ora_comment">-- Fonctions publiques</span>
+ 21     <span class="ora_keyword">FUNCTION</span> F_Test_Augmentation
+ 22         (
+ 23           PN$Numemp <span class="ora_keyword">IN</span> EMP.empno%<span class="ora_keyword">Type</span>
+ 24          ,PN$Pourcent <span class="ora_keyword">IN</span> <span class="ora_keyword">NUMBER</span>
+ 25         ) <span class="ora_keyword">Return</span> <span class="ora_keyword">NUMBER</span>
+ 26     <span class="ora_keyword">IS</span>
+ 27         <span class="ora_keyword">LN</span>$Salaire EMP.sal%<span class="ora_keyword">Type</span> ;
+ 28     <span class="ora_keyword">BEGIN</span>
+ 29          <span class="ora_keyword">Select</span> sal <span class="ora_keyword">Into</span> <span class="ora_keyword">LN</span>$Salaire <span class="ora_keyword">From</span> EMP <span class="ora_keyword">Where</span> empno = PN$Numemp ;
+ 30          <span class="ora_comment">-- augmentation virtuelle de l'employ&eacute;</span>
+ 31          <span class="ora_keyword">LN</span>$Salaire := <span class="ora_keyword">LN</span>$Salaire * PN$Pourcent ;
+ 32          
+ 33          <span class="ora_comment">-- Affectation de la variable globale publique</span>
+ 34          GN$Salaire := <span class="ora_keyword">LN</span>$Salaire ;
+ 35          
+ 36       <span class="ora_keyword">Return</span>( <span class="ora_keyword">LN</span>$Salaire ) ; <span class="ora_comment">-- retour de la valeur</span>
+ 37     <span class="ora_keyword">END</span> F_Test_Augmentation;   
+ 38    
+ 39     <span class="ora_comment">-- Proc&eacute;dures publiques</span>
+ 40     <span class="ora_keyword">PROCEDURE</span> Test_Augmentation
+ 41        (
+ 42          PN$Numemp <span class="ora_keyword">IN</span> EMP.empno%<span class="ora_keyword">Type</span>
+ 43         ,PN$Pourcent <span class="ora_keyword">IN</span> <span class="ora_keyword">OUT</span> <span class="ora_keyword">NUMBER</span>
+ 44        ) <span class="ora_keyword">IS</span>
+ 45        <span class="ora_keyword">LN</span>$Salaire EMP.sal%<span class="ora_keyword">Type</span> ;
+ 46     <span class="ora_keyword">BEGIN</span>
+ 47         <span class="ora_keyword">Select</span> sal <span class="ora_keyword">Into</span> <span class="ora_keyword">LN</span>$Salaire <span class="ora_keyword">From</span> EMP <span class="ora_keyword">Where</span> empno = PN$Numemp ;
+ 48         <span class="ora_comment">-- augmentation virtuelle de l'employ&eacute;</span>
+ 49        PN$Pourcent := <span class="ora_keyword">LN</span>$Salaire * PN$Pourcent ;
+ 50        
+ 51        <span class="ora_comment">-- appel proc&eacute;dure priv&eacute;e</span>
+ 52        Affiche_Salaires ;
+ 53        
+ 54     <span class="ora_keyword">END</span> Test_Augmentation;
+ 55     
+ 56      
+ 57  <span class="ora_keyword">END</span> Pkg_Finance;
+ 58  /
+
+Corps de <span class="ora_keyword">package</span> cr&eacute;&eacute;.</div></pre><div class="paragraph">
+La sp&eacute;cification du paquetage est cr&eacute;&eacute;e avec une variable globale et publique : GN$Salaire<br />
+une proc&eacute;dure publique : PROCEDURE Test_Augmentation<br />
+une fonction publique : FUNCTION F_Test_Augmentation<br /><br />
+qui sont visibles depuis l'ext&eacute;rieur (le programme appelant)
+<br /><br />
+Le corps du paquetage est cr&eacute;&eacute; avec une proc&eacute;dure priv&eacute;e : PROCEDURE Afiche_Salaires qui n'est visible que dans le corps du paquetage<br /><br />
+Le corps d&eacute;finit &eacute;galement une variable globale au corps du paquetage : GR$Emp utilis&eacute;e par la proc&eacute;dure priv&eacute;e
+<br /><br />
+L'acc&egrave;s &agrave; un objet d'un paquetage est r&eacute;alis&eacute; avec la syntaxe suivante : <br /><br />
+<b>nom_paquetage.nom_objet[(liste param&egrave;tres)]</b><br /><br />
+Appel de la fonction F_Test_Augmentation du paquetage
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2      <span class="ora_keyword">LN</span>$Salaire emp.sal%<span class="ora_keyword">Type</span> ; 
+  3  <span class="ora_keyword">Begin</span>
+  4      <span class="ora_keyword">Select</span> sal <span class="ora_keyword">Into</span> <span class="ora_keyword">LN</span>$Salaire <span class="ora_keyword">From</span> EMP <span class="ora_keyword">Where</span> empno = 7369 ;
+  5      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Salaire de 7369 avant augmentation ' 
+  6          || <span class="ora_keyword">To_char</span>( <span class="ora_keyword">LN</span>$Salaire ) ) ;
+  7      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Salaire de 7369 apr&egrave;s augmentation ' 
+  8          || <span class="ora_keyword">To_char</span>( Pkg_Finance.F_Test_Augmentation( 7369, 1.1 ) ) ) ;
+  9  <span class="ora_keyword">End</span> ;
+ 10  /
+Salaire de 7369 avant augmentation 880
+Salaire de 7369 apr&egrave;s augmentation 968
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+Appel de la proc&eacute;dure Test_Augmentation du paquetage
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2       <span class="ora_keyword">LN</span>$Pourcent <span class="ora_keyword">NUMBER</span> := 1.1 ;
+  3  <span class="ora_keyword">Begin</span>
+  4       Pkg_Finance.Test_Augmentation( 7369, <span class="ora_keyword">LN</span>$Pourcent ) ;
+  5       <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Employ&eacute; 7369 apr&egrave;s augmentation : ' || <span class="ora_keyword">To_char</span>( <span class="ora_keyword">LN</span>$Pourcent ) ) ;
+  6  <span class="ora_keyword">End</span> ; 
+  7  /
+Employ&eacute; SMITH <span class="ora_comment">--&gt;        880</span>
+Employ&eacute; ALLEN <span class="ora_comment">--&gt;       1936</span>
+Employ&eacute; WARD <span class="ora_comment">--&gt;       1375</span>
+Employ&eacute; JONES <span class="ora_comment">--&gt;       3273</span>
+Employ&eacute; MARTIN <span class="ora_comment">--&gt;       1375</span>
+Employ&eacute; BLAKE <span class="ora_comment">--&gt;       3135</span>
+Employ&eacute; CLARK <span class="ora_comment">--&gt;       2695</span>
+Employ&eacute; SCOTT <span class="ora_comment">--&gt;       3300</span>
+Employ&eacute; KING <span class="ora_comment">--&gt;       5500</span>
+Employ&eacute; TURNER <span class="ora_comment">--&gt;       1650</span>
+Employ&eacute; ADAMS <span class="ora_comment">--&gt;       1210</span>
+Employ&eacute; JAMES <span class="ora_comment">--&gt;       1045</span>
+Employ&eacute; FORD <span class="ora_comment">--&gt;       3300</span>
+Employ&eacute; MILLER <span class="ora_comment">--&gt;       1430</span>
+Employ&eacute; Dupontont <span class="ora_comment">--&gt;</span>
+Employ&eacute; Duboudin <span class="ora_comment">--&gt;</span>
+Employ&eacute; 7369 apr&egrave;s augmentation : 968
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+Interrogation de la variable globale publique : GN$Salaire
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Begin</span>
+  2       <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Valeur salaire du <span class="ora_keyword">package</span> : ' || <span class="ora_keyword">To_char</span>( Pkg_Finance.GN$Salaire ) ) ;
+  3  <span class="ora_keyword">End</span> ;
+  4  /
+Valeur salaire du <span class="ora_keyword">package</span> : 968
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+</div><br>		
+												
+		<br /><h3 class="TitreSection2"><a name="L4.4"></a>4.4. Fonctions sur des ensembles de lignes (PIPELINED) (9i)</h3>
+			
+<div class="paragraph">
+<span class="important">Oracle 9i</span><br />
+Depuis la version 9i appara&icirc;t une nouvelle possibilit&eacute; de PL/SQL de pouvoir d&eacute;finir des fonctions qui acceptent en argument des collections ou des r&eacute;f&eacute;rences &agrave; un curseur, et qui retournent les donn&eacute;es au fur et &agrave; mesure de l'ex&eacute;cution de la fonction.
+<br /><br />
+Lors de la d&eacute;claration de la fonction, le mot cl&eacute; PIPELINED est ajout&eacute; dans l'ent&ecirc;te et les informations sont retourn&eacute;es &agrave; l'aide de la commande PIPE ROW.
+<br /><br />
+Soit l'exemple suivant
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">create</span> <span class="ora_keyword">type</span> MtSal <span class="ora_keyword">as</span> <span class="ora_keyword">object</span> (numemp <span class="ora_keyword">number</span>(4), salaire <span class="ora_keyword">number</span>(7,2) ) ;
+  2  /
+
+<span class="ora_keyword">Type</span> cr&eacute;&eacute;.
+
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">create</span> <span class="ora_keyword">type</span> MtSalTab <span class="ora_keyword">as</span> <span class="ora_keyword">table</span> <span class="ora_keyword">of</span> MtSal ;
+  2  /
+
+<span class="ora_keyword">Type</span> cr&eacute;&eacute;.</div></pre>
+<pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">CREATE</span> <span class="ora_keyword">OR</span> <span class="ora_keyword">REPLACE</span> <span class="ora_keyword">function</span> LigneSalaire (cur_lig <span class="ora_keyword">in</span> SYS_REFCURSOR)
+  2    <span class="ora_keyword">return</span> MtSalTab PIPELINED
+  3  <span class="ora_keyword">IS</span>
+  4   LSal  MtSal := MtSal (<span class="ora_keyword">NULL</span>,NULL) ;
+  5   Remp  emp%<span class="ora_keyword">rowtype</span> ;
+  6  <span class="ora_keyword">Begin</span>
+  7   <span class="ora_keyword">Loop</span>
+  8     <span class="ora_keyword">Fetch</span> cur_lig <span class="ora_keyword">into</span> Remp ;
+  9     <span class="ora_keyword">Exit</span> <span class="ora_keyword">When</span> cur_lig%<span class="ora_keyword">NOTFOUND</span> ;
+ 10       <span class="ora_comment">-- Manipulation des donn&eacute;es --</span>
+ 11       LSal.numemp := Remp.empno ;
+ 12       LSal.salaire := Remp.sal * 1.1 ;
+ 13       <span class="ora_comment">-- Retour des valeurs --</span>
+ 14       PIPE <span class="ora_keyword">ROW</span>( LSal ) ;
+ 15   <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 16   <span class="ora_keyword">Return</span> ;
+ 17  <span class="ora_keyword">End</span> ;
+ 18  /
+
+Fonction cr&eacute;&eacute;e.</div></pre>
+<pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Select</span> numemp, salaire <span class="ora_keyword">from</span>
+  2  <span class="ora_keyword">table</span>(LigneSalaire(<span class="ora_keyword">CURSOR</span>(<span class="ora_keyword">Select</span> * <span class="ora_keyword">from</span> EMP)))
+  3  /
+
+    NUMEMP    SALAIRE
+<span class="ora_comment">---------- ----------</span>
+      7369        968
+      7499       1936
+      7521     1512,5
+      7566     3600,3
+      7654     1512,5
+      7698     3448,5
+      7782     2964,5
+      7788       3630
+      7839       6050
+      7844       1815
+      7876       1331
+      7900     1149,5
+      7902       3630
+      7934       1573
+
+14 ligne(s) s&eacute;lectionn&eacute;e(s).</div></pre><div class="paragraph">
+L'instruction <b>table(LigneSalaire(CURSOR(Select * from EMP)))</b> indique que la fonction LigneSalaire retourne un ensemble de donn&eacute;es.
+<br /><br />
+Cet exemple est bien &eacute;videmment simpliste, mais on peut imaginer toutes sortes de traitements sur les lignes du curseur avant de renvoyer le r&eacute;sultat.
+<br /><br /><br />
+Pour faire une estimation de la masse salariale totale apr&egrave;s une augmentation de salaire de 10% pour l'ensemble du personnel, il suffit d'interroger la fonction de la fa&ccedil;on suivante : 
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Select</span> <span class="ora_keyword">sum</span>(salaire) <span class="ora_keyword">from</span>
+  2  <span class="ora_keyword">table</span>(LigneSalaire(<span class="ora_keyword">CURSOR</span>(<span class="ora_keyword">Select</span> * <span class="ora_keyword">from</span> EMP)))
+  3  /
+
+<span class="ora_keyword">SUM</span>(SALAIRE)
+<span class="ora_comment">------------</span>
+     35120,8</div></pre><div class="paragraph">
+Bien entendu un r&eacute;sultat &eacute;quivalent pourrait &ecirc;tre obtenu avec la requ&ecirc;te : 
+<br /><br />
+select sum(sal * 1.1) from emp;
+<br /><br />
+mais, r&eacute;p&eacute;tons-le le traitement effectu&eacute; dans la fonction peut &ecirc;tre beaucoup plus &eacute;labor&eacute;.
+</div><br>		
+												
+		<br /><h3 class="TitreSection2"><a name="L4.5"></a>4.5. Maintenance des objets proc&eacute;duraux</h3>
+			
+<div class="paragraph">
+<b>Visualisation du code source</b><br /><br />
+Le code source des objets proc&eacute;duraux est visible par l'interm&eacute;diare des vues du dictionnaire de donn&eacute;es<br /><br />
+<b>USER_SOURCE</b> pour les objets appartenant au sch&eacute;ma<br />
+<b>ALL_SOURCE</b> pour les objets appartenant aux sch&eacute;mas accessibles<br />
+<b>DBA_SOURCE</b> pour les objets appartenant &agrave; tous les sch&eacute;mas
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">desc</span> user_source
+ Nom                    
+ <span class="ora_comment">---------------------</span>
+ NAME                   
+ <span class="ora_keyword">TYPE</span>                   
+ LINE                   
+ TEXT</div></pre><div class="paragraph">
+Pour dissocier le code des proc&eacute;dures, fonctions et paquetages, la restriction sur la colonne TYPE doit &ecirc;tre la suivante : 
+</div><br><ul type="">
+<li><b>Proc&eacute;dure</b> : TYPE = 'PROCEDURE'</li>
+<li><b>Fonction</b> : TYPE = 'FUNCTION'</li>
+<li><b>Sp&eacute;cification de paquetage</b> : TYPE = 'PACKAGE'</li>
+<li><b>Corps de paquetage</b> : TYPE = 'PACKAGE BODY'</li>
+</ul><div class="paragraph">
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Select</span> text <span class="ora_keyword">from</span> user_source
+  2  <span class="ora_keyword">Where</span> name = 'AUGMENTATION'
+  3  <span class="ora_keyword">And</span>   <span class="ora_keyword">type</span> = '<span class="ora_keyword">PROCEDURE</span>'
+  4  /
+
+TEXT
+<span class="ora_comment">----------------------------------------</span>
+<span class="ora_keyword">PROCEDURE</span> Augmentation
+ (
+   PN$Numemp <span class="ora_keyword">IN</span> EMP.empno%<span class="ora_keyword">Type</span>
+  ,PN$Pourcent <span class="ora_keyword">IN</span> <span class="ora_keyword">NUMBER</span>
+ ) <span class="ora_keyword">IS</span>
+<span class="ora_keyword">BEGIN</span>
+  <span class="ora_comment">-- augmentation de l'employ&eacute;</span>
+  <span class="ora_keyword">Update</span> EMP <span class="ora_keyword">Set</span> sal = sal * PN$Pourcent
+  <span class="ora_keyword">Where</span> empno = PN$Numemp ;
+<span class="ora_keyword">END</span>;
+
+10 ligne(s) s&eacute;lectionn&eacute;e(s).</div></pre><div class="paragraph"><br />
+<b>Compilation des objets</b><br /><br />
+</div><br><ul type="">
+<li><b>Proc&eacute;dure</b> : ALTER PROCEDURE nom_proc&eacute;dure COMPILE</li>
+<li><b>Fonction</b> : ALTER FUNCTION nom_fonction COMPILE</li>
+<li><b>Sp&eacute;cification de paquetage</b> : ALTER PACKAGE nom_package COMPILE PACKAGE</li>
+<li><b>Corps de paquetage</b> : ALTER PACKAGE nom_package COMPILE BODY</li>
+<li><b>Sp&eacute;cification + Corps de paquetage</b> : ALTER PACKAGE nom_package COMPILE</li>
+</ul><div class="paragraph">
+<br />
+<b>Suppression des objets</b><br /><br />
+</div><br><ul type="">
+<li><b>Proc&eacute;dure</b> : DROP PROCEDURE nom_proc&eacute;dure</li>
+<li><b>Fonction</b> : DROP FUNCTION nom_fonction</li>
+<li><b>Paquetage entier</b> : DROP PACKAGE nom_package</li>
+<li><b>Corps de paquetage</b> : DROP PACKAGE BODY nom_package</li>
+</ul><div class="paragraph">
+</div><br>		
+												
+	
+	
+<hr><div class="barreNavigation"> [ <a class="barreNavigationTexte" href="Chap3.html">Précédent</a> ]  [ <a class="barreNavigationTexte" href="sommaire.html">Sommaire</a> ]  [ <a class="barreNavigationTexte" href="Chap5.html">Suivant</a> ] </div><hr><p class="licence">Copyright &copy;2004&nbsp;SheikYerbouti.
+            Aucune reproduction, même partielle, ne peut être faite
+			de ce site et de l'ensemble de son contenu : textes, documents, images, etc
+            sans l'autorisation expresse de l'auteur. Sinon vous encourez selon la loi jusqu'à 3 ans de prison et jusqu'à 300 000 E
+			de dommages et intérets. Cette page est déposée à la <a href="http://www.sacd.fr/" target="_blank">SACD</a>.</p>
+       											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			<table width="100%" cellpadding="4" class="cachee">
+				<tr bgcolor="#DDEEFF">
+					<td align="center" class="titrepied">
+			  Vos questions techniques : <b><a href="http://www.developpez.net/forums/" target="_blank">forum d'entraide Accueil</a></b> - Publiez vos articles, tutoriels et cours<br />
+			  et rejoignez-nous dans l'&eacute;quipe de r&eacute;daction du club d'entraide des d&eacute;veloppeurs francophones <br /> <a href="http://club.developpez.com/contacts/">Nous contacter</a>
+	
+			  - Copyright 2000..2005 www.developpez.com
+					</td>
+					<td align="center">
+          
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
+
+	

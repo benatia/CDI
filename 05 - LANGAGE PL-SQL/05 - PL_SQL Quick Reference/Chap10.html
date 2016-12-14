@@ -1,0 +1,538 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <title>Guide PL/SQL - Club d'entraide des d&#233;veloppeurs francophones</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta name="generator" content="developpez-com" />
+  <link rel="stylesheet" type="text/css" href="./mainstyle.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="./printer.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./article.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./faq.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./source.css" />
+</head>
+<body>
+<table width="100%" cellspacing="4">
+	<tr>
+  	<td align="center">
+    	<table width="100%" cellspacing="0" cellpadding="0">
+     		<tr>
+     			<td>
+			      <table width="100%" cellspacing="11">
+    	  			<tr>
+        				<td>
+          				<a href="http://www.developpez.com"><img src="images/logo.gif" alt="Accueil" /></a>
+        				</td>
+      				</tr>
+      				<tr>
+      					<td></td>
+      				</tr>
+      			</table>
+    			</td>
+  			</tr>
+  			<tr>
+    			<td>
+						<table class="cachee" cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td class="iongl"><img src="images/bordg.gif" /></td>
+								<td class="bgongl"><a href="http://www.developpez.com" class="ntdrub">Accueil<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://club.developpez.com" class="ntdrub">Le<br />Club</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://delphi.developpez.com" class="ntdrub">Delphi<br />Kylix</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://c.developpez.com" class="ntdrub">C<br />C++</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://java.developpez.com" class="ntdrub">Java<br />J2EE</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://dotnet.developpez.com" class="ntdrub">DotNET<br />&amp; C#</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://vb.developpez.com" class="ntdrub">Visual<br />Basic</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://access.developpez.com" class="ntdrub">Access<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://pascal.developpez.com" class="ntdrub">Pascal<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://web.developpez.com" class="ntdrub">Dev<br />Web</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://php.developpez.com" class="ntdrub">PHP<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://asp.developpez.com" class="ntdrub">ASP<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://xml.developpez.com" class="ntdrub">XML<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://uml.developpez.com" class="ntdrub">UML<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://sgbd.developpez.com" class="ntdrub">SQL<br />SGBD</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://windows.developpez.com" class="ntdrub">Win<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://linux.developpez.com" class="ntdrub">Linux<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://www.developpez.com/cours/" class="ntdrub">Autres<br /></a></td>
+								<td class="iongl"><img src="images/bordd.gif" /></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="trbleu">
+					</td>
+				</tr>
+
+				<tr valign="top">
+					<td valign="top" class="fondart">
+						<table cellspacing="1" width="100%" class="tbnoir">
+							<tr>
+								<td class="fondart">
+									<table class="cadrearticle" width="90%" cellpadding="10" cellspacing="0">
+										<tr>
+											<td>
+
+        <br><h1>Oracle PL/SQL</h1><p class="dateArticle">
+        Date de publication : Avril 2004 , 
+        Date de mise a jour : Juillet 2004</p><hr><div class="barreNavigation"> [ <a class="barreNavigationTexte" href="Chap9.html">Précédent</a> ]  [ <a class="barreNavigationTexte" href="sommaire.html">Sommaire</a> ] </div><hr>
+	
+	
+	
+	
+	
+	
+	<br /><a class="summaryIndent0" href="#L10">Index de recherche</a>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+<br><br>
+	
+	
+	
+	
+	
+	
+	<br /><h2 class="TitreSection1"><a name="L10"></a>Index de recherche</h2>
+		
+<div class="paragraph">
+<b>Liste alphab&eacute;tique des mots cl&eacute;</b>
+</div><br>
+<table class="tableau" cellspacing="0" border="1" align="center" width="80%">
+<tr>
+<td class="colonne" align="center"><a class="renvoiSignet" href="#signetA">%, A</a></td>
+<td class="colonne" align="center"><a class="renvoiSignet" href="#signetB">B</a></td>
+<td class="colonne" align="center"><a class="renvoiSignet" href="#signetC">C</a></td>
+<td class="colonne" align="center"><a class="renvoiSignet" href="#signetD">D</a></td>
+<td class="colonne" align="center"><a class="renvoiSignet" href="#signetE">E</a></td>
+<td class="colonne" align="center"><a class="renvoiSignet" href="#signetF">F</a></td>
+<td class="colonne" align="center"><a class="renvoiSignet" href="#signetG">G</a></td>
+<td class="colonne" align="center"><a class="renvoiSignet" href="#signetH">H</a></td>
+<td class="colonne" align="center"><a class="renvoiSignet" href="#signetI">I</a></td>
+<td class="colonne" align="center"><a class="renvoiSignet" href="#signetL">L</a></td>
+</tr>
+<tr>
+<td class="colonne" align="center"><a class="renvoiSignet" href="#signetM">M</a></td>
+<td class="colonne" align="center"><a class="renvoiSignet" href="#signetN">N</a></td>
+<td class="colonne" align="center"><a class="renvoiSignet" href="#signetO">O</a></td>
+<td class="colonne" align="center"><a class="renvoiSignet" href="#signetP">P</a></td>
+<td class="colonne" align="center"><a class="renvoiSignet" href="#signetR">R</a></td>
+<td class="colonne" align="center"><a class="renvoiSignet" href="#signetS">S</a></td>
+<td class="colonne" align="center"><a class="renvoiSignet" href="#signetT">T</a></td>
+<td class="colonne" align="center"><a class="renvoiSignet" href="#signetU">U</a></td>
+<td class="colonne" align="center"><a class="renvoiSignet" href="#signetV">V</a></td>
+<td class="colonne" align="center"><a class="renvoiSignet" href="#signetW">W</a></td>
+</tr>
+</table>
+<a name="signetA"></a>
+<div class="paragraph">
+<b>A</b><br /><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#%FOUND" class="lienArticle">%ISOPEN</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#%FOUND" class="lienArticle">%FOUND</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#%FOUND" class="lienArticle">%NOTFOUND</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#%FOUND" class="lienArticle">%ROWCOUNT</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap2#%TYPE" class="lienArticle">%ROWTYPE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap2#%TYPE" class="lienArticle">%TYPE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#ABS" class="lienArticle">ABS</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#SINH" class="lienArticle">ACOS</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#ADD_MONTHS" class="lienArticle">ADD_MONTHS</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap6#L6" class="lienArticle">AFTER</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap6#L6.3.4" class="lienArticle">ALL_TRIGGERS</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap4#L4.5" class="lienArticle">ALTER_FUNCTION</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap4#L4.5" class="lienArticle">ALTER PACKAGE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap6#L6.3.4" class="lienArticle">ALTER TRIGGER</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9#L9.2.1" class="lienArticle">APPEND (DBMS_LOB)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#ATAN" class="lienArticle">ATAN</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap4#AUTONOMOUS_TRANSACTION" class="lienArticle">AUTONOMOUS_TRANSACTION</a><br />
+</div><br>
+<a name="signetB"></a>
+<div class="paragraph">
+<b>B</b><br /><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap6#L6" class="lienArticle">BEFORE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1" class="lienArticle">BEGIN</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap2#BFILE" class="lienArticle">BFILE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap2#BINARY_INTEGER" class="lienArticle">BINARY_INTEGER</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#BIN_TO_NUM" class="lienArticle">BIN_TO_NUM</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#BITAND" class="lienArticle">BITAND</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap2#BLOB" class="lienArticle">BLOB</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap4#L4.3" class="lienArticle">BODY</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap2#BOOLEAN" class="lienArticle">BOOLEAN</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap5#L5.5" class="lienArticle">BULK COLLECT</a><br />
+</div><br>
+<a name="signetC"></a>
+<div class="paragraph">
+<b>C</b><br /><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.12" class="lienArticle">CASE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#CEIL" class="lienArticle">CEIL</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap2#CHAR" class="lienArticle">CHAR</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#CHARTOROWID" class="lienArticle">CHARTOROWID</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap2#CLOB" class="lienArticle">CLOB</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.4" class="lienArticle">CLOSE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9#L9.2.2" class="lienArticle">CLOSE (DBMS_LOB)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9#L9.2.3" class="lienArticle">COMPARE (DBMS_LOB)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9#L9.2.4" class="lienArticle">CONVERTTOBLOB (DBMS_LOB)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9#L9.2.5" class="lienArticle">CONVERTTOCLOB (DBMS_LOB)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.5" class="lienArticle">COMMIT</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#CONCAT" class="lienArticle">CONCAT</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap2#CONSTANT" class="lienArticle">CONSTANT</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#CONVERT" class="lienArticle">CONVERT</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9#L9.2.6" class="lienArticle">COPY (DBMS_LOB)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#SIN" class="lienArticle">COS</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#SINH" class="lienArticle">COSH</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#COUNT" class="lienArticle">COUNT</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap5#.COUNT" class="lienArticle">.COUNT</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap4#L4.2" class="lienArticle">CREATE FUNCTION</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap4#L4.3" class="lienArticle">CREATE PACKAGE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap4#L4.1" class="lienArticle">CREATE PROCEDURE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap6#L6" class="lienArticle">CREATE TRIGGER</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap6#L6.2" class="lienArticle">CREATE VIEW</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9#L9.2.7" class="lienArticle">CREATETEMPORARY (DBMS_LOB)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.22" class="lienArticle">CURSOR</a><br />
+</div><br>
+<a name="signetD"></a>
+<div class="paragraph">
+<b>D</b><br /><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap2#DATE" class="lienArticle">DATE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9" class="lienArticle">DBMS_LOB</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap7" class="lienArticle">DBMS_OUTPUT</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.1" class="lienArticle">DECLARE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#DECODE" class="lienArticle">DECODE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap4#L4.1" class="lienArticle">DEFAULT</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.21" class="lienArticle">DELETE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap6#L6.4" class="lienArticle">DISABLE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap7#DISABLE" class="lienArticle">DISABLE (DBMS_OUTPUT)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap4#L4.5" class="lienArticle">DROP FUNCTION</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap4#L4.5" class="lienArticle">DROP PACKAGE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap4#L4.5" class="lienArticle">DROP PROCEDURE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap6#L6.4" class="lienArticle">DROP TRIGGER</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#DUMP" class="lienArticle">DUMP</a><br />
+</div><br>
+<a name="signetE"></a>
+<div class="paragraph">
+<b>E</b><br /><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.11" class="lienArticle">ELSE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.11" class="lienArticle">ELSIF</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9" class="lienArticle">EMPTY_BLOB</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9" class="lienArticle">EMPTY_CLOB</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap6#L6.4" class="lienArticle">ENABLE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap7#ENABLE" class="lienArticle">ENABLE (DBMS_OUTPUT)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2" class="lienArticle">END</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9#L9.2.8" class="lienArticle">ERASE (DBMS_LOB)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.3" class="lienArticle">EXCEPTION</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#EXCEPTION_INIT" class="lienArticle">EXCEPTION_INIT</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.6" class="lienArticle">EXECUTE IMMEDIATE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap5#.EXISTS" class="lienArticle">.EXISTS</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.7" class="lienArticle">EXIT</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#EXP" class="lienArticle">EXP</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap5#.EXTEND" class="lienArticle">.EXTEND</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#EXTRACT" class="lienArticle">EXTRACT</a><br />
+</div><br>
+<a name="signetF"></a>
+<div class="paragraph">
+<b>F</b><br /><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap8#L8.2.2" class="lienArticle">FCLOSE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap8#L8.2.3" class="lienArticle">FCLOSE_ALL</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.8" class="lienArticle">FETCH</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap8#L8.2.7" class="lienArticle">FFLUSH</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap8#L8.2.8" class="lienArticle">FGETATTR</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap8#L8.2.9" class="lienArticle">FGETPOS</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9#L9.2.9" class="lienArticle">FILECLOSE (DBMS_LOB)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9#L9.2.10" class="lienArticle">FILECLOSEALL (DBMS_LOB)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9#L9.2.11" class="lienArticle">FILEEXISTS (DBMS_LOB)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9#L9.2.12" class="lienArticle">FILEGETNAME (DBMS_LOB)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9#L9.2.13" class="lienArticle">FILEISOPEN (DBMS_LOB)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9#L9.2.14" class="lienArticle">FILEOPEN (DBMS_LOB)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap5#.FIRST" class="lienArticle">.FIRST</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#FLOOR" class="lienArticle">FLOOR</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap8#L8.2.5" class="lienArticle">FOPEN</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap8#L8.2.6" class="lienArticle">FOPEN_NCHAR</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.14" class="lienArticle">FOR (boucle)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.13" class="lienArticle">FOR (curseur)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap6#L6" class="lienArticle">FOR EACH ROW</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.9" class="lienArticle">FORALL</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9#L9.2.15" class="lienArticle">FREETEMPORARY (DBMS_LOB)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap8#L8.2.10" class="lienArticle">FREMOVE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap8#L8.2.11" class="lienArticle">FRENAME</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap8#L8.2.12" class="lienArticle">FSEEK</a><br />
+</div><br>
+<a name="signetG"></a>
+<div class="paragraph">
+<b>G</b><br /><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9#L9.2.16" class="lienArticle">GETCHUNKSIZE (DBMS_LOB)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9#L9.2.17" class="lienArticle">GETLENGTH (DBMS_LOB)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap8#L8.2.13" class="lienArticle">GET_LINE (UTL_FILE)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap7#GET_LINE" class="lienArticle">GET_LINE (DBMS_OUTPUT)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap7#GET_LINE" class="lienArticle">GET_LINES (DBMS_OUTPUT)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap8#L8.2.14" class="lienArticle">GET_LINE_NCHAR</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap8#L8.2.15" class="lienArticle">GET_RAW</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.10" class="lienArticle">GOTO</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#GREATEST" class="lienArticle">GREATEST</a><br />
+</div><br>
+<a name="signetH"></a>
+<div class="paragraph">
+<b>H</b><br /><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#HEXTORAW" class="lienArticle">HEXTORAW</a><br />
+</div><br>
+<a name="signetI"></a>
+<div class="paragraph">
+<b>I</b><br /><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.11" class="lienArticle">IF</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.14" class="lienArticle">IN</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#LOWER" class="lienArticle">INITCAP</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.21" class="lienArticle">INSERT</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap6#L6.2" class="lienArticle">INSTEAD OF</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#INSTR" class="lienArticle">INSTR</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9#L9.2.18" class="lienArticle">INSTR (DBMS_LOB)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap2#L2.2.4" class="lienArticle">Intervalles</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap2#INTERVAL DAY TO SECOND" class="lienArticle">INTERVAL DAY TO SECOND</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap2#INTERVAL YEAR TO MONTH" class="lienArticle">INTERVAL YEAR TO MONTH</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap8#L8.2.1" class="lienArticle">IS_OPEN</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9#L9.2.19" class="lienArticle">ISOPEN (DBMS_LOB)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9#L9.2.20" class="lienArticle">ISTEMPORARY (DBMS_LOB)</a><br />
+</div><br>
+<a name="signetL"></a>
+<div class="paragraph">
+<b>L</b><br /><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap5#.LAST" class="lienArticle">.LAST</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#LAST_DAY" class="lienArticle">LAST_DAY</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#LEAST" class="lienArticle">LEAST</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#LENGTH" class="lienArticle">LENGTH</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap5#L5.5" class="lienArticle">LIMIT</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#LN" class="lienArticle">LN</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9#L9.2.21" class="lienArticle">LOADFROMFILE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9#L9.2.22" class="lienArticle">LOADBLOBFROMFILE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9#L9.2.23" class="lienArticle">LOADCLOBFROMFILE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap2#LONG" class="lienArticle">LONG</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap2#LONG RAW" class="lienArticle">LONG RAW</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.14" class="lienArticle">LOOP</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#LOWER" class="lienArticle">LOWER</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#LPAD" class="lienArticle">LPAD</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#LTRIM" class="lienArticle">LTRIM</a><br />
+</div><br>
+<a name="signetM"></a>
+<div class="paragraph">
+<b>M</b><br /><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#MAX" class="lienArticle">MAX</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#MIN" class="lienArticle">MIN</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#MOD" class="lienArticle">MOD</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#MONTHS_BETWEEN" class="lienArticle">MONTHS_BETWEEN</a><br />
+</div><br>
+<a name="signetN"></a>
+<div class="paragraph">
+<b>N</b><br /><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap2#NCHAR" class="lienArticle">NCHAR</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap2#NCLOB" class="lienArticle">NCLOB</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap8#L8.2.16" class="lienArticle">NEW_LINE (UTL_FILE)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap7#PUT" class="lienArticle">NEW_LINE (DBMS_OUTPUT)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#NEW_TIME" class="lienArticle">NEW_TIME</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap5#.NEXT" class="lienArticle">.NEXT</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#NUMTODSINTERVAL" class="lienArticle">NUMTODSINTERVAL</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#NUMTOYMINTERVAL" class="lienArticle">NUMTOYMINTERVAL</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap2#NVARCHAR2" class="lienArticle">NVARCHAR2</a><br />
+</div><br>
+<a name="signetO"></a>
+<div class="paragraph">
+<b>O</b><br /><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.2" class="lienArticle">OPEN</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9#L9.2.24" class="lienArticle">OPEN (DBMS_LOB)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.3" class="lienArticle">OPEN FOR</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.3" class="lienArticle">OTHERS</a><br />
+</div><br>
+<a name="signetP"></a>
+<div class="paragraph">
+<b>P</b><br /><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap4#L4.4" class="lienArticle">PIPELINED</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap2#PLS_INTEGER" class="lienArticle">PLS_INTEGER</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#POWER" class="lienArticle">POWER</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap8#L8.2.17" class="lienArticle">PUT (UTL_FILE)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap7#PUT" class="lienArticle">PUT (DBMS_OUTPUT)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap8#L8.2.18" class="lienArticle">PUT_NCHAR</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap8#L8.2.19" class="lienArticle">PUT_RAW</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap8#L8.2.22" class="lienArticle">PUTF</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap7#PUT" class="lienArticle">PUT_LINE (DBMS_OUTPUT)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap8#L8.2.20" class="lienArticle">PUT_LINE (UTL_FILE)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap8#L8.2.21" class="lienArticle">PUT_LINE_NCHAR (UTL_FILE)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap8#L8.2.22" class="lienArticle">PUTF</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap8#L8.2.23" class="lienArticle">PUTF_NCHAR (UTL_FILE)</a><br />
+</div><br>
+<a name="signetR"></a>
+<div class="paragraph">
+<b>R</b><br /><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.16" class="lienArticle">RAISE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap2#RAW" class="lienArticle">RAW</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#ROWTOHEX" class="lienArticle">ROWTOHEX</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9#L9.2.25" class="lienArticle">READ (DBMS_LOB)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#REPLACE" class="lienArticle">REPLACE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.17" class="lienArticle">RETURN</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap5#BULK COLLECT" class="lienArticle">RETURNING INTO</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.14" class="lienArticle">REVERSE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.19" class="lienArticle">ROLLBACK</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#ROUND" class="lienArticle">ROUND</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#ROWIDTOCHAR" class="lienArticle">ROWIDTOCHAR</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#LPAD" class="lienArticle">RPAD</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#LTRIM" class="lienArticle">RTRIM</a><br />
+</div><br>
+<a name="signetS"></a>
+<div class="paragraph">
+<b>S</b><br /><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.18" class="lienArticle">SAVEPOINT</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.20" class="lienArticle">SELECT INTO</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#SIGN" class="lienArticle">SIGN</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#SIN" class="lienArticle">SIN</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#SIN" class="lienArticle">SINH</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#SQLCODE" class="lienArticle">SQLCODE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#SQLCODE" class="lienArticle">SQLERRM</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#SQRT" class="lienArticle">SQRT</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#SUBSTR" class="lienArticle">SUBSTR</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9#L9.2.26" class="lienArticle">SUBSTR (DBMS_LOB)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap2#L2.3" class="lienArticle">SUBTYPE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#SUM" class="lienArticle">SUM</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap2#SYS.ANYTYPE" class="lienArticle">SYS.ANYTYPE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap2#SYS.ANYTYPE" class="lienArticle">SYS.ANYDATA</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap2#SYS.ANYTYPE" class="lienArticle">SYS.ANYDATASET</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#SYS_EXTRACT_UTC" class="lienArticle">SYS_EXTRACT_UTC</a><br />
+</div><br>
+<a name="signetT"></a>
+<div class="paragraph">
+<b>T</b><br /><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#SIN" class="lienArticle">TAN</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#SINH" class="lienArticle">TANH</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.11" class="lienArticle">THEN</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap2#TIMESTAMP" class="lienArticle">TIMESTAMP</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.19" class="lienArticle">TO SAVEPOINT</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#TO_CHAR" class="lienArticle">TO_CHAR</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#TO_CLOB" class="lienArticle">TO_CLOB</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#TO_DATE" class="lienArticle">TO_DATE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#TO_DSINTERVAL" class="lienArticle">TO_DSINTERVAL</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#TO_MULTI_BYTE" class="lienArticle">TO_MULTI_BYTE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#TO_NUMBER" class="lienArticle">TO_NUMBER</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#TO_SINGLE_BYTE" class="lienArticle">TO_SINGLE_BYTE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#TO_TIMESTAMP" class="lienArticle">TO_TIMESTAMP</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#TO_YMINTERVAL" class="lienArticle">TO_YMINTERVAL</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#TRANSLATE" class="lienArticle">TRANSLATE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#TRIM" class="lienArticle">TRIM</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9#L9.2.27" class="lienArticle">TRIM (DBMS_LOB)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#TRUNC" class="lienArticle">TRUNC</a><br />
+</div><br>
+<a name="signetU"></a>
+<div class="paragraph">
+<b>U</b><br /><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.21" class="lienArticle">UPDATE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#LOWER" class="lienArticle">UPPER</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.6" class="lienArticle">USING</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap8" class="lienArticle">UTL_FILE</a><br />
+</div><br>
+<a name="signetV"></a>
+<div class="paragraph">
+<b>V</b><br /><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap2#VARCHAR2" class="lienArticle">VARCHAR2</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap3#VSIZE" class="lienArticle">VSIZE</a><br />
+</div><br>
+<a name="signetW"></a>
+<div class="paragraph">
+<b>W</b><br /><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#L1.2.7" class="lienArticle">WHEN</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap1#1.2.14" class="lienArticle">WHILE</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9#L9.2.28" class="lienArticle">WRITE (DBMS_LOB)</a><br />
+<a href="http://sheikyerbouti.developpez.com/pl_sql/?page=Chap9#L9.2.29" class="lienArticle">WRITEAPPEND (DBMS_LOB)</a><br />
+</div><br>
+	
+	
+<hr><div class="barreNavigation"> [ <a class="barreNavigationTexte" href="Chap9.html">Précédent</a> ]  [ <a class="barreNavigationTexte" href="sommaire.html">Sommaire</a> ] </div><hr><p class="licence">Copyright &copy;2004&nbsp;SheikYerbouti.
+            Aucune reproduction, même partielle, ne peut être faite
+			de ce site et de l'ensemble de son contenu : textes, documents, images, etc
+            sans l'autorisation expresse de l'auteur. Sinon vous encourez selon la loi jusqu'à 3 ans de prison et jusqu'à 300 000 E
+			de dommages et intérets. Cette page est déposée à la <a href="http://www.sacd.fr/" target="_blank">SACD</a>.</p>
+       											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			<table width="100%" cellpadding="4" class="cachee">
+				<tr bgcolor="#DDEEFF">
+					<td align="center" class="titrepied">
+			  Vos questions techniques : <b><a href="http://www.developpez.net/forums/" target="_blank">forum d'entraide Accueil</a></b> - Publiez vos articles, tutoriels et cours<br />
+			  et rejoignez-nous dans l'&eacute;quipe de r&eacute;daction du club d'entraide des d&eacute;veloppeurs francophones <br /> <a href="http://club.developpez.com/contacts/">Nous contacter</a>
+	
+			  - Copyright 2000..2005 www.developpez.com
+					</td>
+					<td align="center">
+          
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
+
+	

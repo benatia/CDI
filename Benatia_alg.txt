@@ -640,7 +640,8 @@ FINPROCEDURE
 
 
 ################################### ALGORITHME 18.1 ############################
-Ecrire une procédure permettant de calculer le plus grand commun diviseur (PGCD) de deux nombres en utilisant l’astuce suivante :
+Ecrire une procédure permettant de calculer le plus grand commun diviseur (PGCD) de deux
+nombres en utilisant l’astuce suivante :
  soustraite le plus petit des deux entiers du plus grand jusqu'à ce qu’ils soient égaux'.
  
  DEBUTPROCEDURE calculerPgcd()
@@ -812,7 +813,7 @@ DEBUTPROCEDURE SaisirTableauCroissant()
 		i<-0
 		j <- 0
 		matable[i]<-nombr_saisi
-			TANTQUE (i <= n ) FAIRE
+			TANTQUE (i <= n-1 ) FAIRE
 				SAISIR nombre_saisi
 				SI(nombre_saisi> matable[i]) ALORS
 					matable[i+1]=nombre-saisi
@@ -838,13 +839,13 @@ DEBUTFONCTION  CalculerMaximum()
 	DEBUT
 		i<-0
 		max <- matable[i]
-		TANQUE (i<=n) FAIRE	
+		 FAIRE	
 			i=i+1
 			SI (matable[i+1]>max
 				max <- matable[i+1]
 				i<-i+1
 			FINSI 
-		FINTANTQUE
+		TANTQUE (i<=n)
 		RETOURNER (max)
 	FIN
 FINFONCTION
@@ -860,7 +861,7 @@ DEBUTFONCTION  CalculerMaximumIndice()
 		i<-0
 		max <- matable[i]
 		j <- i
-		TANQUE (i<=n) FAIRE	
+		TANTQUE (i<=n) FAIRE	
 			i=i+1
 			SI (matable[i]>max
 				max <- matable[i]
@@ -876,9 +877,9 @@ Ecrire une procédure nommée AfficherTableau() qui affiche à l’écran le con
 Ecrire la procédure nommée Principale() qui remplit le tableau et appelle la procédure AfficherTableau() 
 pour afficher le contenu du tableau passé en paramètre.
 
-DEBUTPROCEDURE AfficherTableau(entier [] matable : tableau des entiers ,n : entier)
+DEBUTPROCEDURE AfficherTableau(entier [n] matable tableau des entiers )
 	//n le longueur du tableau 
-	VARIABLE i entier
+	VARIABLE i entier 
 	DEBUT
 		POUR i allant de 0 A n PAS DE 1  FAIRE 
 			AFFICHER matable[i]
@@ -886,8 +887,8 @@ DEBUTPROCEDURE AfficherTableau(entier [] matable : tableau des entiers ,n : enti
 	FIN
 FINPROCEDURE
 
-DEBUTPROCEDURE Principale (entiers [] matable:tableau des ENTIERS ,n  i ENTIER )
-	VARIABLE nombr_saisi ENTIER 
+DEBUTPROCEDURE Principale ( )
+	VARIABLE nombr_saisi,i  ENTIER ,entiers [n] matable:tableau des ENTIERS de longueur n 
 	DEBUT
 		i <- 0
 		
@@ -909,8 +910,8 @@ Ecrire une procédure nommée Principale() qui permet :
 ● dans un 1er temps d’accéder à la procédure SaisirTableau(),
 ● dans un 2ème temps d’afficher le résultat à l’aide de la procédure AfficherTableau() de l’algorithme 25.
 
-DEBUTFONCTION SaisirTableau():TABLEAU DES ENTIER 
-	VARIABLE n :ENTIER ,entiers [] matable:tableau
+DEBUTPROCEDURE SaisirTableau():TABLEAU DES ENTIER 
+	VARIABLE  entiers [n] matable tableau de longueur n 
     DEBUT 
 		AFFICHER "ENTER LA LONGUEUR  DE VOTRE TABLEAU"
 		SAISIR n 
@@ -918,11 +919,62 @@ DEBUTFONCTION SaisirTableau():TABLEAU DES ENTIER
 	FIN
 	
 	
-FINFONCTION
-
-FINPROCEDURE Principale()
+FINPROCEDURE
+DEBUTPROCEDURE Principale()
+	
+	DEBUT
 	SaisirTableau()
 	AfficherTableau(entier [] matable : tableau des entiers ,n : entier)
+	FIN
+FINPROCEDURE
+
+#################################################################################
+###########################Algorithme 27######################################
+Ecrire une fonction nommée CalculerInversion() qui calcule et retourne
+le nombre d’inversion d’un tableau de taille p_taille, c’est à dire 
+i<j et tab[i]>tab[j] pour tout i et j.
+
+DEBUTFONCTION  Cal culerInversion(entiers[p_taille] matable :tableau de taille p_taille) 
+	VARIABLE  nombre1 , nombre2,somme entiers
+	nombre2 <-0
+	echange <- 0
+	somme <-0
+	DEBUT
+		POUR nombre1 allant de 1 A n FAIRE
+			TANTQUE (nombre2<nombre1) FAIRE
+				SI (matable[nombre2]>matable[nombre2]) ALORS
+					echange <- matable[nombre2]
+					matable[nombre2] <- matable[nombre1]
+					matable[nombre1] <- echange
+					somme <- somme+1
+				FINSI
+			FINTANTQUE
+			RETOURNER SOMME
+			
+					
+			
+	FIN
+FINFONCTION
+
+#############################################################################
+###########################Algorithme 28######################################
+
+DEBUTPROCEDURE GetTypeAvion (p_codeAvion)
+		SELECT CARACTERISTIQUE FROM Tableau1 inner join Tableau2
+		WHERE CodeAvion = p_codeAvion
+FINPROCEDURE
+
+
+
+DEBUTPROCEDURE GetStatistique(p_codeAvion)
+		SELECT CARACTERISTIQUE FROM AVION 
+		WHERE CodeAvion = p_codeAvion
+FINPROCEDURE
+
+
+
+
 	
+
 	
 	

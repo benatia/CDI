@@ -1,0 +1,827 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <title>Guide PL/SQL - Club d'entraide des d&#233;veloppeurs francophones</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta name="generator" content="developpez-com" />
+  <link rel="stylesheet" type="text/css" href="./mainstyle.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="./printer.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./article.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./faq.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./source.css" />
+</head>
+<body>
+<table width="100%" cellspacing="4">
+	<tr>
+  	<td align="center">
+    	<table width="100%" cellspacing="0" cellpadding="0">
+     		<tr>
+     			<td>
+			      <table width="100%" cellspacing="11">
+    	  			<tr>
+        				<td>
+          				<a href="http://www.developpez.com"><img src="images/logo.gif" alt="Accueil" /></a>
+        				</td>
+      				</tr>
+      				<tr>
+      					<td></td>
+      				</tr>
+      			</table>
+    			</td>
+  			</tr>
+  			<tr>
+    			<td>
+						<table class="cachee" cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td class="iongl"><img src="images/bordg.gif" /></td>
+								<td class="bgongl"><a href="http://www.developpez.com" class="ntdrub">Accueil<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://club.developpez.com" class="ntdrub">Le<br />Club</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://delphi.developpez.com" class="ntdrub">Delphi<br />Kylix</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://c.developpez.com" class="ntdrub">C<br />C++</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://java.developpez.com" class="ntdrub">Java<br />J2EE</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://dotnet.developpez.com" class="ntdrub">DotNET<br />&amp; C#</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://vb.developpez.com" class="ntdrub">Visual<br />Basic</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://access.developpez.com" class="ntdrub">Access<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://pascal.developpez.com" class="ntdrub">Pascal<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://web.developpez.com" class="ntdrub">Dev<br />Web</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://php.developpez.com" class="ntdrub">PHP<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://asp.developpez.com" class="ntdrub">ASP<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://xml.developpez.com" class="ntdrub">XML<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://uml.developpez.com" class="ntdrub">UML<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://sgbd.developpez.com" class="ntdrub">SQL<br />SGBD</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://windows.developpez.com" class="ntdrub">Win<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://linux.developpez.com" class="ntdrub">Linux<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://www.developpez.com/cours/" class="ntdrub">Autres<br /></a></td>
+								<td class="iongl"><img src="images/bordd.gif" /></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="trbleu">
+					</td>
+				</tr>
+
+				<tr valign="top">
+					<td valign="top" class="fondart">
+						<table cellspacing="1" width="100%" class="tbnoir">
+							<tr>
+								<td class="fondart">
+									<table class="cadrearticle" width="90%" cellpadding="10" cellspacing="0">
+										<tr>
+											<td>
+
+        <br><h1>Oracle PL/SQL</h1><p class="dateArticle">
+        Date de publication : Avril 2004 , 
+        Date de mise a jour : Juillet 2004</p><hr><div class="barreNavigation"> [ <a class="barreNavigationTexte" href="Chap1.html">Précédent</a> ]  [ <a class="barreNavigationTexte" href="sommaire.html">Sommaire</a> ]  [ <a class="barreNavigationTexte" href="Chap3.html">Suivant</a> ] </div><hr>
+	
+	
+	
+	
+	
+	
+	<br /><a class="summaryIndent0" href="#L2">2. Les variables, types et litt&eacute;raux</a>
+		
+		<br /><a class="summaryIndent1" href="#L2.1">2.1. Les variables</a>
+			
+
+
+
+
+
+
+
+
+
+	<br /><a class="summaryIndent1" href="#L2.2">2.2. Types pr&eacute;d&eacute;finis</a>
+		
+	<br /><a class="summaryIndent2" href="#L2.2.1">2.2.1. Types caract&egrave;res</a>
+		
+		
+					
+	<br /><a class="summaryIndent2" href="#L2.2.2">2.2.2. Types num&eacute;riques</a>
+		
+	
+		
+	<br /><a class="summaryIndent2" href="#L2.2.3">2.2.3. Types pour les grands objets</a>
+		
+	
+			
+	<br /><a class="summaryIndent2" href="#L2.2.4">2.2.4. Types suppl&eacute;mentaires</a>
+		
+ 	
+			
+			
+	<br /><a class="summaryIndent1" href="#L2.3">2.3. Les Types et Sous-types d&eacute;finis par l'utilisateur</a>
+		
+		
+					
+	<br /><a class="summaryIndent1" href="#L2.4">2.4. Les litt&eacute;raux</a>
+		
+		
+	<br /><a class="summaryIndent2" href="#L2.4.1">2.4.1. Litt&eacute;ral de type caract&egrave;re</a>
+		
+		
+			
+	<br /><a class="summaryIndent2" href="#L2.4.2">2.4.2. Litt&eacute;ral de type entier</a>
+		
+		
+			
+	<br /><a class="summaryIndent2" href="#L2.4.3">2.4.3. Litt&eacute;ral de type d&eacute;cimal</a>
+		
+		
+				
+	<br /><a class="summaryIndent2" href="#L2.4.4">2.4.4. Litt&eacute;ral de type intervalle (9i)</a>
+		
+		
+					
+			
+
+	
+<br><br>
+	
+	
+	
+	
+	
+	
+	<br /><h2 class="TitreSection1"><a name="L2"></a>2. Les variables, types et litt&eacute;raux</h2>
+		
+		<br /><h3 class="TitreSection2"><a name="L2.1"></a>2.1. Les variables</h3>
+			
+<div class="paragraph">
+<b>nom variable [CONSTANT] type [  [NOT NULL] := expression ] ;</b><br /><br />
+<b>nom variable</b> repr&eacute;sente le nom de la variable compos&eacute; de lettres, chiffres, $, _ ou #<br />
+Le nom de la variable ne peut pas exc&eacute;der 30 caract&egrave;res
+<br />
+</div><br><a name="CONSTANT"></a><div class="paragraph">
+<b>CONSTANT</b> indique que la valeur ne pourra pas &ecirc;tre modifi&eacute;e dans le code du bloc PL/SQL
+<br />
+</div><br><a name="NOT NULL"></a><div class="paragraph">
+<b>NOT NULL</b> indique que la variable ne peut pas &ecirc;tre NULL, et dans ce cas <b>expression</b> doit &ecirc;tre indiqu&eacute;.
+<br />
+</div><br><a name="TYPE"></a><div class="paragraph">
+<b>type</b> repr&eacute;sente de type de la variable correspondant &agrave; l'un des types suivants :
+<br /><br /><br />
+(dans le premier tableau, <b>les types Oracle sont en gras</b>, les sous-types compatible ANSI/ISO en normal)
+</div><br>
+<table class="tableau" cellspacing="0" border="1" align="center" width="98%">
+	<tr>
+	<th class="colonne_entete">Types scalaires</th>
+	<th class="colonne_entete">&nbsp;</th>	
+	<th class="colonne_entete">&nbsp;</th>	
+	<th class="colonne_entete">&nbsp;</th>	
+	<th class="colonne_entete">&nbsp;</th>				
+	</tr>
+<tr>
+<td class="colonne"><b>BINARY_INTEGER</b></td>
+<td class="colonne">DEC</td>
+<td class="colonne">DECIMAL</td>
+<td class="colonne">DOUBLE PRECISION</td>
+<td class="colonne">FLOAT</td>
+</tr>
+<tr>
+<td class="colonne">INT</td>
+<td class="colonne">INTEGER</td>
+<td class="colonne">NATURAL</td>
+<td class="colonne">NATURALN</td>
+<td class="colonne"><b>NUMBER</b></td>
+</tr>
+<tr>
+<td class="colonne">NUMERIC</td>
+<td class="colonne"><b>PLS_INTEGER</b></td>
+<td class="colonne">POSITIVE</td>
+<td class="colonne">POSITIVEN</td>
+<td class="colonne">REAL</td>
+</tr>
+<tr>
+<td class="colonne">SIGNTYPE</td>
+<td class="colonne">SMALLINT</td>
+<td class="colonne"><b>CHAR</b></td>
+<td class="colonne">CHARACTER</td>
+<td class="colonne"><b>LONG</b></td>
+</tr>
+<tr>
+<td class="colonne"><b>LONG RAW</b></td>
+<td class="colonne"><b>NCHAR</b></td>
+<td class="colonne"><b>NVARCHAR2</b></td>
+<td class="colonne"><b>RAW</b></td>
+<td class="colonne"><b>ROWID</b></td>
+</tr>
+<tr>
+<td class="colonne">STRING</td>
+<td class="colonne"><b>UROWID</b></td>
+<td class="colonne"><b>VARCHAR</b></td>
+<td class="colonne"><b>VARCHAR2</b></td>
+<td class="colonne">&nbsp;</td>
+</tr>
+<tr>
+<td class="colonne"><b>BOOLEAN</b></td>
+<td class="colonne"><b>DATE</b></td>
+<td class="colonne">&nbsp;</td>
+<td class="colonne">&nbsp;</td>
+<td class="colonne">&nbsp;</td>
+</tr>
+<tr>
+<td class="colonne"><b>INTERVAL DAY TO SECOND</b><span class="important">(9i)</span></td>
+<td class="colonne"><b>INTERVAL YEAR TO MONTH</b><span class="important">(9i)</span></td>
+<td class="colonne"><b>TIMESTAMP</b><span class="important">(9i)</span></td>
+<td class="colonne"><b>TIMESTAMP WITH LOCAL TIME ZONE</b><span class="important">(9i)</span></td>
+<td class="colonne"><b>TIMESTAMP WITH TIME ZONE</b><span class="important">(9i)</span></td>
+</tr>
+</table>
+<table class="tableau" cellspacing="0" border="1" align="center" width="98%">
+	<tr>
+	<th class="colonne_entete">Types compos&eacute;s</th>
+	<th class="colonne_entete">&nbsp;</th>	
+	<th class="colonne_entete">&nbsp;</th>	
+	</tr>
+<tr>
+<td class="colonne">RECORD</td>
+<td class="colonne">TABLE</td>
+<td class="colonne">VARRAY</td>
+</tr>
+</table>
+<table class="tableau" cellspacing="0" border="1" align="center" width="98%">
+	<tr>
+	<th class="colonne_entete">Types r&eacute;f&eacute;rences</th>
+	<th class="colonne_entete">&nbsp;</th>	
+	</tr>
+<tr>
+<td class="colonne">REF CURSOR</td>
+<td class="colonne">REF type_objet</td>
+</tr>
+</table>
+<table class="tableau" cellspacing="0" border="1" align="center" width="98%">
+	<tr>
+	<th class="colonne_entete">Types grands objets</th>
+	<th class="colonne_entete">&nbsp;</th>	
+	<th class="colonne_entete">&nbsp;</th>		
+	<th class="colonne_entete">&nbsp;</th>	
+	</tr>
+<tr>
+<td class="colonne">BFILE</td>
+<td class="colonne">BLOB</td>
+<td class="colonne">CLOB</td>
+<td class="colonne">NCLOB</td>
+</tr>
+</table>
+<table class="tableau" cellspacing="0" border="1" align="center" width="98%">
+	<tr>
+	<th class="colonne_entete">Types supl&eacute;mentaires</th>
+	<th class="colonne_entete">&nbsp;</th>	
+	<th class="colonne_entete">&nbsp;</th>		
+	<th class="colonne_entete">&nbsp;</th>	
+	<th class="colonne_entete">&nbsp;</th>		
+	</tr>
+<tr>
+<td class="colonne">SYS.ANYDATA</td>
+<td class="colonne">SYS.ANYTYPE</td>
+<td class="colonne">SYS.ANYDATASET</td>
+<td class="colonne">&nbsp;</td>
+<td class="colonne">&nbsp;</td>
+</tr>
+<tr>
+<td class="colonne">XMLTYPE</td>
+<td class="colonne">URITYPE</td>
+<td class="colonne">&nbsp;</td>
+<td class="colonne">&nbsp;</td>
+<td class="colonne">&nbsp;</td>
+</tr>
+<tr>
+<td class="colonne">MDSYS.SDO_GEOMETRY</td>
+<td class="colonne">&nbsp;</td>
+<td class="colonne">&nbsp;</td>
+<td class="colonne">&nbsp;</td>
+<td class="colonne">&nbsp;</td>
+</tr>
+<tr>
+<td class="colonne">ORDSYS.ORDAUDIO</td>
+<td class="colonne">ORDSYS.ORDIMAGE</td>
+<td class="colonne">ORDSYS.ORDVIDEO</td>
+<td class="colonne">ORDSYS.ORDDOC</td>
+<td class="colonne">ORDSYS.ORDIMAGESIGNATURE</td>
+</tr>
+</table>
+<div class="paragraph">
+<br />
+<u>Vous pouvez &eacute;galement cr&eacute;er des sous-types :</u>
+<br />
+</div><br><a name="SUBTYPE"></a><div class="paragraph">
+<b>SUBTYPE nom_sous-type IS type ;</b>
+<br /><br />
+SUBTYPE entier_court IS SMALLINT ;<br />
+i entier_court ;
+<br /><br />
+
+<u>Et utiliser les types d&eacute;riv&eacute;s</u>
+<br /><br />
+</div><br><a name="%TYPE"></a><div class="paragraph">
+<b>%TYPE</b><br />
+r&eacute;f&eacute;rence &agrave; un type existant qui est soit une colonne d'une table soit un type d&eacute;fini pr&eacute;c&eacute;demment
+<br /><br />
+<b>nom_variable nom_table.nom_colonne%TYPE ;</b><br />
+<b>nom_variable nom_variable_ref%TYPE ;</b><br />
+<br />
+</div><br><a name="%ROWTYPE"></a><div class="paragraph">
+<b>%ROWTYPE</b><br />
+r&eacute;f&eacute;rence &agrave; une ligne d'une table ou d'un curseur
+<br /><br />
+<b>nom_variable nom_table%ROWTYPE ;</b><br />
+<b>nom_variable nom_curseur%ROWTYPE ;</b><br />
+</div><br>
+<pre class="code"><div class="ora_code"><span class="ora_keyword">Declare</span>
+  <span class="ora_comment">-- variable de m&ecirc;me type que le colonne ENAME de la table EMP</span>
+  LC$Nom	EMP.ENAME%<span class="ora_keyword">TYPE</span> ;
+  <span class="ora_comment">-- variable de m&ecirc;me type qu'une ligne de la table EMP</span>
+  LR$EMP    EMP%<span class="ora_keyword">ROWTYPE</span> ;
+  LC$Dat1	<span class="ora_keyword">DATE</span> ;
+  <span class="ora_comment">-- variable de m&ecirc;me type que LC$Dat1 (DATE)</span>
+  LC$Dat2   LC$Dat1%<span class="ora_keyword">TYPE</span> ;
+  <span class="ora_comment">-- Curseur --</span>
+  <span class="ora_keyword">Cursor</span> C_EMP <span class="ora_keyword">is</span>
+  <span class="ora_keyword">Select</span> empno, ename, job <span class="ora_keyword">From</span> EMP ;
+  <span class="ora_comment">-- variable de type ligne du curseur C_EMP</span>
+  LR$C_emp C_EMP%<span class="ora_keyword">ROWTYPE</span> ;</div></pre>
+
+	<br /><h3 class="TitreSection2"><a name="L2.2"></a>2.2. Types pr&eacute;d&eacute;finis</h3>
+		
+	<br /><h4 class="TitreSection3"><a name="L2.2.1"></a>2.2.1. Types caract&egrave;res</h4>
+		
+<div class="paragraph">
+</div><br><a name="CHAR"></a><div class="paragraph">
+<b>CHAR[(n)]</b><br />
+Cha&icirc;ne de caract&egrave;res de longueur fixe avec n compris entre 1 et 32767 (par d&eacute;faut 1)
+<br /><br />
+</div><br><a name="VARCHAR2"></a><div class="paragraph">
+<b>VARCHAR2(n)</b><br />
+Cha&icirc;ne de caract&egrave;res de longueur variable avec n compris entre 1 et 32767
+<br /><br />
+<span class="important">
+Ces types PL/SQL ont une capacit&eacute; sup&eacute;rieure &agrave; celle des colonnes de tables de m&ecirc;me type.<br />
+(une colonne CHAR ne peut exc&eacute;der 2000 caract&egrave;res et une colonne de type VARCHAR2 4000 caract&egrave;res)
+</span><br /><br />
+</div><br><a name="LONG"></a><div class="paragraph">
+<b>LONG</b><br />
+Cha&icirc;ne de caract&egrave;res de longueur variable avec au maximum 32760 octets
+<br /><br />
+</div><br><a name="RAW"></a><div class="paragraph">
+<b>RAW[(n)]</b><br />
+Cha&icirc;ne de caract&egrave;res ou donn&eacute;es binaires de longueur variable avec n compris entre 1 et 32767. Le contenu d'une variable de ce type n'est pas interpr&eacute;t&eacute; par PL/SQL (pas de gestion des caract&egrave;res nationaux)
+<br /><br />
+</div><br><a name="LONG RAW"></a><div class="paragraph">
+<b>LONG RAW</b><br />
+Identique au type LONG qui peut contenir des donn&eacute;es binaires
+<br /><br /><br />
+<b>Jeux de caract&egrave;res multi-octets</b><br />
+<br />
+</div><br><a name="NCHAR"></a><div class="paragraph">
+<b>NCHAR[(n)]</b><br />
+Cha&icirc;ne de caract&egrave;res de longueur fixe avec n compris entre 1 et 32767 (par d&eacute;faut 1)
+<br /><br />
+</div><br><a name="NVARCHAR2"></a><div class="paragraph">
+<b>NVARCHAR2[(n)]</b><br />
+Cha&icirc;ne de caract&egrave;res de longueur variable avec n compris entre 1 et 32767
+<br /><br />
+Le nombre de caract&egrave;res r&eacute;ellement stock&eacute;s d&eacute;pend du nombre d'octets utilis&eacute;s pour coder chaque caract&egrave;re
+<br /><br />
+<br /><br />
+</div><br><a name="ROWID"></a><div class="paragraph">
+<b>UROWID, ROWID</b><br />
+Permet de stocker l'adresse absolue d'une ligne dans une table sous la forme d'une cha&icirc;ne de caract&egrave;res
+<br /><br />
+Le format d'une telle variable est le suivant :
+<br /><br />
+000000FFFBBBBBBRRR
+<br /><br />
+000000 repr&eacute;sente le num&eacute;ro de l'objet qui poss&egrave;de cette ligne (dans le cas de cluster, plusieurs objets peuvent partager le m&ecirc;me segment)
+<br /><br />
+FFF repr&eacute;sente le num&eacute;ro du fichier qui contient la ligne
+<br /><br />
+BBBBBB repr&eacute;sente le num&eacute;ro du bloc dans le fichier
+<br /><br />
+RRR repr&eacute;sente le num&eacute;ro de ligne dans le bloc
+</div><br>		
+					
+	<br /><h4 class="TitreSection3"><a name="L2.2.2"></a>2.2.2. Types num&eacute;riques</h4>
+		
+<div class="paragraph">	
+</div><br><a name="NUMBER"></a><div class="paragraph">
+<b>NUMBER[(e,d)]</b><br />
+Nombre r&eacute;el avec e chiffres significatifs stock&eacute;s et d d&eacute;cimales
+<br /><br />
+</div><br><a name="BINARY_INTEGER"></a><div class="paragraph">
+<b>BINARY_INTEGER</b><br />
+Nombre entier compris entre -2 147 483 647 et +2 147 483 647<br />
+(Utilise les fonctions de la librairie arithm&eacute;tique)
+<br /><br />
+<span class="important">(10g)</span><b>BINARY_FLOAT</b><br />
+Nombre &agrave; virgule flottante simple pr&eacute;cision au format IEEE 754<br />
+un litt&eacute;ral de ce type est &eacute;crit avec un f terminateur (ex. 3.125f)
+<br /><br />
+<span class="important">(10g)</span><b>BINARY_DOUBLE</b><br />
+Nombre &agrave; virgule flottante double pr&eacute;cision au format IEEE 754<br />
+un litt&eacute;ral de ce type est &eacute;crit avec un d terminateur (ex. 3.12548d)
+<br /><br />
+</div><br><a name="PLS_INTEGER"></a><div class="paragraph">
+<b>PLS_INTEGER</b><br />
+Nombre entier compris entre -2 147 483 647 et +2 147 483 647<br />
+(Plus rapide que BINARY_INTEGER car il utilise les registres du processeur)
+</div><br>	
+		
+	<br /><h4 class="TitreSection3"><a name="L2.2.3"></a>2.2.3. Types pour les grands objets</h4>
+		
+<div class="paragraph">	
+</div><br><a name="BFILE"></a><div class="paragraph">
+<b>BFILE</b><br />
+Stocke la r&eacute;f&eacute;rence vers un fichier du syst&egrave;me d'exploitation
+<br /><br />
+</div><br><a name="BLOB"></a><div class="paragraph">
+<b>BLOB</b><br />
+Permet de stocker un objet binaire jusqu'&agrave; 4 Go
+<br /><br />
+</div><br><a name="CLOB"></a><div class="paragraph">
+<b>CLOB</b><br />
+Permet de stocker un ensemble de caract&egrave;res, jusqu'&agrave; 4 Go
+<br /><br />
+</div><br><a name="NCLOB"></a><div class="paragraph">
+<b>NCLOB</b><br />
+Permet de stocker un ensemble de caract&egrave;res, cod&eacute;s sur un ou plusieurs octets, jusqu'&agrave; 4 Go
+</div><br>	
+			
+	<br /><h4 class="TitreSection3"><a name="L2.2.4"></a>2.2.4. Types suppl&eacute;mentaires</h4>
+		
+<div class="paragraph">	
+</div><br><a name="SYS.ANYTYPE"></a><div class="paragraph">
+<b>SYS.ANYTYPE, SYS.ANYDATA</b><br /><br />
+Une variable de ce type peut contenir un objet de n'importe quel type scalaire ou objet
+<br />
+D&eacute;finie comme colonne d'une table, elle pourrait contenir une variable de type NUMBER dans une ligne, une variable de type VARCHAR2 dans une autre, une variable de type objet dans une troisi&egrave;me, etc.
+<br /><br />
+Il faut utiliser les m&eacute;thodes associ&eacute;es pour ins&eacute;rer la valeur correspondant au type d&eacute;sir&eacute; sur chaque ligne
+<br />
+<b>SYS.ANYDATA.CONVERT...</b>
+<br /><br />
+SYS.ANYDATA.ConvertNumber(1500) pour ins&eacute;rer une variable num&eacute;rique<br />
+SYS.ANYDATA.ConvertVarchar2('Hello') pour ins&eacute;rer une variable caract&egrave;re<br />
+<br /><b>Liste des fonctions de conversion</b>
+<br />
+</div><br><ul type="">
+<li>ConvertNumber(num IN NUMBER) RETURN AnyData</li>
+<li>ConvertDate(dat IN DATE) RETURN AnyData</li>
+<li>ConvertChar(c IN CHAR) RETURN AnyData</li>
+<li>ConvertVarchar(c IN VARCHAR) RETURN AnyData</li>
+<li>ConvertVarchar2(c IN VARCHAR2) RETURN AnyData</li>
+<li>ConvertRaw(r IN RAW) RETURN AnyData</li>
+<li>ConvertBlob(b IN BLOB) RETURN AnyData</li>
+<li>ConvertClob(c IN CLOB) RETURN AnyData</li>
+<li>ConvertBfile(b IN BFILE) RETURN AnyData</li>
+<li>ConvertObject(obj IN "(object_type)") RETURN AnyData</li>
+<li>ConvertRef(rf IN REF "(object_type)") RETURN AnyData</li>
+<li>ConvertCollection(col IN "(COLLECTION_1)") RETURN AnyData</li>
+</ul><div class="paragraph">
+Et les m&eacute;thodes suivantes pour retrouver les valeurs ins&eacute;r&eacute;es
+<br />
+<b>nom_variable.GET...</b>
+<br />
+</div><br><ul type="">
+<li>GetNumber(self IN AnyData, num OUT NOCOPY NUMBER) RETURN PLS_INTEGER</li>
+<li>GetDate(self IN AnyData, dat OUT NOCOPY DATE) RETURN  PLS_INTEGER</li>
+<li>GetChar(self IN AnyData, c OUT NOCOPY CHAR) RETURN PLS_INTEGER</li>
+<li>GetVarchar(self IN AnyData, c OUT NOCOPY VARCHAR) RETURN PLS_INTEGER</li>
+<li>GetVarchar2(self IN AnyData, c  OUT NOCOPY VARCHAR2) RETURN PLS_INTEGER</li>
+<li>GetRaw(self IN AnyData, r OUT NOCOPY RAW) RETURN PLS_INTEGER</li>
+<li>GetBlob(self IN AnyData, b OUT NOCOPY BLOB) RETURN PLS_INTEGER</li>
+<li>GetClob(self IN AnyData, c OUT NOCOPY CLOB) RETURN PLS_INTEGER</li>
+<li>GetBfile(self IN AnyData, b OUT NOCOPY BFILE) RETURN PLS_INTEGER</li>
+<li>GetObject(self IN AnyData, obj OUT NOCOPY "(object_type)") RETURN PLS_INTEGER</li>
+<li>GetRef(self IN AnyData, rf OUT NOCOPY REF "(object_type)") RETURN PLS_INTEGER</li>
+<li>GetCollection(self IN AnyData, col OUT NOCOPY "(collection_type)") RETURN PLS_INTEGER</li>
+</ul><div class="paragraph">
+Le type ANYDATA supporte &eacute;galement les m&eacute;thodes suivantes:
+</div><br><ul type="">
+<li>Proc&eacute;dure BEGINCREATE pour la cr&eacute;ation d'un nouveau type</li>
+<li>Proc&eacute;dure membre PIECEWISE pour d&eacute;finir le mode d'acc&egrave;s &agrave; la valeur courante</li>
+<li>Proc&eacute;dure membre SET... Pour positionner les valeurs</li>
+<li>Proc&eacute;dure membre ENDCREATE Pour terminer la cr&eacute;ation d'un nouveau type</li>
+<li>Fonction membre GETTYPENAME Pour retrouver la d&eacute;finition compl&egrave;te du type</li>
+<li>Fonction membre GETTYPE Pour retrouver le type de l'objet</li>
+</ul><div class="paragraph"> <br />
+<b>SYS.ANYDATASET</b><br /><br />
+Ce type contient &agrave; la fois la description et un ensemble de donn&eacute;es de m&ecirc;me type.
+<br /><br />
+<b>Liste des fonctions attach&eacute;es &agrave; ce type</b>
+</div><br><ul type=""> 
+<li>Proc&eacute;dure membre ADDINSTANCE Pour l'ajout d'une nouvelle instance de donn&eacute;es</li>
+<li>Proc&eacute;dure BEGINCREATE pour la cr&eacute;ation d'un nouveau type</li>
+<li>Proc&eacute;dure membre PIECEWISE pour d&eacute;finir le mode d'acc&egrave;s &agrave; la valeur courante</li>
+<li>Proc&eacute;dure membre SET... Pour positionner les valeurs</li>
+<li>Proc&eacute;dure membre ENDCREATE Pour terminer la cr&eacute;ation d'un nouveau type</li>
+<li>Fonction membre GETTYPENAME Pour retrouver la d&eacute;finition compl&egrave;te du type</li>
+<li>Fonction membre GETTYPE Pour retrouver le type de l'objet</li>
+<li>Fonction membre GETINSTANCE Pour retrouver l'instance suivante</li>
+<li>Fonctions membre GET... Pour retrouver les valeurs</li>
+<li>Fonction membre GETCOUNT Pour retrouver le nombre d'instances du type</li>
+</ul><div class="paragraph">  
+<br /><br />
+<u><b>Types XML</b></u>
+<br /><br />
+Ces types sont utilis&eacute;s pour stocker des objets XML
+<br /><br />
+Le type XMLTYPE poss&eacute;de des fonctions membres pour ins&eacute;rer, extraire et interroger les donn&eacute;es XML via les expressions de type XPATH
+<br /><br />
+Pour manipuler les donn&eacute;es XML, Oracle met &agrave; disposition les fonctions
+</div><br><ul type=""> 
+<li>XMLAGG</li>
+<li>XMLCOLATTVAL</li>
+<li>XMLCONCAT</li>
+<li>XMLDATA</li>
+<li>XMLELEMENT</li>
+<li>XMLFOREST</li>
+<li>XMLSEQUENCE</li>
+<li>XMLTRANSFORM</li>
+</ul><div class="paragraph"> 
+Ainsi que les paquetages
+</div><br><ul type=""> 
+<li>DBMS_XMLDOM</li>
+<li>DBMS_XMLGEN</li>
+<li>DBMS_XMLPARSER</li>
+<li>DBMS_XMLQUERY</li>
+<li>DBMS_XMLSAVE</li>
+<li>DBMS_XMLSCHEMA</li>
+</ul> <div class="paragraph">
+<br />
+<u>Les types URI</u> (URITYPE, DBURITYPE, XDBURITYPE et HTTPURITYPE) permettent de g&eacute;rer les donn&eacute;es sous forme d'URL.
+<br /><br />
+Pour manipuler les donn&eacute;es XML, Oracle met &agrave; disposition le paquetage URIFACTORY
+<br /><br /><br />
+<u>Type Spatial</u>
+<br /><br />
+<b>MDSYS.SDO_GEOMETRY</b>
+<br /><br />
+Pour la manipulation d'objets Oracle Spatial
+<br /><br /><br />
+<u>Types MEDIA</u>
+<br /><br />
+Ces types sont utilis&eacute;s pour stocker des objets multi-m&eacute;dia avec Oracle interMedia
+<br /><br />
+<b>ORDSYS.ORDAUDIO</b><br />
+Pour le stockage de donn&eacute;es audio
+<br /><br />
+<b>ORDSYS.ORDIMAGE</b><br />
+Pour le stockage des images
+<br /><br />
+<b>ORDSYS.ORDIMAGESIGNATURE</b><br />
+Pour le stockage des propri&eacute;t&eacute;s des images
+<br /><br />
+<b>ORDSYS.ORDVIDEO</b><br />
+Pour le stockage des donn&eacute;es vid&eacute;o
+<br /><br />
+<b>ORDSYS.ORDDOC</b><br />
+Pour le stockage de tout type de donn&eacute;es multi-m&eacute;dia
+
+</div><br>	
+			
+			
+	<br /><h3 class="TitreSection2"><a name="L2.3"></a>2.3. Les Types et Sous-types d&eacute;finis par l'utilisateur</h3>
+		
+<div class="paragraph">	
+En plus des types pr&eacute;d&eacute;finis, l'utilisateur peut d&eacute;finir ses propres types avec le mot cl&eacute; <b>TYPE</b> ou <b>SUBTYPE</b><br /><br />
+</div><br><ul type=""><li><b>SUBTYPE nom_sous-type IS type_base[(pr&eacute;cision)] [NOT NULL]</b></li></ul><div class="paragraph">
+<b>nom_sous-type</b> repr&eacute;sente le nom du sous-type d&eacute;clar&eacute;<br />
+<b>type_base</b> repr&eacute;sente le nom du type pr&eacute;d&eacute;fini<br />
+<b>pr&eacute;cision</b> repr&eacute;sente une longueur pour les caract&egrave;res et longueur + d&eacute;cimales pour les num&eacute;riques
+<br /><br />
+<b>SUBTYPE chaine_courte IS VARCHAR2(10);</b><br />
+le sous-type utilisateur chaine_courte d&eacute;finit un VARCHAR2(10)<br />
+&agrave; la suite de cette d&eacute;finition, toute d&eacute;claration de variable de type chaine_courte sera &eacute;gale &agrave; VARCHAR2(10)
+<br /><br />
+<b>SUBTYPE chaine IS VARCHAR2(100);</b><br />
+le sous-type utilisateur chaine d&eacute;finit un VARCHAR2(100)<br /><br />
+<b>SUBTYPE chaine_longue IS VARCHAR2(1000);</b><br />
+le sous-type utilisateur chaine_longue d&eacute;finit un VARCHAR2(1000)<br /><br />
+<b>SUBTYPE NOM_EMP IS EMP.ename%Type;</b><br />
+le sous-type NOM_EMP d&eacute;finit un type identique &agrave; la colonne ename de la table EMP<br /><br />
+<b>SUBTYPE REC_EMP IS EMP%ROWTYPE;</b><br />
+le sous-type REC_EMP d&eacute;finit un type identique &agrave; une ligne de la table EMP<br /><br />
+<br /><br />
+<b>TYPE tableau_numerique IS TABLE OF NUMBER;</b><br />
+le type tableau_numerique d&eacute;finit un tableau de NUMBER<br /><br />
+<b>TYPE TAB_REC_EMP IS TABLE OF REC_EMP;</b><br />
+le type TAB_REC_EMP d&eacute;finit un tableau d'&eacute;l&eacute;ments de type REC_EMP<br />
+
+Lorsque vos nouveaux types et sous-types sont d&eacute;clar&eacute;s, vous pouvez les utiliser pour typer de nouvelles variables<br /><br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_comment">-- d&eacute;finition des types et sous-types</span>
+  3    <span class="ora_keyword">SUBTYPE</span> chaine_courte <span class="ora_keyword">IS</span> <span class="ora_keyword">VARCHAR2</span>(10);
+  4    <span class="ora_keyword">SUBTYPE</span> chaine <span class="ora_keyword">IS</span> <span class="ora_keyword">VARCHAR2</span>(100);
+  5    <span class="ora_keyword">SUBTYPE</span> chaine_longue <span class="ora_keyword">IS</span> <span class="ora_keyword">VARCHAR2</span>(1000);
+  6    <span class="ora_keyword">TYPE</span> tableau_numerique <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> <span class="ora_keyword">NUMBER</span> <span class="ora_keyword">INDEX</span> <span class="ora_keyword">BY</span> <span class="ora_keyword">BINARY_INTEGER</span>;
+  7    <span class="ora_keyword">SUBTYPE</span> NOM_EMP <span class="ora_keyword">IS</span> EMP.ename%<span class="ora_keyword">Type</span>;
+  8    <span class="ora_keyword">SUBTYPE</span> REC_EMP <span class="ora_keyword">IS</span> EMP%<span class="ora_keyword">ROWTYPE</span>;
+  9    <span class="ora_keyword">TYPE</span> TAB_REC_EMP <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> REC_EMP;
+ 10    <span class="ora_comment">-- d&eacute;finition des variables</span>
+ 11    LC$cc chaine_courte;
+ 12    LC$cl chaine_longue;
+ 13    Tab   tableau_numerique;
+ 14  <span class="ora_keyword">Begin</span>
+ 15    LC$cc := 'Court' ;
+ 16    LC$cl := 'Cha&icirc;ne beaucoup plus longue' ;
+ 17    <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Cha&icirc;ne longue = ' || LC$cl ) ;
+ 18    <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> 1..5 <span class="ora_keyword">Loop</span>
+ 19       Tab(i) := i + (.1 * i ) ;
+ 20    <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Tab(' || <span class="ora_keyword">Ltrim</span>( <span class="ora_keyword">To_char</span>( i ) ) || ') = ' || <span class="ora_keyword">To_char</span>( Tab(i) ) ) ;
+ 21    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 22  <span class="ora_keyword">End</span> ;
+ 23  /
+Cha&icirc;ne longue = Cha&icirc;ne beaucoup plus longue
+Tab(1) = 1,1
+Tab(2) = 2,2
+Tab(3) = 3,3
+Tab(4) = 4,4
+Tab(5) = 5,5
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+</div><br>		
+					
+	<br /><h3 class="TitreSection2"><a name="L2.4"></a>2.4. Les litt&eacute;raux</h3>
+		
+<div class="paragraph">
+Un litt&eacute;ral ou valeur constante d&eacute;signe une valeur fixe.<br />
+Par exemple 'LUNDI', 'Montpellier', '2012' repr&eacute;sentent des valeurs litt&eacute;rales de type caract&egrave;re.<br />
+12.3, 25 repr&eacute;sentent des valeurs litt&eacute;rales de type num&eacute;rique
+<br /><br />
+Ces valeurs peuvent appara&icirc;tre dans des initialisations de variables, des calculs ou transmises &agrave; des proc&eacute;dures ou fonctions.
+<br />
+</div><br>		
+	<br /><h4 class="TitreSection3"><a name="L2.4.1"></a>2.4.1. Litt&eacute;ral de type caract&egrave;re</h4>
+		
+<div class="paragraph">	
+D&eacute;signe une valeur fixe comme &eacute;tant de type caract&egrave;re<br />
+La valeur peut contenir n'importe quel caract&egrave;re &agrave; l'exception d'une simple apostrophe<br />
+(pour saisir une apostrophe dans un litt&eacute;ral, il faut la doubler (''))<br />
+Il doit &ecirc;tre encadr&eacute; d'une paire d'apostrophes<br />
+Il peut &ecirc;tre pr&eacute;c&eacute;d&eacute; du caract&egrave;re N pour indiquer qu'il doit &ecirc;tre transform&eacute; dans le jeu de caract&egrave;res national<br />
+Il a les m&ecirc;mes propri&eacute;t&eacute;s que les types CHAR et VARCHAR2<br />
+Sa longueur ne peut pas d&eacute;passer 4000 octets
+<br /><br />
+'J''aime le PL/SQL'<br />
+'Cordialement'<br />
+'Select * From EMP'<br />
+</div><br>		
+			
+	<br /><h4 class="TitreSection3"><a name="L2.4.2"></a>2.4.2. Litt&eacute;ral de type entier</h4>
+		
+<div class="paragraph">	
+D&eacute;signe une valeur fixe comme &eacute;tant de type entier<br />
+Ne peut contenir que les chiffres de 0 &agrave; 9<br />
+Il peut &ecirc;tre pr&eacute;c&eacute;d&eacute; des  signes + ou -<br />
+Il peut contenir jusqu'&agrave; 38 chiffres de pr&eacute;cision<br />
+<br />
+-12<br />
+267589<br />
++3<br />
+</div><br>		
+			
+	<br /><h4 class="TitreSection3"><a name="L2.4.3"></a>2.4.3. Litt&eacute;ral de type d&eacute;cimal</h4>
+		
+<div class="paragraph">	
+D&eacute;signe une valeur fixe comme &eacute;tant de type num&eacute;rique<br />
+Ne peut contenir que les chiffres de 0 &agrave; 9<br />
+Il peut &ecirc;tre pr&eacute;c&eacute;d&eacute; des  signes + ou -<br />
+Il peut contenir jusqu'&agrave; 38 chiffres de pr&eacute;cision<br />
+Il peut contenir le caract&egrave;re e ou E qui indique que la valeur est sp&eacute;cifi&eacute;e en notation scientifique. Les chiffres apr&egrave;s le E indiquent l'exposant. Ce dernier est valide dans un intervalle de -130 &agrave; 125<br />
+<br />
+-54<br />
++3.1415<br />
+0.006<br />
+75E-12<br />
+</div><br>		
+				
+	<br /><h4 class="TitreSection3"><a name="L2.4.4"></a>2.4.4. Litt&eacute;ral de type intervalle (9i)</h4>
+		
+<div class="paragraph">
+<span class="important">Nouveaut&eacute; 9i</span>
+Sp&eacute;cifie une p&eacute;riode de temps, d&eacute;clin&eacute;e en ann&eacute;es et mois ou en jours, heures, minutes et secondes.<br />
+Les deux types de litt&eacute;raux de type intervalle sont YEAR TO MONTH et DAY TO SECOND<br />
+Chaque type contient un pr&eacute;fixe et peut contenir un suffixe. Le pr&eacute;fixe d&eacute;signe l'unit&eacute; de base de date ou d'heure. Le suffixe d&eacute;finit les parties d'incr&eacute;ment associ&eacute;es &agrave; l'unit&eacute; de base.<br />
+<br /><br />
+Si vos donn&eacute;es sont sous forme num&eacute;rique, vous pouvez utiliser les fonctions de conversion NUMTOYMINTERVAL ou NUMTODSINTERVAL pour les convertir en litt&eacute;raux de type intervalle.
+<br /><br />
+</div><br><ul type="">
+<li><b>Intervalle de type YEAR TO MONTH</b></li>
+</ul><div class="paragraph"><br />
+<b>INTERVAL 'nombre_entier [-nombre_entier]' YEAR ou MONTH (pr&eacute;cision) TO YEAR ou MONTH</b>
+<br /><br />
+Nombre_entier [-nombre_entier] sp&eacute;cifie une valeur enti&egrave;re pour le pr&eacute;fixe et &eacute;ventuellement le suffixe du litt&eacute;ral. Si le pr&eacute;fixe est YEAR et le suffixe est MONTH, nombre_entier pour le mois doit &ecirc;tre entre 0 et 11
+<br /><br />
+Pr&eacute;cision repr&eacute;sente le nombre maximum de chiffres pour le pr&eacute;fixe compris entre 0 et 9. Par d&eacute;faut sa valeur est 2
+<br /><br />
+INTERVAL '12-3' YEAR TO MONTH : intervalle de 12 ans et 3 mois
+<br /><br />
+INTERVAL '115' YEAR(3) : intervalle de 115 ans (la pr&eacute;cision du suffixe doit &ecirc;tre sp&eacute;cifi&eacute;e YEAR(3) si elle est sup&eacute;rieure &agrave; la valeur par d&eacute;faut)
+<br /><br />
+INTERVAL '24' MONTH : intervalle de 24 mois
+<br /><br />
+Il est possible d'additionner ou soustraire un litt&eacute;ral de type intervalle &agrave; un autre
+<br /><br />
+INTERVAL '6-4' YEAR TO MONTH - INTERVAL '6' MONTH
+<br />
+</div><br><ul type="">
+<li><b>Intervalle de type DAY TO SECOND</b></li>
+</ul><div class="paragraph"><br />
+<b>INTERVAL 'nombre_entier' DAY ou HOUR ou MINUTE ou SECOND (pr&eacute;cision) TO DAY ou HOUR ou MINUTE ou SECOND (fractions de secondes)</b>
+<br /><br />
+Nombre_entier peut repr&eacute;senter soit : <br />
+Un nombre de jours<br />
+Une heure au format HH[ :MI[ :SS[.fractions_de_secondes]]]<br />
+<br /><br />
+Pr&eacute;cision repr&eacute;sente le nombre de chiffres du pr&eacute;fixe, compris entre 0 et 9. Par d&eacute;faut sa valeur est 2
+<br /><br />
+Fractions_de_secondes repr&eacute;sente le nombre de chiffres des fractions de secondes, compris entre 1 et 9. Par d&eacute;faut sa valeur est 6
+<br /><br />
+Les valeurs correctes pour les champs sont :<br />
+HOUR		0 &agrave; 23<br />
+MINUTE	0 &agrave; 59<br />
+SECOND	0 &agrave; 59.999999999<br />
+<br /><br />
+INTERVAL '6 4 :10 :22.356' DAY TO SECOND(3) : intervalle de 6 jours, 4 heures, 10 minutes, 22 secondes et 356 milli&egrave;mes de secondes
+<br /><br />
+INTERVAL '6 4 :10' DAY TO MINUTE : intervalle de 6 jours, 4 heures et 10 minutes
+<br /><br />
+INTERVAL '365 12' DAY(3) TO HOUR : intervalle de 365 jours et 12 heures
+<br /><br />
+INTERVAL '8 :10 :20.3333333' HOUR TO SECOND(7) : Intervalle de 8 heures, 10 minutes, 20.3333333 secondes
+<br /><br />
+INTERVAL '18 :30' HOUR TO MINUTE : intervalle de 18 heures et 30 minutes
+<br /><br />
+INTERVAL '20' MINUTE : intervalle de 20 minutes
+<br /><br />
+INTERVAL '4.12345' SECOND(2,4) : intervalle arrondi &agrave; 4.1235 secondes car la pr&eacute;cision demand&eacute;e sur les fractions de secondes est de 4 chiffres
+<br /><br />
+Il est possible d'additionner ou soustraire un litt&eacute;ral de type intervalle &agrave; un autre
+<br /><br />
+INTERVAL '30' DAY - INTERVAL '18' HOUR
+</div><br>		
+					
+			
+
+	
+<hr><div class="barreNavigation"> [ <a class="barreNavigationTexte" href="Chap1.html">Précédent</a> ]  [ <a class="barreNavigationTexte" href="sommaire.html">Sommaire</a> ]  [ <a class="barreNavigationTexte" href="Chap3.html">Suivant</a> ] </div><hr><p class="licence">Copyright &copy;2004&nbsp;SheikYerbouti.
+            Aucune reproduction, même partielle, ne peut être faite
+			de ce site et de l'ensemble de son contenu : textes, documents, images, etc
+            sans l'autorisation expresse de l'auteur. Sinon vous encourez selon la loi jusqu'à 3 ans de prison et jusqu'à 300 000 E
+			de dommages et intérets. Cette page est déposée à la <a href="http://www.sacd.fr/" target="_blank">SACD</a>.</p>
+       											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			<table width="100%" cellpadding="4" class="cachee">
+				<tr bgcolor="#DDEEFF">
+					<td align="center" class="titrepied">
+			  Vos questions techniques : <b><a href="http://www.developpez.net/forums/" target="_blank">forum d'entraide Accueil</a></b> - Publiez vos articles, tutoriels et cours<br />
+			  et rejoignez-nous dans l'&eacute;quipe de r&eacute;daction du club d'entraide des d&eacute;veloppeurs francophones <br /> <a href="http://club.developpez.com/contacts/">Nous contacter</a>
+	
+			  - Copyright 2000..2005 www.developpez.com
+					</td>
+					<td align="center">
+          
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
+
+	

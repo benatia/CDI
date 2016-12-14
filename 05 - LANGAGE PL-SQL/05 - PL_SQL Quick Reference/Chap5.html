@@ -1,0 +1,1874 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <title>Guide PL/SQL - Club d'entraide des d&#233;veloppeurs francophones</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta name="generator" content="developpez-com" />
+  <link rel="stylesheet" type="text/css" href="./mainstyle.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="./printer.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./article.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./faq.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./source.css" />
+</head>
+<body>
+<table width="100%" cellspacing="4">
+	<tr>
+  	<td align="center">
+    	<table width="100%" cellspacing="0" cellpadding="0">
+     		<tr>
+     			<td>
+			      <table width="100%" cellspacing="11">
+    	  			<tr>
+        				<td>
+          				<a href="http://www.developpez.com"><img src="images/logo.gif" alt="Accueil" /></a>
+        				</td>
+      				</tr>
+      				<tr>
+      					<td></td>
+      				</tr>
+      			</table>
+    			</td>
+  			</tr>
+  			<tr>
+    			<td>
+						<table class="cachee" cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td class="iongl"><img src="images/bordg.gif" /></td>
+								<td class="bgongl"><a href="http://www.developpez.com" class="ntdrub">Accueil<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://club.developpez.com" class="ntdrub">Le<br />Club</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://delphi.developpez.com" class="ntdrub">Delphi<br />Kylix</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://c.developpez.com" class="ntdrub">C<br />C++</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://java.developpez.com" class="ntdrub">Java<br />J2EE</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://dotnet.developpez.com" class="ntdrub">DotNET<br />&amp; C#</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://vb.developpez.com" class="ntdrub">Visual<br />Basic</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://access.developpez.com" class="ntdrub">Access<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://pascal.developpez.com" class="ntdrub">Pascal<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://web.developpez.com" class="ntdrub">Dev<br />Web</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://php.developpez.com" class="ntdrub">PHP<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://asp.developpez.com" class="ntdrub">ASP<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://xml.developpez.com" class="ntdrub">XML<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://uml.developpez.com" class="ntdrub">UML<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://sgbd.developpez.com" class="ntdrub">SQL<br />SGBD</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://windows.developpez.com" class="ntdrub">Win<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://linux.developpez.com" class="ntdrub">Linux<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://www.developpez.com/cours/" class="ntdrub">Autres<br /></a></td>
+								<td class="iongl"><img src="images/bordd.gif" /></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="trbleu">
+					</td>
+				</tr>
+
+				<tr valign="top">
+					<td valign="top" class="fondart">
+						<table cellspacing="1" width="100%" class="tbnoir">
+							<tr>
+								<td class="fondart">
+									<table class="cadrearticle" width="90%" cellpadding="10" cellspacing="0">
+										<tr>
+											<td>
+
+        <br><h1>Oracle PL/SQL</h1><p class="dateArticle">
+        Date de publication : Avril 2004 , 
+        Date de mise a jour : Juillet 2004</p><hr><div class="barreNavigation"> [ <a class="barreNavigationTexte" href="Chap4.html">Précédent</a> ]  [ <a class="barreNavigationTexte" href="sommaire.html">Sommaire</a> ]  [ <a class="barreNavigationTexte" href="Chap6.html">Suivant</a> ] </div><hr>
+	
+	
+	
+	
+	
+	
+	<br /><a class="summaryIndent0" href="#L5">5. Collections et enregistrements</a>
+		
+
+
+		
+		<br /><a class="summaryIndent1" href="#L5.1">5.1. D&eacute;clarations et initialisation</a>
+			
+		
+								
+		<br /><a class="summaryIndent1" href="#L5.2">5.2. Acc&egrave;s aux &eacute;l&eacute;ments d'une collection</a>
+					
+		
+							
+		<br /><a class="summaryIndent1" href="#L5.3">5.3. M&eacute;thodes associ&eacute;es aux collections</a>
+			
+ 		
+									
+		<br /><a class="summaryIndent1" href="#L5.4">5.4. Utilisation des collections avec les donn&eacute;es issues de la base</a>
+			
+		
+													
+		<br /><a class="summaryIndent1" href="#L5.5">5.5. Traitements en masse des collections</a>
+			
+
+
+		
+															
+		<br /><a class="summaryIndent1" href="#L5.6">5.6. Les collections et enregistrements en param&egrave;tres des proc&eacute;dures et fonctions</a>
+			
+ 		
+										
+	
+	
+<br><br>
+	
+	
+	
+	
+	
+	
+	<br /><h2 class="TitreSection1"><a name="L5"></a>5. Collections et enregistrements</h2>
+		
+<div class="paragraph">
+Ces types de donn&eacute;es n'existent qu'en PL/SQL et n'ont pas d'&eacute;quivalent dans la base Oracle<br />
+Il n'est pas possible de stocker un enregistrement directement dans la base
+<br /><br />
+<b>Les collections</b>
+<br /><br />
+Une collection est un ensemble ordonn&eacute; d'&eacute;l&eacute;ments de m&ecirc;me type. <br />
+Elle est index&eacute;e par une valeur de type num&eacute;rique ou alphanum&eacute;rique<br />
+Elle ne peut avoir qu'une seule dimension ( mais en cr&eacute;ant des collections de collections on peut obtenir des tableaux &agrave; plusieurs dimensions)
+<br /><br />
+On peut distinguer trois types diff&eacute;rents de collections : 
+<br />
+</div><br><ul type="">
+<li><b>Les tables (INDEX-BY TABLES) qui peuvent &ecirc;tre indic&eacute;es par des variables num&eacute;riques ou alpha-num&eacute;riques</b></li>
+</ul>
+<ul type="">
+<li><b>Les tables imbriqu&eacute;es(NESTED TABLES) qui sont indic&eacute;es par des variables num&eacute;riques et peuvent &ecirc;tre lues et &eacute;crites directement depuis les colonnes d'une table</b></li>
+</ul>
+<ul type="">
+<li><b>Les tableaux de type VARRAY, indic&eacute;s par des variables num&eacute;riques, dont le nombre d'&eacute;l&eacute;ments maximum est fix&eacute; d&egrave;s leur d&eacute;claration et peuvent &ecirc;tre lus et &eacute;crits directement depuis les colonnes d'une table</b></li>
+</ul><div class="paragraph">
+<br />
+Les collections de type NESTED TABLE et VARRAY doivent-&ecirc;tre initialis&eacute;es apr&egrave;s leur d&eacute;claration, &agrave; l'aide de leur constructeur qui porte le m&ecirc;me nom que la collection<br />
+(elles sont assign&eacute;es &agrave; NULL lors de leur d&eacute;claration. Il est donc possible de tester leur nullit&eacute;)<br />
+<br /><br />
+<b>Les enregistrements</b>
+<br /><br />
+Un enregistrement ressemble &agrave; une structure d'un L3G<br />
+Il est compos&eacute; de champs qui peuvent &ecirc;tre de type diff&eacute;rent
+</div><br>		
+		<br /><h3 class="TitreSection2"><a name="L5.1"></a>5.1. D&eacute;clarations et initialisation</h3>
+			
+<div class="paragraph">
+</div><br><ul type="">
+<li><b>Les collections de type NESTED TABLE et INDEX-BY TABLES</b></li>
+</ul><div class="paragraph">
+<br />
+Elles sont de taille dynamique et il n'existe pas forc&eacute;ment de valeur pour toutes les positions
+<br /><br />
+D&eacute;claration d'une collection de type nested table<br />
+<b>TYPE nom type IS TABLE OF type &eacute;l&eacute;ment [NOT NULL] ;</b>
+<br /><br />
+D&eacute;claration d'une collection de type index by<br />
+<b>TYPE nom type IS TABLE OF type &eacute;l&eacute;ment [NOT NULL] INDEX BY index_by_type ;</b>
+<br /><br />
+<b>index_by_type</b> repr&eacute;sente l'un des types suivants :
+</div><br><ul type="">
+<li>BINARY_INTEGER</li>
+<li>PLS_INTEGER<span class="important">(9i)</span></li>
+<li>VARCHAR2(taille)</li>
+<li>LONG</li>
+</ul><div class="paragraph"><br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">declare</span>
+  2    <span class="ora_comment">-- collection de type nested table</span>
+  3    <span class="ora_keyword">TYPE</span> TYP_NES_TAB <span class="ora_keyword">is</span> <span class="ora_keyword">table</span> <span class="ora_keyword">of</span> <span class="ora_keyword">varchar2</span>(100) ;
+  4    <span class="ora_comment">-- collection de type index by  </span>
+  5    <span class="ora_keyword">TYPE</span> TYP_IND_TAB <span class="ora_keyword">is</span> <span class="ora_keyword">table</span> <span class="ora_keyword">of</span> <span class="ora_keyword">number</span> <span class="ora_keyword">index</span> <span class="ora_keyword">by</span> <span class="ora_keyword">binary_integer</span> ;
+  6    tab1 TYP_NES_TAB ;
+  7    tab2 TYP_IND_TAB ;
+  8  <span class="ora_keyword">Begin</span>
+  9    tab1 := TYP_NES_TAB('Lundi','Mardi','Mercredi','Jeudi' ) ;
+ 10    <span class="ora_keyword">for</span> i <span class="ora_keyword">in</span> 1..10 <span class="ora_keyword">loop</span>
+ 11       tab2(i):= i ;
+ 12    <span class="ora_keyword">end</span> <span class="ora_keyword">loop</span> ;
+ 13  <span class="ora_keyword">End</span>;
+ 14  /
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+<br />
+</div><br><ul type="">
+<li><b>Les collections de type VARRAY</b></li>
+</ul><div class="paragraph">
+Ce type de collection poss&egrave;de une dimension maximale qui doit &ecirc;tre pr&eacute;cis&eacute;e lors de sa d&eacute;claration<br />
+Elle poss&egrave;de une longueur fixe et donc la suppression d'&eacute;l&eacute;ments ne permet pas de gagner de place en m&eacute;moire<br />
+Ses &eacute;l&eacute;ments sont num&eacute;rot&eacute;s &agrave; partir de la valeur 1
+<br /><br />
+D&eacute;claration d'une collection de type VARRAY<br />
+<b>TYPE nom type IS VARRAY (taille maximum) OF type &eacute;l&eacute;ment [NOT NULL] ;</b>
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">declare</span>
+  2    <span class="ora_comment">-- collection de type VARRAY</span>
+  3    <span class="ora_keyword">TYPE</span> TYP_VAR_TAB <span class="ora_keyword">is</span> VARRAY(30) <span class="ora_keyword">of</span> <span class="ora_keyword">varchar2</span>(100) ;
+  4    tab1 TYP_VAR_TAB := TYP_VAR_TAB('','','','','','','','','','');
+  5  <span class="ora_keyword">Begin</span>
+  6    <span class="ora_keyword">for</span> i <span class="ora_keyword">in</span> 1..10 <span class="ora_keyword">loop</span>
+  7       tab1(i):= <span class="ora_keyword">to_char</span>(i) ;
+  8    <span class="ora_keyword">end</span> <span class="ora_keyword">loop</span> ;
+  9  <span class="ora_keyword">End</span>;
+ 10  /
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+D&eacute;claration d'un tableau VARRAY de 30 &eacute;l&eacute;ments de type varchar2(100)
+<br /><br />
+</div><br><ul type="">
+<li><b>Les enregistrements</b></li>
+</ul><div class="paragraph">
+<b>TYPE nom type IS RECORD ( nom_champ type_&eacute;l&eacute;ment [[ NOT NULL] := expression ] [, &#133;.] ) ;</b><br />
+<b>Nom_variable  nom_type ;</b>
+<br /><br />
+Comme pour la d&eacute;claration des variables, il est possible d'initialiser les champs lors de leur d&eacute;claration
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">declare</span>
+  2    <span class="ora_comment">-- Record --</span>
+  3    <span class="ora_keyword">TYPE</span> T_REC_EMP <span class="ora_keyword">IS</span> <span class="ora_keyword">RECORD</span> (
+  4       Num emp.empno%<span class="ora_keyword">TYPE</span>,
+  5       Nom emp.ename%<span class="ora_keyword">TYPE</span>,
+  6       Job emp.job%<span class="ora_keyword">TYPE</span> );    
+  7    
+  8    R_EMP T_REC_EMP ; <span class="ora_comment">-- variable enregistrement de type T_REC_EMP</span>
+  9  <span class="ora_keyword">Begin</span>
+ 10    R_EMP.Num := 1 ;
+ 11    R_EMP.Nom := 'Scott' ;
+ 12    R_EMP.job := 'GASMAN' ; 
+ 13  <span class="ora_keyword">End</span>; 
+ 14  /
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+Bien s&ucirc;r il est possible de g&eacute;rer des tableaux d'enregistrements
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">declare</span>
+  2    <span class="ora_comment">-- Record --</span>
+  3    <span class="ora_keyword">TYPE</span> T_REC_EMP <span class="ora_keyword">IS</span> <span class="ora_keyword">RECORD</span> (
+  4       Num emp.empno%<span class="ora_keyword">TYPE</span>,
+  5       Nom emp.ename%<span class="ora_keyword">TYPE</span>,
+  6       Job emp.job%<span class="ora_keyword">TYPE</span> );    
+  7    <span class="ora_comment">-- Table de records --</span>
+  8    <span class="ora_keyword">TYPE</span> TAB_T_REC_EMP <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> T_REC_EMP <span class="ora_keyword">index</span> <span class="ora_keyword">by</span> <span class="ora_keyword">binary_integer</span> ;
+  9    t_rec TAB_T_REC_EMP ; <span class="ora_comment">-- variable tableau d'enregistrements</span>
+ 10  <span class="ora_keyword">Begin</span>
+ 11    t_rec(1).Num := 1 ;
+ 12    t_rec(1).Nom := 'Scott' ;
+ 13    t_rec(1).job := 'GASMAN' ;
+ 14    t_rec(2).Num := 2 ;
+ 15    t_rec(2).Nom := 'Smith' ;
+ 16    t_rec(2).job := 'CLERK' ;    
+ 17  <span class="ora_keyword">End</span>; 
+ 18  /
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+<br />
+Les &eacute;l&eacute;ments d'un enregistrement peuvent &ecirc;tre des objets, des collections ou d'autres enregistrements.
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">Declare</span>
+  <span class="ora_keyword">TYPE</span> Temps <span class="ora_keyword">IS</span> <span class="ora_keyword">RECORD</span>
+  (
+    heures   <span class="ora_keyword">SMALLINT</span>,
+    minutes  <span class="ora_keyword">SMALLINT</span>,
+    secondes <span class="ora_keyword">SMALLINT</span>
+  );
+  <span class="ora_keyword">TYPE</span> Vol <span class="ora_keyword">IS</span> <span class="ora_keyword">RECORD</span>
+  (
+    numvol     <span class="ora_keyword">PLS_INTEGER</span>,
+    Numavion   <span class="ora_keyword">VARCHAR2</span>(15),
+    Commandant Employe,     <span class="ora_comment">-- type objet</span>
+    Passagers  ListClients, <span class="ora_comment">-- type nested table</span>
+    depart     Temps,       <span class="ora_comment">-- type record</span>
+    arrivee    Temps        <span class="ora_comment">-- type record</span>
+  );  		
+<span class="ora_keyword">Begin</span>
+  ...
+<span class="ora_keyword">End</span>  ;</div></pre><div class="paragraph">
+<span class="important">A la diff&eacute;rence des types VARRAY et (NESTED)TABLES, les types RECORD ne peuvent pas &ecirc;tre cr&eacute;&eacute;s et stock&eacute;s dans la base.</span>
+<br /><br /><br />
+<b>Initialisation des collections</b>
+<br /><br /><br />
+Les collections de type NESTED TABLE et VARRAY doivent &ecirc;tre initialis&eacute;es avant toute utilisation (&agrave; l'exception des collections de type INDEX-BY TABLE).
+<br /><br />
+Pour initialiser une collection, il faut se r&eacute;f&eacute;rer &agrave; son constructeur. Celui-ci, cr&eacute;&eacute; automatiquement par Oracle porte le m&ecirc;me nom que la collection.
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">Declare</span>
+<span class="ora_comment">-- D&eacute;claration d'un type tableau VARRAY de 30 &eacute;l&eacute;ments de type Varchar2(100)</span>
+<span class="ora_keyword">TYPE</span> TYP_VAR_TAB <span class="ora_keyword">is</span> VARRAY(30) <span class="ora_keyword">of</span> <span class="ora_keyword">varchar2</span>(100) ;
+<span class="ora_comment">-- D&eacute;claration et initialisation d'une variable de type TYP_VAR_TAB</span>
+tab1 TYP_VAR_TAB := TYP_VAR_TAB('','','','','','','','','','');</div></pre><div class="paragraph">
+Il n'est pas obligatoire d'initialiser tous les &eacute;l&eacute;ments d'une collection. On peut m&ecirc;me n'en initialiser aucun. Dans ce cas l'appel de la m&eacute;thode constructeur se fait sans argument .
+<br /><br />
+tab1 TYP_VAR_TAB := TYP_VAR_TAB();
+<br /><br />
+Cette collection n'a aucun &eacute;l&eacute;ment initialis&eacute;. On dit qu'elle est vide.
+<br /><br />
+Une collection non initialis&eacute;e n'est pas vide mais NULL.
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">Declare</span>
+<span class="ora_keyword">TYPE</span> TYP_VAR_TAB <span class="ora_keyword">is</span> VARRAY(30) <span class="ora_keyword">of</span> <span class="ora_keyword">varchar2</span>(100) ;
+tab1 TYP_VAR_TAB; <span class="ora_comment">-- collection NULL</span></div></pre><div class="paragraph">
+L'initialisation d'une collection peut se faire dans la section instructions, mais dans tous les cas, elle ne pourra pas &ecirc;tre utilis&eacute;e avant d'avoir &eacute;t&eacute; initialis&eacute;e.
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">Declare</span>
+<span class="ora_keyword">TYPE</span> TYP_VAR_TAB <span class="ora_keyword">is</span> VARRAY(30) <span class="ora_keyword">of</span> <span class="ora_keyword">varchar2</span>(100) ;
+tab1 TYP_VAR_TAB ; <span class="ora_comment">-- collection automatiquement assign&eacute;e &agrave; NULL</span>
+<span class="ora_keyword">Begin</span>
+  <span class="ora_comment">-- La collection est assign&eacute;e &agrave; NULL mais n'est pas manipulable --</span>
+   <span class="ora_keyword">If</span> Tab1 <span class="ora_keyword">is</span> <span class="ora_keyword">null</span> <span class="ora_keyword">Then</span> <span class="ora_comment">-- Test OK</span>
+	&#133; 
+   <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+  Tab1 := TYP_VAR_TAB('','','','','','','','','','');
+  <span class="ora_comment">-- La collection est manipulable --</span>
+<span class="ora_keyword">End</span> ;</div></pre><div class="paragraph">
+</div><br>		
+								
+		<br /><h3 class="TitreSection2"><a name="L5.2"></a>5.2. Acc&egrave;s aux &eacute;l&eacute;ments d'une collection</h3>
+					
+<div class="paragraph">
+La syntaxe d'acc&egrave;s &agrave; un &eacute;l&eacute;ment d'une collection est la suivante :
+<br /><br />
+<b>Nom_collection( indice )</b>
+<br /><br />
+L'indice  doit &ecirc;tre un nombre valide compris entre -2**31 et 2**31<br />
+Pour une collection de type NESTED TABLE, l'indice doit &ecirc;tre un nombre valide compris entre 1 et 2**31<br />
+Pour une collection de type VARRAY, l'indice doit &ecirc;tre un nombre valide compris entre 1 et la taille maximum du tableau<br />
+Dans le cas d'une collection de type INDEX-BY Varchar2 ou Long, l'indice repr&eacute;sente toute valeur possible du type concern&eacute;.<br />
+<br />
+Indice peut &ecirc;tre un litt&eacute;ral, une variable ou une expression
+<br />
+</div><br><pre class="code"><div class="ora_code">  1   <span class="ora_keyword">Declare</span>
+  2     <span class="ora_keyword">Type</span> TYPE_TAB_EMP <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> <span class="ora_keyword">Varchar2</span>(60) <span class="ora_keyword">INDEX</span> <span class="ora_keyword">BY</span> <span class="ora_keyword">BINARY_INTEGER</span> ;
+  3     emp_tab TYPE_TAB_EMP ;
+  4     i       <span class="ora_keyword">pls_integer</span> ;
+  5   <span class="ora_keyword">Begin</span>
+  6     <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> 0..10 <span class="ora_keyword">Loop</span>
+  7       emp_tab( i+1 ) := 'Emp ' || <span class="ora_keyword">ltrim</span>( <span class="ora_keyword">to_char</span>( i ) ) ;
+  8     <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+  9* <span class="ora_keyword">End</span> ;
+<span class="ora_keyword">SQL</span>&gt; /
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+<br />
+</div><br><pre class="code"><div class="ora_code">  1  <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">Type</span> TYPE_TAB_JOURS <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> <span class="ora_keyword">PLS_INTEGER</span> <span class="ora_keyword">INDEX</span> <span class="ora_keyword">BY</span> <span class="ora_keyword">VARCHAR2</span>(20) ;
+  3    jour_tab TYPE_TAB_JOURS ;
+  4  <span class="ora_keyword">Begin</span>
+  5      jour_tab( 'LUNDI' ) := 10 ;
+  6      jour_tab( 'MARDI' ) := 20 ;
+  7      jour_tab( 'MERCREDI' ) := 30 ;
+  8* <span class="ora_keyword">End</span> ;
+<span class="ora_keyword">SQL</span>&gt; /
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+<br />
+Il est possible d'assigner une collection &agrave; une autre &agrave; condition qu'elles soient de m&ecirc;me type
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">Declare</span>
+  <span class="ora_keyword">Type</span> TYPE_TAB_EMP  <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> EMP%<span class="ora_keyword">ROWTYPE</span> <span class="ora_keyword">INDEX</span> <span class="ora_keyword">BY</span> <span class="ora_keyword">BINARY_INTEGER</span> ;
+  <span class="ora_keyword">Type</span> TYPE_TAB_EMP2 <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> EMP%<span class="ora_keyword">ROWTYPE</span> <span class="ora_keyword">INDEX</span> <span class="ora_keyword">BY</span> <span class="ora_keyword">BINARY_INTEGER</span> ;  
+  tab1 TYPE_TAB_EMP  := TYPE_TAB_EMP( ... );
+  tab2 TYPE_TAB_EMP  := TYPE_TAB_EMP( ... );
+  tab3 TYPE_TAB_EMP2 := TYPE_TAB_EMP2( ... );  
+<span class="ora_keyword">Begin</span>
+    tab2 := tab1 ; <span class="ora_comment">-- OK</span>
+    tab3 := tab1 ; <span class="ora_comment">-- Ill&eacute;gal : types diff&eacute;rents</span>
+    ...		
+<span class="ora_keyword">End</span> ;</div></pre><div class="paragraph">
+<br />
+Les collections ne peuvent pas &ecirc;tre compar&eacute;es entre elles.<br />
+Les op&eacute;rateurs d'&eacute;galit&eacute; ou de comparaison ne peuvent pas &ecirc;tre utilis&eacute;s entre 2 collections
+<br />
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">Type</span> TYPE_TAB_STRING  <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> <span class="ora_keyword">Varchar2</span>(10) ;
+  3    tab1 TYPE_TAB_STRING  := TYPE_TAB_STRING( '1','2','3' );
+  4    tab2 tab1%<span class="ora_keyword">TYPE</span>        := TYPE_TAB_STRING( '1','2','3' );
+  5  <span class="ora_keyword">Begin</span>  
+  6     <span class="ora_keyword">If</span> tab1 = tab2 <span class="ora_keyword">Then</span>
+  7        <span class="ora_keyword">null</span> ;
+  8     <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+  9  <span class="ora_keyword">End</span> ; 
+ 10  /
+   <span class="ora_keyword">If</span> tab1 = tab2 <span class="ora_keyword">Then</span>
+           *
+ERREUR &agrave; la ligne 6 :
+ORA-06550: Ligne 6, colonne 12 :
+PLS-00306: num&eacute;ro ou types d'arguments erron&eacute;s dans appel &agrave; '='
+ORA-06550: Ligne 6, colonne 4 :
+PL/<span class="ora_keyword">SQL</span>: <span class="ora_keyword">Statement</span> ignored</div></pre><div class="paragraph">
+<span class="important">(10g)</span><br />
+Les collections de m&ecirc;me type peuvent &ecirc;tre compar&eacute;es en &eacute;galit&eacute; ou diff&eacute;rence
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">DECLARE</span>
+   <span class="ora_keyword">TYPE</span> Colors <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> <span class="ora_keyword">VARCHAR2</span>(64);
+   primaries Colors := Colors('Blue','Green','Red');
+   rgb Colors := Colors('Red','Green','Blue');
+   traffic_light Colors := Colors('Red','Green','Amber');
+<span class="ora_keyword">BEGIN</span>
+<span class="ora_comment">-- On peut utiliser = ou !=, mais pas &lt; ou &gt;.</span>
+<span class="ora_comment">-- Notez que ces 2 collections sont &eacute;gales m&ecirc;me si leurs membres sont dans un ordre diff&eacute;rent.</span>
+   <span class="ora_keyword">IF</span> primaries = rgb <span class="ora_keyword">THEN</span>
+      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>('OK, PRIMARIES et RGB ont les m&ecirc;mes membres.');
+   <span class="ora_keyword">END</span> <span class="ora_keyword">IF</span>;
+   <span class="ora_keyword">IF</span> rgb != traffic_light <span class="ora_keyword">THEN</span>
+      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>('RGB et TRAFFIC_LIGHT ont des membres diff&eacute;rents.');
+   <span class="ora_keyword">END</span> <span class="ora_keyword">IF</span>;
+<span class="ora_keyword">END</span>;</div></pre><div class="paragraph">
+<span class="important">(10g)</span><br />
+Il est possible d'appliquer certains op&eacute;rateurs sur des tables imbriqu&eacute;es
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">DECLARE</span>
+  <span class="ora_keyword">TYPE</span> nested_typ <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> <span class="ora_keyword">NUMBER</span>;
+  nt1 nested_typ := nested_typ(1,2,3);
+  nt2 nested_typ := nested_typ(3,2,1);
+  nt3 nested_typ := nested_typ(2,3,1,3);
+  nt4 nested_typ := nested_typ(1,2,4);
+  reponse <span class="ora_keyword">BOOLEAN</span>;
+  combien <span class="ora_keyword">NUMBER</span>;
+  <span class="ora_keyword">PROCEDURE</span> verif(test <span class="ora_keyword">BOOLEAN</span> <span class="ora_keyword">DEFAULT</span> <span class="ora_keyword">NULL</span>, quantite <span class="ora_keyword">NUMBER</span> <span class="ora_keyword">DEFAULT</span> <span class="ora_keyword">NULL</span>) <span class="ora_keyword">IS</span>
+  <span class="ora_keyword">BEGIN</span>
+     <span class="ora_keyword">IF</span> truth <span class="ora_keyword">IS</span> <span class="ora_keyword">NOT</span> <span class="ora_keyword">NULL</span> <span class="ora_keyword">THEN</span>
+        <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>(<span class="ora_keyword">CASE</span> test <span class="ora_keyword">WHEN</span> <span class="ora_keyword">TRUE</span> <span class="ora_keyword">THEN</span> '<span class="ora_keyword">True</span>' <span class="ora_keyword">WHEN</span> <span class="ora_keyword">FALSE</span> <span class="ora_keyword">THEN</span> '<span class="ora_keyword">False</span>' <span class="ora_keyword">END</span>);
+     <span class="ora_keyword">END</span> <span class="ora_keyword">IF</span>;
+     <span class="ora_keyword">IF</span> quantity <span class="ora_keyword">IS</span> <span class="ora_keyword">NOT</span> <span class="ora_keyword">NULL</span> <span class="ora_keyword">THEN</span>
+        <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>(quantite);
+     <span class="ora_keyword">END</span> <span class="ora_keyword">IF</span>;
+  <span class="ora_keyword">END</span>;
+<span class="ora_keyword">BEGIN</span>
+  reponse := nt1 <span class="ora_keyword">IN</span> (nt2,nt3,nt4); <span class="ora_comment">-- true, nt1 correspond &agrave; nt2</span>
+  verif(test =&gt; reponse);
+  reponse := nt1 SUBMULTISET <span class="ora_keyword">OF</span> nt3; <span class="ora_comment">-- true, tous les &eacute;l&eacute;ments correspondent</span>
+  verif(test =&gt; reponse);
+  reponse := nt1 <span class="ora_keyword">NOT</span> SUBMULTISET <span class="ora_keyword">OF</span> nt4; <span class="ora_comment">-- true</span>
+  verif(test =&gt; reponse);
+
+  combien := CARDINALITY(nt3); <span class="ora_comment">-- nombre d'&eacute;l&eacute;ments dans nt3</span>
+  verif(quantite =&gt; combien);
+  combien := CARDINALITY(<span class="ora_keyword">SET</span>(nt3)); <span class="ora_comment">-- nombre d'&eacute;l&eacute;ments distincts</span>
+  verif(quantite =&gt; combien);
+
+  reponse := 4 MEMBER <span class="ora_keyword">OF</span> nt1; <span class="ora_comment">-- false, aucun &eacute;l&eacute;ment ne correspond</span>
+  verif(test =&gt; reponse);
+  reponse := nt3 <span class="ora_keyword">IS</span> A <span class="ora_keyword">SET</span>; <span class="ora_comment">-- false, nt3 a des &eacute;l&eacute;ments dupliqu&eacute;s</span>
+  verif(test =&gt; reponse);
+  reponse := nt3 <span class="ora_keyword">IS</span> <span class="ora_keyword">NOT</span> A <span class="ora_keyword">SET</span>; <span class="ora_comment">-- true, nt3 a des &eacute;l&eacute;ments dupliqu&eacute;s</span>
+  verif(test =&gt; reponse);
+  reponse := nt1 <span class="ora_keyword">IS</span> EMPTY; <span class="ora_comment">-- false, nt1 a des &eacute;l&eacute;ments</span>
+  verif(test =&gt; reponse);
+<span class="ora_keyword">END</span>;</div></pre><div class="paragraph">
+</div><br>		
+							
+		<br /><h3 class="TitreSection2"><a name="L5.3"></a>5.3. M&eacute;thodes associ&eacute;es aux collections</h3>
+			
+<div class="paragraph">
+Les m&eacute;thodes sont des fonctions ou des proc&eacute;dures qui s'appliquent uniquement aux collections.<br />
+L'appel de ces m&eacute;thodes s'effectue en pr&eacute;fixant le nom de la m&eacute;thode par le nom de la collection
+<br /><br />
+<b>Nom_collection.nom_m&eacute;thode[(param&egrave;tre, &#133;)]</b>
+<br /><br />
+<span class="important">
+Les m&eacute;thodes ne peuvent pas &ecirc;tre utilis&eacute;es &agrave; l'int&eacute;rieur de commandes SQL
+<br /><br />
+Seule la m&eacute;thode EXISTS peut &ecirc;tre utilis&eacute;e sur une collection NULL.<br />
+L'utilisation de toute autre m&eacute;thode sur une collection NULL provoque l'exception COLLECTION_IS_NULL
+</span>
+<br /><br />
+</div><br><a name=".EXISTS"></a><div class="paragraph">
+<b>EXISTS(indice)</b>
+<br /><br />
+Cette m&eacute;thode retourne la valeur TRUE si l'&eacute;l&eacute;ment indice de la collection existe et retourne la valeur FALSE dans le cas contraire
+<br /><br />
+Cette m&eacute;thode doit &ecirc;tre utilis&eacute;e afin de s'assurer que l'on va r&eacute;aliser une op&eacute;ration conforme sur la collection
+<br /><br />
+<span class="important">
+Le test d'existence d'un &eacute;l&eacute;ment qui n'appartient pas &agrave; la collection ne provoque pas l'exception SUBSCRIPT_OUTSIDE_LIMIT mais retourne simplement FALSE
+</span>
+<br /><br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">If</span> ma_collection.<span class="ora_keyword">EXISTS</span>(10) <span class="ora_keyword">Then</span>
+   Ma_collection.<span class="ora_keyword">DELETE</span>(10) ;
+<span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;</div></pre><div class="paragraph">
+</div><br><a name=".COUNT"></a><div class="paragraph">
+<br />
+<b>COUNT</b>
+<br /><br />
+Cette m&eacute;thode retourne le nombre d'&eacute;l&eacute;ments de la collection y compris les &eacute;l&eacute;ments NULL cons&eacute;cutifs &agrave; des suppressions<br />
+Elle est particuli&egrave;rement utile pour effectuer des traitements sur l'ensemble des &eacute;l&eacute;ments d'une collection.
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">Declare</span>
+  <span class="ora_keyword">LN</span>$Nbre <span class="ora_keyword">pls_integer</span> ;
+<span class="ora_keyword">Begin</span>
+  <span class="ora_keyword">LN</span>$Nbre := ma_collection.<span class="ora_keyword">COUNT</span> ;
+<span class="ora_keyword">End</span> ;</div></pre><div class="paragraph">
+</div><br><a name=".LIMIT"></a><div class="paragraph">
+<br />
+<b>LIMIT</b>
+<br /><br />
+Cette m&eacute;thode retourne le nombre maximum d'&eacute;l&eacute;ments permis d'une collection<br />
+Elle n'est utile que pour les collections de type VARRAY et retourne NULL pour les collections des autre types
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">Declare</span>
+    <span class="ora_comment">-- collection de type VARRAY</span>
+    <span class="ora_keyword">TYPE</span> TYP_VAR_TAB <span class="ora_keyword">is</span> VARRAY(30) <span class="ora_keyword">of</span> <span class="ora_keyword">varchar2</span>(100) ;
+    tab1 TYP_VAR_TAB := TYP_VAR_TAB('','','','','','','','','','');
+<span class="ora_keyword">Begin</span>
+    <span class="ora_keyword">for</span> i <span class="ora_keyword">in</span> 1..tab1.LIMIT <span class="ora_keyword">loop</span>
+       &#133;&#133;&#133;.
+    <span class="ora_keyword">end</span> <span class="ora_keyword">loop</span> ;
+<span class="ora_keyword">End</span>;</div></pre> <div class="paragraph">
+</div><br><a name=".FIRST"></a><div class="paragraph">
+<br />
+<b>FIRST</b>
+<br /><br />
+Cette m&eacute;thode retourne le plus petit indice d'une collection.<br />
+Elle retourne NULL si la collection est vide<br />
+Pour une collection de type VARRAY cette m&eacute;thode retourne toujours 1
+<br />
+</div><br><a name=".LAST"></a><div class="paragraph">
+<br />
+<b>LAST</b>
+<br /><br />
+Cette m&eacute;thode retourne le plus grand indice d'une collection.<br />
+Elle retourne NULL si la collection est vide<br />
+Pour une collection de type VARRAY cette m&eacute;thode retourne la m&ecirc;me valeur que la m&eacute;thode COUNT
+<br />
+</div><br><a name=".PRIOR"></a><div class="paragraph">
+<br />
+<b>PRIOR(indice)</b>
+<br /><br />
+Cette m&eacute;thode retourne l'indice de l'&eacute;l&eacute;ment pr&eacute;c&eacute;dent l'indice donn&eacute; en argument<br />
+Elle retourne NULL si indice est le premier &eacute;l&eacute;ment de la collection
+<br /><br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">LN</span>$i := ma_collection.LAST ;
+<span class="ora_keyword">While</span> <span class="ora_keyword">LN</span>$i <span class="ora_keyword">is</span> <span class="ora_keyword">not</span> <span class="ora_keyword">null</span> <span class="ora_keyword">Loop</span>
+   &#133;
+   <span class="ora_keyword">LN</span>$I := ma_collection.<span class="ora_keyword">PRIOR</span>(<span class="ora_keyword">LN</span>$I) ;
+<span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;</div></pre><div class="paragraph">
+<br />
+</div><br><a name=".NEXT"></a><div class="paragraph">
+<br />
+<b>NEXT(indice)</b>
+<br /><br />
+Cette m&eacute;thode retourne l'indice de l'&eacute;l&eacute;ment suivant l'indice donn&eacute; en argument<br />
+Elle retourne NULL si indice est le dernier &eacute;l&eacute;ment de la collection
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">LN</span>$i := ma_collection.FIRST ;
+<span class="ora_keyword">While</span> <span class="ora_keyword">LN</span>$i <span class="ora_keyword">is</span> <span class="ora_keyword">not</span> <span class="ora_keyword">null</span> <span class="ora_keyword">Loop</span>
+   &#133;
+   <span class="ora_keyword">LN</span>$I := ma_collection.<span class="ora_keyword"><span class="ora_keyword">NEXT</span></span>(<span class="ora_keyword">LN</span>$I) ;
+<span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;</div></pre><div class="paragraph">
+</div><br><a name=".EXTEND"></a><div class="paragraph">
+<br />
+<b>EXTEND[(n[,i])]</b>
+<br /><br />
+Cette m&eacute;thode permet d'&eacute;tendre une collection par ajout de nouveaux &eacute;l&eacute;ments<br /><br />
+Elle dispose de 3 syntaxes diff&eacute;rentes
+</div><br><ul type=""><li><b>EXTEND</b></li></ul><div class="paragraph">
+Un seul &eacute;l&eacute;ment NULL est ajout&eacute; &agrave; la collection
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">declare</span>
+  2    <span class="ora_keyword">TYPE</span> TYP_TAB <span class="ora_keyword">is</span> <span class="ora_keyword">table</span> <span class="ora_keyword">of</span> <span class="ora_keyword">varchar2</span>(100) ;
+  3    tab  TYP_TAB ;
+  4  <span class="ora_keyword">Begin</span>
+  5    tab := TYP_TAB( 'lundi','mardi','mercredi' ) ;
+  6    tab.EXTEND ;
+  7    tab(4) := 'jeudi' ;
+  8  <span class="ora_keyword">End</span>;
+  9  /
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+</div><br><ul type=""><li><b>EXTEND(n)</b></li></ul><div class="paragraph">
+n &eacute;l&eacute;ments NULL sont ajout&eacute;s &agrave; la collection
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">declare</span>
+  2    <span class="ora_keyword">TYPE</span> TYP_TAB <span class="ora_keyword">is</span> <span class="ora_keyword">table</span> <span class="ora_keyword">of</span> <span class="ora_keyword">varchar2</span>(100) ;
+  3    tab  TYP_TAB ;
+  4  <span class="ora_keyword">Begin</span>
+  5    tab := TYP_TAB( 'lundi','mardi','mercredi' ) ;
+  6    tab.EXTEND(4) ;
+  7    tab(4) := 'jeudi' ;
+  8    tab(5) := 'vendredi' ;
+  9    tab(6) := 'samedi' ;
+ 10    tab(7) := 'dimanche' ;      
+ 11  <span class="ora_keyword">End</span>; 
+ 12  /
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+<br />
+</div><br><ul type=""><li><b>EXTEND(n,i)</b></li></ul><div class="paragraph">
+n &eacute;l&eacute;ments sont ajout&eacute;s &agrave; la collection. Chaque &eacute;l&eacute;ment ajout&eacute; contient une copie de la valeur contenue dans l'&eacute;l&eacute;ment d'indice i
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">set</span> serveroutput <span class="ora_keyword">on</span>
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">declare</span>
+  2    <span class="ora_keyword">TYPE</span> TYP_TAB <span class="ora_keyword">is</span> <span class="ora_keyword">table</span> <span class="ora_keyword">of</span> <span class="ora_keyword">varchar2</span>(100) ;
+  3    tab  TYP_TAB ;
+  4  <span class="ora_keyword">Begin</span>
+  5    tab := TYP_TAB( 'lundi','mardi','mercredi' ) ;
+  6    tab.EXTEND(4,1) ;
+  7    <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> tab.first..tab.last <span class="ora_keyword">Loop</span>
+  8      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'tab(' || <span class="ora_keyword">ltrim</span>( <span class="ora_keyword">to_char</span>( i ) ) || ') = ' || tab(i) ) ;
+  9    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ; 
+ 10  <span class="ora_keyword">End</span>;
+ 11  /
+tab(1) = lundi
+tab(2) = mardi
+tab(3) = mercredi
+tab(4) = lundi
+tab(5) = lundi
+tab(6) = lundi
+tab(7) = lundi
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+</div><br><a name=".TRIM"></a><div class="paragraph">
+<br />
+<b>TRIM[(n)]</b>
+<br /><br />
+Cette m&eacute;thode permet de supprimer un ou plusieurs &eacute;l&eacute;ments situ&eacute;s &agrave; la fin d'une collection<br />
+Elle dispose de 2 formes de syntaxe diff&eacute;rentes
+<br /><br />
+<b>TRIM</b>
+<br /><br />
+Le dernier &eacute;l&eacute;ment de la collection est supprim&eacute;
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">declare</span>
+  2    <span class="ora_keyword">TYPE</span> TYP_TAB <span class="ora_keyword">is</span> <span class="ora_keyword">table</span> <span class="ora_keyword">of</span> <span class="ora_keyword">varchar2</span>(100) ;
+  3    tab  TYP_TAB ;
+  4  <span class="ora_keyword">Begin</span>
+  5    tab := TYP_TAB( 'lundi','mardi','mercredi' ) ;
+  6    tab.EXTEND(4,1) ;
+  7    <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> tab.first..tab.last <span class="ora_keyword">Loop</span>
+  8      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'tab(' || <span class="ora_keyword">ltrim</span>( <span class="ora_keyword">to_char</span>( i ) ) || ') = ' || tab(i) ) ;
+  9    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ; 
+ 10    tab.TRIM ;
+ 11    <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> tab.first..tab.last <span class="ora_keyword">Loop</span>
+ 12      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'tab(' || <span class="ora_keyword">ltrim</span>( <span class="ora_keyword">to_char</span>( i ) ) || ') = ' || tab(i) ) ;
+ 13    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;  
+ 14  <span class="ora_keyword">End</span>; 
+ 15  /
+tab(1) = lundi
+tab(2) = mardi
+tab(3) = mercredi
+tab(4) = lundi
+tab(5) = lundi
+tab(6) = lundi
+tab(7) = lundi
+tab(1) = lundi
+tab(2) = mardi
+tab(3) = mercredi
+tab(4) = lundi
+tab(5) = lundi
+tab(6) = lundi
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+<br />
+<b>TRIM(n)</b>
+<br /><br />
+Les n derniers &eacute;l&eacute;ments de la collection sont supprim&eacute;s
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">TYPE</span> TYP_TAB <span class="ora_keyword">is</span> <span class="ora_keyword">table</span> <span class="ora_keyword">of</span> <span class="ora_keyword">varchar2</span>(100) ;
+  3    tab  TYP_TAB ;
+  4  <span class="ora_keyword">Begin</span>
+  5    tab := TYP_TAB( 'lundi','mardi','mercredi' ) ;
+  6    tab.EXTEND(4,1) ;
+  7    <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> tab.first..tab.last <span class="ora_keyword">Loop</span>
+  8      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'tab(' || <span class="ora_keyword">ltrim</span>( <span class="ora_keyword">to_char</span>( i ) ) || ') = ' || tab(i) ) ;
+  9    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ; 
+ 10    tab.TRIM(4) ;
+ 11    <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Suppression des 4 derniers &eacute;l&eacute;ments' ) ;
+ 12    <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> tab.first..tab.last <span class="ora_keyword">Loop</span>
+ 13      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'tab(' || <span class="ora_keyword">ltrim</span>( <span class="ora_keyword">to_char</span>( i ) ) || ') = ' || tab(i) ) ;
+ 14    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;  
+ 15  <span class="ora_keyword">End</span>; 
+ 16  /
+tab(1) = lundi
+tab(2) = mardi
+tab(3) = mercredi
+tab(4) = lundi
+tab(5) = lundi
+tab(6) = lundi
+tab(7) = lundi
+Suppression des 4 derniers &eacute;l&eacute;ments
+tab(1) = lundi
+tab(2) = mardi
+tab(3) = mercredi
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+<br />
+<span class="important">
+Si le nombre d'&eacute;l&eacute;ments que l'on veut supprimer est sup&eacute;rieur au nombre total d'&eacute;l&eacute;ments de la collection,</span><br />
+<span class="important">une exception SUBSCRIPT_BEYOND_COUNT est g&eacute;n&eacute;r&eacute;e</span>
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">TYPE</span> TYP_TAB <span class="ora_keyword">is</span> <span class="ora_keyword">table</span> <span class="ora_keyword">of</span> <span class="ora_keyword">varchar2</span>(100) ;
+  3    tab  TYP_TAB ;
+  4  <span class="ora_keyword">Begin</span>
+  5    tab := TYP_TAB( 'lundi','mardi','mercredi' ) ;
+  6    tab.EXTEND(4,1) ;
+  7    <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> tab.first..tab.last <span class="ora_keyword">Loop</span>
+  8      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'tab(' || <span class="ora_keyword">ltrim</span>( <span class="ora_keyword">to_char</span>( i ) ) || ') = ' || tab(i) ) ;
+  9    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ; 
+ 10    tab.TRIM(8) ;
+ 11    <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Suppression des 8 derniers &eacute;l&eacute;ments' ) ;
+ 12    <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> tab.first..tab.last <span class="ora_keyword">Loop</span>
+ 13      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'tab(' || <span class="ora_keyword">ltrim</span>( <span class="ora_keyword">to_char</span>( i ) ) || ') = ' || tab(i) ) ;
+ 14    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;  
+ 15  <span class="ora_keyword">End</span>; 
+ 16  /
+tab(1) = lundi
+tab(2) = mardi
+tab(3) = mercredi
+tab(4) = lundi
+tab(5) = lundi
+tab(6) = lundi
+tab(7) = lundi
+<span class="ora_keyword">declare</span>
+*
+ERREUR &agrave; la ligne 1 :
+ORA-06533: Valeur de l'indice trop grande
+ORA-06512: &agrave; ligne 10</div></pre><div class="paragraph">
+</div><br><a name=".DELETE"></a><div class="paragraph">
+<br />
+<b>DELETE[(n[,m])]</b>
+<br /><br />
+Cette m&eacute;thode permet de supprimer un, plusieurs, ou la totalit&eacute; des &eacute;l&eacute;ments d'une collection<br />
+Elle dispose de 3 formes de syntaxe diff&eacute;rentes
+</div><br><ul type=""><li><b>DELETE</b></li></ul><div class="paragraph">
+Suppression de tous les &eacute;l&eacute;ments d'une collection
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">TYPE</span> TYP_TAB <span class="ora_keyword">is</span> <span class="ora_keyword">table</span> <span class="ora_keyword">of</span> <span class="ora_keyword">varchar2</span>(100) ;
+  3    tab  TYP_TAB ;
+  4  <span class="ora_keyword">Begin</span>
+  5    tab := TYP_TAB( 'lundi','mardi','mercredi' ) ;
+  6    tab.EXTEND(4,1) ;
+  7    <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> tab.first..tab.last <span class="ora_keyword">Loop</span>
+  8      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'tab(' || <span class="ora_keyword">ltrim</span>( <span class="ora_keyword">to_char</span>( i ) ) || ') = ' || tab(i) ) ;
+  9    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ; 
+ 10    tab.<span class="ora_keyword">DELETE</span> ;
+ 11    <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Suppression de tous les &eacute;l&eacute;ments' ) ;
+ 12    <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'tab.<span class="ora_keyword">COUNT</span> = ' || tab.<span class="ora_keyword">COUNT</span>) ;  
+ 13  <span class="ora_keyword">End</span>;
+ 14  /
+tab(1) = lundi
+tab(2) = mardi
+tab(3) = mercredi
+tab(4) = lundi
+tab(5) = lundi
+tab(6) = lundi
+tab(7) = lundi
+Suppression de tous les &eacute;l&eacute;ments
+tab.<span class="ora_keyword">COUNT</span> = 0
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+</div><br><ul type=""><li><b>DELETE(n)</b></li></ul><div class="paragraph">
+Suppression de l'&eacute;l&eacute;ment d'indice n de la collection
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">TYPE</span> TYP_TAB <span class="ora_keyword">is</span> <span class="ora_keyword">table</span> <span class="ora_keyword">of</span> <span class="ora_keyword">varchar2</span>(100) ;
+  3    tab  TYP_TAB ;
+  4  <span class="ora_keyword">Begin</span>
+  5    tab := TYP_TAB( 'lundi','mardi','mercredi' ) ;
+  6    tab.EXTEND(4,1) ;
+  7    <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> tab.first..tab.last <span class="ora_keyword">Loop</span>
+  8      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'tab(' || <span class="ora_keyword">ltrim</span>( <span class="ora_keyword">to_char</span>( i ) ) || ') = ' || tab(i) ) ;
+  9    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ; 
+ 10    tab.<span class="ora_keyword">DELETE</span>(5) ;
+ 11    <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Suppression de l''&eacute;l&eacute;ment d''indice 5' ) ;
+ 12    <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'tab.<span class="ora_keyword">COUNT</span> = ' || tab.<span class="ora_keyword">COUNT</span>) ;
+ 13    <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> tab.first..tab.last <span class="ora_keyword">Loop</span>
+ 14      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'tab(' || <span class="ora_keyword">ltrim</span>( <span class="ora_keyword">to_char</span>( i ) ) || ') = ' || tab(i) ) ;
+ 15    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;    
+ 16  <span class="ora_keyword">End</span>;
+ 17  /
+tab(1) = lundi
+tab(2) = mardi
+tab(3) = mercredi
+tab(4) = lundi
+tab(5) = lundi
+tab(6) = lundi
+tab(7) = lundi
+Suppression de l'&eacute;l&eacute;ment d'indice 5
+tab.<span class="ora_keyword">COUNT</span> = 6
+tab(1) = lundi
+tab(2) = mardi
+tab(3) = mercredi
+tab(4) = lundi
+<span class="ora_keyword">declare</span>
+*
+ERREUR &agrave; la ligne 1 :
+ORA-01403: Aucune donn&eacute;e trouv&eacute;e
+ORA-06512: &agrave; ligne 14</div></pre><div class="paragraph">
+<br />
+On peut observer que l'&eacute;l&eacute;ment d'indice 5 de la collection, une fois supprim&eacute;, ne peut plus &ecirc;tre affich&eacute;.<br />
+Il convient, lorsque l'on supprime un ou plusieurs &eacute;l&eacute;ments d'une collection des tester l'existence d'une valeur avant de la manipuler
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">TYPE</span> TYP_TAB <span class="ora_keyword">is</span> <span class="ora_keyword">table</span> <span class="ora_keyword">of</span> <span class="ora_keyword">varchar2</span>(100) ;
+  3    tab  TYP_TAB ;
+  4  <span class="ora_keyword">Begin</span>
+  5    tab := TYP_TAB( 'lundi','mardi','mercredi' ) ;
+  6    tab.EXTEND(4,1) ;
+  7    <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> tab.first..tab.last <span class="ora_keyword">Loop</span>
+  8      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'tab(' || <span class="ora_keyword">ltrim</span>( <span class="ora_keyword">to_char</span>( i ) ) || ') = ' || tab(i) ) ;
+  9    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ; 
+ 10    tab.<span class="ora_keyword">DELETE</span>(5) ;
+ 11    <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Suppression de l''&eacute;l&eacute;ment d''indice 5' ) ;
+ 12    <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'tab.<span class="ora_keyword">COUNT</span> = ' || tab.<span class="ora_keyword">COUNT</span>) ;
+ 13    <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> tab.first..tab.last <span class="ora_keyword">Loop</span>
+ 14      <span class="ora_keyword">If</span> tab.<span class="ora_keyword">EXISTS</span>(i) <span class="ora_keyword">Then</span>
+ 15         <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'tab(' || <span class="ora_keyword">ltrim</span>( <span class="ora_keyword">to_char</span>( i ) ) || ') = ' || tab(i) ) ;
+ 16      <span class="ora_keyword">Else</span>
+ 17         <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'tab(' || <span class="ora_keyword">ltrim</span>( <span class="ora_keyword">to_char</span>( i ) ) || ') inexistant ') ; 
+ 18      <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+ 19    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;    
+ 20  <span class="ora_keyword">End</span>;  
+ 21  /
+tab(1) = lundi
+tab(2) = mardi
+tab(3) = mercredi
+tab(4) = lundi
+tab(5) = lundi
+tab(6) = lundi
+tab(7) = lundi
+Suppression de l'&eacute;l&eacute;ment d'indice 5
+tab.<span class="ora_keyword">COUNT</span> = 6
+tab(1) = lundi
+tab(2) = mardi
+tab(3) = mercredi
+tab(4) = lundi
+tab(5) inexistant
+tab(6) = lundi
+tab(7) = lundi
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+<br />
+<span class="important">
+Il est important de noter le d&eacute;calage entre la valeur retourn&eacute;e par la m&eacute;thode COUNT et celle retourn&eacute;e par la m&eacute;thode LAST<br />
+Dans l'exemple pr&eacute;c&eacute;dent LAST retourne la plus grande valeur d'indice de la collection soit 7, alors que COUNT retourne le nombre d'&eacute;l&eacute;ments de la collection soit 6
+<br /><br />
+M&eacute;fiez-vous de l'erreur facile consistant &agrave; penser que COUNT = LAST
+</span>
+</div><br><ul type=""><li><b>DELETE(n,m)</b></li></ul><div class="paragraph">
+Suppression des l'&eacute;l&eacute;ments dont les indices sont compris entre n et m (inclus)
+Si m est plus grand que n, aucun &eacute;l&eacute;ment n'est supprim&eacute;
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">TYPE</span> TYP_TAB <span class="ora_keyword">is</span> <span class="ora_keyword">table</span> <span class="ora_keyword">of</span> <span class="ora_keyword">varchar2</span>(100) ;
+  3    tab  TYP_TAB ;
+  4  <span class="ora_keyword">Begin</span>
+  5    tab := TYP_TAB( 'lundi','mardi','mercredi' ) ;
+  6    tab.EXTEND(4,1) ;
+  7    <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> tab.first..tab.last <span class="ora_keyword">Loop</span>
+  8      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'tab(' || <span class="ora_keyword">ltrim</span>( <span class="ora_keyword">to_char</span>( i ) ) || ') = ' || tab(i) ) ;
+  9    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ; 
+ 10    tab.<span class="ora_keyword">DELETE</span>(4,6) ;
+ 11    <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Suppression des &eacute;l&eacute;ment d''indice 4, 5 et 6' ) ;
+ 12    <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'tab.<span class="ora_keyword">COUNT</span> = ' || tab.<span class="ora_keyword">COUNT</span>) ;
+ 13    <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> tab.first..tab.last <span class="ora_keyword">Loop</span>
+ 14      <span class="ora_keyword">If</span> tab.<span class="ora_keyword">EXISTS</span>(i) <span class="ora_keyword">Then</span>
+ 15         <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'tab(' || <span class="ora_keyword">ltrim</span>( <span class="ora_keyword">to_char</span>( i ) ) || ') = ' || tab(i) ) ;
+ 16      <span class="ora_keyword">Else</span>
+ 17         <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'tab(' || <span class="ora_keyword">ltrim</span>( <span class="ora_keyword">to_char</span>( i ) ) || ') inexistant ') ; 
+ 18      <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+ 19    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;    
+ 20  <span class="ora_keyword">End</span>;
+ 21  /
+tab(1) = lundi
+tab(2) = mardi
+tab(3) = mercredi
+tab(4) = lundi
+tab(5) = lundi
+tab(6) = lundi
+tab(7) = lundi
+Suppression des &eacute;l&eacute;ment d'indice 4, 5 et 6
+tab.<span class="ora_keyword">COUNT</span> = 4
+tab(1) = lundi
+tab(2) = mardi
+tab(3) = mercredi
+tab(4) inexistant
+tab(5) inexistant
+tab(6) inexistant
+tab(7) = lundi
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+<br />
+<span class="important">
+Pour les collections de type VARRAY on ne peut supprimer que le dernier &eacute;l&eacute;ment<br />
+Si l'&eacute;l&eacute;ment &agrave; supprimer n'existe pas, aucune exception n'est g&eacute;n&eacute;r&eacute;e<br />
+L'espace m&eacute;moire assign&eacute; aux &eacute;l&eacute;ments supprim&eacute;s est conserv&eacute;. Il est tout &agrave; fait permis de r&eacute;assigner une nouvelle valeur &agrave; ces &eacute;l&eacute;ments.
+</span>
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">TYPE</span> TYP_TAB <span class="ora_keyword">is</span> <span class="ora_keyword">table</span> <span class="ora_keyword">of</span> <span class="ora_keyword">varchar2</span>(100) ;
+  3    tab  TYP_TAB ;
+  4  <span class="ora_keyword">Begin</span>
+  5    tab := TYP_TAB( 'lundi','mardi','mercredi' ) ;
+  6    tab.EXTEND(4,1) ;
+  7    <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> tab.first..tab.last <span class="ora_keyword">Loop</span>
+  8      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'tab(' || <span class="ora_keyword">ltrim</span>( <span class="ora_keyword">to_char</span>( i ) ) || ') = ' || tab(i) ) ;
+  9    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ; 
+ 10    tab.<span class="ora_keyword">DELETE</span>(4,6) ;
+ 11    <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Suppression des &eacute;l&eacute;ment d''indice 4, 5 et 6' ) ;
+ 12    <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'tab.<span class="ora_keyword">COUNT</span> = ' || tab.<span class="ora_keyword">COUNT</span>) ;
+ 13    <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'R&eacute;assignation des &eacute;l&eacute;ment d''indice 4, 5 et 6' ) ;
+ 14    tab(4) := 'Jeudi' ;
+ 15    tab(5) := 'Vendredi' ;
+ 16    tab(6) := 'Samedi' ;    
+ 17    <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'tab.<span class="ora_keyword">COUNT</span> = ' || tab.<span class="ora_keyword">COUNT</span>) ;  
+ 18    <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> tab.first..tab.last <span class="ora_keyword">Loop</span>
+ 19      <span class="ora_keyword">If</span> tab.<span class="ora_keyword">EXISTS</span>(i) <span class="ora_keyword">Then</span>
+ 20         <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'tab(' || <span class="ora_keyword">ltrim</span>( <span class="ora_keyword">to_char</span>( i ) ) || ') = ' || tab(i) ) ;
+ 21      <span class="ora_keyword">Else</span>
+ 22         <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'tab(' || <span class="ora_keyword">ltrim</span>( <span class="ora_keyword">to_char</span>( i ) ) || ') inexistant ') ; 
+ 23      <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+ 24    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;    
+ 25  <span class="ora_keyword">End</span>;    
+ 26  /
+tab(1) = lundi
+tab(2) = mardi
+tab(3) = mercredi
+tab(4) = lundi
+tab(5) = lundi
+tab(6) = lundi
+tab(7) = lundi
+Suppression des &eacute;l&eacute;ment d'indice 4, 5 et 6
+tab.<span class="ora_keyword">COUNT</span> = 4
+R&eacute;assignation des &eacute;l&eacute;ment d'indice 4, 5 et 6
+tab.<span class="ora_keyword">COUNT</span> = 7
+tab(1) = lundi
+tab(2) = mardi
+tab(3) = mercredi
+tab(4) = Jeudi
+tab(5) = Vendredi
+tab(6) = Samedi
+tab(7) = lundi
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+<br />
+<b>Principales exceptions</b>
+<br /><br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">Declare</span>
+  <span class="ora_keyword">TYPE</span> TYP_TAB <span class="ora_keyword">is</span> <span class="ora_keyword">table</span> <span class="ora_keyword">of</span> <span class="ora_keyword">varchar2</span>(100) ;
+  tab  TYP_TAB ;
+  lc$valeur <span class="ora_keyword">varchar2</span>(100) ;
+<span class="ora_keyword">Begin</span>
+  tab(1) := 'Lundi' ; <span class="ora_comment">-- ORA-06531: R&eacute;f&eacute;rence &agrave; un ensemble non initialis&eacute;</span>
+  tab := TYP_TAB( 'lundi','mardi','mercredi' ) ;
+  tab.EXTEND(4,1) ;
+  tab.<span class="ora_keyword">DELETE</span>(4,6) ;
+  lc$valeur := tab(4) ; <span class="ora_comment">-- ORA-01403: Aucune donn&eacute;e trouv&eacute;e</span>
+  tab(0) :='lunmanche' ; <span class="ora_comment">-- ORA-06532: Indice hors limites</span>
+  tab(22) :='marcredi' ; <span class="ora_comment">-- ORA-06533: Valeur de l'indice trop grande</span>
+  lc$valeur := tab(999999999999999999) ; <span class="ora_comment">-- ORA-01426: d&eacute;passement num&eacute;rique</span>
+  lc$valeur := tab(<span class="ora_keyword">NULL</span>) ; <span class="ora_comment">-- ORA-06502: PL/SQL : erreur num&eacute;rique ou erreur sur une valeur:</span>
+      la valeur de cl&eacute; de la <span class="ora_keyword">table</span> d'<span class="ora_keyword">index</span> est <span class="ora_keyword">NULL</span>.
+<span class="ora_keyword">End</span> ;</div></pre><div class="paragraph">
+</div><br>		
+									
+		<br /><h3 class="TitreSection2"><a name="L5.4"></a>5.4. Utilisation des collections avec les donn&eacute;es issues de la base</h3>
+			
+<div class="paragraph">
+Prenons l'exemple d'une table des ent&ecirc;tes de factures qui stocke &eacute;galement les lignes des factures
+<br /><br />
+Sous Sql*Plus d&eacute;finissons le type ligne de facture (TYP_LIG_FAC)
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt;  <span class="ora_keyword">CREATE</span> <span class="ora_keyword">TYPE</span> TYP_LIG_FAC <span class="ora_keyword">AS</span> <span class="ora_keyword">OBJECT</span> (
+  2   numlig <span class="ora_keyword">Integer</span>,
+  3   code   <span class="ora_keyword">Varchar2</span>(20),
+  4   Pht    <span class="ora_keyword">Number</span>(6,2),
+  5   Tva    <span class="ora_keyword">Number</span>(3,2),
+  6   Qte    <span class="ora_keyword">Integer</span>
+  7   );
+  8  /
+
+<span class="ora_keyword">Type</span> cr&eacute;&eacute;.</div></pre><div class="paragraph">
+<br />
+D&eacute;finissons le type TYP_TAB_LIG_FAC comme &eacute;tant une collection d'&eacute;l&eacute;ments du type TYP_LIG_FAC
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt;  <span class="ora_keyword">CREATE</span> <span class="ora_keyword">TYPE</span> TYP_TAB_LIG_FAC <span class="ora_keyword">AS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> TYP_LIG_FAC ;
+  2  /
+
+<span class="ora_keyword">Type</span> cr&eacute;&eacute;.</div></pre><div class="paragraph">
+<br />
+Cr&eacute;ation de la table des factures
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">CREATE</span> <span class="ora_keyword">TABLE</span> FACTURE (
+  2   numero   <span class="ora_keyword">Number</span>(9),
+  3   numcli   <span class="ora_keyword">Number</span>(6),
+  4   date_fac <span class="ora_keyword">Date</span>,
+  5   ligne    TYP_TAB_LIG_FAC )
+  6   <span class="ora_keyword">NESTED <span class="ora_keyword">TABLE</span></span> ligne <span class="ora_keyword">STORE</span> <span class="ora_keyword">AS</span> ligne_table ;
+
+<span class="ora_keyword">Table</span> cr&eacute;&eacute;e.</div></pre><div class="paragraph">
+<br />
+Chaque &eacute;l&eacute;ment pr&eacute;sent dans la colonne ligne est une collection de type NESTED TABLE qui va permettre de stocker les diff&eacute;rentes lignes de la facture
+<br /><br />
+Insertion de donn&eacute;es dans la table FACTURE
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Begin</span>
+  2     <span class="ora_keyword">Insert</span> <span class="ora_keyword">into</span> FACTURE
+  3       <span class="ora_keyword">values</span>( 1, 1214, <span class="ora_keyword">sysdate</span>,
+  4       Typ_tab_lig_fac( Typ_lig_fac( 1, 'Oracle 9i', 999.99, 5.5, 3 ),
+  5                        Typ_lig_fac( 1, 'Forms 9i', 899.99, 5.5, 3 ),
+  6                        Typ_lig_fac( 1, 'Reports 9i', 699.99, 5.5, 3 )
+  7          )
+  8     );
+  9         
+ 10     <span class="ora_keyword">Insert</span> <span class="ora_keyword">into</span> FACTURE
+ 11       <span class="ora_keyword">values</span>( 2, 1215, <span class="ora_keyword">sysdate</span>,
+ 12       Typ_tab_lig_fac( Typ_lig_fac( 1, 'Oracle 9i', 999.99, 5.5, 1 ),
+ 13                        Typ_lig_fac( 1, 'Forms 9i', 899.99, 5.5, 1 ),
+ 14                        Typ_lig_fac( 1, 'Reports 9i', 699.99, 5.5, 1 )
+ 15          )
+ 16     );
+ 17  <span class="ora_keyword">End</span> ;
+ 18  /
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.
+
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">commit</span>;
+
+Validation effectu&eacute;e.</div></pre><div class="paragraph">
+<br />
+Modification d'une facture
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    Tab_lig Typ_tab_lig_fac := Typ_tab_lig_fac( 
+  3             Typ_lig_fac( 1, 'Forms 9i', 899.99, 5.5, 2 ),
+  4             Typ_lig_fac( 1, 'Reports 9i', 699.99, 5.5, 2 )
+  5             );
+  6  <span class="ora_keyword">Begin</span>
+  7    <span class="ora_keyword">Update</span> FACTURE
+  8    <span class="ora_keyword">Set</span> ligne = Tab_lig <span class="ora_keyword">Where</span> numero = 2 ;
+  9  <span class="ora_keyword">End</span>;
+ 10  /
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.
+
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">commit</span>;
+
+Validation effectu&eacute;e.</div></pre><div class="paragraph">
+<br />
+Utilisation d'un type enregistrement (RECORD) pour s&eacute;lectionner une ligne de la table FACTURE ainsi que toutes les lignes rattach&eacute;es via la NESTED TABLE
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">TYPE</span> Fact_rec <span class="ora_keyword">IS</span> <span class="ora_keyword">RECORD</span>
+  3    (
+  4      numero   facture.NUMERO%<span class="ora_keyword">type</span>, 
+  5      numcli   facture.NUMCLI%<span class="ora_keyword">type</span>,
+  6      date_fac facture.DATE_FAC%<span class="ora_keyword">type</span>,
+  7      lignes   facture.LIGNE%<span class="ora_keyword">type</span>
+  8    ) ;
+  9    rec_fact Fact_rec ;
+ 10    <span class="ora_keyword">Cursor</span> C_Fact <span class="ora_keyword">is</span> <span class="ora_keyword">select</span> * <span class="ora_keyword">from</span> facture ;
+ 11  <span class="ora_keyword">Begin</span>
+ 12    <span class="ora_keyword">Open</span> C_Fact ;
+ 13    <span class="ora_keyword">Loop</span>
+ 14      <span class="ora_keyword">Fetch</span> C_Fact <span class="ora_keyword">into</span> rec_fact ;
+ 15      <span class="ora_keyword">Exit</span> <span class="ora_keyword">when</span> C_Fact%<span class="ora_keyword">NOTFOUND</span> ;
+ 16      <span class="ora_keyword">For</span> i <span class="ora_keyword">IN</span> 1..rec_fact.lignes.last <span class="ora_keyword">Loop</span>
+ 17        <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Numcli/Numfac ' || rec_fact.numcli || '/' || rec_fact.numero 
+ 18          || ' Ligne ' || rec_fact.lignes(i).numlig 
+ 19          || ' code ' || rec_fact.lignes(i).code || ' Qt&eacute; ' 
+ 20          || <span class="ora_keyword">To_char</span>(rec_fact.lignes(i).qte) ) ;
+ 21      <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 22    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 23  <span class="ora_keyword">End</span> ;  
+ 24  /
+Numcli/Numfac 1214/1 Ligne 1 code Oracle 9i Qt&eacute; 3
+Numcli/Numfac 1214/1 Ligne 1 code Forms 9i Qt&eacute; 3
+Numcli/Numfac 1214/1 Ligne 1 code Reports 9i Qt&eacute; 3
+Numcli/Numfac 1215/2 Ligne 1 code Forms 9i Qt&eacute; 2
+Numcli/Numfac 1215/2 Ligne 1 code Reports 9i Qt&eacute; 2
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+<br />
+Le champ lignes de l'enregistrement est d&eacute;clar&eacute; de type LIGNE%type donc de type TYP_LIG_FAC.<br />
+On r&eacute;cup&egrave;re dans un enregistrement l'ent&ecirc;te de la facture ainsi que toutes les colonnes des lignes attach&eacute;es.
+<br /><br />
+Ou l'on s'aper&ccedil;oit que le type RECORD permet de stocker et manipuler des objets complexes.
+<br /><br />
+Une variable de type RECORD peut &ecirc;tre utilis&eacute;e dans une clause RETURNING INTO
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">TYPE</span> Emp_rec <span class="ora_keyword">IS</span> <span class="ora_keyword">RECORD</span>
+  3    (
+  4      empno    emp.empno%<span class="ora_keyword">type</span>,
+  5      empname  emp.ename%<span class="ora_keyword">type</span>,
+  6      salaire  emp.sal%<span class="ora_keyword">type</span>
+  7    );
+  8    emp_info Emp_rec ;
+  9  <span class="ora_keyword">Begin</span>
+ 10      <span class="ora_keyword">Select</span> empno, ename, sal <span class="ora_keyword">Into</span> emp_info <span class="ora_keyword">From</span> EMP <span class="ora_keyword">where</span> empno = 7499 ;
+ 11      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Ancien  salaire pour ' || emp_info.empno || ' : ' || <span class="ora_keyword">To_char</span>(emp_info.salaire) ) ;
+ 12   
+ 13      <span class="ora_keyword">Update</span> EMP <span class="ora_keyword">set</span> sal = sal * 1.1 <span class="ora_keyword">Where</span> empno = 7499 
+ 14         RETURNING empno, ename, sal <span class="ora_keyword">INTO</span> emp_info ; 
+ 15   
+ 16      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Nouveau salaire pour ' || emp_info.empno || ' : ' || <span class="ora_keyword">To_char</span>(emp_info.salaire) ) ;
+ 17  <span class="ora_keyword">End</span>  ;
+ 18  /
+Ancien  salaire pour 7499 : 1760
+Nouveau salaire pour 7499 : 1936
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+</div><br>		
+													
+		<br /><h3 class="TitreSection2"><a name="L5.5"></a>5.5. Traitements en masse des collections</h3>
+			
+<div class="paragraph">
+Les collections permettent le traitement des donn&eacute;es en " masse "
+<br /><br />
+Elles permettent de charger les donn&eacute;es d'une table, de les traiter puis de les enregistrer dans la base<br />
+Afin de limiter les interactions co&ucirc;teuses entre le moteur PL/SQL et le moteur SQL,<br />
+les collections peuvent &ecirc;tre trait&eacute;es int&eacute;gralement gr&acirc;ce &agrave; la copie des donn&eacute;es par blocs 
+<br /><br />
+Cette copie des donn&eacute;es par blocs autorise un ordre SQL &agrave; traiter toute la collection gr&acirc;ce aux instructions BULK COLLECT et FORALL.
+<br /><br />
+Pour s'en convaincre, analysons le code suivant :
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2  <span class="ora_keyword">TYPE</span>   TYP_TAB_NUM <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> TEST.B%<span class="ora_keyword">TYPE</span> <span class="ora_keyword">INDEX</span> <span class="ora_keyword">BY</span> <span class="ora_keyword">PLS_INTEGER</span> ;
+  3  <span class="ora_keyword">TYPE</span>   TYP_TAB_CAR <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> TEST.A%<span class="ora_keyword">TYPE</span> <span class="ora_keyword">INDEX</span> <span class="ora_keyword">BY</span> <span class="ora_keyword">PLS_INTEGER</span> ;
+  4  tab1   TYP_TAB_NUM ;
+  5  tab2   TYP_TAB_CAR ;
+  6  <span class="ora_keyword">LN</span>$T1  <span class="ora_keyword">number</span> ;
+  7  <span class="ora_keyword">LN</span>$T2  <span class="ora_keyword">number</span> ;
+  8  <span class="ora_keyword">LN</span>$T3  <span class="ora_keyword">number</span> ;
+  9  <span class="ora_keyword">begin</span>
+ 10     <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> 1..50000 <span class="ora_keyword">Loop</span>
+ 11       tab1(i) := i ;
+ 12       tab2(i) := <span class="ora_keyword">ltrim</span>( <span class="ora_keyword">to_char</span>( i ) ) ;
+ 13     <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 14  
+ 15     <span class="ora_keyword">Select</span> <span class="ora_keyword">to_char</span>( <span class="ora_keyword">sysdate</span>, 'SSSSS' ) <span class="ora_keyword">into</span> <span class="ora_keyword">LN</span>$T1 <span class="ora_keyword">from</span> dual ;
+ 16     
+ 17     <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> 1..50000 <span class="ora_keyword">Loop</span>
+ 18         <span class="ora_keyword">Insert</span> <span class="ora_keyword">into</span> TEST( A, B ) <span class="ora_keyword">Values</span>( tab2(i), tab1(i) ) ;
+ 19     <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;   
+ 20  
+ 21     <span class="ora_keyword">Select</span> <span class="ora_keyword">to_char</span>( <span class="ora_keyword">sysdate</span>, 'SSSSS' ) <span class="ora_keyword">into</span> <span class="ora_keyword">LN</span>$T2 <span class="ora_keyword">from</span> dual ;
+ 22     
+ 23     Forall i <span class="ora_keyword">in</span> 1..50000
+ 24         <span class="ora_keyword">Insert</span> <span class="ora_keyword">into</span> TEST( A, B ) <span class="ora_keyword">Values</span>( tab2(i), tab1(i) ) ;
+ 25     
+ 26     <span class="ora_keyword">Select</span> <span class="ora_keyword">to_char</span>( <span class="ora_keyword">sysdate</span>, 'SSSSS' ) <span class="ora_keyword">into</span> <span class="ora_keyword">LN</span>$T3 <span class="ora_keyword">from</span> dual ;
+ 27     
+ 28     <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Temps d''ex&eacute;cution en secondes' ) ;
+ 29     <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( '<span class="ora_keyword">For</span>    ' || <span class="ora_keyword">to_char</span>(<span class="ora_keyword">LN</span>$T2 - <span class="ora_keyword">LN</span>$T1) ) ;
+ 30     <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Forall ' || <span class="ora_keyword">to_char</span>(<span class="ora_keyword">LN</span>$T3 - <span class="ora_keyword">LN</span>$T2) ) ;
+ 31     
+ 32        
+ 33  <span class="ora_keyword">End</span> ;    
+ 34  /
+Temps d'ex&eacute;cution en secondes
+<span class="ora_keyword">For</span>    14
+Forall 1</div></pre><div class="paragraph">
+Les deux parties de code r&eacute;alisent exactement la m&ecirc;me op&eacute;ration soit l'insertion de 50000 lignes dans une table.<br />
+Cependant les temps d'ex&eacute;cutions respectifs sont sans commune mesure<br />
+La diff&eacute;rence s'explique uniquement par la charge de travail g&eacute;n&eacute;r&eacute;e par les passages entre le moteur PL/SQL et le moteur SQL
+<br /><br />
+<b>BULK COLLECT</b>
+<br /><br />
+<b>(Select)(Fetch)(execute immediate) &#133; BULK COLLECT Into nom_collection [,nom_collection, &#133;] [LIMIT nombre_lignes] ;</b>
+<br /><br />
+Ce mot cl&eacute; demande au moteur SQL de retourner l'ensemble des lignes lues dans une ou plusieurs collections avant de rendre la main au moteur PL/SQL.<br />
+Cette fonctionnalit&eacute; r&eacute;duit donc consid&eacute;rablement les allers-retours entre les deux moteurs.
+<br /><br />
+Dans le cas d'une instruction FETCH, la clause optionnelle LIMIT permet de restreindre le nombre de lignes ramen&eacute;es.<br />
+Ce nombre de lignes doit &ecirc;tre exprim&eacute; sous forme de litt&eacute;ral ou de variable
+<br /><br />
+Dans l'exemple suivant, on alimente la collection par groupes de 3 lignes
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2   <span class="ora_keyword">TYPE</span>    TYP_TAB_EMP <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> EMP.EMPNO%<span class="ora_keyword">Type</span> ;
+  3   Temp_no TYP_TAB_EMP ;
+  4   <span class="ora_keyword">Cursor</span>  C_EMP <span class="ora_keyword">is</span> <span class="ora_keyword">Select</span> empno <span class="ora_keyword">From</span> EMP ;
+  5   Pass    <span class="ora_keyword">Pls_integer</span> := 1 ;
+  6  <span class="ora_keyword">Begin</span>
+  7   <span class="ora_keyword">Open</span> C_EMP ;
+  8   <span class="ora_keyword">Loop</span>
+  9     <span class="ora_keyword">Fetch</span> C_EMP BULK COLLECT <span class="ora_keyword">into</span> Temp_no LIMIT 3 ;
+ 10     <span class="ora_keyword">For</span> i <span class="ora_keyword">In</span> Temp_no.first..Temp_no.last <span class="ora_keyword">Loop</span>
+ 11       <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Pass ' || <span class="ora_keyword">to_char</span>(Pass) || ' Empno= ' || Temp_no(i) ) ;
+ 12     <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 13     Pass := Pass + 1 ;
+ 14     <span class="ora_keyword">Exit</span> <span class="ora_keyword">When</span> C_EMP%<span class="ora_keyword">NOTFOUND</span> ;
+ 15   <span class="ora_keyword">End</span> <span class="ora_keyword">Loop</span> ;
+ 16  <span class="ora_keyword">End</span> ;
+ 17  /
+Pass 1 Empno= 7369
+Pass 1 Empno= 7499
+Pass 1 Empno= 7521
+Pass 2 Empno= 7566
+Pass 2 Empno= 7654
+Pass 2 Empno= 7698
+Pass 3 Empno= 7782
+Pass 3 Empno= 7788
+Pass 3 Empno= 7839
+Pass 4 Empno= 7844
+Pass 4 Empno= 7876
+Pass 4 Empno= 7900
+Pass 5 Empno= 7902
+Pass 5 Empno= 7934
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+On peut &eacute;galement utiliser le mot cl&eacute; LIMIT pour effectuer par tranches, des op&eacute;rations co&ucirc;teuses pour le ROLLBACK SEGMENT 
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">select</span> empno,sal <span class="ora_keyword">from</span> emp;
+
+     EMPNO        SAL
+<span class="ora_comment">---------- ----------</span>
+      7369        800
+      7499       1600
+      7521       1250
+      7566       2975
+      7654       1250
+      7698       2850
+      7782       2450
+      7788       3000
+      7839       5000
+      7844       1500
+      7876       1100
+      7900        950
+      7902       3000
+      7934       1300
+
+14 ligne(s) s&eacute;lectionn&eacute;e(s).</div></pre>
+<pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2   <span class="ora_keyword">TYPE</span>    TYP_TAB_EMP <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> EMP.EMPNO%<span class="ora_keyword">Type</span> ;
+  3   Temp_no TYP_TAB_EMP ;
+  4   <span class="ora_keyword">Cursor</span>  C_EMP <span class="ora_keyword">is</span> <span class="ora_keyword">Select</span> empno <span class="ora_keyword">From</span> EMP ;
+  5  <span class="ora_keyword">Begin</span>
+  6   <span class="ora_keyword">Open</span> C_EMP ;
+  7   <span class="ora_keyword">Loop</span>
+  8     <span class="ora_keyword">Fetch</span> C_EMP BULK COLLECT <span class="ora_keyword">into</span> Temp_no LIMIT 3 ;
+  9      Forall i <span class="ora_keyword">In</span> Temp_no.first..Temp_no.last 
+ 10         <span class="ora_keyword">Update</span> EMP <span class="ora_keyword">set</span> SAL = <span class="ora_keyword">Round</span>(SAL * 1.1) <span class="ora_keyword">Where</span> empno = Temp_no(i) ;
+ 11      <span class="ora_keyword">Commit</span> ;
+ 12      Temp_no.<span class="ora_keyword">DELETE</span> ;
+ 13      <span class="ora_keyword">Exit</span> <span class="ora_keyword">When</span> C_EMP%<span class="ora_keyword">NOTFOUND</span> ;
+ 14   <span class="ora_keyword">End</span> <span class="ora_keyword">Loop</span> ;
+ 15  <span class="ora_keyword">End</span> ;
+ 16  /
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre>
+<pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">select</span> empno,sal <span class="ora_keyword">from</span> emp;
+
+     EMPNO        SAL
+<span class="ora_comment">---------- ----------</span>
+      7369        880
+      7499       1760
+      7521       1375
+      7566       3273
+      7654       1375
+      7698       3135
+      7782       2695
+      7788       3300
+      7839       5500
+      7844       1650
+      7876       1210
+      7900       1045
+      7902       3300
+      7934       1430
+
+14 ligne(s) s&eacute;lectionn&eacute;e(s).</div></pre><div class="paragraph">
+Le mot cl&eacute; BULK COLLECT peut &eacute;galement &ecirc;tre utilis&eacute; pour r&eacute;cup&eacute;rer les r&eacute;sultats d'un ordre DML, lorsqu'il est associ&eacute; &agrave; la clause RETURNING INTO.
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">TYPE</span>    TYP_TAB_EMPNO <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> EMP.EMPNO%<span class="ora_keyword">Type</span> ;
+  3    <span class="ora_keyword">TYPE</span>    TYP_TAB_NOM   <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> EMP.ENAME%<span class="ora_keyword">Type</span> ;  
+  4    Temp_no TYP_TAB_EMPNO ;
+  5    Tnoms   TYP_TAB_NOM ;  
+  6  <span class="ora_keyword">Begin</span>
+  7     <span class="ora_keyword">Delete</span> <span class="ora_keyword">From</span> EMP <span class="ora_keyword">where</span> sal &gt; 3000 
+  8        RETURNING empno, ename BULK COLLECT <span class="ora_keyword">INTO</span> Temp_no, Tnoms ;
+  9     <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> Temp_no.first..Temp_no.last <span class="ora_keyword">Loop</span>
+ 10        <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Employ&eacute; vir&eacute; : ' || <span class="ora_keyword">To_char</span>( Temp_no(i) ) || ' ' || Tnoms(i) ) ;
+ 11     <span class="ora_keyword">End</span>  <span class="ora_keyword">loop</span> ;
+ 12  <span class="ora_keyword">End</span> ;
+ 13  /
+Employ&eacute; vir&eacute; : 7566 JONES
+Employ&eacute; vir&eacute; : 7698 BLAKE
+Employ&eacute; vir&eacute; : 7788 SCOTT
+Employ&eacute; vir&eacute; : 7839 KING
+Employ&eacute; vir&eacute; : 7902 FORD
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+Une attention particuli&egrave;re doit &ecirc;tre port&eacute;e sur l'utilisation des m&eacute;thodes appliqu&eacute;es aux collections, notamment FIRST.
+<br /><br />
+Dans l'exemple suivant, la proc&eacute;dure tombe en erreur car aucune ligne n'est retourn&eacute;e.<br />
+Dans ce cas nom_collection.FIRST ne vaut pas z&eacute;ro mais NULL
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">TYPE</span>    TYP_TAB_EMPNO <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> EMP.EMPNO%<span class="ora_keyword">Type</span> ;
+  3    <span class="ora_keyword">TYPE</span>    TYP_TAB_NOM   <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> EMP.ENAME%<span class="ora_keyword">Type</span> ;  
+  4    Temp_no TYP_TAB_EMPNO ;
+  5    Tnoms   TYP_TAB_NOM ;  
+  6  <span class="ora_keyword">Begin</span>
+  7     <span class="ora_keyword">Delete</span> <span class="ora_keyword">From</span> EMP <span class="ora_keyword">where</span> sal &lt; 100 
+  8        RETURNING empno, ename BULK COLLECT <span class="ora_keyword">INTO</span> Temp_no, Tnoms ;
+  9     <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> Temp_no.first..Temp_no.last <span class="ora_keyword">Loop</span>
+ 10        <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Employ&eacute; vir&eacute; : ' || <span class="ora_keyword">To_char</span>( Temp_no(i) ) || ' ' || Tnoms(i) ) ;
+ 11     <span class="ora_keyword">End</span>  <span class="ora_keyword">loop</span> ;
+ 12  <span class="ora_keyword">End</span> ;
+ 13  /
+<span class="ora_keyword">Declare</span>
+*
+ERREUR &agrave; la ligne 1 :
+ORA-06502: PL/<span class="ora_keyword">SQL</span> : erreur num&eacute;rique ou erreur sur une valeur
+ORA-06512: &agrave; ligne 9</div></pre><div class="paragraph">
+Il convient de tester la nullit&eacute; d'une m&eacute;thode avant de l'utiliser : 
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">TYPE</span>    TYP_TAB_EMPNO <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> EMP.EMPNO%<span class="ora_keyword">Type</span> ;
+  3    <span class="ora_keyword">TYPE</span>    TYP_TAB_NOM   <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> EMP.ENAME%<span class="ora_keyword">Type</span> ;  
+  4    Temp_no TYP_TAB_EMPNO ;
+  5    Tnoms   TYP_TAB_NOM ;  
+  6  <span class="ora_keyword">Begin</span>
+  7     <span class="ora_keyword">Delete</span> <span class="ora_keyword">From</span> EMP <span class="ora_keyword">where</span> sal &lt; 100 
+  8        RETURNING empno, ename BULK COLLECT <span class="ora_keyword">INTO</span> Temp_no, Tnoms ;
+  9     <span class="ora_keyword">If</span> Temp_no.first <span class="ora_keyword">is</span> <span class="ora_keyword">not</span> <span class="ora_keyword">null</span> <span class="ora_keyword">Then</span>
+ 10       <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> Temp_no.first..Temp_no.last <span class="ora_keyword">Loop</span>
+ 11          <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Employ&eacute; vir&eacute; : ' || <span class="ora_keyword">To_char</span>( Temp_no(i) ) || ' ' || Tnoms(i) ) ;
+ 12       <span class="ora_keyword">End</span>  <span class="ora_keyword">loop</span> ;
+ 13     <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+ 14  <span class="ora_keyword">End</span> ;
+ 15  /
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+<br />
+<b>FORALL</b>
+<br /><br />
+<b>FORALL index IN borne_inf&eacute;rieure..borne_sup&eacute;rieure [SAVE EXCEPTION] ordre_sql</b>
+<br /><br />
+Bien que l'instruction FORALL pr&eacute;cise une borne d&eacute;but et une borne fin, il ne peut pas &ecirc;tre inclus dans une boucle FOR &#133; LOOP
+<br />
+L'instruction FORALL ne peut pas &ecirc;tre utilis&eacute;e dans le code PL/SQL cot&eacute; client
+<br />
+L'ordre SQL doit &ecirc;tre INSERT, UPDATE ou DELETE en relation avec au moins une collection
+<br />
+Il doit exister des &eacute;l&eacute;ments dans la collection pour toutes les valeurs d'indice de l'instruction FORALL
+<br />
+Il n'est pas possible d'exprimer l'indice sous forme d'un calcul
+<br />
+FORALL ne peut traiter qu'un seul ordre SQL &agrave; la fois sous peine de g&eacute;n&eacute;rer un message d'erreur : 
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2  <span class="ora_keyword">TYPE</span> TYP_TAB_NUM <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> TEST.B%<span class="ora_keyword">TYPE</span> <span class="ora_keyword">INDEX</span> <span class="ora_keyword">BY</span> <span class="ora_keyword">PLS_INTEGER</span> ;
+  3  <span class="ora_keyword">TYPE</span> TYP_TAB_CAR <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> TEST.A%<span class="ora_keyword">TYPE</span> <span class="ora_keyword">INDEX</span> <span class="ora_keyword">BY</span> <span class="ora_keyword">PLS_INTEGER</span> ;
+  4  tab1 TYP_TAB_NUM ;
+  5  tab2 TYP_TAB_CAR ;
+  6  <span class="ora_keyword">begin</span>
+  7     <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> 1..1000 <span class="ora_keyword">Loop</span>
+  8       tab1(i) := i ;
+  9       tab2(i) := <span class="ora_keyword">ltrim</span>( <span class="ora_keyword">to_char</span>( i ) ) ;
+ 10     <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 11     
+ 12     Forall i <span class="ora_keyword">in</span> 1..1000
+ 13         <span class="ora_keyword">Insert</span> <span class="ora_keyword">into</span> TEST( A, B ) <span class="ora_keyword">Values</span>( tab2(i), tab1(i) ) ;
+ 14         <span class="ora_keyword">Delete</span> <span class="ora_keyword">from</span> TEST <span class="ora_keyword">where</span> A = tab2(i) ;    
+ 15  <span class="ora_keyword">End</span> ;
+ 16  /
+       <span class="ora_keyword">Delete</span> <span class="ora_keyword">from</span> TEST <span class="ora_keyword">where</span> A = tab2(i) ;
+                                       *
+ERREUR &agrave; la ligne 14 :
+ORA-06550: Ligne 14, colonne 40 :
+PLS-00201: l'identificateur 'I' doit &ecirc;tre d&eacute;clar&eacute;
+ORA-06550: Ligne 14, colonne 35 :
+PL/<span class="ora_keyword">SQL</span>: ORA-00904:  : identificateur non valide
+ORA-06550: Ligne 14, colonne 8 :
+PL/<span class="ora_keyword">SQL</span>: <span class="ora_keyword">SQL</span> <span class="ora_keyword">Statement</span> ignored</div></pre><div class="paragraph">
+La variable d'index I n'est plus connue en sortie de l'instruction FORALL
+<br /><br />
+A partir d'oracle9i, les copies d'informations par blocs peuvent &ecirc;tre effectu&eacute;es directement dans les collections d'enregistrements
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">TYPE</span>   TYP_TAB_TEST <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> TEST%<span class="ora_keyword">ROWTYPE</span> ;
+  3    tabrec TYP_TAB_TEST ;
+  4    <span class="ora_keyword">CURSOR</span> C_test <span class="ora_keyword">is</span> <span class="ora_keyword">select</span> A, B <span class="ora_keyword">From</span> TEST ;
+  5  <span class="ora_keyword">begin</span>
+  6     <span class="ora_comment">-- chargement de la collection depuis la table --</span>
+  7     <span class="ora_keyword">Select</span> A, B BULK COLLECT <span class="ora_keyword">into</span> tabrec <span class="ora_keyword">From</span> TEST ;
+  8     
+  9     <span class="ora_comment">-- insertion de lignes &agrave; partir de la collection --</span>
+ 10     Forall i <span class="ora_keyword">in</span> tabrec.first..tabrec.last
+ 11         <span class="ora_keyword">insert</span> <span class="ora_keyword">into</span> TEST <span class="ora_keyword">values</span> tabrec(i) ;
+ 12      
+ 13     <span class="ora_comment">-- mise &agrave; jour des donn&eacute;es de la collection --</span>
+ 14     <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> tabrec.first..tabrec.last <span class="ora_keyword">Loop</span>
+ 15         tabrec(i).B := tabrec(i).B * 2 ;    
+ 16     <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 17     
+ 18     <span class="ora_comment">-- utilisation du curseur --</span>
+ 19     <span class="ora_keyword">Open</span> C_test ;
+ 20     <span class="ora_keyword">Fetch</span> C_test BULK COLLECT <span class="ora_keyword">Into</span> tabrec ;
+ 21     <span class="ora_keyword">Close</span> C_test ;
+ 22         
+ 23  <span class="ora_keyword">End</span> ;
+ 24  /
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+Il n'est pas possible de mettre &agrave; jour une ligne compl&egrave;te avec une collection d'enregistrements en conjonction avec l'instruction FORALL
+<br />
+</div><br><pre class="code"><div class="ora_code">Forall i <span class="ora_keyword">in</span> tabrec.first..tabrec.last
+	   <span class="ora_keyword">update</span> TEST <span class="ora_keyword">set</span> <span class="ora_keyword">row</span> =  tabrec(i) <span class="ora_keyword">where</span> A = tabrec(i).A ; <span class="ora_comment">-- INVALIDE</span></div></pre><div class="paragraph">
+Pour cela il faut utiliser une boucle For..Loop
+</div><br><pre class="code"><div class="ora_code">   <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> tabrec.first..tabrec.last <span class="ora_keyword">loop</span>
+	   <span class="ora_keyword">update</span> TEST <span class="ora_keyword">set</span> <span class="ora_keyword">row</span> =  tabrec(i) <span class="ora_keyword">where</span> A = tabrec(i).A ;
+   <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;</div></pre><div class="paragraph">
+Ou utiliser des collections simples
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">Declare</span>
+  <span class="ora_keyword">TYPE</span>   TYP_TAB_A <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> TEST.A%<span class="ora_keyword">TYPE</span> ;
+  <span class="ora_keyword">TYPE</span>   TYP_TAB_B <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> TEST.B%<span class="ora_keyword">TYPE</span> ;    
+  taba   TYP_TAB_A ;
+  tabb   TYP_TAB_B ;  
+  <span class="ora_keyword">CURSOR</span> C_test <span class="ora_keyword">is</span> <span class="ora_keyword">select</span> A, B <span class="ora_keyword">From</span> TEST ;
+<span class="ora_keyword">Begin</span>
+   <span class="ora_comment">-- utilisation du curseur --</span>
+   <span class="ora_keyword">Open</span> C_test ;
+   <span class="ora_keyword">Fetch</span> C_test BULK COLLECT <span class="ora_keyword">Into</span> taba, tabb ;
+   <span class="ora_keyword">Close</span> C_test ;
+   
+   <span class="ora_comment">-- mise &agrave; jour des donn&eacute;es de la collection --</span>
+   <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> taba.first..taba.last <span class="ora_keyword">Loop</span>
+       tabb(i) := tabb(i) * 2 ;
+   <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+   
+   <span class="ora_comment">-- mise &agrave; jour des lignes de la table --</span>
+   Forall i <span class="ora_keyword">in</span> taba.first..taba.last
+	   <span class="ora_keyword">update</span> TEST <span class="ora_keyword">set</span> B =  tabb(i) <span class="ora_keyword">where</span> A = taba(i) ;             
+<span class="ora_keyword">End</span> ;</div></pre><div class="paragraph">
+<b>La gestion des erreurs avec la commande FORALL</b>
+<br /><br />
+Sans gestion particuli&egrave;re des exceptions dans le bloc PL/SQL, toute erreur d'ex&eacute;cution provoque l'annulation de toutes<br />
+les instructions r&eacute;alis&eacute;es par l'instruction FORALL (ROLLBACK)<br />
+En pr&eacute;sence d'une section Exception dans le bloc PL/SQL, il sera possible de d&eacute;cider si l'on conserve les modifications valides jusqu'&agrave; l'erreur (COMMIT)<br />
+ou si l'on annule toute l'instruction FORALL (ROLLBACK)
+<br /><br />
+Il est &eacute;galement possible, lors d'erreur sur une instruction, de sauvegarder l'information concernant l'exception et de poursuivre le processus<br />
+Cette fonctionnalit&eacute; est impl&eacute;ment&eacute;e par l'ajout du mot cl&eacute; SAVE EXCEPTION dans l'instruction FORALL<br />
+Toutes les exceptions lev&eacute;es en cours d'ex&eacute;cution sont sauv&eacute;es dans l'attribut %BULK_EXCEPTIONS, qui est une collection d'enregistrements.<br />
+Chaque enregistrement est compos&eacute; de 2 champs : 
+<br /><br />
+<b>%BULK_EXCEPTIONS(n).ERROR_INDEX</b> qui contient l'indice de l'it&eacute;ration qui a provoqu&eacute; l'erreur<br />
+<b>%BULK_EXCEPTIONS(n).ERROR_CODE</b> qui contient le code d'erreur
+<br /><br />
+Le nombre total d'exceptions g&eacute;n&eacute;r&eacute;es par l'instruction FORALL est contenu dans l'attribut SQL%BULK_EXCEPTIONS.COUNT
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">TYPE</span>    TYP_TAB <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> <span class="ora_keyword">Number</span> ;
+  3    tab     TYP_TAB := TYP_TAB( 2, 0, 1, 3, 0, 4, 5 ) ;  
+  4    nb_err  <span class="ora_keyword">Pls_integer</span> ;  
+  5  <span class="ora_keyword">Begin</span>
+  6     Forall i <span class="ora_keyword">in</span> tab.first..tab.last SAVE <span class="ora_keyword">EXCEPTIONS</span>
+  7         <span class="ora_keyword">delete</span> <span class="ora_keyword">from</span> TEST <span class="ora_keyword">where</span> B = 5 / tab(i) ;
+  8  <span class="ora_keyword">Exception</span>
+  9    <span class="ora_keyword">When</span> <span class="ora_keyword">others</span> <span class="ora_keyword">then</span>    
+ 10      nb_err := <span class="ora_keyword">SQL</span>%BULK_EXCEPTIONS.<span class="ora_keyword">COUNT</span> ;
+ 11      <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( <span class="ora_keyword">to_char</span>( nb_err ) || ' Erreurs ' ) ;
+ 12      <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> 1..nb_err <span class="ora_keyword">Loop</span>   
+ 13         <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Indice ' || <span class="ora_keyword">to_char</span>( <span class="ora_keyword">SQL</span>%BULK_EXCEPTIONS(i).ERROR_INDEX ) || ' Erreur Oracle :  ' 
+ 14		|| <span class="ora_keyword">to_char</span>( <span class="ora_keyword">SQL</span>%BULK_EXCEPTIONS(i).ERROR_CODE ) ) ;
+ 15      <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;     
+ 16  <span class="ora_keyword">End</span> ; 
+ 17  /
+2 Erreurs
+Indice 2 Erreur Oracle :  1476
+Indice 5 Erreur Oracle :  1476
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+<br />
+<b>L'attribut %BULK_ROWCOUNT</b>
+<br /><br />
+En plus des attributs de curseur %FOUND, %NOTFOUND, %ISOPEN et %ROWCOUNT, le curseur implicite SQL dispose d'un attribut sp&eacute;cifique<br />
+&agrave; l'instruction FORALL : %BULK_ROWCOUNT
+<br /><br />
+Il s'agit d'une collection de type INDEX BY TABLE pour laquelle l'&eacute;l&eacute;ment d'indice n contient le nombre de lignes affect&eacute;es par l'ex&eacute;cution de l'ordre SQL num&eacute;ro n<br />
+Si aucune ligne n'est affect&eacute;e par l'instruction num&eacute;ro n alors l'attribut SQL%BULK_ROWCOUNT(n) vaut 0
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">TYPE</span>   TYP_TAB_TEST <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> TEST%<span class="ora_keyword">ROWTYPE</span> ;
+  3    <span class="ora_keyword">TYPE</span>   TYP_TAB_A <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> TEST.A%<span class="ora_keyword">TYPE</span> ;
+  4    <span class="ora_keyword">TYPE</span>   TYP_TAB_B <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> TEST.B%<span class="ora_keyword">TYPE</span> ;    
+  5    tabrec TYP_TAB_TEST ;
+  6    taba   TYP_TAB_A ;
+  7    tabb   TYP_TAB_B ;
+  8    total  <span class="ora_keyword">Pls_integer</span> := 0 ;  
+  9    <span class="ora_keyword">CURSOR</span> C_test <span class="ora_keyword">is</span> <span class="ora_keyword">select</span> A, B <span class="ora_keyword">From</span> TEST ;
+ 10  <span class="ora_keyword">begin</span>
+ 11     <span class="ora_comment">-- chargement de la collection depuis la table --</span>
+ 12     <span class="ora_keyword">Select</span> A, B BULK COLLECT <span class="ora_keyword">into</span> tabrec <span class="ora_keyword">From</span> TEST ;
+ 13  
+ 14     <span class="ora_comment">-- insertion de lignes &agrave; partir de la collection --</span>
+ 15     Forall i <span class="ora_keyword">in</span> tabrec.first..tabrec.last
+ 16         <span class="ora_keyword">insert</span> <span class="ora_keyword">into</span> TEST <span class="ora_keyword">values</span> tabrec(i) ;
+ 17      
+ 18     <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> tabrec.first..tabrec.last <span class="ora_keyword">Loop</span>
+ 19         total := total + <span class="ora_keyword">SQL</span>%BULK_ROWCOUNT(i) ;
+ 20     <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 21      
+ 22     <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>('Total insertions : ' || <span class="ora_keyword">to_char</span>( total) ) ;
+ 23          
+ 24     total := 0 ;
+ 25     <span class="ora_comment">-- mise &agrave; jour d'une ligne pr&eacute;cise non permise avec les collections d'enregistrements --</span>
+ 26     <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> tabrec.first..tabrec.last <span class="ora_keyword">loop</span>
+ 27       <span class="ora_keyword">update</span> TEST <span class="ora_keyword">set</span> <span class="ora_keyword">row</span> =  tabrec(i) <span class="ora_keyword">where</span> A = tabrec(i).A ;
+ 28     <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 29     
+ 30     <span class="ora_keyword">For</span> i <span class="ora_keyword">in</span> tabrec.first..tabrec.last <span class="ora_keyword">Loop</span>
+ 31         total := total + <span class="ora_keyword">SQL</span>%BULK_ROWCOUNT(i) ;
+ 32     <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 33      
+ 34     <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>('Total mises &agrave; jour : ' || <span class="ora_keyword">to_char</span>( total) ) ;   
+ 35      
+ 36  <span class="ora_keyword">End</span> ;
+ 37  /
+Total insertions : 20
+Total mises &agrave; jour : 20
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+</div><br>		
+															
+		<br /><h3 class="TitreSection2"><a name="L5.6"></a>5.6. Les collections et enregistrements en param&egrave;tres des proc&eacute;dures et fonctions</h3>
+			
+<div class="paragraph">
+Le passage de ces types d'objets se fait de fa&ccedil;on identique qu'avec les types scalaires.
+<br /><br />
+Soit le package suivant :
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">CREATE</span> <span class="ora_keyword">OR</span> <span class="ora_keyword">REPLACE</span> <span class="ora_keyword">PACKAGE</span> PKG_TEST <span class="ora_keyword">IS</span>
+  2    
+  3    <span class="ora_keyword">TYPE</span> TYP_TAB_EMP  <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> EMP%<span class="ora_keyword">ROWTYPE</span> ;
+  4    <span class="ora_keyword">TYPE</span> TYP_TAB_EMP2 <span class="ora_keyword">IS</span> <span class="ora_keyword">TABLE</span> <span class="ora_keyword">OF</span> EMP%<span class="ora_keyword">ROWTYPE</span> <span class="ora_keyword">INDEX</span> <span class="ora_keyword">BY</span> <span class="ora_keyword">PLS_INTEGER</span> ;  
+  5    
+  6    <span class="ora_keyword">PROCEDURE</span> Affiche_lignes ( Temp <span class="ora_keyword">IN</span> TYP_TAB_EMP ) ;
+  7    
+  8    <span class="ora_keyword">PROCEDURE</span> Affiche_ligne ( Temp <span class="ora_keyword">IN</span> <span class="ora_keyword">OUT</span> EMP%<span class="ora_keyword">ROWTYPE</span> ) ;
+  9    
+ 10    <span class="ora_keyword">PROCEDURE</span> Affiche_ligne_nocopy ( Temp <span class="ora_keyword">IN</span> <span class="ora_keyword">OUT</span> NOCOPY EMP%<span class="ora_keyword">ROWTYPE</span> ) ;  
+ 11    
+ 12    <span class="ora_keyword">PROCEDURE</span> Modifie_lignes ( Temp <span class="ora_keyword">IN</span> <span class="ora_keyword">OUT</span> TYP_TAB_EMP ) ;
+ 13    
+ 14    <span class="ora_keyword">PROCEDURE</span> Modifie_lignes_nocopy ( Temp <span class="ora_keyword">IN</span> <span class="ora_keyword">OUT</span> NOCOPY TYP_TAB_EMP ) ;
+ 15    
+ 16    <span class="ora_keyword">PROCEDURE</span> Modifie_lignes2 ( Temp <span class="ora_keyword">IN</span> <span class="ora_keyword">OUT</span> TYP_TAB_EMP2 ) ;
+ 17    
+ 18    <span class="ora_keyword">PROCEDURE</span> Modifie_lignes_nocopy2 ( Temp <span class="ora_keyword">IN</span> <span class="ora_keyword">OUT</span> NOCOPY TYP_TAB_EMP2 ) ;
+ 19    
+ 20    <span class="ora_keyword">FUNCTION</span> Affiche_lignes <span class="ora_keyword">Return</span> TYP_TAB_EMP ;      
+ 21    
+ 22  <span class="ora_keyword">END</span>;
+ 23  /
+
+<span class="ora_keyword">Package</span> cr&eacute;&eacute;.
+
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">CREATE</span> <span class="ora_keyword">OR</span> <span class="ora_keyword">REPLACE</span> <span class="ora_keyword">PACKAGE</span> <span class="ora_keyword">BODY</span> PKG_TEST <span class="ora_keyword">IS</span>
+  2  
+  3    GN$Lig <span class="ora_keyword">pls_integer</span> := 0 ;
+  4  
+  5    <span class="ora_keyword">PROCEDURE</span> Affiche_lignes ( Temp <span class="ora_keyword">IN</span> TYP_TAB_EMP )
+  6    <span class="ora_keyword">IS</span>
+  7    <span class="ora_keyword">Begin</span>
+  8     GN$Lig := 0 ;
+  9     <span class="ora_keyword">For</span> i <span class="ora_keyword">IN</span> Temp.first..Temp.last <span class="ora_keyword">Loop</span>
+ 10       GN$Lig := GN$Lig + 1 ;
+ 11       <span class="ora_keyword">If</span> GN$Lig  &lt;= 10 <span class="ora_keyword">Then</span>
+ 12          <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( <span class="ora_keyword">Rpad</span>( Temp(i).ename, 25 ) || ' <span class="ora_comment">--&gt; ' || To_char( Temp(i).sal ) ) ;</span>
+ 13       <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+ 14     <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 15    <span class="ora_keyword">End</span> Affiche_lignes ;
+ 16  
+ 17    <span class="ora_keyword">PROCEDURE</span> Affiche_ligne ( Temp <span class="ora_keyword">IN</span> <span class="ora_keyword">OUT</span> EMP%<span class="ora_keyword">ROWTYPE</span> )
+ 18    <span class="ora_keyword">IS</span>
+ 19    <span class="ora_keyword">Begin</span>
+ 20      GN$Lig := GN$Lig + 1 ;
+ 21      Temp.sal := Temp.sal * 1.1 ; 
+ 22      <span class="ora_keyword">If</span> GN$Lig  &lt;= 10 <span class="ora_keyword">Then</span>
+ 23        <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( <span class="ora_keyword">Rpad</span>( Temp.ename, 25 ) || ' <span class="ora_comment">--&gt; ' || To_char( Temp.sal ) ) ;</span>
+ 24      <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+ 25    <span class="ora_keyword">End</span> Affiche_ligne ;
+ 26  
+ 27    <span class="ora_keyword">PROCEDURE</span> Affiche_ligne_nocopy ( Temp <span class="ora_keyword">IN</span> <span class="ora_keyword">OUT</span> NOCOPY EMP%<span class="ora_keyword">ROWTYPE</span> )
+ 28    <span class="ora_keyword">IS</span>
+ 29    <span class="ora_keyword">Begin</span>
+ 30      GN$Lig := GN$Lig + 1 ;
+ 31      Temp.sal := Temp.sal * 1.1 ;
+ 32      <span class="ora_keyword">If</span> GN$Lig  &lt;= 10 <span class="ora_keyword">Then</span>  
+ 33        <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( <span class="ora_keyword">Rpad</span>( Temp.ename, 25 ) || ' <span class="ora_comment">--&gt; ' || To_char( Temp.sal ) ) ;</span>
+ 34      <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+ 35    <span class="ora_keyword">End</span> Affiche_ligne_nocopy ;
+ 36      
+ 37    <span class="ora_keyword">PROCEDURE</span> Modifie_lignes ( Temp <span class="ora_keyword">IN</span> <span class="ora_keyword">OUT</span> TYP_TAB_EMP )
+ 38    <span class="ora_keyword">IS</span>
+ 39    <span class="ora_keyword">Begin</span>
+ 40     GN$Lig := 0 ;
+ 41     <span class="ora_keyword">For</span> i <span class="ora_keyword">IN</span> Temp.first..Temp.last <span class="ora_keyword">Loop</span>
+ 42       Temp(i).sal := Temp(i).sal * 1.1 ;
+ 43       Affiche_ligne( Temp(i) ) ;
+ 44     <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 45    <span class="ora_keyword">End</span> Modifie_lignes ;
+ 46    
+ 47    <span class="ora_keyword">PROCEDURE</span> Modifie_lignes_nocopy ( Temp <span class="ora_keyword">IN</span> <span class="ora_keyword">OUT</span> NOCOPY TYP_TAB_EMP )
+ 48    <span class="ora_keyword">IS</span>
+ 49    <span class="ora_keyword">Begin</span>
+ 50     GN$Lig := 0 ;
+ 51     <span class="ora_keyword">For</span> i <span class="ora_keyword">IN</span> Temp.first..Temp.last <span class="ora_keyword">Loop</span>
+ 52       Temp(i).sal := Temp(i).sal * 1.1 ;
+ 53       Affiche_ligne_nocopy( Temp(i) ) ; 
+ 54     <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 55    <span class="ora_keyword">End</span> Modifie_lignes_nocopy ;
+ 56    
+ 57    <span class="ora_keyword">PROCEDURE</span> Modifie_lignes2 ( Temp <span class="ora_keyword">IN</span> <span class="ora_keyword">OUT</span> TYP_TAB_EMP2 )
+ 58    <span class="ora_keyword">IS</span>
+ 59    <span class="ora_keyword">Begin</span>
+ 60     GN$Lig := 0 ;
+ 61     <span class="ora_keyword">For</span> i <span class="ora_keyword">IN</span> Temp.first..Temp.last <span class="ora_keyword">Loop</span>
+ 62       Temp(i).sal := Temp(i).sal * 1.1 ;
+ 63       Affiche_ligne( Temp(i) ) ;
+ 64       <span class="ora_comment">--dbms_output.put_line( Rpad( Temp(i).ename, 25 ) || ' --&gt; ' || To_char( Temp(i).sal ) ) ;</span>
+ 65     <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 66    <span class="ora_keyword">End</span> Modifie_lignes2 ;
+ 67    
+ 68    <span class="ora_keyword">PROCEDURE</span> Modifie_lignes_nocopy2 ( Temp <span class="ora_keyword">IN</span> <span class="ora_keyword">OUT</span> NOCOPY TYP_TAB_EMP2 )
+ 69    <span class="ora_keyword">IS</span>
+ 70    <span class="ora_keyword">Begin</span>
+ 71     GN$Lig := 0 ;
+ 72     <span class="ora_keyword">For</span> i <span class="ora_keyword">IN</span> Temp.first..Temp.last <span class="ora_keyword">Loop</span>
+ 73       Temp(i).sal := Temp(i).sal * 1.1 ;
+ 74       Affiche_ligne_nocopy( Temp(i) ) ; 
+ 75       <span class="ora_comment">--dbms_output.put_line( Rpad( Temp(i).ename, 25 ) || ' --&gt; ' || To_char( Temp(i).sal ) ) ;</span>
+ 76     <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+ 77    <span class="ora_keyword">End</span> Modifie_lignes_nocopy2 ;    
+ 78    
+ 79  
+ 80    <span class="ora_keyword">FUNCTION</span> Affiche_lignes <span class="ora_keyword">Return</span> TYP_TAB_EMP
+ 81    <span class="ora_keyword">IS</span>
+ 82      Tlignes PKG_TEST.TYP_TAB_EMP ;
+ 83      <span class="ora_keyword">Cursor</span> C_EMP <span class="ora_keyword">is</span> <span class="ora_keyword">Select</span> * <span class="ora_keyword">From</span> EMP ;
+ 84    <span class="ora_keyword">Begin</span>
+ 85      <span class="ora_keyword">Open</span> C_EMP ;
+ 86      <span class="ora_keyword">Fetch</span> C_EMP BULK COLLECT <span class="ora_keyword">into</span> Tlignes ;
+ 87      <span class="ora_keyword">Close</span> C_EMP ;
+ 88      <span class="ora_keyword">Return</span>( Tlignes ) ;
+ 89    <span class="ora_keyword">End</span> ;
+ 90    
+ 91  <span class="ora_keyword">END</span>;
+ 92  /
+
+Corps de <span class="ora_keyword">package</span> cr&eacute;&eacute;.</div></pre><div class="paragraph">
+<br />
+<b>Collections en argument de proc&eacute;dure</b>
+<br /><br />
+Nous allons maintenant &eacute;crire un bloc PL/SQL anonyme qui utilise la fonction Affiche_lignes()
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    Tlignes PKG_TEST.TYP_TAB_EMP ;
+  3    <span class="ora_keyword">Cursor</span>  C_EMP <span class="ora_keyword">is</span> <span class="ora_keyword">Select</span> * <span class="ora_keyword">From</span> EMP ;
+  4  <span class="ora_keyword">Begin</span>
+  5  
+  6   <span class="ora_keyword">Open</span>  C_EMP ;
+  7   <span class="ora_keyword">Fetch</span> C_EMP BULK COLLECT <span class="ora_keyword">into</span> Tlignes ;
+  8   <span class="ora_keyword">Close</span> C_EMP ;
+  9   
+ 10   PKG_TEST.Affiche_lignes( Tlignes ) ;
+ 11   
+ 12  <span class="ora_keyword">End</span> ;
+ 13  /
+SMITH                     <span class="ora_comment">--&gt; 880</span>
+ALLEN                     <span class="ora_comment">--&gt; 1760</span>
+WARD                      <span class="ora_comment">--&gt; 1375</span>
+JONES                     <span class="ora_comment">--&gt; 3273</span>
+MARTIN                    <span class="ora_comment">--&gt; 1375</span>
+BLAKE                     <span class="ora_comment">--&gt; 3135</span>
+CLARK                     <span class="ora_comment">--&gt; 2695</span>
+SCOTT                     <span class="ora_comment">--&gt; 3300</span>
+KING                      <span class="ora_comment">--&gt; 5500</span>
+TURNER                    <span class="ora_comment">--&gt; 1650</span>
+ADAMS                     <span class="ora_comment">--&gt; 1210</span>
+JAMES                     <span class="ora_comment">--&gt; 1045</span>
+FORD                      <span class="ora_comment">--&gt; 3300</span>
+MILLER                    <span class="ora_comment">--&gt; 1430</span>
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+Une variable Tlignes est d&eacute;clar&eacute;e avec le type PKG_TEST.TYP_TAB_EMP<br />
+qui est une collection d'enregistrements de type EMP%ROWTYPE
+<br /><br />
+Cette collection est aliment&eacute;e par le curseur C_EMP et transmise &agrave; la proc&eacute;dure qui en affiche une partie du contenu.
+<br />
+Vous pouvez &eacute;galement ne transmettre qu'une ligne de la collection
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    Tlignes PKG_TEST.TYP_TAB_EMP ;
+  3    <span class="ora_keyword">Cursor</span>  C_EMP <span class="ora_keyword">is</span> <span class="ora_keyword">Select</span> * <span class="ora_keyword">From</span> EMP ;
+  4  <span class="ora_keyword">Begin</span>
+  5   <span class="ora_keyword">Open</span>  C_EMP ;
+  6   <span class="ora_keyword">Fetch</span> C_EMP BULK COLLECT <span class="ora_keyword">into</span> Tlignes ;
+  7   <span class="ora_keyword">Close</span> C_EMP ;
+  8   PKG_TEST.Affiche_ligne( Tlignes(2) ) ;
+  9  <span class="ora_keyword">End</span> ;
+ 10  /
+ALLEN                     <span class="ora_comment">--&gt; 1760</span>
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+La proc&eacute;dure Affiche_ligne() re&ccedil;oit en argument une variable de type EMP%ROWTYPE.<br />
+Dans l'appel, seule la deuxi&egrave;me ligne de la collection lui est transmise.
+<br /><br />
+<b>Pour pouvoir en modifier la valeurs des &eacute;l&eacute;ments, la collection doit &ecirc;tre transmise en mode IN OUT</b>
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    Tlignes PKG_TEST.TYP_TAB_EMP ;
+  3    <span class="ora_keyword">Cursor</span>  C_EMP <span class="ora_keyword">is</span> <span class="ora_keyword">Select</span> * <span class="ora_keyword">From</span> EMP ;
+  4  <span class="ora_keyword">Begin</span>
+  5  
+  6   <span class="ora_keyword">Open</span>  C_EMP ;
+  7   <span class="ora_keyword">Fetch</span> C_EMP BULK COLLECT <span class="ora_keyword">into</span> Tlignes ;
+  8   <span class="ora_keyword">Close</span> C_EMP ;
+  9   
+ 10   PKG_TEST.Modifie_lignes( Tlignes ) ;
+ 11   
+ 12  <span class="ora_keyword">End</span> ;
+ 13  /
+SMITH                     <span class="ora_comment">--&gt; 968</span>
+ALLEN                     <span class="ora_comment">--&gt; 1936</span>
+WARD                      <span class="ora_comment">--&gt; 1512,5</span>
+JONES                     <span class="ora_comment">--&gt; 3600,3</span>
+MARTIN                    <span class="ora_comment">--&gt; 1512,5</span>
+BLAKE                     <span class="ora_comment">--&gt; 3448,5</span>
+CLARK                     <span class="ora_comment">--&gt; 2964,5</span>
+SCOTT                     <span class="ora_comment">--&gt; 3630</span>
+KING                      <span class="ora_comment">--&gt; 6050</span>
+TURNER                    <span class="ora_comment">--&gt; 1815</span>
+ADAMS                     <span class="ora_comment">--&gt; 1331</span>
+JAMES                     <span class="ora_comment">--&gt; 1149,5</span>
+FORD                      <span class="ora_comment">--&gt; 3630</span>
+MILLER                    <span class="ora_comment">--&gt; 1573</span>
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+<span class="important">
+Lors du passage de collections ou &eacute;l&eacute;ments de collection &agrave; des proc&eacute;dures ou fonctions, les arguments sont pass&eacute;s par copie.<br />
+Une copie de l'objet est faite dans un espace m&eacute;moire particulier.<br />
+Dans le cas o&ugrave; des collections tr&egrave;s volumineuses sont pass&eacute;es en argument, o&ugrave; de nombreux appels sont effectu&eacute;es avec des collections<br />
+ou &eacute;l&eacute;ments de collection, il est pr&eacute;f&eacute;rable de passer les arguments en mode NOCOPY.<br />
+En effet dans ce mode, aucun espace m&eacute;moire suppl&eacute;mentaire n'est allou&eacute; puisque la variable est pass&eacute;e par r&eacute;f&eacute;rence (Le pointeur sur la variable)<br />
+Voir la proc&eacute;dure PKG_TEST.Affiche_ligne_nocopy()
+</span>
+<br /><br /><br />
+<b>Collections en retour de fonction</b>
+<br /><br />
+Soit la fonction PKG_TEST.Affiche_lignes
+</div><br><pre class="code"><div class="ora_code">  <span class="ora_keyword">FUNCTION</span> Affiche_lignes <span class="ora_keyword">Return</span> TYP_TAB_EMP
+  <span class="ora_keyword">IS</span>
+    Tlignes PKG_TEST.TYP_TAB_EMP ;
+    <span class="ora_keyword">Cursor</span>  C_EMP <span class="ora_keyword">is</span> <span class="ora_keyword">Select</span> * <span class="ora_keyword">From</span> EMP ;
+  <span class="ora_keyword">Begin</span>
+    <span class="ora_keyword">Open</span>  C_EMP ;
+    <span class="ora_keyword">Fetch</span> C_EMP BULK COLLECT <span class="ora_keyword">into</span> Tlignes ;
+    <span class="ora_keyword">Close</span> C_EMP ;
+    <span class="ora_keyword">Return</span>( Tlignes ) ;
+  <span class="ora_keyword">End</span> ;</div></pre><div class="paragraph">
+Appel&eacute;e par le bloc PL/SQL suivant : 
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    Tlignes PKG_TEST.TYP_TAB_EMP ;
+  3  <span class="ora_keyword">Begin</span>
+  4    Tlignes := PKG_TEST.Affiche_lignes ;
+  5    <span class="ora_keyword">For</span> i <span class="ora_keyword">IN</span> Tlignes.first..Tlignes.last <span class="ora_keyword">Loop</span>
+  6       <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( <span class="ora_keyword">Rpad</span>( Tlignes(i).ename, 25 ) || ' <span class="ora_comment">--&gt; ' || To_char( Tlignes(i).sal ) ) ;</span>
+  7    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+  8  <span class="ora_keyword">End</span> ;
+  9  /
+SMITH                     <span class="ora_comment">--&gt; 880</span>
+ALLEN                     <span class="ora_comment">--&gt; 1760</span>
+WARD                      <span class="ora_comment">--&gt; 1375</span>
+JONES                     <span class="ora_comment">--&gt; 3273</span>
+MARTIN                    <span class="ora_comment">--&gt; 1375</span>
+BLAKE                     <span class="ora_comment">--&gt; 3135</span>
+CLARK                     <span class="ora_comment">--&gt; 2695</span>
+SCOTT                     <span class="ora_comment">--&gt; 3300</span>
+KING                      <span class="ora_comment">--&gt; 5500</span>
+TURNER                    <span class="ora_comment">--&gt; 1650</span>
+ADAMS                     <span class="ora_comment">--&gt; 1210</span>
+JAMES                     <span class="ora_comment">--&gt; 1045</span>
+FORD                      <span class="ora_comment">--&gt; 3300</span>
+MILLER                    <span class="ora_comment">--&gt; 1430</span>
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+La fonction Affiche_lignes retourne une collection de type  PKG_TEST.TYP_TAB_EMP,<br />
+ouvre un curseur sur la table EMP pour remplir la collection et la retourne au bloc PL/SQL appelant qui peut en afficher les valeurs
+<br /><br /><br />
+<b>Enregistrements</b>
+<br /><br />
+Lorsque l'on veut appeler une fonction retournant un type RECORD, il faut respecter la syntaxe suivante pour r&eacute;f&eacute;rencer un champ de l'enregistrement :  
+<br /><br />
+<b>Nom_fonction(argument).nom_champ</b>
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2    <span class="ora_keyword">TYPE</span> Emp_rec <span class="ora_keyword">IS</span> <span class="ora_keyword">RECORD</span>
+  3    (
+  4      empno  emp.empno%<span class="ora_keyword">type</span>,
+  5      salaire  emp.sal%<span class="ora_keyword">type</span>
+  6    );
+  7    salaire emp.sal%<span class="ora_keyword">type</span> ;
+  8    <span class="ora_keyword">Function</span> xx(<span class="ora_keyword">ln</span>$numemp <span class="ora_keyword">in</span> emp.EMPNO%<span class="ora_keyword">type</span>) <span class="ora_keyword">return</span> Emp_rec
+  9    <span class="ora_keyword">is</span>
+ 10      emp_info EMp_rec ;
+ 11    <span class="ora_keyword">Begin</span>
+ 12      <span class="ora_keyword">Select</span> empno, sal <span class="ora_keyword">into</span> emp_info.empno, emp_info.salaire
+ 13      <span class="ora_keyword">from</span> emp <span class="ora_keyword">where</span> empno = <span class="ora_keyword">ln</span>$numemp ;
+ 14      <span class="ora_keyword">return</span> emp_info ;
+ 15    <span class="ora_keyword">End</span> ;   
+ 16  <span class="ora_keyword">Begin</span>
+ 17    salaire := xx(7499).salaire ;
+ 18    <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Salaire de 7499 : ' || <span class="ora_keyword">to_char</span>(salaire) ) ;
+ 19  <span class="ora_keyword">End</span>  ; 
+ 20  /
+Salaire de 7499 : 1760
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre> <div class="paragraph">
+</div><br>		
+										
+	
+	
+<hr><div class="barreNavigation"> [ <a class="barreNavigationTexte" href="Chap4.html">Précédent</a> ]  [ <a class="barreNavigationTexte" href="sommaire.html">Sommaire</a> ]  [ <a class="barreNavigationTexte" href="Chap6.html">Suivant</a> ] </div><hr><p class="licence">Copyright &copy;2004&nbsp;SheikYerbouti.
+            Aucune reproduction, même partielle, ne peut être faite
+			de ce site et de l'ensemble de son contenu : textes, documents, images, etc
+            sans l'autorisation expresse de l'auteur. Sinon vous encourez selon la loi jusqu'à 3 ans de prison et jusqu'à 300 000 E
+			de dommages et intérets. Cette page est déposée à la <a href="http://www.sacd.fr/" target="_blank">SACD</a>.</p>
+       											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			<table width="100%" cellpadding="4" class="cachee">
+				<tr bgcolor="#DDEEFF">
+					<td align="center" class="titrepied">
+			  Vos questions techniques : <b><a href="http://www.developpez.net/forums/" target="_blank">forum d'entraide Accueil</a></b> - Publiez vos articles, tutoriels et cours<br />
+			  et rejoignez-nous dans l'&eacute;quipe de r&eacute;daction du club d'entraide des d&eacute;veloppeurs francophones <br /> <a href="http://club.developpez.com/contacts/">Nous contacter</a>
+	
+			  - Copyright 2000..2005 www.developpez.com
+					</td>
+					<td align="center">
+          
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
+
+	

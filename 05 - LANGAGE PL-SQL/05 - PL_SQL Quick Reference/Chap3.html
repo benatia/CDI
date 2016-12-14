@@ -1,0 +1,1044 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <title>Guide PL/SQL - Club d'entraide des d&#233;veloppeurs francophones</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta name="generator" content="developpez-com" />
+  <link rel="stylesheet" type="text/css" href="./mainstyle.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="./printer.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./article.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./faq.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./source.css" />
+</head>
+<body>
+<table width="100%" cellspacing="4">
+	<tr>
+  	<td align="center">
+    	<table width="100%" cellspacing="0" cellpadding="0">
+     		<tr>
+     			<td>
+			      <table width="100%" cellspacing="11">
+    	  			<tr>
+        				<td>
+          				<a href="http://www.developpez.com"><img src="images/logo.gif" alt="Accueil" /></a>
+        				</td>
+      				</tr>
+      				<tr>
+      					<td></td>
+      				</tr>
+      			</table>
+    			</td>
+  			</tr>
+  			<tr>
+    			<td>
+						<table class="cachee" cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td class="iongl"><img src="images/bordg.gif" /></td>
+								<td class="bgongl"><a href="http://www.developpez.com" class="ntdrub">Accueil<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://club.developpez.com" class="ntdrub">Le<br />Club</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://delphi.developpez.com" class="ntdrub">Delphi<br />Kylix</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://c.developpez.com" class="ntdrub">C<br />C++</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://java.developpez.com" class="ntdrub">Java<br />J2EE</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://dotnet.developpez.com" class="ntdrub">DotNET<br />&amp; C#</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://vb.developpez.com" class="ntdrub">Visual<br />Basic</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://access.developpez.com" class="ntdrub">Access<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://pascal.developpez.com" class="ntdrub">Pascal<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://web.developpez.com" class="ntdrub">Dev<br />Web</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://php.developpez.com" class="ntdrub">PHP<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://asp.developpez.com" class="ntdrub">ASP<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://xml.developpez.com" class="ntdrub">XML<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://uml.developpez.com" class="ntdrub">UML<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://sgbd.developpez.com" class="ntdrub">SQL<br />SGBD</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://windows.developpez.com" class="ntdrub">Win<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://linux.developpez.com" class="ntdrub">Linux<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://www.developpez.com/cours/" class="ntdrub">Autres<br /></a></td>
+								<td class="iongl"><img src="images/bordd.gif" /></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="trbleu">
+					</td>
+				</tr>
+
+				<tr valign="top">
+					<td valign="top" class="fondart">
+						<table cellspacing="1" width="100%" class="tbnoir">
+							<tr>
+								<td class="fondart">
+									<table class="cadrearticle" width="90%" cellpadding="10" cellspacing="0">
+										<tr>
+											<td>
+
+        <br><h1>Oracle PL/SQL</h1><p class="dateArticle">
+        Date de publication : Avril 2004 , 
+        Date de mise a jour : Juillet 2004</p><hr><div class="barreNavigation"> [ <a class="barreNavigationTexte" href="Chap2.html">Précédent</a> ]  [ <a class="barreNavigationTexte" href="sommaire.html">Sommaire</a> ]  [ <a class="barreNavigationTexte" href="Chap4.html">Suivant</a> ] </div><hr>
+	
+	
+	
+	
+	
+	
+	<br /><a class="summaryIndent0" href="#L3">3. Les fonctions natives</a>
+			
+
+		<br /><a class="summaryIndent1" href="#L3.1">3.1. Les fonctions cha&icirc;nes de caract&egrave;res</a>
+			
+		
+
+		
+		
+		<br /><a class="summaryIndent1" href="#L3.2">3.2. Les fonctions arithm&eacute;tiques</a>
+			
+		
+				
+		<br /><a class="summaryIndent1" href="#L3.3">3.3. Les fonctions de conversion et de transformation</a>
+			
+
+	
+	
+
+
+		
+				
+		<br /><a class="summaryIndent1" href="#L3.4">3.4. Les fonctions sur les dates</a>
+			
+
+
+	
+
+	
+
+
+		
+
+								
+	
+	
+<br><br>
+	
+	
+	
+	
+	
+	
+	<br /><h2 class="TitreSection1"><a name="L3"></a>3. Les fonctions natives</h2>
+			
+<div class="paragraph">
+Ces fonctions SQL ne sont pas propres au PL/SQL et ne sont donc pas d&eacute;velopp&eacute;es outre mesure dans ce chapitre,<br />
+notamment au niveau des formats et litt&eacute;raux utilisables.<br />
+Reportez-vous &agrave; la documentation SQL pour davantage de pr&eacute;cisions
+</div><br>
+		<br /><h3 class="TitreSection2"><a name="L3.1"></a>3.1. Les fonctions cha&icirc;nes de caract&egrave;res</h3>
+			
+<div class="paragraph">		
+</div><br><ul type="">
+<li><b>Concat&eacute;nation de cha&icirc;nes</b></li>
+</ul><div class="paragraph">
+</div><br><a name="CONCAT"></a><div class="paragraph">
+2 syntaxes :
+<br /><br />
+<b>cha&icirc;ne || cha&icirc;ne</b>
+<br /><br />
+<b>CONCAT( cha&icirc;ne, cha&icirc;ne )</b>
+<br /><br />
+</div><br><ul type="">
+<li><b>Remplissage &agrave; gauche ou &agrave; droite d'une cha&icirc;ne</b></li>
+</ul><div class="paragraph">
+Ces fonctions formatent une cha&icirc;ne sur une longueur donn&eacute;e par ajout de caract&egrave;res avant (LPAD) ou apr&egrave;s (RPAD) la cha&icirc;ne pass&eacute;e en argument
+<br /><br />
+</div><br><a name="LPAD"></a><div class="paragraph">
+<b>LPAD( cha&icirc;ne, longueur [, 'caract&egrave;res'] )</b><br />
+<b>RPAD( cha&icirc;ne, longueur [, 'caract&egrave;res'] )</b><br />
+<br /><br />
+cha&icirc;ne repr&eacute;sente le nom d'une colonne, d'une variable ou un litt&eacute;ral<br />
+longueur repr&eacute;sente le nombre total de caract&egrave;res du r&eacute;sultat<br />
+caract&egrave;res repr&eacute;sente le ou les caract&egrave;res de remplissage<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">RPAD</span>( 'Total', 20, '.' )
+Total...............
+
+<span class="ora_keyword">LPAD</span>( 'Hello', 20, '.' )
+...............Hello
+
+<span class="ora_keyword">RPAD</span>( <span class="ora_keyword">LPAD</span>( '2320 euros', 20, '*' ), 30, '*' )
+**********2320 euros**********
+
+<span class="ora_keyword">LPAD</span>( 'Hello', 20, '-*-' )
+-*<span class="ora_comment">--*--*--*--*-Hello</span></div></pre><div class="paragraph">
+Si caract&egrave;res n'est pas sp&eacute;cifi&eacute;, le caract&egrave;re par d&eacute;faut est l'espace (CHR(32))
+<br /><br />
+</div><br><ul type="">
+<li><b>Suppression de caract&egrave;res &agrave; gauche (LTRIM) ou &agrave; droite (RTRIM) d'une cha&icirc;ne</b></li>
+</ul><div class="paragraph">
+</div><br><a name="LTRIM"></a><div class="paragraph">
+<b>LTRIM( cha&icirc;ne [, 'caract&egrave;res'] )</b><br />
+<b>RTRIM( cha&icirc;ne [, 'caract&egrave;res'] )</b>
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">LTRIM</span>( '<span class="ora_ch">"Libell&eacute;', '"</span>' )
+Libell&eacute;
+
+<span class="ora_keyword">RTRIM</span>( 'Libell&eacute;<span class="ora_comment">----', '-' )</span>
+Libell&eacute;
+
+<span class="ora_keyword">LTRIM</span>( <span class="ora_keyword">RTRIM</span>( '<span class="ora_ch">"Libell&eacute;"</span>', '<span class="ora_ch">"' ), '"</span>' )
+Libell&eacute;</div></pre><div class="paragraph">
+si caract&egrave;res n'est pas sp&eacute;cifi&eacute;, le caract&egrave;re par d&eacute;faut est l'espace (CHR(32))
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">RTRIM</span>( '(Libell&eacute;     ') || ')'
+(Libell&eacute;)</div></pre><div class="paragraph">
+<br />
+</div><br><a name="TRIM"></a><div class="paragraph">
+<b>TRIM</b>
+</div><br>		
+<div class="image"><img src="./images/trim.gif"></div>
+<div class="paragraph">
+Cette fonction permet de cumuler les possibilit&eacute;s de LTRIM et RTRIM
+<br /><br />
+<b>cha&icirc;ne</b> repr&eacute;sente la cha&icirc;ne de caract&egrave;res en entr&eacute;e de la fonction<br />
+si <b>LEADING</b> est sp&eacute;cifi&eacute;, tous les premiers caract&egrave;res identiques &agrave; <b>caract&egrave;re</b> sont supprim&eacute;s<br />
+si <b>TRAILING</b> est sp&eacute;cifi&eacute;, tous les derniers caract&egrave;res identiques &agrave; <b>caract&egrave;re</b> sont supprim&eacute;s<br />
+si <b>BOTH</b> ou rien est sp&eacute;cifi&eacute;, tous les premiers et derniers caract&egrave;res identiques &agrave; <b>caract&egrave;re</b> sont supprim&eacute;s<br />
+si caract&egrave;re n'est pas sp&eacute;cifi&eacute; la valeur par d&eacute;faut est l'espace<br />
+si seule <b>cha&icirc;ne</b> est sp&eacute;cifi&eacute;e tous les espaces en d&eacute;but et fin de cha&icirc;ne sont supprim&eacute;s<br />
+si <b>caract&egrave;re</b> ou <b>cha&icirc;ne</b> est NULL, la fonction retourne NULL
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Declare</span>
+  2     LC$Ch1 <span class="ora_keyword">Varchar</span>(20) := '   libell&eacute;   ' ;
+  3     LC$Ch2 <span class="ora_keyword">Varchar</span>(20) := '***libell&eacute;***' ;    
+  4  <span class="ora_keyword">Begin</span>  
+  5     <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( TRIM( LC$Ch1 ) ) ;
+  6     <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( TRIM( '*' <span class="ora_keyword">FROM</span> LC$Ch2 ) ) ;
+  7  <span class="ora_keyword">End</span> ;
+  8  /
+libell&eacute;
+libell&eacute;
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+<br />
+</div><br><ul type="">
+<li><b>Modification de la casse d'une cha&icirc;ne</b></li>
+</ul><div class="paragraph">
+</div><br><a name="LOWER"></a><div class="paragraph">
+<b>LOWER( cha&icirc;ne )</b><br />
+<b>NLS_LOWER( cha&icirc;ne [, nls_param&egrave;tre ] )</b><br />
+<b>UPPER( cha&icirc;ne )</b><br />
+<b>NLS_UPPER( cha&icirc;ne [, nls_param&egrave;tre ] )</b><br />
+<b>INITCAP( cha&icirc;ne )</b><br />
+<b>NLS_INITCAP( cha&icirc;ne [, nls_param&egrave;tre ] )</b><br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_comment">-- Conversion d'une cha&icirc;ne en minuscules</span>
+<span class="ora_keyword">LOWER</span>( 'ORACLE' )
+oracle
+
+<span class="ora_comment">-- Conversion d'une cha&icirc;ne en majuscules</span>
+<span class="ora_keyword">UPPER</span>( 'oracle' )
+ORACLE
+
+<span class="ora_comment">-- Conversion d'une cha&icirc;ne avec la premi&egrave;re lettre de chaque mot en majuscule</span>
+<span class="ora_keyword">INITCAP</span>( 'le sgbd oracle' )
+Le Sgbd Oracle</div></pre><div class="paragraph">
+</div><br><ul type="">
+<li><b>Indication de la longueur d'une cha&icirc;ne en caract&egrave;res (LENGTH) ou en octets (LENGTHB)</b></li>
+</ul><div class="paragraph">
+</div><br><a name="LENGTH"></a><div class="paragraph">
+<b>LENGTH( cha&icirc;ne )</b>
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">LENGTH</span>( 'le sgbd oracle' )
+14</div></pre><div class="paragraph">
+</div><br><ul type="">
+<li><b>Extraction d'une sous-cha&icirc;ne &agrave; partir d'une cha&icirc;ne</b></li>
+</ul><div class="paragraph">
+</div><br><a name="SUBSTR"></a><div class="paragraph">
+<b>SUBSTR( cha&icirc;ne, d&eacute;but [, 'nombre'] )</b>
+<br /><br />
+<b>cha&icirc;ne</b> repr&eacute;sente le nom d'une colonne, d'une variable ou un litt&eacute;ral<br />
+<b>d&eacute;but</b> repr&eacute;sente la position de d&eacute;part de recherche dans la cha&icirc;ne<br />
+<b>nombre</b> repr&eacute;sente le nombre de caract&egrave;res &agrave; extraire<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_comment">-- extraction de 4 caract&egrave;res &agrave; partir du 4&egrave;me caract&egrave;re</span>
+<span class="ora_keyword">SUBSTR</span>( 'le sgbd oracle', 4, 4 )
+sgbd</div></pre><div class="paragraph">
+si <b>nombre</b> est omis, la fonction ram&egrave;ne tous les caract&egrave;res &agrave; partir de la position d&eacute;but
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SUBSTR</span>( 'le sgbd oracle', 4 )
+sgbd oracle</div></pre><div class="paragraph">
+si <b>nombre</b> est n&eacute;gatif l'extraction d&eacute;bute &agrave; partir de la fin de la cha&icirc;ne
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SUBSTR</span>( 'le sgbd oracle', -6 )
+oracle</div></pre><div class="paragraph">
+</div><br><ul type="">
+<li><b>Recherche de la position d'une sous-cha&icirc;ne dans une cha&icirc;ne</b></li>
+</ul><div class="paragraph">
+</div><br><a name="INSTR"></a><div class="paragraph">
+<b>INSTR( cha&icirc;ne, sous-cha&icirc;ne [, d&eacute;but [,nombre occurrences] ] )</b><br />
+<b>INSTRB( cha&icirc;ne, sous-cha&icirc;ne [, d&eacute;but [,nombre occurrences] ] )</b>
+<br /><br />
+<b>cha&icirc;ne</b> repr&eacute;sente le nom d'une colonne, d'une variable ou un litt&eacute;ral pass&eacute; en argument<br />
+<b>sous-cha&icirc;ne</b> repr&eacute;sente le nom d'une variable ou un litt&eacute;ral dont on cherche la position<br />
+<b>d&eacute;but</b> (optionnel) repr&eacute;sente la position de d&eacute;part de la recherche dans cha&icirc;ne<br />
+<b>nombre occurrences</b> (si d&eacute;but renseign&eacute;) repr&eacute;sente le nombre d'occurrences trouv&eacute;es &agrave; ignorer
+<br /><br />
+Lorsque <b>sous-cha&icirc;ne</b> repr&eacute;sente plusieurs caract&egrave;res, la fonction retourne la position du premier caract&egrave;re de la sous-cha&icirc;ne
+<br /><br />
+recherche de la premi&egrave;re position de la sous-cha&icirc;ne oracle
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">INSTR</span>( 'le sgbd oracle', 'oracle' )
+9</div></pre><div class="paragraph">
+recherche de la deuxi&egrave;me position de la sous-cha&icirc;ne oracle
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">INSTR</span>( 'le sgbd oracle d''oracle corporation', 'oracle', 1, 2 )
+18</div></pre><div class="paragraph">
+si la sous-cha&icirc;ne n'est pas trouv&eacute;e, la fonction retourne 0
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">INSTR</span>( 'le sgbd oracle d''oracle corporation', 'texte', 1, 2 )
+0</div></pre><div class="paragraph">
+</div><br><a name="REPLACE"></a><div class="paragraph">
+</div><br><ul type="">
+<li><b>Remplacement des caract&egrave;res d'une cha&icirc;ne par une sous-cha&icirc;ne</b></li>
+</ul><div class="paragraph">
+<b>REPLACE( cha&icirc;ne, cha&icirc;ne source, cha&icirc;ne cible )</b>
+<br /><br />
+<b>cha&icirc;ne</b> repr&eacute;sente le nom d'une colonne, d'une variable ou un litt&eacute;ral pass&eacute; en argument<br />
+<b>cha&icirc;ne source</b> repr&eacute;sente le nom d'une variable ou un litt&eacute;ral de recherche<br />
+<b>cha&icirc;ne cible</b> repr&eacute;sente le nom d'une variable ou un litt&eacute;ral de remplacement<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">REPLACE</span>( 'banjaur', 'a', 'o' )
+bonjour</div></pre><div class="paragraph">
+Elimination de caract&egrave;res
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">REPLACE</span>( '<span class="ora_ch">"champs1"</span>,<span class="ora_ch">"champs2"</span>', '"', '' )
+champs1,champs2</div></pre><div class="paragraph">
+</div><br><a name="TRANSLATE"></a><div class="paragraph">
+</div><br><ul type="">
+<li><b>Remplacement caract&egrave;re par caract&egrave;re dans une cha&icirc;ne</b></li>
+</ul><div class="paragraph">
+<b>TRANSLATE( cha&icirc;ne, cha&icirc;ne source, cha&icirc;ne cible )</b>
+<br /><br />
+<b>cha&icirc;ne</b> repr&eacute;sente le nom d'une colonne, d'une variable ou un litt&eacute;ral pass&eacute; en argument<br />
+<b>cha&icirc;ne source</b> repr&eacute;sente le nom d'une variable ou un litt&eacute;ral de recherche<br />
+<b>cha&icirc;ne cible</b> repr&eacute;sente le nom d'une variable ou un litt&eacute;ral de remplacement<br />
+<br /><br />
+Chaque caract&egrave;re pr&eacute;sent dans <b>cha&icirc;ne</b> qui est &eacute;galement pr&eacute;sent dans <b>cha&icirc;ne source</b> est remplac&eacute;<br />
+par le caract&egrave;re qui occupe la m&ecirc;me position dans <b>cha&icirc;ne cible</b>
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">TRANSLATE</span>( 'Pas d''accents : &eacute;&egrave;&agrave;&ugrave;&ocirc;&ouml;', '&eacute;&egrave;&agrave;&ugrave;&ocirc;&ouml;', 'eeauoo' )
+Pas d'accents : eeauoo</div></pre><div class="paragraph">
+Dans l'exemple suivant, le caract&egrave;re _ est remplac&eacute; par _ et tous les autres (interdit sous Unix)<br />
+sont &eacute;galement remplac&eacute;s par _
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">TRANSLATE</span>( 'Nom*de[fichier&lt;unix&gt;', '_ /\&lt;&gt;|(){}[]*&amp;"''$;','___________________' )
+Nom_de_fichier_unix_</div></pre><div class="paragraph">
+Elimination de caract&egrave;res ind&eacute;sirables
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">TRANSLATE</span>( 'Nom+de|fichier!unix', 'A+|!', 'A' )
+Nomdefichierunix</div></pre><div class="paragraph">
+Le premier caract&egrave;re A de la cha&icirc;ne source est un leurre qui indique &agrave; la fonction de remplacer<br />
+toutes les occurrences de A par A et de remplacer les autres caract&egrave;res (+|!) par rien.
+</div><br>		
+		
+		<br /><h3 class="TitreSection2"><a name="L3.2"></a>3.2. Les fonctions arithm&eacute;tiques</h3>
+			
+<div class="paragraph">
+</div><br><ul type="">
+<li><b>Fonctions monolignes</b></li>
+</ul><div class="paragraph">
+</div><br><a name="ABS"></a><div class="paragraph">
+<b>ABS( valeur )</b><br />
+Valeur absolue d'un nombre
+<br /><br />
+ABS( 200 ) = 200<br />
+ABS( -200 ) = 200
+<br /><br />
+</div><br><a name="CEIL"></a><div class="paragraph">
+<b>CEIL( valeur)</b><br />
+Entier sup&eacute;rieur ou &eacute;gal &agrave; <b>valeur</b>
+<br /><br />
+CEIL( 5 ) = 5<br />
+CEIL( 5.1 ) = 6<br />
+CEIL( -5 ) = -5<br />
+CEIL( -5.1 ) = -5<br />
+CEIL( -5.9 ) = -5
+<br /><br />
+</div><br><a name="FLOOR"></a><div class="paragraph">
+<b>FLOOR( valeur )</b><br />
+Entier inf&eacute;rieur ou &eacute;gal &agrave; <b>valeur</b>
+<br /><br />
+FLOOR( 5 ) = 5<br />
+FLOOR( 5.1 ) = 5<br />
+FLOOR( -5 ) = -5<br />
+FLOOR( -5.1 ) = -6<br />
+FLOOR( -5.9 ) = -6
+<br /><br />
+</div><br><a name="MOD"></a><div class="paragraph">
+<b>MOD( valeur, diviseur )</b><br />
+Reste d'une division
+<br /><br />
+MOD( 10, 2 ) = 0<br />
+MOD( 10, 3 ) = 1<br />
+MOD( 10, .6 ) = 0.4<br />
+MOD( -10, 2 ) = 0<br />
+MOD( -10, .6 ) = -0.4
+<br /><br />
+Lorsque <b>diviseur</b> est sup&eacute;rieur &agrave; <b>valeur</b>, la fonction retourne la valeur<br />
+MOD( 5, 12 ) = 5
+<br /><br />
+Si <b>valeur</b> est un entier alors MOD( valeur, 1 ) = 0
+(id&eacute;al pour tester que valeur est entier)
+<br /><br />
+Si <b>valeur</b> est un entier pair alors MOD( valeur, 2 ) = 0
+<br /><br />
+</div><br><a name="POWER"></a><div class="paragraph">
+<b>POWER( valeur, exposant )</b><br />
+El&eacute;vation d'un nombre &agrave; une puissance
+<br /><br />
+POWER( 8, 2 ) = 64 <br />
+POWER( 8, -2 ) = 0.015625
+<br /><br />
+</div><br><a name="SQRT"></a><div class="paragraph">
+<b>SQRT( valeur )</b><br />
+Racine carr&eacute;e d'un nombre
+<br /><br />
+SQRT( 64 ) = 8
+<br /><br />
+</div><br><a name="EXP"></a><div class="paragraph">
+<b>EXP( valeur )</b><br />
+e (2,71828182845905) &eacute;lev&eacute; &agrave; une puissance
+<br /><br />
+EXP( 5 ) = 148.413159102577
+<br /><br />
+</div><br><a name="LN"></a><div class="paragraph">
+<b>LN( valeur )</b><br />
+Logarithme naturel, ou base e, d'une valeur
+<br /><br />
+LN(148.413159102577 ) = 5
+<br /><br />
+</div><br><a name="LOG"></a><div class="paragraph">
+<b>LOG( base, valeur )</b>
+<br />
+Logarithme d'une valeur
+<br /><br />
+LOG( 10, 2 ) = 0.301029995663981
+<br /><br />
+LN( valeur ) est identique &agrave; LOG(2,71828182845905 (EXP( 1 ) ), valeur )
+<br /><br />
+</div><br><a name="ROUND"></a><div class="paragraph">
+<b>ROUND( valeur, pr&eacute;cision )</b><br />
+Arrondi d'une valeur &agrave; un certain nombre de chiffres de pr&eacute;cision
+<br /><br />
+ROUND( 9.254, 1 )<br />
+9,3
+<br /><br />
+ROUND( 9.259, 2 )<br />
+9,26
+<br /><br />
+ROUND( 9.258, 0 )<br />
+9
+<br /><br />
+ROUND( 9.9, 0 )<br />
+10
+<br /><br />
+ROUND( 99.259, -1 )<br />
+100
+<br /><br />
+</div><br><a name="TRUNC"></a><div class="paragraph">
+<b>TRUNC( valeur, pr&eacute;cision )</b><br />
+Suppression d'une partie des chiffres de pr&eacute;cision d&eacute;cimale
+<br /><br />
+TRUNC( 9.259, 2 )<br />
+9,25
+<br /><br />
+TRUNC( 9.9, 0 )<br />
+9
+<br /><br />
+TRUNC( 99.259, -1 )<br />
+90
+<br /><br />
+une pr&eacute;cision n&eacute;gative est int&eacute;ressante pour arrondir des nombres sur des tranches de milliers, millions, milliards, etc.
+<br /><br />
+</div><br><a name="SIGN"></a><div class="paragraph">
+<b>SIGN( valeur )</b><br />
+Signe d'une valeur
+<br /><br />
+SIGN( 12 )<br />
+1
+<br /><br />
+SIGN( -12 )<br />
+-1
+<br /><br />
+</div><br><a name="SIN"></a><div class="paragraph">
+<b>SIN( valeur ), COS( valeur ), TAN( valeur )</b><br />
+Renvoie la valeur trigonom&eacute;trique d'un angle exprim&eacute; en radians
+<br /><br />
+</div><br><a name="SINH"></a><div class="paragraph">
+<b>SINH( valeur ), COSH( valeur ), TANH( valeur )</b><br />
+Renvoie la valeur trigonom&eacute;trique hyperbolique d'un angle exprim&eacute;e en radians
+<br /><br />
+</div><br><a name="ASIN"></a><div class="paragraph">
+<b>ASIN( valeur ), ACOS( valeur ), ATAN( valeur )</b><br />
+Renvoie respectivement l'arc sinus, cosinus et tangente en radians
+<br /><br />
+</div><br><ul type="">
+<li><b>Fonctions d'agr&eacute;gation</b></li>
+</ul><div class="paragraph">
+Ces fonctions portent sur des groupes de lignes et sont utilis&eacute;es dans les ordres select<br />
+(Bien s&ucirc;r rien n'emp&ecirc;che de coder : AVG(40), mais cela n'a pas beaucoup de sens)
+<br /><br />
+</div><br><a name="AVG"></a><div class="paragraph">
+<b>AVG( colonne )</b><br />
+Valeur moyenne des valeurs de <b>colonne</b><br />
+(les valeurs NULL ne sont pas prises en compte)<br /><br />
+select AVG( SAL ) from EMP
+<br /><br />
+  AVG(SAL)<br />
+----------<br />
+2073,21429
+<br /><br />
+</div><br><a name="COUNT"></a><div class="paragraph">
+<b>COUNT( colonne )</b><br />
+Nombre de valeurs de <b>colonne</b> (les valeurs NULL ne sont pas prises en compte)<br /><br />
+select COUNT( ENAME ) from EMP;
+<br /><br />
+COUNT(ENAME)<br />
+------------<br />
+          14
+<br /><br />
+</div><br><a name="MAX"></a><div class="paragraph">
+<b>MAX( colonne )</b><br />
+Valeur maximum des valeurs de <b>colonne</b><br /><br />
+select ENAME, SAL from emp where SAL = (select MAX( SAL) From EMP );
+<br /><br />
+ENAME             SAL<br />
+---------- ----------<br />
+KING             5000
+<br /><br />
+</div><br><a name="MIN"></a><div class="paragraph">
+<b>MIN( colonne )</b><br />
+Valeur minimum des valeurs de <b>colonne</b><br /><br />
+Select MIN( SAL ) From EMP
+<br /><br />
+</div><br><a name="SUM"></a><div class="paragraph">
+<b>SUM( colonne )</b><br />
+Somme des valeurs de colonne<br /><br />
+Select SUM( SAL ) From EMP
+<br /><br />
+</div><br><ul type="">
+<li><b>Fonctions de listes</b></li>
+</ul><div class="paragraph">
+Ces fonctions portent sur un ensemble de colonnes d'une seule ligne<br />
+Elles peuvent &ecirc;tre utilis&eacute;es avec de nombreuses valeurs qui peuvent appara&icirc;tre sous forme de colonnes, de litt&eacute;raux, de calculs ou de combinaison d'autres colonnes.
+<br /><br />
+</div><br><a name="GREATEST"></a><div class="paragraph">
+<b>GREATEST( valeur1, valeur2, valeur3,&#133; )</b><br />
+Valeur la plus grande de la liste
+<br /><br />
+GREATEST( 1, 5, 15, 8 )<br />
+15
+<br /><br />
+GREATEST( 'Elmer', 'Achille','Richard', 'Josianne' )<br />
+Richard
+<br /><br />
+GREATEST( Length('Elmer'), Length('Achille'),Length('Richard'), Length('Josianne') )<br />
+8
+<br /><br />
+</div><br><a name="LEAST"></a><div class="paragraph">
+<b>LEAST( valeur1, valeur2, valeur3,&#133; )</b><br />
+Valeur la plus petite de la liste
+<br /><br />
+LEAST( 1, 5, 15, 8 )<br />
+1
+<br /><br />
+LEAST( 3, 5+5, 8, 12-6 )<br />
+3
+</div><br>		
+				
+		<br /><h3 class="TitreSection2"><a name="L3.3"></a>3.3. Les fonctions de conversion et de transformation</h3>
+			
+<div class="paragraph">
+</div><br><a name="BIN_TO_NUM"></a><div class="paragraph">
+<b>BIN_TO_NUM( bit [,bit[...]] )</b><br /><br />
+Conversion d'une suite de bits en nombre
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">SELECT</span> BIN_TO_NUM(1,0,0,0,0,0,0,0,0,0,0,0,0) <span class="ora_keyword">FROM</span> DUAL ;
+
+BIN_TO_NUM(1,0,0,0,0,0,0,0,0,0,0,0,0)
+<span class="ora_comment">-------------------------------------</span>
+                                 4096
+
+<span class="ora_keyword">SQL</span>&gt;</div></pre><div class="paragraph">
+</div><br><a name="BITAND"></a><div class="paragraph">
+<b>BITAND( arg1, arg2 )</b><br /><br />
+Applique un ET logique sur les deux arguments
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SELECT</span> order_id, customer_id,
+  <span class="ora_keyword">DECODE</span>(BITAND(order_status, 1), 1, 'Warehouse', 'PostOffice') <span class="ora_keyword">Location</span>,
+  <span class="ora_keyword">DECODE</span>(BITAND(order_status, 2), 2, 'Ground', 'Air') Method,
+  <span class="ora_keyword">DECODE</span>(BITAND(order_status, 4), 4, 'Insured', 'Certified') Receipt
+  <span class="ora_keyword">FROM</span> orders
+  <span class="ora_keyword">WHERE</span> order_status &lt; 8;
+
+  ORDER_ID CUSTOMER_ID <span class="ora_keyword">LOCATION</span>   MET RECEIPT
+<span class="ora_comment">---------- ----------- ---------- --- ---------</span>
+      2458         101 Postoffice Air Certified
+      2397         102 Warehouse  Air Certified
+      2454         103 Warehouse  Air Certified
+      2354         104 Postoffice Air Certified
+      2358         105 Postoffice G   Certified
+      2440         107 Warehouse  G   Certified
+      2357         108 Warehouse  Air Insured
+      2435         144 Postoffice G   Insured
+...</div></pre><div class="paragraph">
+</div><br><a name="CHARTOROWID"></a><div class="paragraph">
+<b>CHARTOROWID( char )</b><br />
+Conversion d'une cha&icirc;ne en ROWID
+<br /><br />
+</div><br><a name="CONVERT"></a><div class="paragraph">
+<b>CONVERT( cha&icirc;ne, jeu caract source, jeu caract cible )</b><br />
+Conversion d'une cha&icirc;ne d'un jeu de caract&egrave;res &agrave; un autre
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">select</span> <span class="ora_keyword">CONVERT</span>('&Auml; &Ecirc; &Iacute; &Otilde; &Oslash; A B C D E ', 'US7ASCII', 'WE8ISO8859P1') <span class="ora_keyword">from</span> dual ;
+
+<span class="ora_keyword">CONVERT</span>('&Auml;&Ecirc;&Iacute;&Otilde;&Oslash;ABCDE'
+<span class="ora_comment">--------------------</span>
+A E I ? ? A B C D E</div></pre><div class="paragraph">
+</div><br><a name="DECODE"></a><div class="paragraph">
+<b>DECODE( valeur, si1, alors1, si2, alors2,&#133;.., sinon )</b><br />
+Substitution valeur par valeur
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">select</span> SAL, <span class="ora_keyword">DECODE</span>( <span class="ora_keyword">TRUNC</span>( SAL, -3 ), 0, 'Bof', 1000, 'Mieux', 2000, 'Pas mal', 'Super' ) <span class="ora_keyword">from</span> emp ;
+
+       SAL <span class="ora_keyword">DECODE</span>(
+<span class="ora_comment">---------- -------</span>
+       800 Bof
+      1600 Mieux
+      1250 Mieux
+      2975 Pas mal
+      1250 Mieux
+      2850 Pas mal
+      2450 Pas mal
+      3000 Super
+      5000 Super
+      1500 Mieux
+      1100 Mieux
+       950 Bof
+      3000 Super
+      1300 Mieux</div></pre><div class="paragraph">
+</div><br><a name="BIN_TO_NUM"></a><div class="paragraph">
+<b>BIN_TO_NUM( bit [,bit[...]] )</b><br /><br />
+Conversion d'une suite de bits en nombre
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">SELECT</span> BIN_TO_NUM(1,0,0,0,0,0,0,0,0,0,0,0,0) <span class="ora_keyword">FROM</span> DUAL ;
+
+BIN_TO_NUM(1,0,0,0,0,0,0,0,0,0,0,0,0)
+<span class="ora_comment">-------------------------------------</span>
+                                 4096
+
+<span class="ora_keyword">SQL</span>&gt;</div></pre><div class="paragraph">
+</div><br><a name="DUMP"></a><div class="paragraph">
+<b>DUMP( expr [,format_retour [,d&eacute;but [,longueur]]] )</b><br /><br />
+Retourne le type interne, longueur en octets de l'expression pass&eacute;e en argument<br /><br />
+<b>format_retour</b> peut prendre l'une des quatre valeurs suivantes :
+</div><br>
+	<ul type="">
+		<li><b>8</b> octal</li>
+		<li><b>10</b> d&eacute;cimal</li>
+		<li><b>16</b> h&eacute;xad&eacute;cimal</li>
+		<li><b>17</b> caract&egrave;res</li>
+	</ul>
+<div class="paragraph">
+On peut ajouter 1000 &agrave; l'argument format_retour pour forcer DUMP &agrave; afficher le jeu de caract&egrave;res en cours
+</div><br>	
+<pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_comment">-- DUMP --</span>
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">SELECT</span> <span class="ora_keyword">DUMP</span>('Hello', 8) <span class="ora_ch">"Octal"</span>,
+  2  <span class="ora_keyword">DUMP</span>('Hello', 10) <span class="ora_ch">"D&eacute;cimal"</span>,
+  3  <span class="ora_keyword">DUMP</span>('Hello', 16) <span class="ora_ch">"Hexad&eacute;cimal"</span>,
+  4  <span class="ora_keyword">DUMP</span>('Hello', 17) <span class="ora_ch">"Caract&egrave;re"</span> 
+  5  <span class="ora_keyword">FROM</span> DUAL ; 
+
+Octal                             D&eacute;cimal                          Hexad&eacute;cimal                  Caract&egrave;re
+<span class="ora_comment">--------------------------------- -------------------------------- ---------------------------- -----------------------</span>
+Typ=96 Len=5: 110,145,154,154,157 Typ=96 Len=5: 72,101,108,108,111 Typ=96 Len=5: 48,65,6c,6c,6f Typ=96 Len=5: H,e,l,l,o
+
+<span class="ora_keyword">SQL</span>&gt;</div></pre><pre class="code"><div class="ora_code"><span class="ora_keyword">SELECT</span> <span class="ora_keyword">DUMP</span>('abc', 1016)
+   <span class="ora_keyword">FROM</span> DUAL;
+
+<span class="ora_keyword">DUMP</span>('ABC',1016)                          
+<span class="ora_comment">------------------------------------------ </span>
+Typ=96 Len=3 CharacterSet=WE8DEC: 61,62,63 
+
+<span class="ora_keyword">SQL</span>&gt;</div></pre><div class="paragraph">
+</div><br><a name="HEXTORAW"></a><div class="paragraph">
+<b>HEXTORAW( char )</b><br />
+Conversion d'un nombre hexad&eacute;cimal en un nombre binaire
+<br /><br />
+</div><br><a name="RAWTOHEX"></a><div class="paragraph">
+<b>RAWTOHEX( raw )</b><br />
+Conversion d'un nombre binaire en nombre hexad&eacute;cimal
+<br /><br />
+</div><br><a name="ROWIDTOCHAR"></a><div class="paragraph">
+<b>ROWIDTOCHAR( rowid )</b><br />
+Conversion d'un ROWID en cha&icirc;ne
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">select</span> <span class="ora_keyword">ROWIDTOCHAR</span>( <span class="ora_keyword">ROWID</span> ) <span class="ora_keyword">from</span> emp ;
+
+<span class="ora_keyword">ROWIDTOCHAR</span>(<span class="ora_keyword">ROWID</span>)
+<span class="ora_comment">------------------</span>
+AAAHW7AABAAAMUiAAA
+AAAHW7AABAAAMUiAAB
+AAAHW7AABAAAMUiAAC
+AAAHW7AABAAAMUiAAD
+AAAHW7AABAAAMUiAAE
+AAAHW7AABAAAMUiAAF</div></pre><div class="paragraph">
+</div><br><a name="TO_CHAR"></a><div class="paragraph">
+<b>TO_CHAR( date [, 'format' ] )</b><br />
+<b>TO_CHAR( nombre [, 'format' ] )</b><br />
+Transformation d'un type DATE ou NUMBER en cha&icirc;ne
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">select</span> <span class="ora_keyword">TO_CHAR</span>( <span class="ora_keyword">SYSDATE</span>, 'DD/MM/YYYY HH24:MI:SS' ) <span class="ora_keyword">from</span> dual ;
+
+<span class="ora_keyword">TO_CHAR</span>(<span class="ora_keyword">SYSDATE</span>,'DD
+<span class="ora_comment">-------------------</span>
+31/01/2004 19:30:56</div></pre>
+<pre class="code"><div class="ora_code"><span class="ora_keyword">select</span> <span class="ora_keyword">TO_CHAR</span>( 1256.35, '999G999D000' ) <span class="ora_keyword">from</span> dual ;
+
+<span class="ora_keyword">TO_CHAR</span>(1256
+<span class="ora_comment">------------</span>
+   1.256,350</div></pre><div class="paragraph">
+</div><br><a name="TO_DATE"></a><div class="paragraph">
+<b>TO_DATE( nombre [, 'format' ] )</b><br />
+<b>TO_DATE( cha&icirc;ne [, 'format' ] )</b><br />
+Transformation d'un type NUMBER ou CHAR ou VARCHAR2 en date
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">select</span> <span class="ora_keyword">TO_DATE</span>( '01/01/04', 'DD/MM/RR' ) <span class="ora_keyword">from</span> dual ;
+
+<span class="ora_keyword">TO_DATE</span>('01/01/04',
+<span class="ora_comment">-------------------</span>
+01/01/2004 00:00:00</div></pre>
+<pre class="code"><div class="ora_code"><span class="ora_keyword">Select</span> <span class="ora_keyword">TO_DATE</span>( 2453036, 'J' ) <span class="ora_keyword">from</span> dual ;
+
+<span class="ora_keyword">TO_DATE</span>(2453036,'J'
+<span class="ora_comment">-------------------</span>
+31/01/2004 00:00:00</div></pre><div class="paragraph">
+</div><br><a name="TO_DSINTERVAL"></a><div class="paragraph">
+<b>TO_DSINTERVAL( cha&icirc;ne )</b><span class="important">(9i)</span><br />
+Transformation d'un type CHAR ou VARCHAR2 en INTERVAL DAY TO SECOND
+<br /><br />
+</div><br><a name="TO_LOB"></a><div class="paragraph">
+<b>TO_LOB( LONG )</b><br />
+<b>TO_LOB( LONG RAW )</b><br />
+Conversion d'une valeur de type LONG ou LONG RAW en valeur de type LOB
+<br /><br />
+</div><br><a name="TO_CLOB"></a><div class="paragraph">
+<b>TO_CLOB( char )</b><br />
+<b>TO_CLOB( colonne lob )</b><br />
+Conversion d'une valeur de type CHAR ou LOB en valeur de type CLOB
+<br /><br />
+</div><br><a name="TO_MULTI_BYTE"></a><div class="paragraph">
+<b>TO_MULTI_BYTE</b><br />
+Conversion d'une cha&icirc;ne de caract&egrave;res mono-octet en cha&icirc;ne de caract&egrave;res multi-octets<br />
+Cette fonction n'est n&eacute;cessaire que si votre jeu de caract&egrave;res contient &agrave; la fois des caract&egrave;res mono-octets et des caract&egrave;res multi-octets
+<br /><br />
+</div><br><a name="TO_NUMBER"></a><div class="paragraph">
+<b>TO_NUMBER( cha&icirc;ne [, 'format' ] )</b><br />
+Transformation d'un type CHAR ou VARCHAR2 en nombre
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">select</span> <span class="ora_keyword">TO_NUMBER</span>( '25,8', '9G999D00' ) <span class="ora_keyword">from</span> dual ;
+
+<span class="ora_keyword">TO_NUMBER</span>('25,8','9G999D00')
+<span class="ora_comment">----------------------------</span>
+                        25,8</div></pre><div class="paragraph">
+</div><br><a name="TO_SINGLE_BYTE"></a><div class="paragraph">
+<b>TO_SINGLE_BYTE</b><br />
+Conversion d'une cha&icirc;ne de caract&egrave;res multi-octets en cha&icirc;ne de caract&egrave;res mono-octet<br />
+Cette fonction n'est n&eacute;cessaire que si votre jeu de caract&egrave;res contient &agrave; la fois des caract&egrave;res mono-octets et des caract&egrave;res multi-octets
+<br /><br />
+</div><br><a name="TO_TIMESTAMP"></a><div class="paragraph">
+<b>TO_TIMESTAMP( cha&icirc;ne )</b><span class="important">(9i)</span><br />
+Transformation d'un type CHAR ou VARCHAR2 en TIMESTAMP
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">select</span> to_timestamp( '01/01/2004 01:00:00' ,'DD/MM/YYYY HH24:MI:SS') <span class="ora_keyword">from</span> dual ;
+
+TO_TIMESTAMP('01/01/200401:00:00','DD/MM/YYYYHH24:MI:SS')
+<span class="ora_comment">---------------------------------------------------------------------------</span>
+01/01/04 01:00:00,000000000</div></pre><div class="paragraph">
+</div><br><a name="TO_TIMESTAMP_TZ"></a><div class="paragraph">
+<b>TO_TIMESTAMP_TZ( cha&icirc;ne )</b><span class="important">(9i)</span><br />
+Transformation d'un type CHAR ou VARCHAR2 en TIMESTAMP + TIME ZONE
+<br /><br />
+</div><br><a name="TO_YMINTERVAL"></a><div class="paragraph">
+<b>TO_YMINTERVAL( cha&icirc;ne )</b><span class="important">(9i)</span><br />
+Transformation d'un type CHAR ou VARCHAR2 en INTERVAL YEAR TO MONTH<br />
+Cha&icirc;ne repr&eacute;sente un couple ann&eacute;e-mois 'AA-MM'
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">select</span> ename <span class="ora_ch">"Salari&eacute;"</span>, hiredate <span class="ora_ch">"<span class="ora_keyword">Date</span> entr&eacute;e"</span> , hiredate + TO_YMINTERVAL( '05-01' ) <span class="ora_ch">"Anciennet&eacute;"</span> <span class="ora_keyword">from</span> emp ;
+
+Salari&eacute;    <span class="ora_keyword">Date</span> entr&eacute;e         Anciennet&eacute;
+<span class="ora_comment">---------- ------------------- -------------------</span>
+SMITH      17/12/1980 00:00:00 17/01/1986 00:00:00
+ALLEN      20/02/1981 00:00:00 20/03/1986 00:00:00
+WARD       22/02/1981 00:00:00 22/03/1986 00:00:00</div></pre><div class="paragraph">
+</div><br><a name="VSIZE"></a><div class="paragraph">
+<b>VSIZE( argument )</b><br /><br />
+Retourne le nombre d'octets n&eacute;cessaires au stockage de l'argument
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_comment">-- Nombre d'octets de stockage --</span>
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">SELECT</span> <span class="ora_keyword">VSIZE</span>(10),<span class="ora_keyword">VSIZE</span>(123.9658), <span class="ora_keyword">VSIZE</span>(123.9658123456789), <span class="ora_keyword">VSIZE</span>(123456789456) <span class="ora_keyword">FROM</span> DUAL ;
+
+ <span class="ora_keyword">VSIZE</span>(10) <span class="ora_keyword">VSIZE</span>(123.9658) <span class="ora_keyword">VSIZE</span>(123.9658123456789) <span class="ora_keyword">VSIZE</span>(123456789456)
+<span class="ora_comment">---------- --------------- ------------------------ -------------------</span>
+         2               5                       10                   7
+
+<span class="ora_keyword">SQL</span>&gt; 
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">SELECT</span> <span class="ora_keyword">VSIZE</span>(<span class="ora_keyword">SYSDATE</span>), <span class="ora_keyword">VSIZE</span>(CURRENT_TIMESTAMP) <span class="ora_keyword">FROM</span> DUAL ;
+
+<span class="ora_keyword">VSIZE</span>(<span class="ora_keyword">SYSDATE</span>) <span class="ora_keyword">VSIZE</span>(CURRENT_TIMESTAMP)
+<span class="ora_comment">-------------- ------------------------</span>
+             7                       13
+
+<span class="ora_keyword">SQL</span>&gt;</div></pre><div class="paragraph">
+</div><br>		
+				
+		<br /><h3 class="TitreSection2"><a name="L3.4"></a>3.4. Les fonctions sur les dates</h3>
+			
+<div class="paragraph">
+</div><br><a name="ADD_MONTHS"></a><div class="paragraph">
+<b>ADD_MONTHS( date, nombre de mois )</b><br />
+Ajoute ou soustrait un nombre de mois &agrave; une date
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">select</span> <span class="ora_keyword">SYSDATE</span>, <span class="ora_keyword">ADD_MONTHS</span>( <span class="ora_keyword">SYSDATE</span>, 1 ) <span class="ora_keyword">from</span> dual ;
+
+<span class="ora_keyword">SYSDATE</span>    <span class="ora_keyword">ADD_MONTHS</span>
+<span class="ora_comment">---------- ----------</span>
+31/01/2004 29/02/2004</div></pre>
+<pre class="code"><div class="ora_code"><span class="ora_keyword">select</span> <span class="ora_keyword">SYSDATE</span>, <span class="ora_keyword">ADD_MONTHS</span>( <span class="ora_keyword">SYSDATE</span>, -12 ) <span class="ora_keyword">from</span> dual ;
+
+<span class="ora_keyword">SYSDATE</span>    <span class="ora_keyword">ADD_MONTHS</span>
+<span class="ora_comment">---------- ----------</span>
+31/01/2004 31/01/2003</div></pre><div class="paragraph">
+</div><br><a name="EXTRACT"></a><div class="paragraph">
+<b>EXTRACT (datetemps FROM valeur)</b><span class="important">(9i)</span><br />
+Extraction d'un segment d'une valeur de type date ou d'un litt&eacute;ral de type intervalle<br /><br />
+(Pour une raison inconnue, cette fonction ne permet pas d'extraire l'heure d'une date...)
+<br /><br />
+datetemps peut &ecirc;tre l'un des arguments suivants
+</div><br><ul type="">
+<li>YEAR</li>
+<li>MONTH</li>
+<li>DAY</li>
+<li>HOUR</li>
+<li>MINUTE</li>
+<li>SECOND</li>
+<li>TIMEZONE_HOUR</li>
+<li>TIMEZONE_MINUTE</li>
+<li>TIMEZONE_REGION</li>
+<li>TIMEZONE_ABBR</li>
+</ul><div class="paragraph">
+valeur est l'un des arguments suivants
+</div><br><ul type="">
+<li>un litt&eacute;ral de type DATE</li>
+<li>un litt&eacute;ral de type INTERVAL</li>
+</ul><div class="paragraph">
+<br />
+Extraction de la partie ann&eacute;e d'une date : 
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">SELECT</span> EXTRACT(YEAR <span class="ora_keyword">FROM</span> <span class="ora_keyword">TO_DATE</span>('10/01/2004','DD/MM/YYYY')) <span class="ora_keyword">FROM</span> DUAL;
+
+EXTRACT(YEARFROMTO_DATE('10/01/2004','DD/MM/YYYY'))
+<span class="ora_comment">---------------------------------------------------</span>
+                                               2004</div></pre><div class="paragraph">
+Affichage des employ&eacute;s dont la date d'ent&eacute;e est sup&eacute;rieure &agrave; 1981
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt;  <span class="ora_keyword">SELECT</span> empno <span class="ora_ch">"Num&eacute;ro"</span>, ename <span class="ora_ch">"Nom"</span>, <span class="ora_keyword">to_char</span>(hiredate,'DD/MM/YYYY') <span class="ora_ch">"Entr&eacute; le"</span>
+  2      <span class="ora_keyword">FROM</span> EMP
+  3      <span class="ora_keyword">WHERE</span> EXTRACT(YEAR <span class="ora_keyword">FROM</span>
+  4      <span class="ora_keyword">TO_DATE</span>(hiredate, 'DD/MM/RR')) &gt; 1981
+  5     <span class="ora_keyword">ORDER</span> <span class="ora_keyword">BY</span> hiredate
+  6  /
+
+    Num&eacute;ro Nom        Entr&eacute; le
+<span class="ora_comment">---------- ---------- ----------</span>
+      7934 MILLER     24/01/1982
+      7788 SCOTT      20/04/1987
+      7876 ADAMS      24/05/1987</div></pre><div class="paragraph">
+<br /><br />
+</div><br><a name="LAST_DAY"></a><div class="paragraph">
+<b>LAST_DAY( date )</b><br />
+Dernier jour du mois de la date pass&eacute;e en argument
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">select</span> <span class="ora_keyword">LAST_DAY</span>( '01/01/2004' ) <span class="ora_keyword">from</span> dual ;
+
+<span class="ora_keyword">LAST_DAY</span>('
+<span class="ora_comment">----------</span>
+31/01/2004</div></pre><div class="paragraph">
+</div><br><a name="MONTHS_BETWEEN"></a><div class="paragraph">
+<b>MONTHS_BETWEEN( date2, date1 )</b><br />
+Nombre de mois qui s&eacute;parent <b>date2</b> de <b>date1</b>
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">select</span> <span class="ora_keyword">MONTHS_BETWEEN</span>( '01/10/2004', '01/01/2004' ) <span class="ora_keyword">from</span> dual ;
+
+<span class="ora_keyword">MONTHS_BETWEEN</span>('01/10/2004','01/01/2004')
+<span class="ora_comment">-----------------------------------------</span>
+                                        9</div></pre><div class="paragraph">
+</div><br><a name="NEXT_DAY"></a><div class="paragraph">
+<b>NEXT_DAY( date, 'jour' )</b><br />
+Date du prochain jour apr&egrave;s <b>date</b> ou <b>jour</b> est un jour de la semaine
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">select</span> <span class="ora_keyword">NEXT_DAY</span>( '31/01/2004', 'Lundi' ) <span class="ora_keyword">from</span> dual ;
+
+<span class="ora_keyword">NEXT_DAY</span>('
+<span class="ora_comment">----------</span>
+02/02/2004</div></pre><div class="paragraph">
+</div><br><a name="NEW_TIME"></a><div class="paragraph">
+<b>NEW_TIME( date, fuseau1, fuseau2 )</b><br />
+Date et heure de <b>date</b> en time zone <b>fuseau2</b> lorsque <b>date</b> est en time zone <b>fuseau1</b>
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">select</span> <span class="ora_keyword">sysdate</span>, <span class="ora_keyword">NEW_TIME</span>( <span class="ora_keyword">sysdate</span>, 'AST', 'PST' ) <span class="ora_keyword">from</span> dual ;
+
+<span class="ora_keyword">SYSDATE</span>             <span class="ora_keyword">NEW_TIME</span>(<span class="ora_keyword">SYSDATE</span>,'A
+<span class="ora_comment">------------------- -------------------</span>
+31/01/2004 18:15:20 31/01/2004 14:15:20</div></pre><div class="paragraph">
+</div><br><a name="NUMTODSINTERVAL"></a><div class="paragraph">
+<b>NUMTODSINTERVAL( nombre, 'type' )</b><span class="important">(9i)</span><br />
+Conversion d'un nombre en intervalle de type DAY TO SECOND
+<br /><br />
+<b>'type'</b> peut prendre l'une des quatre valeurs suivantes :
+</div><br>
+	<ul type="">
+		<li><b>'DAY'</b> pr&eacute;cise que nombre indique un nombre de jours</li>
+		<li><b>'HOUR'</b> pr&eacute;cise que nombre indique un nombre d'heures</li>
+		<li><b>'MINUTE'</b> pr&eacute;cise que nombre indique un nombre de minutes</li>
+		<li><b>'SECOND'</b> pr&eacute;cise que nombre indique un nombre de secondes</li>		
+	</ul>
+<pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_comment">-- Ajout de 8 minutes &agrave; une date --</span>
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">SELECT</span> <span class="ora_keyword">SYSDATE</span>, <span class="ora_keyword">SYSDATE</span> + NUMTODSINTERVAL(8,'MINUTE') <span class="ora_keyword">FROM</span> DUAL ;
+
+<span class="ora_keyword">SYSDATE</span>             <span class="ora_keyword">SYSDATE</span>+NUMTODSINTE
+<span class="ora_comment">------------------- -------------------</span>
+25/11/2004 12:18:23 25/11/2004 12:26:23
+
+<span class="ora_keyword">SQL</span>&gt; 
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_comment">-- Ajout de 8 heures &agrave; une date --</span>
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">SELECT</span> <span class="ora_keyword">SYSDATE</span>, <span class="ora_keyword">SYSDATE</span> + NUMTODSINTERVAL(8,'HOUR') <span class="ora_keyword">FROM</span> DUAL ;
+
+<span class="ora_keyword">SYSDATE</span>             <span class="ora_keyword">SYSDATE</span>+NUMTODSINTE
+<span class="ora_comment">------------------- -------------------</span>
+25/11/2004 12:18:23 25/11/2004 20:18:23
+
+<span class="ora_keyword">SQL</span>&gt; 
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_comment">-- ajout de 30 secondes &agrave; une date --</span>
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">SELECT</span> <span class="ora_keyword">SYSDATE</span>, <span class="ora_keyword">SYSDATE</span> + NUMTODSINTERVAL(30,'SECOND') <span class="ora_keyword">FROM</span> DUAL ;
+
+<span class="ora_keyword">SYSDATE</span>             <span class="ora_keyword">SYSDATE</span>+NUMTODSINTE
+<span class="ora_comment">------------------- -------------------</span>
+25/11/2004 12:18:23 25/11/2004 12:18:53
+
+<span class="ora_keyword">SQL</span>&gt;</div></pre><div class="paragraph">
+</div><br><a name="NUMTOYMINTERVAL"></a><div class="paragraph">
+<b>NUMTOYMINTERVAL( nombre, 'type' )</b><span class="important">(9i)</span><br />
+Conversion d'un nombre en intervalle de type YEAR TO MONTH
+<br /><br />
+<b>'type'</b> peut prendre l'une des deux valeurs suivantes :
+</div><br>
+	<ul type="">
+		<li><b>'YEAR'</b> pr&eacute;cise que nombre indique un nombre d'ann&eacute;es</li>
+		<li><b>'MONTH'</b> pr&eacute;cise que nombre indique un nombre de mois</li>
+	</ul>
+<pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_comment">-- Ajout de 6 mois &agrave; une date --</span>
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">SELECT</span> <span class="ora_keyword">SYSDATE</span> + NUMTOYMINTERVAL(6,'MONTH') <span class="ora_keyword">FROM</span> DUAL ;
+
+<span class="ora_keyword">SYSDATE</span>+NUMTOYMINTE
+<span class="ora_comment">-------------------</span>
+25/05/2005 12:18:23
+
+<span class="ora_keyword">SQL</span>&gt; 
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_comment">-- Ajout de 8 ans &agrave; une date --</span>
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">SELECT</span> <span class="ora_keyword">SYSDATE</span> + NUMTOYMINTERVAL(8,'YEAR') <span class="ora_keyword">FROM</span> DUAL ;
+
+<span class="ora_keyword">SYSDATE</span>+NUMTOYMINTE
+<span class="ora_comment">-------------------</span>
+25/11/2012 12:18:23
+
+<span class="ora_keyword">SQL</span>&gt;</div></pre><div class="paragraph">
+</div><br><a name="ROUND"></a><div class="paragraph">
+<b>ROUND( date [, format] )</b><br />
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">select</span> <span class="ora_keyword">ROUND</span>( <span class="ora_keyword">to_date</span>('01/01/2004 10:25','DD/MM/YYYY HH24:MI') ) <span class="ora_keyword">from</span> dual
+<span class="ora_keyword">SQL</span>&gt; /
+
+<span class="ora_keyword">ROUND</span>(<span class="ora_keyword">TO_DATE</span>('01/0
+<span class="ora_comment">-------------------</span>
+01/01/2004 00:00:00</div></pre>
+<pre class="code"><div class="ora_code"><span class="ora_keyword">select</span> <span class="ora_keyword">ROUND</span>( <span class="ora_keyword">to_date</span>('01/01/2004 18:25','DD/MM/YYYY HH24:MI') ) <span class="ora_keyword">from</span> dual
+<span class="ora_keyword">SQL</span>&gt; /
+
+<span class="ora_keyword">ROUND</span>(<span class="ora_keyword">TO_DATE</span>('01/0
+<span class="ora_comment">-------------------</span>
+02/01/2004 00:00:00</div></pre><div class="paragraph">
+sans l'argument <b>format</b>, la date est arrondie au matin 00:00:00 si l'heure transmise dans date est situ&eacute;e avant 12:00, sinon elle est arrondie au lendemain 00:00:00
+<br /><br />
+</div><br><a name="TRUNC"></a><div class="paragraph">
+<b>TRUNC( date [, format] )</b><br />
+<br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">select</span> <span class="ora_keyword">TRUNC</span>( <span class="ora_keyword">to_date</span>('01/01/2004 18:25','DD/MM/YYYY HH24:MI') ) <span class="ora_keyword">from</span> dual ;
+
+<span class="ora_keyword">TRUNC</span>(<span class="ora_keyword">TO_DATE</span>('01/0
+<span class="ora_comment">-------------------</span>
+01/01/2004 00:00:00</div></pre>
+<pre class="code"><div class="ora_code"><span class="ora_keyword">select</span> <span class="ora_keyword">TRUNC</span>( <span class="ora_keyword">to_date</span>('01/01/2004 10:25','DD/MM/YYYY HH24:MI') ) <span class="ora_keyword">from</span> dual ;
+
+<span class="ora_keyword">TRUNC</span>(<span class="ora_keyword">TO_DATE</span>('01/0
+<span class="ora_comment">-------------------</span>
+01/01/2004 00:00:00</div></pre><div class="paragraph">
+sans l'argument <b>format</b>, la date est arrondie au matin 00:00:00
+</div><br>		
+<a name="SYS_EXTRACT_UTC"></a><div class="paragraph">
+<b>SYS_EXTRACT_UTC( timestamp )</b><span class="important">(9i)</span><br />
+Conversion d'une date au fuseau Greenwich
+<br /><br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_comment">-- Ramener une date/heure au format Greenwich --</span>
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">SELECT</span> <span class="ora_keyword">SYSDATE</span>, SYS_EXTRACT_UTC(SYSTIMESTAMP) <span class="ora_keyword">FROM</span> DUAL ;
+
+<span class="ora_keyword">SYSDATE</span>             SYS_EXTRACT_UTC(SYSTIMESTAMP)
+<span class="ora_comment">------------------- -----------------------------------------------------</span>
+25/11/2004 12:18:26 25/11/04 11:18:26,399272
+
+<span class="ora_keyword">SQL</span>&gt;</div></pre>
+								
+	
+	
+<hr><div class="barreNavigation"> [ <a class="barreNavigationTexte" href="Chap2.html">Précédent</a> ]  [ <a class="barreNavigationTexte" href="sommaire.html">Sommaire</a> ]  [ <a class="barreNavigationTexte" href="Chap4.html">Suivant</a> ] </div><hr><p class="licence">Copyright &copy;2004&nbsp;SheikYerbouti.
+            Aucune reproduction, même partielle, ne peut être faite
+			de ce site et de l'ensemble de son contenu : textes, documents, images, etc
+            sans l'autorisation expresse de l'auteur. Sinon vous encourez selon la loi jusqu'à 3 ans de prison et jusqu'à 300 000 E
+			de dommages et intérets. Cette page est déposée à la <a href="http://www.sacd.fr/" target="_blank">SACD</a>.</p>
+       											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			<table width="100%" cellpadding="4" class="cachee">
+				<tr bgcolor="#DDEEFF">
+					<td align="center" class="titrepied">
+			  Vos questions techniques : <b><a href="http://www.developpez.net/forums/" target="_blank">forum d'entraide Accueil</a></b> - Publiez vos articles, tutoriels et cours<br />
+			  et rejoignez-nous dans l'&eacute;quipe de r&eacute;daction du club d'entraide des d&eacute;veloppeurs francophones <br /> <a href="http://club.developpez.com/contacts/">Nous contacter</a>
+	
+			  - Copyright 2000..2005 www.developpez.com
+					</td>
+					<td align="center">
+          
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
+
+	

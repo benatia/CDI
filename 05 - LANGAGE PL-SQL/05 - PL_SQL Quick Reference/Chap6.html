@@ -1,0 +1,529 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <title>Guide PL/SQL - Club d'entraide des d&#233;veloppeurs francophones</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta name="generator" content="developpez-com" />
+  <link rel="stylesheet" type="text/css" href="./mainstyle.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="./printer.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./article.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./faq.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./source.css" />
+</head>
+<body>
+<table width="100%" cellspacing="4">
+	<tr>
+  	<td align="center">
+    	<table width="100%" cellspacing="0" cellpadding="0">
+     		<tr>
+     			<td>
+			      <table width="100%" cellspacing="11">
+    	  			<tr>
+        				<td>
+          				<a href="http://www.developpez.com"><img src="images/logo.gif" alt="Accueil" /></a>
+        				</td>
+      				</tr>
+      				<tr>
+      					<td></td>
+      				</tr>
+      			</table>
+    			</td>
+  			</tr>
+  			<tr>
+    			<td>
+						<table class="cachee" cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td class="iongl"><img src="images/bordg.gif" /></td>
+								<td class="bgongl"><a href="http://www.developpez.com" class="ntdrub">Accueil<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://club.developpez.com" class="ntdrub">Le<br />Club</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://delphi.developpez.com" class="ntdrub">Delphi<br />Kylix</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://c.developpez.com" class="ntdrub">C<br />C++</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://java.developpez.com" class="ntdrub">Java<br />J2EE</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://dotnet.developpez.com" class="ntdrub">DotNET<br />&amp; C#</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://vb.developpez.com" class="ntdrub">Visual<br />Basic</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://access.developpez.com" class="ntdrub">Access<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://pascal.developpez.com" class="ntdrub">Pascal<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://web.developpez.com" class="ntdrub">Dev<br />Web</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://php.developpez.com" class="ntdrub">PHP<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://asp.developpez.com" class="ntdrub">ASP<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://xml.developpez.com" class="ntdrub">XML<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://uml.developpez.com" class="ntdrub">UML<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://sgbd.developpez.com" class="ntdrub">SQL<br />SGBD</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://windows.developpez.com" class="ntdrub">Win<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://linux.developpez.com" class="ntdrub">Linux<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://www.developpez.com/cours/" class="ntdrub">Autres<br /></a></td>
+								<td class="iongl"><img src="images/bordd.gif" /></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="trbleu">
+					</td>
+				</tr>
+
+				<tr valign="top">
+					<td valign="top" class="fondart">
+						<table cellspacing="1" width="100%" class="tbnoir">
+							<tr>
+								<td class="fondart">
+									<table class="cadrearticle" width="90%" cellpadding="10" cellspacing="0">
+										<tr>
+											<td>
+
+        <br><h1>Oracle PL/SQL</h1><p class="dateArticle">
+        Date de publication : Avril 2004 , 
+        Date de mise a jour : Juillet 2004</p><hr><div class="barreNavigation"> [ <a class="barreNavigationTexte" href="Chap5.html">Précédent</a> ]  [ <a class="barreNavigationTexte" href="sommaire.html">Sommaire</a> ]  [ <a class="barreNavigationTexte" href="Chap7.html">Suivant</a> ] </div><hr>
+	
+	
+	
+	
+	
+	
+	<br /><a class="summaryIndent0" href="#L6">6. Les d&eacute;clencheurs</a>
+		
+		
+
+
+		
+	<br /><a class="summaryIndent1" href="#L6.1">6.1. Les d&eacute;clencheurs sur TABLE</a>
+		
+
+
+	
+	<br /><a class="summaryIndent1" href="#L6.2">6.2. Les d&eacute;clencheurs sur VUE</a>
+		
+
+		
+	<br /><a class="summaryIndent1" href="#L6.3">6.3. Les d&eacute;clencheurs sur &eacute;v&egrave;nements syst&egrave;me ou utilisateur</a>
+		
+
+
+	<br /><a class="summaryIndent2" href="#L6.3.1">6.3.1. Les attributs</a>
+		
+
+		
+	<br /><a class="summaryIndent2" href="#L6.3.2">6.3.2. Les &eacute;v&egrave;nements syst&egrave;me</a>	
+		
+
+			
+	<br /><a class="summaryIndent2" href="#L6.3.3">6.3.3. Les &eacute;v&egrave;nements utilisateur</a>	
+		
+
+				
+					
+	<br /><a class="summaryIndent1" href="#L6.4">6.4. Maintenance des d&eacute;clencheurs</a>	
+		
+
+					
+	
+	
+<br><br>
+	
+	
+	
+	
+	
+	
+	<br /><h2 class="TitreSection1"><a name="L6"></a>6. Les d&eacute;clencheurs</h2>
+		
+<div class="paragraph">
+Un d&eacute;clencheur est un bloc PL/SQL associ&eacute; &agrave; une vue ou une table, qui s'ex&eacute;cutera lorsqu'une instruction du langage<br />
+de manipulation de donn&eacute;es (DML) sera ex&eacute;cut&eacute;e<br /><br />
+<span class="important">
+L'avantage principal du d&eacute;clencheur r&eacute;side dans le fait que le code est centralis&eacute; dans la base de donn&eacute;es, et se d&eacute;clenchera quel que soit l'outil utilis&eacute; pour mettre &agrave; jour ces donn&eacute;es, 
+donnant ainsi l'assurance qu'une utilisation d'un ordre DML depuis Sql*Plus, Forms ou n'importe quelle application tierce procurera un r&eacute;sultat identique sur les donn&eacute;es
+</span>
+<br /><br />
+<span class="important">
+l'inconv&eacute;nient principal du d&eacute;clencheur r&eacute;side dans le fait que son ex&eacute;cution utilise des ressources qui peuvent augmenter sensiblement les temps de traitement, notamment lors de modifications massives apport&eacute;es sur une table
+</span>
+<br /><br />
+<span class="important">
+Un d&eacute;clencheur s'ex&eacute;cute dans le cadre d'une transaction. Il ne peut donc pas contenir d'instruction COMMIT ou ROLLBACK ou toute instruction g&eacute;n&eacute;rant une fin de transaction implicite (ordre DDL)
+</span><br /><br />
+<b>Les ordres SQL (SELECT, INSERT, UPDATE, DELETE) contenus dans le bloc PL/SQL et qui se r&eacute;f&eacute;rent &agrave; la table sur laquelle s'ex&eacute;cute le d&eacute;clencheur peuvent g&eacute;n&eacute;rer l'exception ORA-04091 TABLE IS MUTATING</b><br />
+(pour une explication d&eacute;taill&eacute;e du probl&egrave;me des tables en mutation, r&eacute;f&eacute;rez-vous &agrave; l'article <a href="http://sgbd.developpez.com/oracle/ora-04091/" class="lienArticle">R&eacute;solution du probl&egrave;me de la table mutante (ora-04091) par Pomalaix</a>
+<br /><br />
+Le bloc PL/SQL qui constitue le trigger peut &ecirc;tre ex&eacute;cut&eacute; avant ou apr&egrave;s la v&eacute;rification des contraintes d'int&eacute;grit&eacute;
+<br />
+Il peut &ecirc;tre ex&eacute;cut&eacute; pour chaque ligne affect&eacute;e par l'ordre DML ou bien une seule fois pour la commande
+<br /><br />
+Seules les colonnes de la ligne en cours de modification sont accessibles par l'interm&eacute;diaire de 2 variables de type enregistrement <b>OLD</b> et <b>NEW</b><br />
+<br />
+<b>OLD</b> repr&eacute;sente la valeur avant modification<br />
+<b>OLD</b> n'est renseign&eacute;e que pour les ordres DELETE et UPDATE. Elle n'a aucune signification pour un ordre INSERT, puisqu'aucune ancienne valeur n'existe
+<br /><br />
+<b>NEW</b> repr&eacute;sente la nouvelle valeur<br />
+<b>NEW</b> n'est renseign&eacute;e que pour les ordres INSERT et UPDATE. Elle n'a aucune signification pour un ordre DELETE, puisqu'aucune nouvelle valeur n'existe
+<br /><br />
+Ces deux variables peuvent &ecirc;tre utilis&eacute;es dans la clause <b>WHEN</b> du d&eacute;clencheur et dans la section ex&eacute;cutable<br />
+Dans cette section, elle doivent &ecirc;tre pr&eacute;fix&eacute;es comme des variables h&ocirc;tes avec l'op&eacute;rateur <b>:</b><br />
+<br />
+Les noms de ces deux variables sont fix&eacute;s par d&eacute;faut, mais il est possible de les modifier en pr&eacute;cisant les nouveaux noms dans la clause <b>REFERENCING</b><br /><br />
+<b>REFERENCING OLD AS nouveau_nom NEW AS nouveau_nom</b>
+<br /><br />
+</div><br>		
+<div class="image"><img src="./images/create_trigger.gif"></div>
+<div class="image"><img src="./images/create_trigger_event.gif"></div>
+<div class="paragraph">		
+<br />
+<b>Evt. DML</b> repr&eacute;sente l'&eacute;v&egrave;nement INSERT ou UPDATE ou DELETE<br />
+<b>Evt. DDL</b> repr&eacute;sente un &eacute;v&egrave;nement utilisateur<br />
+<b>Evt. syst&egrave;me</b> repr&eacute;sente un &eacute;v&egrave;nement syst&egrave;me<br />
+<b>colonne nest. table</b> repr&eacute;sente le nom d'une colonne de table imbriqu&eacute;e<br />
+<b>r&eacute;f&eacute;rencement</b> repr&eacute;sente le renommage des valeurs OLD et NEW<br />
+<br /><br />
+Dans le cas d'un d&eacute;clencheur <b>BEFORE UPDATE</b> ou <b>AFTER UPDATE</b>, la clause <b>OF</b> peut &ecirc;tre ajout&eacute;e apr&egrave;s le mot cl&eacute; <b>UPDATE</b> pour sp&eacute;cifier la liste des colonnes modifi&eacute;es.<br />
+Cela permet de restreindre l'activation du d&eacute;clencheurs sur les seules colonnes vis&eacute;es.
+<br /><br />
+Le mot cl&eacute; <b>WHEN(condition)</b> permet &eacute;galement de restreindre le champs d'activation du d&eacute;clencheur en ajoutant une clause restrictive
+</div><br>		
+	<br /><h3 class="TitreSection2"><a name="L6.1"></a>6.1. Les d&eacute;clencheurs sur TABLE</h3>
+		
+<div class="paragraph">
+Cr&eacute;ons un d&eacute;clencheur tr&egrave;s basique qui ne fait qu'afficher le num&eacute;ro et le nom d'un employ&eacute; que l'on veut supprimer de la table EMP
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">CREATE</span> <span class="ora_keyword">OR</span> <span class="ora_keyword">REPLACE</span> <span class="ora_keyword">TRIGGER</span> TRG_BDR_EMP
+  2     <span class="ora_keyword">BEFORE</span> <span class="ora_keyword">DELETE</span> <span class="ora_comment">-- avant supression</span>
+  3     <span class="ora_keyword">ON</span> EMP        <span class="ora_comment">-- sur la table EMP</span>
+  4     <span class="ora_keyword">FOR</span> <span class="ora_keyword">EACH</span> <span class="ora_keyword">ROW</span>  <span class="ora_comment">-- pour chaque ligne</span>
+  5  <span class="ora_keyword">Declare</span>
+  6    LC$Chaine <span class="ora_keyword">VARCHAR2</span>(100);
+  7  <span class="ora_keyword">Begin</span>  
+  8    <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Suppression de l''employ&eacute; n&deg; ' || <span class="ora_keyword">To_char</span>( :<span class="ora_keyword">OLD</span>.empno )
+  9       || ' -&gt; ' || :<span class="ora_keyword">OLD</span>.ename ) ;
+ 10  <span class="ora_keyword">End</span> ;
+ 11  /
+
+D&eacute;clencheur cr&eacute;&eacute;.</div></pre><div class="paragraph">
+Supprimons maintenant un employ&eacute;
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">set</span> serveroutput <span class="ora_keyword">on</span>
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">delete</span> <span class="ora_keyword">from</span> emp <span class="ora_keyword">where</span> empno = 7369
+  2  /
+Suppression de l'employ&eacute; n&deg; 7369 -&gt; SMITH
+
+1 ligne supprim&eacute;e.
+
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">rollback</span>;
+
+Annulation (<span class="ora_keyword">rollback</span>) effectu&eacute;e.</div></pre><div class="paragraph">
+La DRH annonce que d&eacute;sormais, tout nouvel employ&eacute; devra avoir un num&eacute;ro sup&eacute;rieur ou &eacute;gal &agrave; 10000<br />
+Il faut donc interdire toute insertion qui ne refl&egrave;te pas cette nouvelle directive
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">CREATE</span> <span class="ora_keyword">OR</span> <span class="ora_keyword">REPLACE</span> <span class="ora_keyword">TRIGGER</span> TRG_BIR_EMP
+  2     <span class="ora_keyword">BEFORE</span> <span class="ora_keyword">INSERT</span> <span class="ora_comment">-- avant insertion</span>
+  3     <span class="ora_keyword">ON</span> EMP        <span class="ora_comment">-- sur la table EMP</span>
+  4     <span class="ora_keyword">FOR</span> <span class="ora_keyword">EACH</span> <span class="ora_keyword">ROW</span>  <span class="ora_comment">-- pour chaque ligne</span>
+  5  <span class="ora_keyword">Begin</span>
+  6    <span class="ora_keyword">If</span> :<span class="ora_keyword">NEW</span>.empno &lt; 10000 <span class="ora_keyword">Then</span>
+  7        <span class="ora_keyword"><span class="ora_keyword">RAISE_APPLICATION_ERROR</span></span> ( -20010, 'Num&eacute;ro employ&eacute; inf&eacute;rieur &agrave; 10000' ) ;
+  8    <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+  9  <span class="ora_keyword">End</span> ;
+ 10  /
+
+D&eacute;clencheur cr&eacute;&eacute;.</div></pre><div class="paragraph">
+Tentons d'ins&eacute;rer un nouvel employ&eacute; avec le num&eacute;ro 9999
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt;  <span class="ora_keyword">insert</span> <span class="ora_keyword">into</span> emp (empno, ename, job) <span class="ora_keyword">values</span>( 9999, 'Burger', 'CLERK' ) ;
+ <span class="ora_keyword">insert</span> <span class="ora_keyword">into</span> emp (empno, ename, job) <span class="ora_keyword">values</span>( 9999, 'Burger', 'CLERK' )
+             *
+ERREUR &agrave; la ligne 1 :
+ORA-20010: Num&eacute;ro employ&eacute; inf&eacute;rieur &agrave; 10000
+ORA-06512: &agrave; <span class="ora_ch">"SCOTT.TRG_BIR_EMP"</span>, ligne 3
+ORA-04088: erreur lors d'ex&eacute;cution du d&eacute;clencheur 'SCOTT.TRG_BIR_EMP'</div></pre><div class="paragraph">
+L'ordre d'insertion est rejet&eacute;
+<br /><br />
+Il est possible de g&eacute;rer dans le m&ecirc;me d&eacute;clencheur des ordres DML diff&eacute;rents en combinant les termes de la clause BEFORE avec le mot cl&eacute; <b>OR</b><br /><br />
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">CREATE</span> <span class="ora_keyword">OR</span> <span class="ora_keyword">REPLACE</span> <span class="ora_keyword">TRIGGER</span> TRG_BIUDR_EMP
+  2     <span class="ora_keyword">BEFORE</span> <span class="ora_keyword">INSERT</span> <span class="ora_keyword">OR</span> <span class="ora_keyword">UPDATE</span> <span class="ora_keyword">OR</span> <span class="ora_keyword">DELETE</span><span class="ora_comment">-- avant insertion, modification ou suppression</span>
+  3     <span class="ora_keyword">ON</span> EMP        <span class="ora_comment">-- sur la table EMP</span>
+  4     <span class="ora_keyword">FOR</span> <span class="ora_keyword">EACH</span> <span class="ora_keyword">ROW</span>  <span class="ora_comment">-- pour chaque ligne</span>
+  5  <span class="ora_keyword">Begin</span>
+  6    <span class="ora_keyword">If</span> <span class="ora_keyword"><span class="ora_keyword">INSERTING</span></span> <span class="ora_keyword">Then</span>
+  7       <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Insertion dans la <span class="ora_keyword">table</span> EMP' ) ;
+  8    <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+  9    <span class="ora_keyword">If</span> <span class="ora_keyword"><span class="ora_keyword">UPDATING</span></span> <span class="ora_keyword">Then</span>
+ 10       <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Mise &agrave; jour de la <span class="ora_keyword">table</span> EMP' ) ;
+ 11    <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;  
+ 12    <span class="ora_keyword">If</span> <span class="ora_keyword"><span class="ora_keyword">DELETING</span></span> <span class="ora_keyword">Then</span>
+ 13       <span class="ora_keyword">dbms_output</span>.<span class="ora_keyword">put_line</span>( 'Suppression dans la <span class="ora_keyword">table</span> EMP' ) ;
+ 14    <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;  
+ 15  <span class="ora_keyword">End</span> ;
+ 16  /
+
+D&eacute;clencheur cr&eacute;&eacute;.</div></pre>
+<pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">DROP</span> <span class="ora_keyword">TRIGGER</span> TRG_BIR_EMP ;
+
+D&eacute;clencheur supprim&eacute;.
+
+<span class="ora_keyword">SQL</span>&gt;  <span class="ora_keyword">insert</span> <span class="ora_keyword">into</span> emp (empno, ename, job) <span class="ora_keyword">values</span>( 9993, 'Burger', 'CLERK') ;
+Insertion dans la <span class="ora_keyword">table</span> EMP
+
+1 ligne cr&eacute;&eacute;e.
+
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">update</span> emp <span class="ora_keyword">set</span> sal = 5000 <span class="ora_keyword">where</span> empno = 9993 ;
+Mise &agrave; jour de la <span class="ora_keyword">table</span> EMP
+
+1 ligne mise &agrave; jour.
+
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">delete</span> <span class="ora_keyword">from</span> emp <span class="ora_keyword">where</span> empno = 9993 ;
+Suppression dans la <span class="ora_keyword">table</span> EMP
+Suppression de l'employ&eacute; n&deg; 9993 -&gt; Burger
+
+1 ligne supprim&eacute;e.
+
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">rollback</span>;
+
+Annulation (<span class="ora_keyword">rollback</span>) effectu&eacute;e.</div></pre><div class="paragraph">
+Notez au passage que dans l'exemple de la suppression, les deux d&eacute;clencheurs de type BEFORE DELETE ont &eacute;t&eacute; ex&eacute;cut&eacute;s<br />
+</div><br>
+	
+	<br /><h3 class="TitreSection2"><a name="L6.2"></a>6.2. Les d&eacute;clencheurs sur VUE</h3>
+		
+<div class="paragraph">
+La syntaxe d'un d&eacute;clencheur sur vue est identique &agrave; celle du d&eacute;clencheur sur table, &agrave; la diff&eacute;rence que la clause INSTEAD OF est ajout&eacute;e
+<br /><br />
+Ce type de d&eacute;clencheur est particulier dans la mesure ou son ex&eacute;cution remplace celle de la commande DML &agrave; laquelle il est associ&eacute;
+<br /><br />
+<span class="important">Ce type de d&eacute;clencheur n'est d&eacute;finissable que sur les vues et lui seul peut &ecirc;tre mis en place sur les vues</span>
+<br /><br /><br />
+Nous mettons &agrave; la disposition de certains utilisateurs une vue permettant de s&eacute;lectionner les employ&eacute;s qui ont le job CLERK<br />
+
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">CREATE</span> <span class="ora_keyword">OR</span> <span class="ora_keyword">REPLACE</span> <span class="ora_keyword">VIEW</span> VW_EMP_CLERK <span class="ora_keyword">AS</span>
+  2    <span class="ora_keyword">Select</span> empno <span class="ora_ch">"Num&eacute;ro"</span>, ename <span class="ora_ch">"Nom"</span>, deptno <span class="ora_ch">"Dept."</span>, sal <span class="ora_ch">"Salaire"</span>
+  3    <span class="ora_keyword">From</span>   EMP
+  4    <span class="ora_keyword">Where</span>  JOB = 'CLERK';
+
+Vue cr&eacute;&eacute;e.
+
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">select</span> * <span class="ora_keyword">from</span> VW_EMP_CLERK ;
+
+    Num&eacute;ro Nom             Dept.    Salaire
+<span class="ora_comment">---------- ---------- ---------- ----------</span>
+      7369 SMITH              20        880
+      7876 ADAMS              20       1210
+      7900 JAMES              30       1045
+      7934 MILLER             10       1430
+      9991 Dupontont
+      9992 Duboudin
+
+6 ligne(s) s&eacute;lectionn&eacute;e(s).</div></pre><div class="paragraph">
+A travers cette vue, ces utilisateurs peuvent ins&eacute;rer des lignes
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Insert</span> <span class="ora_keyword">into</span> VW_EMP_CLERK <span class="ora_keyword">values</span>( 9994, 'Schmoll', 20, 2500 ) ;
+Insertion dans la <span class="ora_keyword">table</span> EMP
+
+1 ligne cr&eacute;&eacute;e.</div></pre><div class="paragraph">
+Cependant, ils ne peuvent pas voir leurs insertions car la colonne job (inutile dans ce cas) ne fait pas partie de la vue et donc de l'insertion !
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt;  <span class="ora_keyword">select</span> * <span class="ora_keyword">from</span> VW_EMP_CLERK ;
+
+    Num&eacute;ro Nom             Dept.    Salaire
+<span class="ora_comment">---------- ---------- ---------- ----------</span>
+      7369 SMITH              20        880
+      7876 ADAMS              20       1210
+      7900 JAMES              30       1045
+      7934 MILLER             10       1430
+      9991 Dupontont
+      9992 Duboudin
+
+6 ligne(s) s&eacute;lectionn&eacute;e(s).</div></pre><div class="paragraph">
+Nous allons donc cr&eacute;er un d&eacute;clencheur sur vue qui va r&eacute;soudre ce probl&egrave;me
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">CREATE</span> <span class="ora_keyword">OR</span> <span class="ora_keyword">REPLACE</span> <span class="ora_keyword">TRIGGER</span> TRG_BIR_VW_EMP_CLERK
+  2    INSTEAD <span class="ora_keyword">OF</span> <span class="ora_keyword">INSERT</span> <span class="ora_comment">-- &agrave; la place de l'insertion</span>
+  3    <span class="ora_keyword">ON</span> VW_EMP_CLERK   <span class="ora_comment">-- sur la vue VW_EMP_CLERK</span>
+  4    <span class="ora_keyword">FOR</span> <span class="ora_keyword">EACH</span> <span class="ora_keyword">ROW</span>      <span class="ora_comment">-- pour chaque ligne</span>
+  5  <span class="ora_keyword">Begin</span>
+  6    <span class="ora_keyword">Insert</span> <span class="ora_keyword">into</span> EMP ( empno, ename, deptno, sal, job ) <span class="ora_comment">-- on valorise la colonne JOB</span>
+  7    <span class="ora_keyword">Values</span> (:<span class="ora_keyword">NEW</span>.<span class="ora_ch">"Num&eacute;ro"</span>, :<span class="ora_keyword">NEW</span>.<span class="ora_ch">"Nom"</span>, :<span class="ora_keyword">NEW</span>.<span class="ora_ch">"Dept."</span>, :<span class="ora_keyword">NEW</span>.<span class="ora_ch">"Salaire"</span>, 'CLERK' ) ;
+  8  <span class="ora_keyword">End</span> ;
+  9  /
+
+D&eacute;clencheur cr&eacute;&eacute;.</div></pre><div class="paragraph">
+L'utilisateur peut d&eacute;sormais visualiser ses insertions
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">Insert</span> <span class="ora_keyword">into</span> VW_EMP_CLERK <span class="ora_keyword">values</span>( 9994, 'Schmoll', 20, 2500 ) ;
+Insertion dans la <span class="ora_keyword">table</span> EMP
+
+1 ligne cr&eacute;&eacute;e.
+
+<span class="ora_keyword">SQL</span>&gt;  <span class="ora_keyword">select</span> * <span class="ora_keyword">from</span> VW_EMP_CLERK ;
+
+    Num&eacute;ro Nom             Dept.    Salaire
+<span class="ora_comment">---------- ---------- ---------- ----------</span>
+      7369 SMITH              20        880
+      7876 ADAMS              20       1210
+      7900 JAMES              30       1045
+      7934 MILLER             10       1430
+      9991 Dupontont
+      9992 Duboudin
+      9994 Schmoll            20       2500
+
+7 ligne(s) s&eacute;lectionn&eacute;e(s).</div></pre><div class="paragraph">
+</div><br>
+		
+	<br /><h3 class="TitreSection2"><a name="L6.3"></a>6.3. Les d&eacute;clencheurs sur &eacute;v&egrave;nements syst&egrave;me ou utilisateur</h3>
+		
+<div class="paragraph">
+depuis la version Oracle8i, il est d&eacute;sormais possible d'utiliser des d&eacute;clencheurs pour suivre les changements d'&eacute;tat du syst&egrave;me ainsi que les connexions/d&eacute;connexions utilisateur et la surveillance des ordres DDL et DML
+<br /><br />
+Lors de l'&eacute;criture de ces d&eacute;clencheurs, il est possible d'utiliser des attributs pour identifier pr&eacute;cis&eacute;ment l'origine des &eacute;v&egrave;nements et adapter les traitements en cons&eacute;quence
+<br /><br />
+
+</div><br>
+
+	<br /><h4 class="TitreSection3"><a name="L6.3.1"></a>6.3.1. Les attributs</h4>
+		
+<div class="paragraph">
+</div><br><ul type="">
+<li><b>ora_client_ip_adress</b></li> Adresse IP du poste client qui se connecte
+<li><b>ora_database_name</b></li> Nom de la base de donn&eacute;es
+<li><b>ora_des_encrypted_password</b></li> Description cod&eacute;e du mot de passe de l'utilisateur cr&eacute;&eacute; ou modif&eacute;
+<li><b>ora_dict_obj_name</b></li> Nom de l'objet vis&eacute; par l'op&eacute;ration DDL
+<li><b>ora_dict_obj_name_list</b></li> Liste de tous les noms d'objets modifi&eacute;s
+<li><b>ora_dict_obj_owner</b></li> Propri&eacute;taire de l'objet vis&eacute; par l'op&eacute;ration DDL
+<li><b>ora_dict_obj_owner_list</b></li> Liste de tous les propri&eacute;taires d'objets modifi&eacute;s
+<li><b>ora_dict_obj_type</b></li> Type de l'objet vis&eacute; par l'op&eacute;ration DDL
+<li><b>ora_grantee</b></li> Liste des utilisateurs disposant du privil&egrave;ge
+<li><b>ora_instance_num</b></li> Num&eacute;ro de l'instance
+<li><b>ora_is_alter_column</b></li> Vrai si la colonne en param&egrave;tre a &eacute;t&eacute; modifi&eacute;e
+<li><b>ora_is_creating_nested_table</b></li> Cr&eacute;ation ou non d'une table de fusion
+<li><b>ora_is_drop_column</b></li> Modification ou non de la colonne en param&egrave;tre
+<li><b>ora_is_servererror</b></li> Vrai si le num&eacute;ro erreur pass&eacute; en param&egrave;tre se trouve dans la pile des erreurs
+<li><b>ora_login_user</b></li> Nom de la connexion
+<li><b>ora_privileges</b></li> Liste des privil&egrave;ges accord&eacute;s ou retir&eacute;s par un utilisateur
+<li><b>ora_revokee</b></li> Liste des utilisateurs &agrave; qui le privil&egrave;ge a &eacute;t&eacute; retir&eacute;
+<li><b>ora_server_error</b></li> Num&eacute;ro d'erreur dans la pile dont la position est pass&eacute;e en param&egrave;tre
+<li><b>ora_sysevent</b></li> Nom de l'&eacute;v&egrave;nement syst&egrave;me qui a activ&eacute; le d&eacute;clencheur
+<li><b>ora_with_grant_option</b></li> Vrai si le privil&egrave;ge a &eacute;t&eacute; accord&eacute; avec option d'administration
+</ul><div class="paragraph">
+</div><br>
+		
+	<br /><h4 class="TitreSection3"><a name="L6.3.2"></a>6.3.2. Les &eacute;v&egrave;nements syst&egrave;me</h4>	
+		
+<div class="paragraph">
+<b>CREATE TRIGGER nom_d&eacute;clencheur {BEFORE|AFTER} &eacute;v&egrave;nement_syst&egrave;me ON{DATABASE|SCHEMA} bloc PL/SQL</b>
+<br />
+</div><br><ul type="">
+<li><b>STARTUP</b></li> Ev&egrave;nement d&eacute;clench&eacute; lors de l'ouverture de l'instance (AFTER seulement)
+<li><b>SHUTDOWN</b></li> Ev&egrave;nement d&eacute;clench&eacute; avant le processus d'arr&ecirc;t de l'instance (non d&eacute;clench&eacute; en cas d'arr&ecirc;t brutal du serveur) (BEFORE seulement)
+<li><b>SERVERERROR</b></li> Ev&egrave;nement d&eacute;clench&eacute; lors d'une erreur Oracle (sauf ORA-1034, ORA-1403, ORA-1422, ORA-1423 et ORA-4030) (AFTER seulement)
+</ul><div class="paragraph">
+</div><br>
+			
+	<br /><h4 class="TitreSection3"><a name="L6.3.3"></a>6.3.3. Les &eacute;v&egrave;nements utilisateur</h4>	
+		
+<div class="paragraph">
+<b>CREATE TRIGGER nom_d&eacute;clencheur {BEFORE|AFTER} &eacute;v&egrave;nement_utilisateur ON{DATABASE|SCHEMA} bloc PL/SQL</b>
+<br />
+</div><br><ul type="">
+<li><b>LOGON</b></li> Apr&egrave;s une connexion (AFTER seulement)
+<li><b>LOGOFF</b></li> Avant une d&eacute;connexion (BEFORE seulement)
+<li><b>CREATE</b></li> Lors de la cr&eacute;ation d'un objet
+<li><b>ALTER</b></li> Lors de la modification d'un objet
+<li><b>DROP</b></li> Lors de la suppression d'un objet
+<li><b>ANALYZE</b></li> Lors de l'analise d'un objet
+<li><b>ASSOCIATE STATISTICS</b></li> Lors de l'association d'une statistique
+<li><b>AUDIT</b></li> Lors de la mise en place d'un audit
+<li><b>NOAUDIT</b></li> Lors de l'annulation d'un audit
+<li><b>COMMENT</b></li> Lors de l'insertion d'un commentaire
+<li><b>DDL</b></li> Lors de l'ex&eacute;cution des ordres DDL (sauf ALTER DATABASE, CREATE CONTROLFILE et CREATE DATABASE)
+<li><b>DISSOCIATE STATISTICS</b></li> Lors de la dissociation d'une statistique
+<li><b>GRANT</b></li> Lors de l'ex&eacute;cution d'une commande GRANT
+<li><b>RENAME</b></li> Lors de l'ex&eacute;cution d'une commande RENAME
+<li><b>REVOKE</b></li> Lors de l'ex&eacute;cution d'une commande REVOKE
+<li><b>TRUNCATE</b></li> Lors d'une troncature de table
+</ul><div class="paragraph">
+</div><br>
+				
+					
+	<br /><h3 class="TitreSection2"><a name="L6.4"></a>6.4. Maintenance des d&eacute;clencheurs</h3>	
+		
+<div class="paragraph">
+<b>Activation/d&eacute;sactivation d'un d&eacute;clencheur.</b>
+<br /><br />
+Il est possible de d&eacute;sactiver un d&eacute;clencheur avec la commande suivante
+<br />
+<b>ALTER TRIGGER nom_d&eacute;clencheur DISABLE</b>
+<br /><br />
+et de l'activer avec la commande suivante<br />
+<b>ALTER TRIGGER nom_d&eacute;clencheur ENABLE</b>
+<br /><br /><br />
+De la m&ecirc;me fa&ccedil;on, on peut d&eacute;sactiver tous les d&eacute;clencheurs d&eacute;finis sur une table
+<br />
+<b>ALTER TABLE nom_table DISABLE ALL TRIGGERS</b>
+<br /><br />
+et de les activer avec la commande suivante<br />
+<b>ALTER TABLE nom_table ENABLE ALL TRIGGERS</b>
+<br /><br /><br />
+Les informations sur les d&eacute;clencheurs sont visibles &agrave; travers les vues du dictionnaire de donn&eacute;es<br /><br />
+<b>USER_TRIGGERS</b> pour les d&eacute;clencheurs appartenant au sch&eacute;ma<br />
+<b>ALL_TRIGGERS</b> pour les d&eacute;clencheurs appartenant aux sch&eacute;mas accessibles<br />
+<b>DBA_TRIGGERS</b> pour les d&eacute;clencheurs appartenant &agrave; tous les sch&eacute;mas
+<br /><br />
+La colonne BASE_OBJECT_TYPE permet de savoir si le d&eacute;clencheur est bas&eacute; sur une table, une vue, un sch&eacute;ma ou la totalit&eacute; de la base
+<br /><br />
+La colonne TRIGGER_TYPE permet de savoir s'il s'agit d'un d&eacute;clencheur BEFORE, AFTER ou INSTEAD OF<br />
+si son mode est FOR EACH ROW ou non<br />
+s'il s'agit d'un d&eacute;clencheur &eacute;v&egrave;nementiel ou non
+<br /><br />
+La colonne TRIGGERING_EVENT permet de conna&icirc;tre l'&eacute;v&egrave;vement concern&eacute; par le d&eacute;clencheur
+<br /><br />
+La colonne TRIGGER_BODY contient le code du bloc PL/SQL
+</div><br>
+					
+	
+	
+<hr><div class="barreNavigation"> [ <a class="barreNavigationTexte" href="Chap5.html">Précédent</a> ]  [ <a class="barreNavigationTexte" href="sommaire.html">Sommaire</a> ]  [ <a class="barreNavigationTexte" href="Chap7.html">Suivant</a> ] </div><hr><p class="licence">Copyright &copy;2004&nbsp;SheikYerbouti.
+            Aucune reproduction, même partielle, ne peut être faite
+			de ce site et de l'ensemble de son contenu : textes, documents, images, etc
+            sans l'autorisation expresse de l'auteur. Sinon vous encourez selon la loi jusqu'à 3 ans de prison et jusqu'à 300 000 E
+			de dommages et intérets. Cette page est déposée à la <a href="http://www.sacd.fr/" target="_blank">SACD</a>.</p>
+       											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			<table width="100%" cellpadding="4" class="cachee">
+				<tr bgcolor="#DDEEFF">
+					<td align="center" class="titrepied">
+			  Vos questions techniques : <b><a href="http://www.developpez.net/forums/" target="_blank">forum d'entraide Accueil</a></b> - Publiez vos articles, tutoriels et cours<br />
+			  et rejoignez-nous dans l'&eacute;quipe de r&eacute;daction du club d'entraide des d&eacute;veloppeurs francophones <br /> <a href="http://club.developpez.com/contacts/">Nous contacter</a>
+	
+			  - Copyright 2000..2005 www.developpez.com
+					</td>
+					<td align="center">
+          
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
+
+	

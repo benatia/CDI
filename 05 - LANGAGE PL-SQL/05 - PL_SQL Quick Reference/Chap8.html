@@ -1,0 +1,1235 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <title>Guide PL/SQL - Club d'entraide des d&#233;veloppeurs francophones</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta name="generator" content="developpez-com" />
+  <link rel="stylesheet" type="text/css" href="./mainstyle.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="./printer.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./article.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./faq.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./source.css" />
+</head>
+<body>
+<table width="100%" cellspacing="4">
+	<tr>
+  	<td align="center">
+    	<table width="100%" cellspacing="0" cellpadding="0">
+     		<tr>
+     			<td>
+			      <table width="100%" cellspacing="11">
+    	  			<tr>
+        				<td>
+          				<a href="http://www.developpez.com"><img src="images/logo.gif" alt="Accueil" /></a>
+        				</td>
+      				</tr>
+      				<tr>
+      					<td></td>
+      				</tr>
+      			</table>
+    			</td>
+  			</tr>
+  			<tr>
+    			<td>
+						<table class="cachee" cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td class="iongl"><img src="images/bordg.gif" /></td>
+								<td class="bgongl"><a href="http://www.developpez.com" class="ntdrub">Accueil<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://club.developpez.com" class="ntdrub">Le<br />Club</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://delphi.developpez.com" class="ntdrub">Delphi<br />Kylix</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://c.developpez.com" class="ntdrub">C<br />C++</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://java.developpez.com" class="ntdrub">Java<br />J2EE</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://dotnet.developpez.com" class="ntdrub">DotNET<br />&amp; C#</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://vb.developpez.com" class="ntdrub">Visual<br />Basic</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://access.developpez.com" class="ntdrub">Access<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://pascal.developpez.com" class="ntdrub">Pascal<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://web.developpez.com" class="ntdrub">Dev<br />Web</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://php.developpez.com" class="ntdrub">PHP<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://asp.developpez.com" class="ntdrub">ASP<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://xml.developpez.com" class="ntdrub">XML<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://uml.developpez.com" class="ntdrub">UML<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://sgbd.developpez.com" class="ntdrub">SQL<br />SGBD</a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://windows.developpez.com" class="ntdrub">Win<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://linux.developpez.com" class="ntdrub">Linux<br /></a></td>
+								<td class="iongl"><img src="images/bord1.gif" /></td>
+								<td class="bgongl"><a href="http://www.developpez.com/cours/" class="ntdrub">Autres<br /></a></td>
+								<td class="iongl"><img src="images/bordd.gif" /></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="trbleu">
+					</td>
+				</tr>
+
+				<tr valign="top">
+					<td valign="top" class="fondart">
+						<table cellspacing="1" width="100%" class="tbnoir">
+							<tr>
+								<td class="fondart">
+									<table class="cadrearticle" width="90%" cellpadding="10" cellspacing="0">
+										<tr>
+											<td>
+
+        <br><h1>Oracle PL/SQL</h1><p class="dateArticle">
+        Date de publication : Avril 2004 , 
+        Date de mise a jour : Juillet 2004</p><hr><div class="barreNavigation"> [ <a class="barreNavigationTexte" href="Chap7.html">Précédent</a> ]  [ <a class="barreNavigationTexte" href="sommaire.html">Sommaire</a> ]  [ <a class="barreNavigationTexte" href="Chap9.html">Suivant</a> ] </div><hr>
+	
+	
+	
+	
+	
+	
+	<br /><a class="summaryIndent0" href="#L8">8. Le paquetage UTL_FILE</a>
+		
+
+	<br /><a class="summaryIndent1" href="#L8.1">8.1. Proc&eacute;dures et fonctions du paquetage</a>
+		
+	
+				
+	<br /><a class="summaryIndent1" href="#L8.1.1">8.1.1. Liste des proc&eacute;dures et fonctions version 8i</a>
+		
+	
+				
+	<br /><a class="summaryIndent1" href="#L8.1.2">8.1.2. Liste des proc&eacute;dures et fonctions version 9i</a>
+		
+	
+						
+	<br /><a class="summaryIndent1" href="#L8.2">8.2. Syntaxe des proc&eacute;dures et fonctions</a>
+		
+	<br /><a class="summaryIndent2" href="#L8.2.1">8.2.1. IS_OPEN</a>
+		
+	
+					
+	<br /><a class="summaryIndent2" href="#L8.2.2">8.2.2. FCLOSE</a>
+		
+	
+					
+	<br /><a class="summaryIndent2" href="#L8.2.3">8.2.3. FCLOSE_ALL</a>
+		
+	
+							
+	<br /><a class="summaryIndent2" href="#L8.2.4">8.2.4. FCOPY</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L8.2.5">8.2.5. FOPEN</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L8.2.6">8.2.6. FOPEN_NCHAR</a>
+		
+	
+		
+	<br /><a class="summaryIndent2" href="#L8.2.7">8.2.7. FFLUSH</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L8.2.8">8.2.8. FGETATTR</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L8.2.9">8.2.9. FGETPOS</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L8.2.10">8.2.10. FREMOVE</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L8.2.11">8.2.11. FRENAME</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L8.2.12">8.2.12. FSEEK</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L8.2.13">8.2.13. GET_LINE</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L8.2.14">8.2.14. GET_LINE_NCHAR</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L8.2.15">8.2.15. GET_RAW</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L8.2.16">8.2.16. NEW_LINE</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L8.2.17">8.2.17. PUT</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L8.2.18">8.2.18. PUT_NCHAR</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L8.2.19">8.2.19. PUT_RAW</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L8.2.20">8.2.20. PUT_LINE</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L8.2.21">8.2.21. PUT_LINE_NCHAR</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L8.2.22">8.2.22. PUTF</a>
+		
+	
+	
+	<br /><a class="summaryIndent2" href="#L8.2.23">8.2.23. PUTF_NCHAR</a>
+		
+	
+																				
+					
+	<br /><a class="summaryIndent1" href="#L8.3">8.3. Exceptions g&eacute;n&eacute;r&eacute;es par le paquetage</a>
+		
+	<br /><a class="summaryIndent2" href="#L8.3.1">8.3.1. Exceptions de la version 8i</a>
+		
+	
+				
+	<br /><a class="summaryIndent2" href="#L8.3.2">8.3.2. Exceptions de la version 9i</a>
+		
+	
+						
+						
+	<br /><a class="summaryIndent1" href="#L8.4">8.4. Exemples concrets</a>
+		
+	
+						
+	
+	
+<br><br>
+	
+	
+	
+	
+	
+	
+	<br /><h2 class="TitreSection1"><a name="L8"></a>8. Le paquetage UTL_FILE</h2>
+		
+<div class="paragraph">
+<b>Les proc&eacute;dures et fonctions de ce paquetage vous permettent de lire et &eacute;crire dans des fichiers texte situ&eacute;s dans les r&eacute;pertoires du syst&egrave;me d'exploitation.</b>
+<br />
+<b>Elles sont ex&eacute;cut&eacute;es par le noyau Oracle, donc sur la partie serveur.</b>
+<br /><br />
+Pour b&eacute;n&eacute;ficier des m&ecirc;mes fonctionnalit&eacute;s sur la partie cliente, il faut utiliser le paquetage TEXT_IO.
+<br /><br />
+Sous Oracle 9i, l'acc&egrave;s &agrave; ces fichiers est restreint aux <b>r&eacute;pertoires(DIRECTORIES)</b> d&eacute;clar&eacute;s au niveau du serveur.
+<br /><br />
+<span class="important">
+Dans les version ant&eacute;rieures, la description des r&eacute;pertoires autoris&eacute;s &eacute;tait sp&eacute;cifi&eacute;e dans le param&egrave;tre UTL_FILE_DIR du fichier d'initialisation INIT.ORA, dont toute modification imposait &eacute;videment un arr&ecirc;t et relance de la base
+</span>
+<br /><br /><br />
+Pour cr&eacute;er un r&eacute;pertoire, il faut avoir le privil&egrave;ge CREATE DIRECTORY, accord&eacute; par d&eacute;faut aux seuls sch&eacute;mas SYS et SYSTEM
+<br /><br />
+Pour acc&eacute;der en lecture aux r&eacute;pertoires d&eacute;clar&eacute;s dans les r&eacute;pertoires, l'utilisateur doit avoir le droit READ sur le ou les r&eacute;pertoires
+<br /><br />
+Pour acc&eacute;der en &eacute;criture aux r&eacute;pertoires d&eacute;clar&eacute;s dans les r&eacute;pertoires, l'utilisateur doit avoir le droit WRITE sur le ou les r&eacute;pertoires
+<br /><br /><br />
+Cr&eacute;ons sous l'utilisateur SYSTEM deux r&eacute;pertoires pour les fichiers en entr&eacute;e et ceux en sortie
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">CREATE</span> DIRECTORY FICHIERS_IN <span class="ora_keyword">AS</span> 'd:\fichiers\<span class="ora_keyword">in</span>' ;
+
+R&eacute;pertoire cr&eacute;&eacute;.
+
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">GRANT</span> <span class="ora_keyword">READ</span> <span class="ora_keyword">ON</span> DIRECTORY FICHIERS_IN <span class="ora_keyword">TO</span> <span class="ora_keyword">PUBLIC</span> ;
+
+Autorisation de privil&egrave;ges (<span class="ora_keyword">GRANT</span>) <span class="ora_keyword">accept</span>&eacute;e.
+
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">CREATE</span> DIRECTORY FICHIERS_OUT <span class="ora_keyword">AS</span> 'd:\fichiers\<span class="ora_keyword">out</span>' ;
+
+R&eacute;pertoire cr&eacute;&eacute;.
+
+<span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword">GRANT</span> <span class="ora_keyword">READ</span>, <span class="ora_keyword">WRITE</span> <span class="ora_keyword">ON</span> DIRECTORY FICHIERS_OUT <span class="ora_keyword">TO</span> <span class="ora_keyword">PUBLIC</span> ;
+
+Autorisation de privil&egrave;ges (<span class="ora_keyword">GRANT</span>) <span class="ora_keyword">accept</span>&eacute;e.</div></pre><div class="paragraph">
+Le r&eacute;pertoire contenant les fichiers en entr&eacute;e se voit attribuer le droit de lecture (READ) pour tous les utilisateurs
+<br /><br />
+Le r&eacute;pertoire contenant les fichiers en sortie se voit attribuer les droits de lecture (READ) et &eacute;criture (WRITE) pour tous les utilisateurs
+<br /><br />
+<span class="important">
+Il n'y a pas de syst&egrave;me de r&eacute;cursivit&eacute; dans les sous-r&eacute;pertoires
+</span><br />
+<span class="important">
+CREATE DIRECTORY FICHIERS_IN AS 'd:\fichiers\in' n'autorise pas l'acc&egrave;s aux &eacute;ventuels sous-r&eacute;pertoires
+</span>
+
+</div><br>
+	<br /><h3 class="TitreSection2"><a name="L8.1"></a>8.1. Proc&eacute;dures et fonctions du paquetage</h3>
+		
+<div class="paragraph">
+</div><br>	
+				
+	<br /><h3 class="TitreSection2"><a name="L8.1.1"></a>8.1.1. Liste des proc&eacute;dures et fonctions version 8i</h3>
+		
+<div class="paragraph">
+</div><br><ul type="">
+<li>Fonction  <b>IS_OPEN</b> Teste si le pointeur de fichier se r&eacute;f&egrave;re &agrave; un fichier ouvert</li>
+<li>Proc&eacute;dure <b>FCLOSE</b> Fermeture d'un fichier</li>
+<li>Proc&eacute;dure <b>FCLOSE_ALL</b> Fermeture de tous les fichiers ouverts</li>
+<li>Fonction  <b>FOPEN</b> Ouverture d'un fichier pour lecture ou &eacute;criture</li>
+<li>Proc&eacute;dure <b>FFLUSH</b> Ecriture physique des tampons sur le disque</li>
+<li>Proc&eacute;dure <b>GET_LINE</b> Lecture d'une ligne depuis un fichier ouvert</li>
+<li>Proc&eacute;dure <b>PUT</b> Ecriture d'une ligne (sans caract&egrave;re fin de ligne) dans un fichier ouvert</li>
+<li>Proc&eacute;dure <b>PUT_LINE</b> Ecriture d'une ligne (avec caract&egrave;re fin de ligne) dans un fichier ouvert</li>
+<li>Proc&eacute;dure <b>PUTF</b> Ecriture d'une ligne format&eacute;e</li>
+<li>Proc&eacute;dure <b>PUTF</b> Ecriture d'une ligne format&eacute;e</li>
+</ul><div class="paragraph">
+</div><br>	
+				
+	<br /><h3 class="TitreSection2"><a name="L8.1.2"></a>8.1.2. Liste des proc&eacute;dures et fonctions version 9i</h3>
+		
+<div class="paragraph">
+</div><br><ul type="">
+<li>Fonction  <b>IS_OPEN</b> Test si le pointeur de fichier se r&eacute;f&egrave;re &agrave; un fichier ouvert</li>
+<li>Proc&eacute;dure <b>FCLOSE</b> Fermeture d'un fichier</li>
+<li>Proc&eacute;dure <b>FCLOSE_ALL</b> Fermeture de tous les fichiers ouverts</li>
+<li>Fonction  <b>FCOPY</b> Copie d'un fichier sur le disque</li>
+<li>Fonction  <b>FOPEN</b> Ouverture d'un fichier pour lecture ou &eacute;criture</li>
+<li>Fonction  <b>FOPEN_NCHAR</b> Ouverture d'un fichier en unicode pour lecture ou &eacute;criture</li>
+<li>Proc&eacute;dure <b>FFLUSH</b> Ecriture physique des tampons sur le disque</li>
+<li>Proc&eacute;dure <b>FGETATTR</b> Lecture des attributs d'un fichier</li>
+<li>Fonction  <b>FGETPOS</b> Retourne la position du pointeur de lecture/&eacute;criture</li>
+<li>Fonction  <b>FREMOVE</b> Suppression d'un fichier sur le disque</li>
+<li>Fonction  <b>FRENAME</b> Renommage d'un fichier</li>
+<li>Fonction  <b>FSEEK</b> D&eacute;placement du pointeur de lecture/&eacute;criture dans le fichier</li>
+<li>Proc&eacute;dure <b>GET_LINE</b> Lecture d'une ligne depuis un fichier ouvert</li>
+<li>Proc&eacute;dure <b>GET_LINE_NCHAR</b> Lecture d'une ligne en unicode depuis un fichier ouvert</li>
+<li>Proc&eacute;dure <b>GET_RAW</b> Lecture d'une ligne de type RAW depuis un fichier ouvert avec ajustement du pointeur de position</li>
+<li>Proc&eacute;dure <b>NEW_LINE</b> Ecriture d'un caract&egrave;re fin de ligne dans un fichier ouvert</li>
+<li>Proc&eacute;dure <b>PUT</b> Ecriture d'une ligne (sans caract&egrave;re fin de ligne) dans un fichier ouvert</li>
+<li>Proc&eacute;dure <b>PUT_NCHAR</b> Ecriture d'une ligne en unicode (sans caract&egrave;re fin de ligne) dans un fichier ouvert</li>
+<li>Proc&eacute;dure <b>PUT_RAW</b> Ecriture d'une ligne de type RAW dans un fichier ouvert</li>
+<li>Proc&eacute;dure <b>PUT_LINE</b> Ecriture d'une ligne (avec caract&egrave;re fin de ligne) dans un fichier ouvert</li>
+<li>Proc&eacute;dure <b>PUT_LINE_NCHAR</b> Ecriture d'une ligne en unicode (avec caract&egrave;re fin de ligne) dans un fichier ouvert</li>
+<li>Proc&eacute;dure <b>PUTF</b> Ecriture d'une ligne format&eacute;e</li>
+<li>Proc&eacute;dure <b>PUTF_NCHAR</b> Ecriture d'une ligne en unicode format&eacute;e</li>
+</ul><div class="paragraph">
+</div><br>	
+						
+	<br /><h3 class="TitreSection2"><a name="L8.2"></a>8.2. Syntaxe des proc&eacute;dures et fonctions</h3>
+		
+	<br /><h4 class="TitreSection3"><a name="L8.2.1"></a>8.2.1. IS_OPEN</h4>
+		
+<div class="paragraph">
+<b>V&eacute;rification de l'ouverture d'un fichier</b>
+<br /><br />
+<b>UTL_FILE.IS_OPEN (</b><br />
+<b>pointeur IN FILE_TYPE)</b><br />
+<b>RETURN BOOLEAN</b>
+<br /><br />
+<b>pointeur</b> repr&eacute;sente une variable de type UTL_FILE.FILE_TYPE pr&eacute;alablement obtenue par un appel aux fonctions FOPEN() ou FOPEN_NCHAR()
+<br /><br />
+La fonction retourne TRUE si le fichier est ouvert, sinon FALSE
+</div><br>	
+					
+	<br /><h4 class="TitreSection3"><a name="L8.2.2"></a>8.2.2. FCLOSE</h4>
+		
+<div class="paragraph">
+<b>Fermeture d'un fichier</b>
+<br /><br />
+<b>UTL_FILE.FCLOSE (</b><br />
+<br /><br />
+<b>pointeur IN OUT FILE_TYPE)</b>
+<br /><br />
+<b>pointeur</b> repr&eacute;sente une variable de type UTL_FILE.FILE_TYPE pr&eacute;alablement obtenue par un appel aux fonctions FOPEN() ou FOPEN_NCHAR()
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+WRITE_ERROR<br />
+INVALID_FILEHANDLE
+</div><br>	
+					
+	<br /><h4 class="TitreSection3"><a name="L8.2.3"></a>8.2.3. FCLOSE_ALL</h4>
+		
+<div class="paragraph">
+<b>Fermeture de tous les fichiers ouverts de la session en cours</b>
+<br /><br />
+<b>UTL_FILE.FCLOSE_ALL</b>
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+WRITE_ERROR
+</div><br>	
+							
+	<br /><h4 class="TitreSection3"><a name="L8.2.4"></a>8.2.4. FCOPY</h4>
+		
+<div class="paragraph">
+<b>Copie d'un fichier</b>
+<br /><br />
+<b>UTL_FILE.FCOPY (</b><br />
+<b>dir_source IN VARCHAR2,</b><br />
+<b>fichier_source IN VARCHAR2,</b><br />
+<b>dir_cible IN VARCHAR2,</b><br />
+<b>fichier_cible IN VARCHAR2,</b><br />
+<b>ligne_debut IN PLS_INTEGER DEFAULT 1,</b><br />
+<b>ligne_fin IN PLS_INTEGER DEFAULT NULL)</b>
+<br /><br />
+<b>dir_source</b> repr&eacute;sente le r&eacute;pertoire Oracle du fichier source<br />
+<b>fichier_source</b> repr&eacute;sente le nom du fichier source avec son extension<br />
+<b>dir_cible</b> repr&eacute;sente le r&eacute;pertoire de destination<br />
+<b>fichier_cible</b> repr&eacute;sente le nom du fichier de destination<br />
+<b>ligne_debut</b> repr&eacute;sente le num&eacute;ro de ligne de d&eacute;but de copie (par d&eacute;faut 1, d&eacute;but du fichier)<br />
+<b>ligne_fin</b> repr&eacute;sente le num&eacute;ro de ligne de fin de copie (par d&eacute;faut NULL, fin du fichier)
+<br /><br />
+Cette fonction permet de cr&eacute;er un fichier &agrave; partir d'un autre en recopiant tout ou partie du fichier source.
+
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L8.2.5"></a>8.2.5. FOPEN</h4>
+		
+<div class="paragraph">
+<b>Ouverture d'un fichier</b>
+<br /><br />
+Oracle 8i, 9i<br />
+<b>UTL_FILE.FOPEN (</b><br />
+<b>repertoire IN VARCHAR2,</b><br />
+<b>fichier IN VARCHAR2,</b><br />
+<b>mode IN VARCHAR2,</b><br />
+<b>taille_ligne_maxi IN BINARY_INTEGER)</b><br />
+<b>RETURN UTL_FILE.FILE_TYPE</b>
+<br /><br />
+<b>repertoire</b> repr&eacute;sente le chemin d'acc&egrave;s (8i) ou le r&eacute;pertoire (9i)<br />
+<b>fichier</b> repr&eacute;sente le nom du fichier avec son extension<br />
+<b>mode</b> repr&eacute;sente le mode d'ouverture du fichier qui peut prendre l'une des trois valeurs suivantes
+</div><br><ul type="">
+<li><b>R</b> le fichier est ouvert en lecture (Read)</li>
+<li><b>W</b> le fichier est ouvert en &eacute;criture (Write)</li>
+<li><b>A</b> le fichier est ouvert en ajout (Append)</li>
+</ul><div class="paragraph">
+<b>taille_ligne_maxi</b> repr&eacute;sente la taille maximum en octets d'une ligne lue ou &eacute;crite. La plage des valeurs acceptables est comprise entre 1 et 32767 (par d&eacute;faut environ 1000)
+<br /><br />
+La fonction retourne un enregistrement de type UTL_FILE.FILE_TYPE
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+Oracle 8i, 9i<br />
+INVALID_PATH: Nom de r&eacute;pertoire ou de fichier invalide.<br />
+INVALID_MODE: Mode d'ouverture invalide.<br />
+INVALID_OPERATION: Le fihcier ne peut &ecirc;tre ouvert.<br />
+INVALID_MAXLINESIZE: La valeur de taille_ligne_maxi est trop grande ou trop petite.
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L8.2.6"></a>8.2.6. FOPEN_NCHAR</h4>
+		
+<div class="paragraph">
+<span class="important">(9i)</span><br />
+<b>Ouverture d'un fichier</b>
+<br /><br />
+Identique &agrave; la fonction FOPEN, mais traite des fichiers en mode unicode
+<br /><br />
+<b>UTL_FILE.FOPEN_NCHAR (</b><br />
+<b>repertoire IN VARCHAR2,</b><br />
+<b>fichier IN VARCHAR2,</b><br />
+<b>mode IN VARCHAR2,</b><br />
+<b>taille_ligne_maxi IN BINARY_INTEGER)</b><br />
+<b>RETURN UTL_FILE.FILE_TYPE</b>
+<br /><br />
+</div><br>	
+		
+	<br /><h4 class="TitreSection3"><a name="L8.2.7"></a>8.2.7. FFLUSH</h4>
+		
+<div class="paragraph">
+<b>Ecriture physique des tampons sur le disque</b>
+<br /><br />
+<b>UTL_FILE.FFLUSH (</b><br />
+<b>pointeur IN FILE_TYPE)</b>
+<br /><br />
+<b>pointeur</b> repr&eacute;sente une variable de type UTL_FILE.FILE_TYPE pr&eacute;alablement obtenue par un appel aux fonctions FOPEN() ou FOPEN_NCHAR()
+<br /><br />
+Cette fonction permet de forcer l'&eacute;criture du tampon sur le disque
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+INVALID_FILEHANDLE<br />
+INVALID_OPERATION<br />
+WRITE_ERROR
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L8.2.8"></a>8.2.8. FGETATTR</h4>
+		
+<div class="paragraph">
+<span class="important">(9i)</span><br />
+<b>Lecture des attributs d'un fichier</b>
+<br /><br />
+<b>UTL_FILE.FGETATTR(</b><br />
+<b>repertoire IN VARCHAR2,</b><br />
+<b>fichier IN VARCHAR2,</b><br />
+<b>exists OUT BOOLEAN,</b><br />
+<b>taille_fichier OUT NUMBER,</b><br />
+<b>taille_bloc OUT NUMBER)</b>
+<br /><br />
+<b>repertoire</b> repr&eacute;sente le r&eacute;pertoire Oracle<br />
+<b>fichier</b> repr&eacute;sente le nom du fichier avec son extension<br />
+<b>exists</b> vaut TRUE si le fichier existe, sinon FALSE<br />
+<b>taille_fichier</b> repr&eacute;sente la taille du fichier en octets<br />
+<b>taille_bloc</b> repr&eacute;sente la taille d'un bloc syst&egrave;me en octets
+<br /><br />
+Cette fonction teste l'existence d'un fichier et r&eacute;cup&egrave;re, dans l'affirmative, la taille du fichier et la taille du bloc syst&egrave;me
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L8.2.9"></a>8.2.9. FGETPOS</h4>
+		
+<div class="paragraph">
+<b>Position du pointeur de lecture/&eacute;criture du fichier</b>
+<br /><br />
+<b>UTL_FILE.FGETPOS (</b><br />
+<b>pointeur IN file_type)</b><br />
+<b>RETURN PLS_INTEGER</b>
+<br /><br />
+<b>pointeur</b> repr&eacute;sente une variable de type UTL_FILE.FILE_TYPE pr&eacute;alablement obtenue par un appel aux fonctions FOPEN() ou FOPEN_NCHAR()
+<br /><br />
+Cette fonction retourne la position en octets actuelle de pointeur du fichier ouvert
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L8.2.10"></a>8.2.10. FREMOVE</h4>
+		
+<div class="paragraph">
+<span class="important">(9i)</span><br />
+<b>Suppression d'un fichier sur disque</b>
+<br /><br />
+<b>UTL_FILE.FREMOVE (</b><br />
+<b>repertoire IN VARCHAR2,</b><br />
+<b>fichier IN VARCHAR2)</b>
+<br /><br />
+<b>repertoire</b> repr&eacute;sente le r&eacute;pertoire Oracle<br />
+<b>fichier</b> repr&eacute;sente le nom du fichier avec son extension
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L8.2.11"></a>8.2.11. FRENAME</h4>
+		
+<div class="paragraph">
+<span class="important">(9i)</span><br />
+<b>Renommage d'un fichier sur disque</b>
+<br /><br />
+<b>UTL_FILE.FRENAME (</b><br />
+<b>dir_source IN VARCHAR2,</b><br />
+<b>fichier_source IN VARCHAR2,</b><br />
+<b>dir_cible IN VARCHAR2,</b><br />
+<b>fichier_cible IN VARCHAR2,</b><br />
+<b>remplacer IN BOOLEAN DEFAULT FALSE)</b>
+<br /><br />
+<b>dir_source</b> repr&eacute;sente le r&eacute;pertoire Oracle du fichier source<br />
+<b>fichier_source</b> repr&eacute;sente le nom du fichier source avec son extension<br />
+<b>dir_cible</b> repr&eacute;sente le r&eacute;pertoire de destination<br />
+<b>fichier_cible</b> repr&eacute;sente le nom du fichier de destination<br />
+<b>remplacer</b> positionn&eacute; &agrave; TRUE permet d'&eacute;craser un fichier existant
+<br /><br />
+Cette fonction permet de renommer un fichier avec possibilit&eacute; de d&eacute;placement, comme de la commande Unix <b>mv</b>
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L8.2.12"></a>8.2.12. FSEEK</h4>
+		
+<div class="paragraph">
+<span class="important">(9i)</span><br />
+<b>Positionnement du pointeur de lecture/&eacute;criture dans le fichier</b>
+<br /><br />
+<b>UTL_FILE.FSEEK (</b><br />
+<b>pointeur IN utl_file.file_type,</b><br />
+<b>d&eacute;placement_absolu IN PL_INTEGER DEFAULT NULL,</b><br />
+<b>d&eacute;placement_relatif IN PLS_INTEGER DEFAULT NULL)</b>
+<br /><br />
+<b>pointeur</b> repr&eacute;sente une variable de type UTL_FILE.FILE_TYPE pr&eacute;alablement obtenue par un appel aux fonctions FOPEN() ou FOPEN_NCHAR()<br />
+<b>d&eacute;placement_absolu</b> repr&eacute;sente l'octet du fichier sur lequel on veut pointer<br />
+<b>d&eacute;placement_relatif</b> repr&eacute;sente un d&eacute;placement vers l'avant ou vers l'arri&egrave;re par rapport &agrave; la position courante<br />
+<br />
+si <b>d&eacute;placement_relatif</b> est positif, le d&eacute;placement s'effectue vers la fin du fichier<br />
+si <b>d&eacute;placement_relatif</b> est n&eacute;gatif, le d&eacute;placement s'effectue vers le d&eacute;but du fichier
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L8.2.13"></a>8.2.13. GET_LINE</h4>
+		
+<div class="paragraph">
+<b>Lecture d'une ligne depuis un fichier</b>
+<br /><br />
+Oracle 8i<br />
+<b>UTL_FILE.GET_LINE (</b><br />
+<b>pointeur IN FILE_TYPE,</b><br />
+<b>tampon OUT VARCHAR2);</b>
+<br /><br />
+Oracle 9i<br />
+<b>UTL_FILE.GET_LINE (</b><br />
+<b>pointeur IN FILE_TYPE,</b><br />
+<b>tampon OUT VARCHAR2,</b><br />
+<b>longueur IN NUMBER,</b><br />
+<b>len IN PLS_INTEGER DEFAULT NULL)</b>
+<br /><br />
+<b>pointeur</b> repr&eacute;sente une variable de type UTL_FILE.FILE_TYPE pr&eacute;alablement obtenue par un appel aux fonctions FOPEN() ou FOPEN_NCHAR()<br />
+<b>tampon</b> repr&eacute;sente la variable destin&eacute;e &agrave; recevoir les donn&eacute;es lues<br />
+<b>longueur</b> repr&eacute;sente le nombre maximum d'octets &agrave; lire<br />
+<b>len</b> repr&eacute;sente le nombre d'octets &agrave; lire. Par d&eacute;faut il est &agrave; NULL ce qui signifie qu'il vaut la taille maximum d'un RAW
+<br /><br />
+<span class="important">La variable tampon doit &ecirc;tre suffisamment dimensionn&eacute;e pour accueillir la ligne lue depuis le fichier sous peine de g&eacute;n&eacute;rer l'exception VALUE_ERROR</span><br />
+<span class="important">longueur ne peut pas exc&eacute;der la valeur d&eacute;finie par le param&egrave;tre taille_ligne_maxi de la fonction FOPEN()</span><br />
+<span class="important">Lorsque la lecture ne ram&egrave;ne aucune donn&eacute;e (fin de fichier), l'exception NO_DATA_FOUND est g&eacute;n&eacute;r&eacute;e</span>
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+INVALID_FILEHANDLE<br />
+INVALID_OPERATION<br />
+READ_ERROR<br />
+NO_DATA_FOUND<br />
+VALUE_ERROR
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L8.2.14"></a>8.2.14. GET_LINE_NCHAR</h4>
+		
+<div class="paragraph">
+<span class="important">(9i)</span><br />
+<b>Lecture d'une ligne en unicode depuis un fichier</b>
+<br /><br />
+<b>UTL_FILE.GET_LINE_NCHAR (</b><br />
+<b>pointeur IN FILE_TYPE,</b><br />
+<b>tampon OUT NVARCHAR2,</b><br />
+<b>len IN PLS_INTEGER DEFAULT NULL)</b>
+<br /><br />
+<b>pointeur</b> repr&eacute;sente une variable de type UTL_FILE.FILE_TYPE pr&eacute;alablement obtenue par un appel aux fonctions FOPEN() ou FOPEN_NCHAR()<br />
+<b>tampon</b> repr&eacute;sente la variable de type NVARCHAR2 retourn&eacute;e par la proc&eacute;dure<br />
+<b>len</b> repr&eacute;sente le nombre d'octets &agrave; lire. Par d&eacute;faut il est &agrave; NULL ce qui signifie qu'il vaut la taille maximum d'un RAW
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+INVALID_FILEHANDLE<br />
+INVALID_OPERATION<br />
+READ_ERROR<br />
+NO_DATA_FOUND<br />
+VALUE_ERROR
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L8.2.15"></a>8.2.15. GET_RAW</h4>
+		
+<div class="paragraph">
+<span class="important">(9i)</span><br />
+<b>Lecture d'une ligne dans une variable RAW depuis un fichier</b>
+<br /><br />
+<b>UTL_FILE.GET_RAW (</b><br />
+<b>pointeur IN utl_file.file_type,</b><br />
+<b>tampon OUT NOCOPY RAW,</b><br />
+<b>len IN PLS_INTEGER DEFAULT NULL)</b>
+<br /><br />
+<b>pointeur</b> repr&eacute;sente une variable de type UTL_FILE.FILE_TYPE pr&eacute;alablement obtenue par un appel aux fonctions FOPEN() ou FOPEN_NCHAR()<br />
+<b>tampon</b> repr&eacute;sente la variable de type RAW retourn&eacute;e par la proc&eacute;dure<br />
+<b>len</b> repr&eacute;sente le nombre d'octets &agrave; lire. Par d&eacute;faut il est &agrave; NULL ce qui signifie qu'il vaut la taille maximum d'un RAW
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+INVALID_FILEHANDLE<br />
+INVALID_OPERATION<br />
+READ_ERROR<br />
+NO_DATA_FOUND<br />
+VALUE_ERROR
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L8.2.16"></a>8.2.16. NEW_LINE</h4>
+		
+<div class="paragraph">
+<b>Ecriture d'un caract&egrave;re fin de ligne dans un fichier</b>
+<br /><br />
+<b>UTL_FILE.NEW_LINE (</b><br />
+<b>pointeur IN FILE_TYPE,</b><br />
+<b>nombre_lignes IN NATURAL := 1)</b>
+<br /><br />
+<b>pointeur</b> repr&eacute;sente une variable de type UTL_FILE.FILE_TYPE pr&eacute;alablement obtenue par un appel aux fonctions FOPEN() ou FOPEN_NCHAR()<br />
+<b>nombre_lignes</b> repr&eacute;sente le nombre de terminateurs fin de ligne que l'on souhaite &eacute;crire dans le fichier (par d&eacute;faut 1)
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+INVALID_FILEHANDLE<br />
+INVALID_OPERATION<br />
+WRITE_ERROR
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L8.2.17"></a>8.2.17. PUT</h4>
+		
+<div class="paragraph">
+<b>Ecriture d'une ligne (sans caract&egrave;re fin de ligne) dans un fichier</b>
+<br /><br />
+<b>UTL_FILE.PUT (</b><br />
+<b>pointeur IN FILE_TYPE,</b><br />
+<b>tampon IN VARCHAR2)</b>
+<br /><br />
+<b>pointeur</b> repr&eacute;sente une variable de type UTL_FILE.FILE_TYPE pr&eacute;alablement obtenue par un appel aux fonctions FOPEN() ou FOPEN_NCHAR()<br />
+<b>tampon</b> repr&eacute;sente la variable destin&eacute;e &agrave; contenir les donn&eacute;es &agrave; &eacute;crire
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+INVALID_FILEHANDLE<br />
+INVALID_OPERATION<br />
+WRITE_ERROR
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L8.2.18"></a>8.2.18. PUT_NCHAR</h4>
+		
+<div class="paragraph">
+<span class="important">(9i)</span><br />
+<b>Ecriture d'une ligne en unicode (sans caract&egrave;re fin de ligne) dans un fichier</b>
+<br /><br />
+<b>UTL_FILE.PUT_INCHAR (</b><br />
+<b>pointeur IN FILE_TYPE,</b><br />
+<b>tampon IN NVARCHAR2)</b>
+<br /><br />
+<b>pointeur</b> repr&eacute;sente une variable de type UTL_FILE.FILE_TYPE pr&eacute;alablement obtenue par un appel aux fonctions FOPEN() ou FOPEN_NCHAR()<br />
+<b>tampon</b> repr&eacute;sente la variable de type NVARCHAR2 destin&eacute;e &agrave; contenir les donn&eacute;es &agrave; &eacute;crire
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+INVALID_FILEHANDLE<br />
+INVALID_OPERATION<br />
+WRITE_ERROR
+
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L8.2.19"></a>8.2.19. PUT_RAW</h4>
+		
+<div class="paragraph">
+<span class="important">(9i)</span><br />
+<b>Ecriture d'une ligne de type RAW dans un fichier</b>
+<br /><br />
+<b>UTL_FILE. PUT_RAW (</b><br />
+<b>pointeur IN utl_file.file_type,</b><br />
+<b>tampon IN RAW,</b><br />
+<b>autoflush IN BOOLEAN DEFAULT FALSE)</b><br />
+<br /><br />
+<b>pointeur</b> repr&eacute;sente une variable de type UTL_FILE.FILE_TYPE pr&eacute;alablement obtenue par un appel aux fonctions FOPEN() ou FOPEN_NCHAR()<br />
+<b>tampon</b> repr&eacute;sente la variable de type RAW destin&eacute;e &agrave; contenir les donn&eacute;es &agrave; &eacute;crire<br />
+<b>autoflush</b>, positionn&eacute; &agrave; TRUE permet de forcer l'&eacute;criture du tampon sur disque.
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+INVALID_FILEHANDLE<br />
+INVALID_OPERATION<br />
+WRITE_ERROR
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L8.2.20"></a>8.2.20. PUT_LINE</h4>
+		
+<div class="paragraph">
+<b>Ecriture d'une ligne (avec caract&egrave;re fin de ligne) dans un fichier</b>
+<br /><br />
+Oracle 8i<br />
+<b>UTL_FILE.PUT_LINE (</b><br />
+<b>pointeur IN FILE_TYPE,</b><br />
+<b>tampon IN VARCHAR2)</b>
+<br /><br />
+Oracle 9i<br />
+<b>UTL_FILE.PUT_LINE (</b><br />
+<b>pointeur IN FILE_TYPE,</b><br />
+<b>tampon IN VARCHAR2,</b><br />
+<b>autoflush IN BOOLEAN DEFAULT FALSE)</b>
+<br /><br />
+<b>pointeur</b> repr&eacute;sente une variable de type UTL_FILE.FILE_TYPE pr&eacute;alablement obtenue par un appel aux fonctions FOPEN() ou FOPEN_NCHAR()<br />
+<b>tampon</b> repr&eacute;sente la variable destin&eacute;e &agrave; contenir les donn&eacute;es &agrave; &eacute;crire<br />
+<b>autoflush</b>, positionn&eacute; &agrave; TRUE permet de forcer l'&eacute;criture du tampon sur disque.
+<br /><br />
+Un caract&egrave;re fin de ligne est ajout&eacute; en fin de tampon
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L8.2.21"></a>8.2.21. PUT_LINE_NCHAR</h4>
+		
+<div class="paragraph">
+<span class="important">(9i)</span><br />
+<b>Ecriture d'une ligne en unicode (avec caract&egrave;re fin de ligne) dans un fichier</b>
+<br /><br />
+<b>UTL_FILE.PUT_LINE_NCHAR (</b><br />
+<b>pointeur IN FILE_TYPE,</b><br />
+<b>tampon IN NVARCHAR2,</b><br />
+<b>autoflush IN BOOLEAN DEFAULT FALSE)</b>
+<br /><br />
+<b>pointeur</b> repr&eacute;sente une variable de type UTL_FILE.FILE_TYPE pr&eacute;alablement obtenue par un appel aux fonctions FOPEN() ou FOPEN_NCHAR()<br />
+<b>tampon</b> repr&eacute;sente la variable de type NVARCHAR2 destin&eacute;e &agrave; contenir les donn&eacute;es &agrave; &eacute;crire<br />
+<b>autoflush</b>, positionn&eacute; &agrave; TRUE permet de forcer l'&eacute;criture du tampon sur disque.
+<br /><br />
+Un caract&egrave;re fin de ligne est ajout&eacute; en fin de tampon
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L8.2.22"></a>8.2.22. PUTF</h4>
+		
+<div class="paragraph">
+<b>Ecriture d'une ligne format&eacute;e dans un fichier</b>
+<br /><br />
+<b>UTL_FILE.PUTF (</b><br />
+<b>pointeur IN FILE_TYPE,</b><br />
+<b>format IN VARCHAR2,</b><br />
+<b>[arg1 IN VARCHAR2 DEFAULT NULL,</b><br />
+<b>. . .</b><br />
+<b>arg5 IN VARCHAR2 DEFAULT NULL])</b>
+<br /><br />
+<b>pointeur</b> repr&eacute;sente une variable de type UTL_FILE.FILE_TYPE pr&eacute;alablement obtenue par un appel aux fonctions FOPEN() ou FOPEN_NCHAR()<br />
+<b>format</b> repr&eacute;sente une cha&icirc;ne pouvant inclure les caract&egrave;res %s et \n<br />
+<b>arg1.. arg5</b> repr&eacute;sentent jusqu'&agrave; 5 param&egrave;tres dont chaque valeur remplace un caract&egrave;re %s du format donn&eacute;.
+<br /><br />
+Cette fonction ressemble &agrave; une version limit&eacute;e de fprintf() du langage C
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+INVALID_FILEHANDLE<br />
+INVALID_OPERATION<br />
+WRITE_ERROR
+</div><br>	
+	
+	<br /><h4 class="TitreSection3"><a name="L8.2.23"></a>8.2.23. PUTF_NCHAR</h4>
+		
+<div class="paragraph">
+
+<b>Ecriture d'une ligne unicode format&eacute;e dans un fichier</b>
+<br /><br />
+<b>UTL_FILE.PUTF_NCHAR (</b><br />
+<b>pointeur IN FILE_TYPE,</b><br />
+<b>format IN NVARCHAR2,</b><br />
+<b>[arg1 IN NVARCHAR2 DEFAULT NULL,</b><br />
+<b>. . .</b><br />
+<b>arg5 IN NVARCHAR2 DEFAULT NULL])</b>
+<br /><br />
+<b>pointeur</b> repr&eacute;sente une variable de type UTL_FILE.FILE_TYPE pr&eacute;alablement obtenue par un appel aux fonctions FOPEN() ou FOPEN_NCHAR()<br />
+<b>format</b> repr&eacute;sente une cha&icirc;ne pouvant inclure les caract&egrave;res %s et \n<br />
+<b>arg1.. arg5</b> repr&eacute;sentent jusqu'&agrave; 5 param&egrave;tres dont chaque valeur remplace un caract&egrave;re %s du format donn&eacute;.
+<br /><br />
+<u>Exceptions g&eacute;n&eacute;r&eacute;es</u><br />
+INVALID_FILEHANDLE<br />
+INVALID_OPERATION<br />
+WRITE_ERROR
+</div><br>	
+																				
+					
+	<br /><h3 class="TitreSection2"><a name="L8.3"></a>8.3. Exceptions g&eacute;n&eacute;r&eacute;es par le paquetage</h3>
+		
+	<br /><h4 class="TitreSection3"><a name="L8.3.1"></a>8.3.1. Exceptions de la version 8i</h4>
+		
+<div class="paragraph">
+</div><br><ul type="">
+<li><b>INVALID_PATH</b> La directorie ou le nom de fichier est invalide</li>
+<li><b>INVALID_MODE</b> Mode d'ouverture invalide pour la fonction FOPEN</li>
+<li><b>INVALID_FILEHANDLE</b> Pointeur de fichier invalide</li>
+<li><b>INVALID_OPERATION</b> Le fichier ne peut &ecirc;tre ouvert ou manipul&eacute;</li>
+<li><b>READ_ERROR</b> Erreur syst&egrave;me pendant une op&eacute;ration de lecture</li>
+<li><b>WRITE_ERROR</b> Erreur syst&egrave;me pendant une op&eacute;ration d'&eacute;criture</li>
+<li><b>INTERNAL_ERROR</b> Erreur PL/SQL non sp&eacute;cifi&eacute;e</li>
+</ul><div class="paragraph">
+</div><br>	
+				
+	<br /><h4 class="TitreSection3"><a name="L8.3.2"></a>8.3.2. Exceptions de la version 9i</h4>
+		
+<div class="paragraph">
+</div><br><ul type="">
+<li><b>INVALID_PATH</b> La directorie ou le nom de fichier est invalide</li>
+<li><b>INVALID_MODE</b> Mode d'ouverture invalide pour la fonction FOPEN</li>
+<li><b>INVALID_FILEHANDLE</b> Pointeur de fichier invalide</li>
+<li><b>INVALID_OPERATION</b> Le fichier ne peut &ecirc;tre ouvert ou manipul&eacute;</li>
+<li><b>READ_ERROR</b> Erreur syst&egrave;me pendant une op&eacute;ration de lecture</li>
+<li><b>WRITE_ERROR</b> Erreur syst&egrave;me pendant une op&eacute;ration d'&eacute;criture</li>
+<li><b>INTERNAL_ERROR</b> Erreur PL/SQL non sp&eacute;cifi&eacute;e</li>
+<li><b>CHARSETMISMATCH</b> Utilisation de fonctions non NCHAR apr&egrave;s une ouverture avec FOPEN_NCHAR</li>
+<li><b>FILE_OPEN</b> L'op&eacute;ration a &eacute;chou&eacute; car le fichier est ouvert</li>
+<li><b>INVALID_MAXLINESIZE</b> La taille MAXLINESIZE pour la fonction FOPEN doit &ecirc;tre entre 1 to 32767</li>
+<li><b>INVALID_FILENAME</b> Nom de fichier invalide</li>
+<li><b>ACCESS_DENIED</b> Vous n'avez pas les droits d'acc&egrave;s au fichier</li>
+<li><b>INVALID_OFFSET</b> Le d&eacute;placement d&eacute;clar&eacute; dans la fonction FSEEK() doit &ecirc;tre sup&eacute;rieur &agrave; 0 et inf&eacute;rieur &agrave; la taille du fichier</li>
+<li><b>DELETE_FAILED</b> L'op&eacute;ration de suppression &agrave; &eacute;chou&eacute;</li>
+<li><b>RENAME_FAILED</b> L'op&eacute;ration de renommage a &eacute;chou&eacute;</li>
+</ul><div class="paragraph">
+</div><br>	
+						
+						
+	<br /><h3 class="TitreSection2"><a name="L8.4"></a>8.4. Exemples concrets</h3>
+		
+<div class="paragraph">
+</div><br><ul type=""><li>Ouverture d'un fichier en lecture et &eacute;criture du contenu dans un autre</li></ul><div class="paragraph">
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">Declare</span>
+  <span class="ora_comment">-- Noms des fichiers --</span>
+  LC$Fic_in   <span class="ora_keyword">Varchar2</span>(128) := 'EMP.TXT' ;       <span class="ora_comment">-- a adapter sur votre configuration</span>
+  LC$Fic_out  <span class="ora_keyword">Varchar2</span>(128) := 'EMP2.TXT' ;      <span class="ora_comment">-- a adapter sur votre configuration</span>
+  <span class="ora_comment">-- Noms des r&eacute;pertoires --</span>
+  LC$Dir_in   <span class="ora_keyword">Varchar</span>(30)   := 'FICHIERS_IN';    <span class="ora_comment">-- a adapter sur votre configuration</span>
+  LC$Dir_out  <span class="ora_keyword">Varchar</span>(30)   := 'FICHIERS_OUT' ;  <span class="ora_comment">-- a adapter sur votre configuration</span>
+  <span class="ora_comment">-- Pointeurs de fichier --</span>
+  LF$FicIN	<span class="ora_keyword">UTL_FILE</span>.<span class="ora_keyword">FILE_TYPE</span> ;
+  LF$FicOUT	<span class="ora_keyword">UTL_FILE</span>.<span class="ora_keyword">FILE_TYPE</span> ;
+  <span class="ora_comment">-- Tampon de travail --  </span>
+  LC$Ligne	<span class="ora_keyword">Varchar2</span>(32767) ;  
+  <span class="ora_comment">-- Message --</span>
+  LC$Msg    <span class="ora_keyword">Varchar2</span>(256) ;
+  <span class="ora_comment">-- Exception --</span>
+  LE$Fin    <span class="ora_keyword">Exception</span> ;
+<span class="ora_keyword">Begin</span>
+
+  <span class="ora_comment">-- Ouverture du fichier en entr&eacute;e</span>
+  <span class="ora_keyword">Begin</span>
+    LF$FicIN := <span class="ora_keyword">UTL_FILE</span>.<span class="ora_keyword">FOPEN</span>( LC$Dir_in, LC$Fic_in, 'R', 32764 ) ;
+  <span class="ora_keyword">Exception</span>
+    <span class="ora_keyword">When</span> <span class="ora_keyword">OTHERS</span> <span class="ora_keyword">Then</span>
+	LC$Msg := <span class="ora_keyword">SQLERRM</span> || ' [' || LC$Dir_in || '] -&gt; ' || LC$Fic_in;
+	<span class="ora_keyword">Raise</span> LE$Fin ;
+  <span class="ora_keyword">End</span> ;
+  
+  <span class="ora_comment">-- Ouverture du fichier en sortie</span>
+  <span class="ora_keyword">Begin</span>
+    LF$FicOUT := <span class="ora_keyword">UTL_FILE</span>.<span class="ora_keyword">FOPEN</span>( LC$Dir_out, LC$Fic_out, 'W', 32764 ) ;
+  <span class="ora_keyword">Exception</span>
+    <span class="ora_keyword">When</span> <span class="ora_keyword">OTHERS</span> <span class="ora_keyword">Then</span>
+	LC$Msg := <span class="ora_keyword">SQLERRM</span> || ' [' || LC$Dir_out || '] -&gt; ' || LC$Fic_out;
+	<span class="ora_keyword">Raise</span> LE$Fin ;
+  <span class="ora_keyword">End</span> ;	
+  
+  <span class="ora_comment">-- Traitement --</span>
+  <span class="ora_keyword">Begin</span>
+     <span class="ora_keyword">Loop</span>
+	<span class="ora_comment">-- lecture du fichier en entr&eacute;e --</span>
+	<span class="ora_keyword">UTL_FILE</span>.<span class="ora_keyword">GET_LINE</span>( LF$FicIN,  LC$Ligne ) ;
+	<span class="ora_comment">-- &eacute;criture du fichier en sortie --</span>
+	<span class="ora_keyword">UTL_FILE</span>.<span class="ora_keyword">PUT_LINE</span>( LF$FicOUT, LC$Ligne ) ;
+     <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+  <span class="ora_keyword">Exception</span>
+     <span class="ora_keyword">When</span> <span class="ora_keyword">NO_DATA_FOUND</span> <span class="ora_keyword">Then</span> <span class="ora_comment">-- Fin du fichier en entr&eacute;e</span>
+        <span class="ora_comment">-- Fermeture des fichiers --</span>
+	<span class="ora_keyword">UTL_FILE</span>.<span class="ora_keyword">FCLOSE</span>( LF$FicIN ) ;
+	<span class="ora_keyword">UTL_FILE</span>.<span class="ora_keyword">FCLOSE</span>( LF$FicOUT ) ;
+  <span class="ora_keyword">End</span>  ;		 		
+  
+<span class="ora_keyword">Exception</span>
+   <span class="ora_keyword">When</span> LE$Fin <span class="ora_keyword">Then</span>
+     <span class="ora_keyword">UTL_FILE</span>.<span class="ora_keyword">FCLOSE_ALL</span> ;
+     <span class="ora_keyword"><span class="ora_keyword">RAISE_APPLICATION_ERROR</span></span>( -20100, LC$Msg ) ;
+<span class="ora_keyword">End</span> ;</div></pre><div class="paragraph">
+</div><br><ul type=""><li>Extraction d'une table dans un fichier</li></ul><div class="paragraph">
+Voici le code d'une proc&eacute;dure qui permet d'extraire le contenu d'une table dans un fichier<br />
+<br /><br />
+Cette proc&eacute;dure a besoin des 3 premiers param&egrave;tres pour fonctionner<br /><br />
+<b>PC$Table</b> re&ccedil;oit le nom d'une table Oracle<br />
+<b>PC$Fichier</b> re&ccedil;oit le nom du fichier de sortie<br />
+<b>PC$Repertoire</b> re&ccedil;oit le nom du chemin (8i) ou de la directorie (9i)<br />
+<b>PC$Separateur</b> re&ccedil;oit le caract&egrave;re de s&eacute;paration voulu (d&eacute;faut ,)<br />
+<b>PC$DateFMT</b> re&ccedil;oit le format des dates (d&eacute;faut : DD/MM/YYYY)<br />
+<b>PC$Where</b> re&ccedil;oit une &eacute;ventuelle clause WHERE<br />
+<b>PC$Order</b> re&ccedil;oit une &eacute;ventuelle clause ORDER BY<br />
+<br />
+le param&egrave;tre <b>PC$Entetes</b> permet les actions suivantes
+</div><br><ul type="">
+<li>positionn&eacute; &agrave; O, il indique une sortie des lignes de la table avec une ligne d'ent&ecirc;te</li>
+<li>positionn&eacute; &agrave; I, il indique la g&eacute;n&eacute;ration des ordres INSERT pour chaque ligne</li>
+<li>diff&eacute;rent de O et I, il indique une sortie des lignes de la table sans ligne d'ent&ecirc;te</li>
+</ul><div class="paragraph">
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">CREATE</span> <span class="ora_keyword">OR</span> <span class="ora_keyword">REPLACE</span> <span class="ora_keyword">PROCEDURE</span> Extraction_Table
+	(
+		PC$<span class="ora_keyword">Table</span>      <span class="ora_keyword">in</span> <span class="ora_keyword">Varchar2</span>,                      <span class="ora_comment">-- Nom de la table a extraire</span>
+		PC$Fichier    <span class="ora_keyword">in</span> <span class="ora_keyword">Varchar2</span>,                      <span class="ora_comment">-- Nom du fichier de sortie</span>
+		PC$Repertoire <span class="ora_keyword">in</span> <span class="ora_keyword">Varchar2</span>,                      <span class="ora_comment">-- Nom du directory de sortie</span>
+		PC$Separateur <span class="ora_keyword">in</span> <span class="ora_keyword">Varchar2</span> <span class="ora_keyword">Default</span> ',',          <span class="ora_comment">-- Caractere de separation</span>
+		PC$Entetes    <span class="ora_keyword">in</span> <span class="ora_keyword">Varchar2</span> <span class="ora_keyword">Default</span> 'O',          <span class="ora_comment">-- Affichage de l'entete des colonnes</span>
+		PC$DateFMT    <span class="ora_keyword">in</span> <span class="ora_keyword">Varchar2</span> <span class="ora_keyword">Default</span> 'DD/MM/YYYY', <span class="ora_comment">-- Format des dates</span>
+		PC$<span class="ora_keyword">Where</span>      <span class="ora_keyword">in</span> <span class="ora_keyword">Varchar2</span> <span class="ora_keyword">Default</span> <span class="ora_keyword">Null</span>,         <span class="ora_comment">-- Clause Where de filtrage</span>
+		PC$<span class="ora_keyword">Order</span>      <span class="ora_keyword">in</span> <span class="ora_keyword">Varchar2</span> <span class="ora_keyword">Default</span> <span class="ora_keyword">Null</span>          <span class="ora_comment">-- Colonne de tri</span>
+	) <span class="ora_keyword">IS</span>
+
+
+LF$Fichier  <span class="ora_keyword">UTL_FILE</span>.<span class="ora_keyword">FILE_TYPE</span> ;
+LC$Ligne    <span class="ora_keyword">Varchar2</span>(32767) ;
+LI$I        <span class="ora_keyword">Integer</span> ;
+LC$DateFMT  <span class="ora_keyword">Varchar2</span>(40) := '''' || PC$DateFMT || '''' ;
+
+
+<span class="ora_keyword">TYPE</span> REFCUR1 <span class="ora_keyword">IS</span> <span class="ora_keyword">REF</span> <span class="ora_keyword">CURSOR</span> ;
+cur		REFCUR1;
+
+
+<span class="ora_comment">-- Colonnes de la table --</span>
+  <span class="ora_keyword">CURSOR</span> C_COLTAB ( PC$Tab <span class="ora_keyword">IN</span> <span class="ora_keyword">VARCHAR2</span> ) <span class="ora_keyword">IS</span>
+  <span class="ora_keyword">SELECT</span>
+  	COLUMN_NAME,
+	DATA_TYPE
+  <span class="ora_keyword">FROM</span>
+  	USER_TAB_COLUMNS
+  <span class="ora_keyword">WHERE</span>
+  	TABLE_NAME = PC$Tab
+  <span class="ora_keyword">AND</span>
+  	DATA_TYPE <span class="ora_keyword">IN</span> ('<span class="ora_keyword">CHAR</span>','<span class="ora_keyword">VARCHAR2</span>','<span class="ora_keyword">NUMBER</span>','<span class="ora_keyword">DATE</span>','<span class="ora_keyword">FLOAT</span>')
+  ;
+
+LC$Separateur	<span class="ora_keyword">Varchar2</span>(2) := PC$Separateur ;
+LC$Requete	<span class="ora_keyword">Varchar2</span>(10000) ;
+LC$<span class="ora_keyword">Desc</span>		<span class="ora_keyword">Varchar2</span>(10000) ;
+LC$SQLW		<span class="ora_keyword">VARCHAR2</span>(10000):= '<span class="ora_keyword">SELECT</span> ';
+LC$Col		<span class="ora_keyword">VARCHAR2</span>(256);
+
+
+<span class="ora_comment">-----------------------------------------</span>
+<span class="ora_comment">-- Ouverture d'un fichier d'extraction --</span>
+<span class="ora_comment">-----------------------------------------</span>
+<span class="ora_keyword">FUNCTION</span> Ouvrir_fichier
+	(
+		PC$Dir <span class="ora_keyword">in</span> <span class="ora_keyword">Varchar2</span>,
+		PC$Nom_Fichier <span class="ora_keyword">in</span> <span class="ora_keyword">Varchar2</span>
+	) <span class="ora_keyword">RETURN</span> <span class="ora_keyword">UTL_FILE</span>.<span class="ora_keyword">FILE_TYPE</span>
+<span class="ora_keyword">IS</span>
+  Fichier	<span class="ora_keyword">UTL_FILE</span>.<span class="ora_keyword">FILE_TYPE</span> ;
+  LC$Msg	<span class="ora_keyword">Varchar2</span>(256);
+
+<span class="ora_keyword">Begin</span>
+
+  Fichier := <span class="ora_keyword">UTL_FILE</span>.<span class="ora_keyword">FOPEN</span>( PC$Dir, PC$Nom_Fichier, 'W', 32764 ) ;
+
+  <span class="ora_keyword">If</span> <span class="ora_keyword">not</span> <span class="ora_keyword">UTL_FILE</span>.<span class="ora_keyword">IS_OPEN</span>( Fichier ) <span class="ora_keyword">Then</span>
+	LC$Msg := 'Erreur ouverture du fichier (' || PC$Dir || ') ' || PC$Nom_Fichier ;
+  	<span class="ora_keyword"><span class="ora_keyword">RAISE_APPLICATION_ERROR</span></span>( -20100, LC$Msg ) ;
+  <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+
+  <span class="ora_keyword">Return</span>( Fichier ) ;
+
+<span class="ora_keyword">Exception</span>
+
+<span class="ora_keyword">When</span> <span class="ora_keyword">UTL_FILE</span>.<span class="ora_keyword">INVALID_PATH</span> <span class="ora_keyword">Then</span>
+	LC$Msg := PC$Dir || PC$Nom_Fichier || ' : ' || '<span class="ora_keyword">File</span> <span class="ora_keyword">location</span> <span class="ora_keyword">is</span> invalid.';
+	<span class="ora_keyword"><span class="ora_keyword">RAISE_APPLICATION_ERROR</span></span>( -20070, LC$Msg ) ;
+<span class="ora_keyword">When</span> <span class="ora_keyword">UTL_FILE</span>.<span class="ora_keyword">INVALID_MODE</span> <span class="ora_keyword">Then</span>
+	LC$Msg := PC$Dir || PC$Nom_Fichier || ' : ' || 'The open_mode parameter <span class="ora_keyword">in</span> <span class="ora_keyword">FOPEN</span> <span class="ora_keyword">is</span> invalid.';
+	<span class="ora_keyword"><span class="ora_keyword">RAISE_APPLICATION_ERROR</span></span>( -20070, LC$Msg ) ;
+<span class="ora_keyword">When</span> <span class="ora_keyword">UTL_FILE</span>.<span class="ora_keyword">INVALID_FILEHANDLE</span> <span class="ora_keyword">Then</span>
+	LC$Msg := PC$Dir || PC$Nom_Fichier || ' : ' || '<span class="ora_keyword">File</span> handle <span class="ora_keyword">is</span> invalid.';
+	<span class="ora_keyword"><span class="ora_keyword">RAISE_APPLICATION_ERROR</span></span>( -20070, LC$Msg ) ;
+<span class="ora_keyword">When</span> <span class="ora_keyword">UTL_FILE</span>.<span class="ora_keyword">INVALID_OPERATION</span>	<span class="ora_keyword">Then</span>
+	LC$Msg := PC$Dir || PC$Nom_Fichier || ' : ' || '<span class="ora_keyword">File</span> could <span class="ora_keyword">not</span> be opened <span class="ora_keyword">or</span> operated <span class="ora_keyword">on</span> <span class="ora_keyword">as</span> requested.';
+	<span class="ora_keyword"><span class="ora_keyword">RAISE_APPLICATION_ERROR</span></span>( -20070, LC$Msg ) ;
+<span class="ora_keyword">When</span> <span class="ora_keyword">UTL_FILE</span>.<span class="ora_keyword">READ_ERROR</span>	<span class="ora_keyword">Then</span>
+	LC$Msg := PC$Dir || PC$Nom_Fichier || ' : ' || 'Operating <span class="ora_keyword">system</span> error occurred during the <span class="ora_keyword">read</span> operation.';
+	<span class="ora_keyword"><span class="ora_keyword">RAISE_APPLICATION_ERROR</span></span>( -20070, LC$Msg ) ;
+<span class="ora_keyword">When</span> <span class="ora_keyword">UTL_FILE</span>.WRITE_ERROR <span class="ora_keyword">Then</span>
+	LC$Msg := PC$Dir || PC$Nom_Fichier || ' : ' || 'Operating <span class="ora_keyword">system</span> error occurred during the <span class="ora_keyword">write</span> operation.';
+	<span class="ora_keyword"><span class="ora_keyword">RAISE_APPLICATION_ERROR</span></span>( -20070, LC$Msg ) ;
+<span class="ora_keyword">When</span> <span class="ora_keyword">UTL_FILE</span>.<span class="ora_keyword">INTERNAL_ERROR</span> <span class="ora_keyword">then</span>
+	LC$Msg := PC$Dir || PC$Nom_Fichier || ' : ' || 'Unspecified PL/<span class="ora_keyword">SQL</span> error';
+	<span class="ora_keyword"><span class="ora_keyword">RAISE_APPLICATION_ERROR</span></span>( -20070, LC$Msg ) ;
+<span class="ora_comment">---------------------------------------------------------------</span>
+<span class="ora_comment">-- Les exceptions suivantes sont sp&eacute;cifiques &agrave; la version 9i --</span>
+<span class="ora_comment">-- A mettre en commentaire pour une version ant&eacute;rieure       --</span>
+<span class="ora_comment">---------------------------------------------------------------</span>
+<span class="ora_keyword">When</span> <span class="ora_keyword">UTL_FILE</span>.CHARSETMISMATCH <span class="ora_keyword">Then</span>
+	LC$Msg := PC$Dir || PC$Nom_Fichier || ' : ' || 'A <span class="ora_keyword">file</span> <span class="ora_keyword">is</span> opened <span class="ora_keyword">using</span> FOPEN_NCHAR,'
+	  || ' but later I/O operations <span class="ora_keyword">use</span> nonchar functions such <span class="ora_keyword">as</span> <span class="ora_keyword">PUTF</span> <span class="ora_keyword">or</span> <span class="ora_keyword">GET_LINE</span>.';
+	<span class="ora_keyword"><span class="ora_keyword">RAISE_APPLICATION_ERROR</span></span>( -20070, LC$Msg ) ;
+<span class="ora_keyword">When</span> <span class="ora_keyword">UTL_FILE</span>.FILE_OPEN <span class="ora_keyword">Then</span>
+	LC$Msg := PC$Dir || PC$Nom_Fichier || ' : ' || 'The requested operation failed because the <span class="ora_keyword">file</span> <span class="ora_keyword">is</span> <span class="ora_keyword">open</span>.';
+	<span class="ora_keyword"><span class="ora_keyword">RAISE_APPLICATION_ERROR</span></span>( -20070, LC$Msg ) ;
+<span class="ora_keyword">When</span> <span class="ora_keyword">UTL_FILE</span>.INVALID_MAXLINESIZE <span class="ora_keyword">Then</span>
+	LC$Msg := PC$Dir || PC$Nom_Fichier || ' : ' || 'The MAX_LINESIZE value <span class="ora_keyword">for</span> <span class="ora_keyword">FOPEN</span>() <span class="ora_keyword">is</span> invalid;'
+	  || ' it should be within the <span class="ora_keyword">range</span> 1 <span class="ora_keyword">to</span> 32767.';
+	<span class="ora_keyword"><span class="ora_keyword">RAISE_APPLICATION_ERROR</span></span>( -20070, LC$Msg ) ;
+<span class="ora_keyword">When</span> <span class="ora_keyword">UTL_FILE</span>.INVALID_FILENAME <span class="ora_keyword">Then</span>
+	LC$Msg := PC$Dir || PC$Nom_Fichier || ' : ' || 'The filename parameter <span class="ora_keyword">is</span> invalid.';
+	<span class="ora_keyword"><span class="ora_keyword">RAISE_APPLICATION_ERROR</span></span>( -20070, LC$Msg ) ;
+<span class="ora_keyword">When</span> <span class="ora_keyword">UTL_FILE</span>.ACCESS_DENIED <span class="ora_keyword">Then</span>
+	LC$Msg := PC$Dir || PC$Nom_Fichier || ' : ' || 'Permission <span class="ora_keyword">to</span> access <span class="ora_keyword">to</span> the <span class="ora_keyword">file</span> <span class="ora_keyword">location</span> <span class="ora_keyword">is</span> denied.';
+	<span class="ora_keyword"><span class="ora_keyword">RAISE_APPLICATION_ERROR</span></span>( -20070, LC$Msg ) ;
+<span class="ora_keyword">When</span> <span class="ora_keyword">UTL_FILE</span>.INVALID_OFFSET <span class="ora_keyword">Then</span>
+	LC$Msg := PC$Dir || PC$Nom_Fichier || ' : ' || 'The ABSOLUTE_OFFSET parameter <span class="ora_keyword">for</span> FSEEK() <span class="ora_keyword">is</span> invalid;'
+	  ||' it should be greater than 0 <span class="ora_keyword">and</span> <span class="ora_keyword">less than</span> the total <span class="ora_keyword">number</span> <span class="ora_keyword">of</span> bytes <span class="ora_keyword">in</span> the <span class="ora_keyword">file</span>.';
+	<span class="ora_keyword"><span class="ora_keyword">RAISE_APPLICATION_ERROR</span></span>( -20070, LC$Msg ) ;
+<span class="ora_keyword">When</span> <span class="ora_keyword">UTL_FILE</span>.DELETE_FAILED <span class="ora_keyword">Then</span>
+	LC$Msg := PC$Dir || PC$Nom_Fichier || ' : ' || 'The requested <span class="ora_keyword">file</span> <span class="ora_keyword">delete</span> operation failed.';
+	<span class="ora_keyword"><span class="ora_keyword">RAISE_APPLICATION_ERROR</span></span>( -20070, LC$Msg ) ;
+<span class="ora_keyword">When</span> <span class="ora_keyword">UTL_FILE</span>.RENAME_FAILED <span class="ora_keyword">Then</span>
+	LC$Msg := PC$Dir || PC$Nom_Fichier || ' : ' || 'The requested <span class="ora_keyword">file</span> <span class="ora_keyword">rename</span> operation failed.';
+	<span class="ora_keyword"><span class="ora_keyword">RAISE_APPLICATION_ERROR</span></span>( -20070, LC$Msg ) ;
+<span class="ora_comment">-----------------------------------------------------------------</span>
+<span class="ora_comment">-- Les exceptions pr&eacute;c&eacute;dentes sont sp&eacute;cifiques &agrave; la version 9i --</span>
+<span class="ora_comment">--     mettre en commentaire pour une version ant&eacute;rieure       --</span>
+<span class="ora_comment">-----------------------------------------------------------------</span>
+<span class="ora_keyword">When</span> <span class="ora_keyword">others</span> <span class="ora_keyword">Then</span>
+	LC$Msg := 'Erreur : ' || <span class="ora_keyword">To_char</span>( <span class="ora_keyword">SQLCODE</span> ) || ' sur ouverture du fichier ('
+	   || PC$Dir || ') ' || PC$Nom_Fichier ;
+	<span class="ora_keyword"><span class="ora_keyword">RAISE_APPLICATION_ERROR</span></span>( -20070, LC$Msg ) ;
+
+<span class="ora_keyword">End</span> Ouvrir_fichier ;
+
+<span class="ora_keyword">Begin</span>
+
+  <span class="ora_comment">-- Ouverture du fichier --</span>
+  LF$Fichier := Ouvrir_fichier( PC$Repertoire, PC$Fichier ) ;
+
+  <span class="ora_comment">-- Affichage des entetes de colonne ? --</span>
+  <span class="ora_keyword">If</span> <span class="ora_keyword">Upper</span>(PC$Entetes) = 'O' <span class="ora_keyword">Then</span>
+	LI$I := 1 ;
+	<span class="ora_keyword">For</span> COLS <span class="ora_keyword">IN</span> C_COLTAB( PC$<span class="ora_keyword">Table</span> ) <span class="ora_keyword">Loop</span>
+	   <span class="ora_keyword">If</span> LI$I = 1 <span class="ora_keyword">Then</span>
+	      LC$Ligne := LC$Ligne || COLS.COLUMN_NAME ;
+	   <span class="ora_keyword">Else</span>
+	      LC$Ligne := LC$Ligne || LC$Separateur || COLS.COLUMN_NAME ;
+	   <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+	   LI$I := LI$I + 1 ;
+	<span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+	<span class="ora_comment">-- Ecriture ligne entetes --</span>
+	<span class="ora_keyword">UTL_FILE</span>.<span class="ora_keyword">PUT_LINE</span>( LF$Fichier, LC$Ligne ) ;
+  <span class="ora_keyword">ElsIf</span> <span class="ora_keyword">Upper</span>(PC$Entetes) = 'I' <span class="ora_keyword">Then</span>
+    LC$Separateur := ',' ;
+    LC$<span class="ora_keyword">Desc</span> := '<span class="ora_keyword">INSERT</span> <span class="ora_keyword">INTO</span> ' || PC$<span class="ora_keyword">Table</span> || ' (' ;
+    LI$I := 1 ;
+    <span class="ora_keyword">For</span> COLS <span class="ora_keyword">IN</span> C_COLTAB( PC$<span class="ora_keyword">Table</span> ) <span class="ora_keyword">Loop</span>
+      <span class="ora_keyword">If</span> LI$I = 1 <span class="ora_keyword">Then</span>
+	     LC$<span class="ora_keyword">Desc</span> := LC$<span class="ora_keyword">Desc</span> || COLS.COLUMN_NAME ;
+      <span class="ora_keyword">Else</span>
+	     LC$<span class="ora_keyword">Desc</span> := LC$<span class="ora_keyword">Desc</span> || LC$Separateur || COLS.COLUMN_NAME ;
+      <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+      LI$I := LI$I + 1 ;
+    <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+    LC$<span class="ora_keyword">Desc</span> := LC$<span class="ora_keyword">Desc</span> || ' ) <span class="ora_keyword">VALUES</span> (' ;
+  <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+
+  <span class="ora_comment">-- Construction de la requete --</span>
+  LI$I := 1 ;
+
+  <span class="ora_keyword">FOR</span> COLS <span class="ora_keyword">IN</span> C_COLTAB( PC$<span class="ora_keyword">Table</span> ) <span class="ora_keyword">LOOP</span>
+    <span class="ora_keyword">IF</span> LI$I &gt; 1 <span class="ora_keyword">THEN</span>
+       LC$SQLW := LC$SQLW || '||' ;
+    <span class="ora_keyword">END</span> <span class="ora_keyword">IF</span> ;
+
+    <span class="ora_keyword">If</span> COLS.DATA_TYPE <span class="ora_keyword">IN</span> ('<span class="ora_keyword">NUMBER</span>','<span class="ora_keyword">FLOAT</span>') <span class="ora_keyword">Then</span>
+	    LC$Col := '<span class="ora_keyword">Decode</span>(' || COLS.COLUMN_NAME || ',<span class="ora_keyword">NULL</span>, ''<span class="ora_keyword">NULL</span>'',<span class="ora_keyword">To_char</span>(<span class="ora_ch">"'
+	       || COLS.COLUMN_NAME || '"</span>))' ;
+    <span class="ora_keyword">ElsIf</span> COLS.DATA_TYPE = '<span class="ora_keyword">DATE</span>' <span class="ora_keyword">Then</span>
+       <span class="ora_keyword">If</span> <span class="ora_keyword">Upper</span>(PC$Entetes) = 'I' <span class="ora_keyword">Then</span>
+           LC$Col := '<span class="ora_keyword">Decode</span>(' || COLS.COLUMN_NAME || ',<span class="ora_keyword">NULL</span>,''<span class="ora_keyword">NULL</span>'',''<span class="ora_keyword">to_date</span>(''''''||'
+              || '<span class="ora_keyword">To_char</span>(<span class="ora_ch">"' || COLS.COLUMN_NAME || '"</span>,'|| LC$DateFMT ||')' || '||'''''','''|| LC$DateFMT||''')'')' ;
+       <span class="ora_keyword">Else</span>
+	       LC$Col := '<span class="ora_keyword">To_char</span>(<span class="ora_ch">"'|| COLS.COLUMN_NAME || '"</span>,'|| LC$DateFMT ||')' ;
+       <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+    <span class="ora_keyword">Else</span>
+       <span class="ora_keyword">If</span> <span class="ora_keyword">Upper</span>(PC$Entetes) = 'I' <span class="ora_keyword">Then</span>
+	      LC$Col := '<span class="ora_keyword">Decode</span>(' || COLS.COLUMN_NAME || ',<span class="ora_keyword">NULL</span>, ''<span class="ora_keyword">NULL</span>'',' || ''''''''''
+	       || '|| <span class="ora_keyword">REPLACE</span>(<span class="ora_ch">"'|| COLS.COLUMN_NAME || '"</span>,<span class="ora_keyword">CHR</span>(39),<span class="ora_keyword">CHR</span>(39)||<span class="ora_keyword">CHR</span>(39))' || '||' || ''''''''')' ;
+       <span class="ora_keyword">Else</span>
+	      LC$Col := '<span class="ora_ch">"'|| COLS.COLUMN_NAME || '"</span>' ;
+       <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+    <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+
+    <span class="ora_keyword">IF</span> LI$I = 1 <span class="ora_keyword">THEN</span>
+       LC$SQLW := LC$SQLW || LC$Col ;
+    <span class="ora_keyword">ELSE</span>
+       LC$SQLW := LC$SQLW || '''' || LC$Separateur || '''' || '||' || LC$Col  ;
+    <span class="ora_keyword">END</span> <span class="ora_keyword">IF</span> ;
+    LI$I := LI$I + 1 ;
+  <span class="ora_keyword">END</span> <span class="ora_keyword">LOOP</span> ;
+
+  LC$Requete := LC$SQLW || ' <span class="ora_keyword">FROM</span> ' || PC$<span class="ora_keyword">Table</span> ;
+
+  <span class="ora_keyword">If</span> PC$<span class="ora_keyword">Where</span> <span class="ora_keyword">is</span> <span class="ora_keyword">not</span> <span class="ora_keyword">null</span> <span class="ora_keyword">Then</span>
+    <span class="ora_comment">-- ajout de la clause WHERE --</span>
+    LC$Requete := LC$Requete || ' <span class="ora_keyword">WHERE</span> ' || PC$<span class="ora_keyword">Where</span> ;
+  <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+  <span class="ora_keyword">If</span> PC$<span class="ora_keyword">Order</span> <span class="ora_keyword">is</span> <span class="ora_keyword">not</span> <span class="ora_keyword">null</span> <span class="ora_keyword">Then</span>
+    <span class="ora_comment">-- ajout de la clause ORDER BY --</span>
+    LC$Requete := LC$Requete || ' <span class="ora_keyword">ORDER</span> <span class="ora_keyword">BY</span> ' || PC$<span class="ora_keyword">Order</span> ;
+  <span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+
+  F_TRACE( LC$Requete, 'T' ) ;
+  <span class="ora_comment">-- Extraction des lignes --</span>
+  <span class="ora_keyword">Open</span> cur <span class="ora_keyword">For</span> LC$Requete ;
+  <span class="ora_keyword">Loop</span>
+	<span class="ora_keyword">Fetch</span> cur <span class="ora_keyword">Into</span> LC$Ligne ;
+	<span class="ora_keyword">Exit</span> <span class="ora_keyword">when</span> cur%<span class="ora_keyword">NOTFOUND</span> ;
+	<span class="ora_comment">-- Ecriture du fichier de sortie --</span>
+	<span class="ora_keyword">If</span> <span class="ora_keyword">Upper</span>(PC$Entetes) = 'I' <span class="ora_keyword">Then</span>
+	  <span class="ora_keyword">UTL_FILE</span>.<span class="ora_keyword">PUT_LINE</span>( LF$Fichier, LC$<span class="ora_keyword">Desc</span> || LC$Ligne || ' );' ) ;
+	<span class="ora_keyword">Else</span>
+	  <span class="ora_keyword">UTL_FILE</span>.<span class="ora_keyword">PUT_LINE</span>( LF$Fichier, LC$Ligne ) ;
+	<span class="ora_keyword">End</span> <span class="ora_keyword">if</span> ;
+  <span class="ora_keyword">End</span> <span class="ora_keyword">loop</span> ;
+
+  <span class="ora_keyword">Close</span> cur ;
+
+  <span class="ora_comment">-- Fermeture fichier --</span>
+  <span class="ora_keyword">UTL_FILE</span>.<span class="ora_keyword">FCLOSE</span>( LF$Fichier ) ;
+
+<span class="ora_keyword">End</span> ;
+/</div></pre><div class="paragraph">
+Nous allons maintenant extraire les lignes de la table EMP dans le fichier EMP.TXT
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt; <span class="ora_keyword"><span class="ora_keyword">execute</span></span> extraction_table( 'EMP','EMP.TXT','FICHIERS_OUT' ) ;
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+dont voici le contenu<br /><br />
+EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO<br />
+7369,SMITH,CLERK,7902,18/12/1980,880,,20<br />
+7499,ALLEN,SALESMAN,7698,21/02/1981,1936,300,30<br />
+7521,WARD,SALESMAN,7698,23/02/1981,1375,500,30<br />
+7566,JONES,MANAGER,7839,03/04/1981,3273,,20<br />
+7654,MARTIN,SALESMAN,7698,29/09/1981,1375,1400,30<br />
+7698,BLAKE,MANAGER,7839,02/05/1981,3135,,30<br />
+7782,CLARK,MANAGER,7839,10/06/1981,2695,,10<br />
+7788,SCOTT,ANALYST,7566,20/04/1987,3300,,20<br />
+7839,KING,PRESIDENT,,18/11/1981,5500,,10<br />
+7844,TURNER,SALESMAN,7698,09/09/1981,1650,0,30<br />
+7876,ADAMS,CLERK,7788,24/05/1987,1210,,20<br />
+7900,JAMES,CLERK,7698,04/12/1981,1045,,30<br />
+7902,FORD,ANALYST,7566,04/12/1981,3300,,20<br />
+7934,MILLER,CLERK,7782,24/01/1982,1430,,10<br />
+9991,Dupontont,CLERK,,,,,<br />
+9992,Duboudin,CLERK,,,,,<br />
+9994,Schmoll,CLERK,,,2500,,20
+<br /><br /><br />
+Maintenant, utilisons cette proc&eacute;dure pour g&eacute;n&eacute;rer les ordres INSERT pour les employ&eacute;s ayant le job CLERK dans un fichier EMP.INS
+</div><br><pre class="code"><div class="ora_code"><span class="ora_keyword">SQL</span>&gt;  <span class="ora_keyword"><span class="ora_keyword">execute</span></span> extraction_table( 'EMP','EMP.INS','FICHIERS_OUT', ',', 'I', 'JOB = ''CLERK''' ) ;
+
+Proc&eacute;dure PL/<span class="ora_keyword">SQL</span> termin&eacute;e avec succ&egrave;s.</div></pre><div class="paragraph">
+dont voici le contenu<br /><br />
+INSERT INTO EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO ) VALUES (7369,'SMITH','CLERK',7902,to_date('18/12/1980','DD/MM/YYYY'),880,NULL,20 );<br />
+INSERT INTO EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO ) VALUES (7876,'ADAMS','CLERK',7788,to_date('24/05/1987','DD/MM/YYYY'),1210,NULL,20 );<br />
+INSERT INTO EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO ) VALUES (7900,'JAMES','CLERK',7698,to_date('04/12/1981','DD/MM/YYYY'),1045,NULL,30 );<br />
+INSERT INTO EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO ) VALUES (7934,'MILLER','CLERK',7782,to_date('24/01/1982','DD/MM/YYYY'),1430,NULL,10 );<br />
+INSERT INTO EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO ) VALUES (9991,'Dupontont','CLERK',NULL,NULL,NULL,NULL,NULL );<br />
+INSERT INTO EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO ) VALUES (9992,'Duboudin','CLERK',NULL,NULL,NULL,NULL,NULL );<br />
+INSERT INTO EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO ) VALUES (9994,'Schmoll','CLERK',NULL,NULL,2500,NULL,20 );<br />
+</div><br>	
+						
+	
+	
+<hr><div class="barreNavigation"> [ <a class="barreNavigationTexte" href="Chap7.html">Précédent</a> ]  [ <a class="barreNavigationTexte" href="sommaire.html">Sommaire</a> ]  [ <a class="barreNavigationTexte" href="Chap9.html">Suivant</a> ] </div><hr><p class="licence">Copyright &copy;2004&nbsp;SheikYerbouti.
+            Aucune reproduction, même partielle, ne peut être faite
+			de ce site et de l'ensemble de son contenu : textes, documents, images, etc
+            sans l'autorisation expresse de l'auteur. Sinon vous encourez selon la loi jusqu'à 3 ans de prison et jusqu'à 300 000 E
+			de dommages et intérets. Cette page est déposée à la <a href="http://www.sacd.fr/" target="_blank">SACD</a>.</p>
+       											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			<table width="100%" cellpadding="4" class="cachee">
+				<tr bgcolor="#DDEEFF">
+					<td align="center" class="titrepied">
+			  Vos questions techniques : <b><a href="http://www.developpez.net/forums/" target="_blank">forum d'entraide Accueil</a></b> - Publiez vos articles, tutoriels et cours<br />
+			  et rejoignez-nous dans l'&eacute;quipe de r&eacute;daction du club d'entraide des d&eacute;veloppeurs francophones <br /> <a href="http://club.developpez.com/contacts/">Nous contacter</a>
+	
+			  - Copyright 2000..2005 www.developpez.com
+					</td>
+					<td align="center">
+          
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
+
+	
