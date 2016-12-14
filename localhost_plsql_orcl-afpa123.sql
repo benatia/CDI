@@ -1,4 +1,6 @@
 
+
+
 create user plsql identified by 1234;
 grant connect to plsql;
 grant resource to plsql;
@@ -142,7 +144,31 @@ DECLARE
 BEGIN
   V_NOMBRE1 :=&V_NOMBRE1;
   V_NOMBRE2 :=&V_NOMBRE2;
-   DBMS_OUTPUT.PUT_LINE('LA MULTIPLICATION' ||(V_NOMBRE1*V_NOMBRE2));
+   DBMS_OUTPUT.PUT_LINE('LA MULTIPLICATION   ' ||(V_NOMBRE1*V_NOMBRE2));
  
 END;
+/
 
+------------------------------Exercice 1.3---------------------------------------
+--Transformez le bloc anonyme PL/SQL en une procédure sans paramètre. Exécutez la
+--procédure à l’aide d’un bloc anonyme.
+
+CREATE OR REPLACE PROCEDURE ma_procedure1
+  IS
+    V_NOMBRE1 NUMBER ;
+    V_NOMBRE2 NUMBER ;
+  BEGIN
+    V_NOMBRE1 :=&V_NOMBRE1;
+    V_NOMBRE2 :=&V_NOMBRE2;
+     DBMS_OUTPUT.PUT_LINE('LA MULTIPLICATION   ' ||(V_NOMBRE1*V_NOMBRE2));
+   
+END;
+/
+
+
+DECLARE 
+BEGIN 
+ma_procedure1
+END;
+
+EXECUTE maprocedure1;
