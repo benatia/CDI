@@ -90,7 +90,7 @@ desc avion;
 desc voyage;
 desc resultat;
 
--------------------------Contenu des tables utilis�es----------
+-------------------------Contenu des tables utilisées----------
 select * from aeroport ;
 select * from vol;
 select * from avion;
