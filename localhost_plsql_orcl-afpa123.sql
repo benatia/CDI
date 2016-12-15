@@ -144,7 +144,7 @@ DECLARE
 BEGIN
   V_NOMBRE1 :=&V_NOMBRE1;
   V_NOMBRE2 :=&V_NOMBRE2;
-   DBMS_OUTPUT.PUT_LINE('LA MULTIPLICATION   ' ||(V_NOMBRE1*V_NOMBRE2));
+  DBMS_OUTPUT.PUT_LINE('LA MULTIPLICATION   ' ||(V_NOMBRE1*V_NOMBRE2));
  
 END;
 /
@@ -161,14 +161,104 @@ CREATE OR REPLACE PROCEDURE ma_procedure1
     V_NOMBRE1 :=&V_NOMBRE1;
     V_NOMBRE2 :=&V_NOMBRE2;
      DBMS_OUTPUT.PUT_LINE('LA MULTIPLICATION   ' ||(V_NOMBRE1*V_NOMBRE2));
-   
 END;
-/
 
+
+
+
+BEGIN 
+ma_procedure1;
+END;
+
+EXECUTE ma_procedure1;
+
+
+--------------------------Exercice 1.4----------------------------------------------------
+--Transformez la procédure sans paramètre en une procédure avec 2 
+--paramètres en entrée (multiplicande et multiplicateur). Exécutez la procédure à l’aide d’un bloc anonyme.
+
+
+CREATE OR REPLACE PROCEDURE ma_procedure2(multiplicande NUMBER ,multiplicateur NUMBER )
+  IS
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('LA MULTIPLICATION   ' ||(multiplicande*multiplicateur));
+END;
+
+
+BEGIN 
+ma_procedure2(6 ,6 );
+END;
+
+-------------------------------------------Exercice 1.5----------------------------------
+--Transformez la procédure avec 2 paramètres en entrée (multiplicande et multiplicateur) en une procédure avec 2 paramètres en entrée 
+--(multiplicande et multiplicateur) et 1 paramètre en sortie (résultat de la multiplication). Exécutez la procédure à l’aide d’un bloc anonyme.
+
+
+CREATE OR REPLACE PROCEDURE ma_procedure3(
+multiplicande IN INTEGER ,
+multiplicateur IN INTEGER,
+resultat  OUT INTEGER)
+ IS 
+BEGIN
+resultat:=multiplicande*multiplicateur;
+DBMS_OUTPUT.PUT_LINE(resultat);
+END;
+--------------------------execution-----------------------------
 
 DECLARE 
+multiplicande INTEGER ; multiplicateur INTEGER; resultat INTEGER;
 BEGIN 
-ma_procedure1
+multiplicande:=8;
+multiplicateur :=8;
+resultat := multiplicande*multiplicateur;
+ma_procedure3(multiplicande,multiplicateur,resultat);
 END;
 
-EXECUTE maprocedure1;
+--------------------------------------Exercice 1.6------------------------------
+--Transformez la procédure précédente en une fonction avec 2 paramètres en entrée 
+--(multiplicande et multiplicateur) et une valeur de retour (résultat de la multiplication).
+--Exécutez la fonction à l’aide d’un bloc anonyme.
+
+CREATE OR REPLACE FUNCTION MA_FONCTION1(
+              multiplicande INTEGER ,
+              multiplicateur INTEGER
+              )RETURN INTEGER
+ IS 
+ resultat INTEGER;
+BEGIN
+    resultat := (multiplicande*multiplicateur);
+    RETURN (resultat);
+END;
+
+
+----------------------------Exécutez la fonction à l’aide d’un bloc anonyme.------------
+
+
+BEGIN
+DBMS_OUTPUT.PUT_LINE(MA_FONCTION1(5,9));
+END;
+
+--------------------------------------------Exercice 2------------------------------
+------------------------------------------------------------------------------------
+
+DECLARE 
+v_num_voy CHAR(6);
+v_typ_avi VARCHAR2(25);
+BEGIN
+v_num_voy := &VALEUR;
+
+SELECT TYP_AVI  INTO v_typ_avi FROM AVION INNER JOIN VOYAGE 
+ON AVION.NUM_AVI=VOYAGE.NUM_AVI
+ AND NUM_VOY LIKE v_num_voy;
+      
+       CASE v_typ_avi
+             WHEN  v_typ_avi = 'CONCORDE'
+             THEN   UPDATE VOYAGE SET PLA_RES =PLA_RES +50;
+    
+             WHEN  v_typ_avi LIKE 'AIRBUS'
+             THEN   UPDATE VOYAGE SET PLA_RES =PLA_RES +100;
+              
+              ELSE
+              UPDATE VOYAGE SET PLA_RES =PLA_RES +100;
+        END CASE;
+END;
