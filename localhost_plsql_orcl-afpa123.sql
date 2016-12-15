@@ -243,17 +243,16 @@ END;
 
 DECLARE 
 v_num_voy CHAR(6);
-v_typ_avi VARCHAR2(25);
+v_typ_avi CHAR(10 BYTE);
 BEGIN
-v_num_voy := &VALEUR;
+v_num_voy := '&VALEUR';
 
 SELECT TYP_AVI  INTO v_typ_avi FROM AVION INNER JOIN VOYAGE 
 ON AVION.NUM_AVI=VOYAGE.NUM_AVI
  AND NUM_VOY LIKE v_num_voy;
-      
-       CASE v_typ_avi
-             WHEN  v_typ_avi = 'CONCORDE'
-             THEN   UPDATE VOYAGE SET PLA_RES =PLA_RES +50;
+      CASE (v_typ_avi)
+             WHEN  v_typ_avi LIKE 'CONCORDE'
+             THEN   UPDATE VOYAGE SET PLA_RES = PLA_RES +50;
     
              WHEN  v_typ_avi LIKE 'AIRBUS'
              THEN   UPDATE VOYAGE SET PLA_RES =PLA_RES +100;
