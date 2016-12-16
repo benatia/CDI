@@ -250,8 +250,8 @@ v_num_voy := '&VALEUR';
 SELECT TYP_AVI  INTO v_typ_avi FROM AVION INNER JOIN VOYAGE 
 ON AVION.NUM_AVI=VOYAGE.NUM_AVI
  AND NUM_VOY LIKE v_num_voy;
-      CASE (v_typ_avi)
-             WHEN  v_typ_avi LIKE 'CONCORDE'
+      CASE (v_typ_av :=)
+             WHEN  'CONCORDE'
              THEN   UPDATE VOYAGE SET PLA_RES = PLA_RES +50;
     
              WHEN  v_typ_avi LIKE 'AIRBUS'
