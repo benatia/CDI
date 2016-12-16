@@ -6,6 +6,11 @@ grant connect to plsql;
 grant resource to plsql;
 
 DROP TABLE RESULTAT;
+DROP TABLE AEROPORT;
+DROP TABLE VOL;
+DROP TABLE AVION;
+DROP TABLE VOYAGE;
+
 
 CREATE TABLE "AEROPORT"
 (	"COD_AER" CHAR(3) NOT NULL ENABLE, 
@@ -44,7 +49,7 @@ CREATE TABLE "VOYAGE"
 
 CREATE TABLE "RESULTAT"
 (	"NO" NUMBER(2), 
-	"LIBELLE" VARCHAR2(60), 
+	"LIBELLE" VARCHAR2(100), 
 	"VALEUR" NUMBER(9,2)
 );
 
@@ -90,7 +95,7 @@ desc avion;
 desc voyage;
 desc resultat;
 
--------------------------Contenu des tables utilisï¿½es----------
+-------------------------Contenu des tables utilisÃ©es----------
 select * from aeroport ;
 select * from vol;
 select * from avion;
@@ -174,8 +179,8 @@ EXECUTE ma_procedure1;
 
 
 --------------------------Exercice 1.4----------------------------------------------------
---Transformez la procédure sans paramètre en une procédure avec 2 
---paramètres en entrée (multiplicande et multiplicateur). Exécutez la procédure à l’aide d’un bloc anonyme.
+--Transformez la procï¿½dure sans paramï¿½tre en une procï¿½dure avec 2 
+--paramï¿½tres en entrï¿½e (multiplicande et multiplicateur). Exï¿½cutez la procï¿½dure ï¿½ lï¿½aide dï¿½un bloc anonyme.
 
 
 CREATE OR REPLACE PROCEDURE ma_procedure2(multiplicande NUMBER ,multiplicateur NUMBER )
@@ -190,8 +195,8 @@ ma_procedure2(6 ,6 );
 END;
 
 -------------------------------------------Exercice 1.5----------------------------------
---Transformez la procédure avec 2 paramètres en entrée (multiplicande et multiplicateur) en une procédure avec 2 paramètres en entrée 
---(multiplicande et multiplicateur) et 1 paramètre en sortie (résultat de la multiplication). Exécutez la procédure à l’aide d’un bloc anonyme.
+--Transformez la procï¿½dure avec 2 paramï¿½tres en entrï¿½e (multiplicande et multiplicateur) en une procï¿½dure avec 2 paramï¿½tres en entrï¿½e 
+--(multiplicande et multiplicateur) et 1 paramï¿½tre en sortie (rï¿½sultat de la multiplication). Exï¿½cutez la procï¿½dure ï¿½ lï¿½aide dï¿½un bloc anonyme.
 
 
 CREATE OR REPLACE PROCEDURE ma_procedure3(
@@ -215,9 +220,9 @@ ma_procedure3(multiplicande,multiplicateur,resultat);
 END;
 
 --------------------------------------Exercice 1.6------------------------------
---Transformez la procédure précédente en une fonction avec 2 paramètres en entrée 
---(multiplicande et multiplicateur) et une valeur de retour (résultat de la multiplication).
---Exécutez la fonction à l’aide d’un bloc anonyme.
+--Transformez la procï¿½dure prï¿½cï¿½dente en une fonction avec 2 paramï¿½tres en entrï¿½e 
+--(multiplicande et multiplicateur) et une valeur de retour (rï¿½sultat de la multiplication).
+--Exï¿½cutez la fonction ï¿½ lï¿½aide dï¿½un bloc anonyme.
 
 CREATE OR REPLACE FUNCTION MA_FONCTION1(
               multiplicande INTEGER ,
@@ -231,7 +236,7 @@ BEGIN
 END;
 
 
-----------------------------Exécutez la fonction à l’aide d’un bloc anonyme.------------
+----------------------------Exï¿½cutez la fonction ï¿½ lï¿½aide dï¿½un bloc anonyme.------------
 
 
 BEGIN
@@ -240,15 +245,17 @@ END;
 
 --------------------------------------------Exercice 2------------------------------
 ------------------------------------------------------------------------------------
-
 DECLARE 
 v_num_voy CHAR(6);
-v_typ_avi CHAR(10 BYTE);
+v_typ_avi CHAR(10);
+v_num_avi CHAR (5);
 BEGIN
+---------------SAISIR  LE CODE ENTRE PAR L'UTILISATEUR --------------------
 v_num_voy := '&VALEUR';
-
-SELECT TYP_AVI  INTO v_typ_avi FROM AVION INNER JOIN VOYAGE 
+--------------STOCKER LE RESULTAT DE LA REQ DANS LA VARIABLE ---------
+SELECT TYP_AVI INTO v_typ_avi  FROM AVION INNER JOIN VOYAGE 
 ON AVION.NUM_AVI=VOYAGE.NUM_AVI
+<<<<<<< HEAD
  AND NUM_VOY LIKE v_num_voy;
       CASE (v_typ_av :=)
              WHEN  'CONCORDE'
@@ -256,8 +263,38 @@ ON AVION.NUM_AVI=VOYAGE.NUM_AVI
     
              WHEN  v_typ_avi LIKE 'AIRBUS'
              THEN   UPDATE VOYAGE SET PLA_RES =PLA_RES +100;
+=======
+WHERE  NUM_VOY LIKE v_num_voy;
+--------------STOCKER LE RESULTAT DE LA REQ DANS LA VARIABLE ---------
+SELECT NUM_AVI INTO v_num_avi FROM AVION 
+WHERE TYP_AVI LIKE v_typ_avi;
+-------------------------ETUDE CAS PAR CAS TYPE D'AVION ---------------
+   CASE V_TYP_AVI
+         WHEN   'CONCORDE'
+         THEN
+                UPDATE VOYAGE SET PLA_RES = PLA_RES +50
+                WHERE NUM_AVI=(v_num_avI);
+         
+              INSERT INTO RESULTAT VALUES (1,'VOYAGE N  '|| v_num_voy||' AUGMENTE DE 50 PLACES',
+              (SELECT PLA_RES FROM VOYAGE WHERE NUM_VOY LIKE v_num_voy));
+          
+          WHEN 'AIRBUS'
+          THEN   
+                 UPDATE VOYAGE SET PLA_RES =PLA_RES +100
+                 WHERE NUM_AVI=(v_num_avI);
+          
+                 INSERT INTO RESULTAT VALUES (1,'VOYAGE N '||v_num_voy||' AUGMENTE DE 100 PLACES',
+                (SELECT PLA_RES FROM VOYAGE WHERE NUM_VOY LIKE v_num_voy));
+          ELSE  
+               UPDATE VOYAGE SET PLA_RES =PLA_RES +100
+               WHERE NUM_AVI=(v_num_avI);
+>>>>>>> 6d4694000dc05a6853f5b8055cae7c27d08751fb
               
-              ELSE
-              UPDATE VOYAGE SET PLA_RES =PLA_RES +100;
-        END CASE;
+                INSERT INTO RESULTAT VALUES (1,'VOYAGE N '||v_num_voy||' AVION '||v_typ_avi ||
+                'AUGMENTE DE 100 PLACES',(SELECT PLA_RES FROM VOYAGE WHERE NUM_VOY LIKE v_num_voy));
+    END CASE;
+------------------------------EXECEPTION  EN CAS D'UN CODE DE VOYAGE INCORRECTE-------------------
+EXCEPTION
+     WHEN others THEN
+      dbms_output.put_line('erreur');
 END;
