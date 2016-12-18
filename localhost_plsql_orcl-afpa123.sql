@@ -255,15 +255,14 @@ v_num_voy := '&VALEUR';
 --------------STOCKER LE RESULTAT DE LA REQ DANS LA VARIABLE ---------
 SELECT TYP_AVI INTO v_typ_avi  FROM AVION INNER JOIN VOYAGE 
 ON AVION.NUM_AVI=VOYAGE.NUM_AVI
-<<<<<<< HEAD
+
  AND NUM_VOY LIKE v_num_voy;
       CASE (v_typ_av :=)
              WHEN  'CONCORDE'
              THEN   UPDATE VOYAGE SET PLA_RES = PLA_RES +50;
     
              WHEN  v_typ_avi LIKE 'AIRBUS'
-             THEN   UPDATE VOYAGE SET PLA_RES =PLA_RES +100;
-=======
+             THEN   UPDATE VOYAGE SET PLA_RES =PLA_RES +1
 WHERE  NUM_VOY LIKE v_num_voy;
 --------------STOCKER LE RESULTAT DE LA REQ DANS LA VARIABLE ---------
 SELECT NUM_AVI INTO v_num_avi FROM AVION 
@@ -288,7 +287,7 @@ WHERE TYP_AVI LIKE v_typ_avi;
           ELSE  
                UPDATE VOYAGE SET PLA_RES =PLA_RES +100
                WHERE NUM_AVI=(v_num_avI);
->>>>>>> 6d4694000dc05a6853f5b8055cae7c27d08751fb
+
               
                 INSERT INTO RESULTAT VALUES (1,'VOYAGE N '||v_num_voy||' AVION '||v_typ_avi ||
                 'AUGMENTE DE 100 PLACES',(SELECT PLA_RES FROM VOYAGE WHERE NUM_VOY LIKE v_num_voy));
@@ -298,3 +297,152 @@ EXCEPTION
      WHEN others THEN
       dbms_output.put_line('erreur');
 END;
+
+
+
+----------------------------------------------------------------------------------------------------------
+----------------------------------------curseurs----------------------------------------------------
+
+DECLARE  CURSOR C_MACURSOR 
+IS 
+SELECT NUM_VOY,DAT_VOY FROM VOYAGE ;
+V_LIGNE  C_MACURSOR%ROWTYPE;
+VI INTEGER;
+BEGIN
+VI:=12;
+    OPEN C_MACURSOR;
+        LOOP 
+          FETCH C_MACURSOR INTO V_LIGNE ;
+          EXIT WHEN C_MACURSOR%NOTFOUND;
+         DBMS_OUTPUT.PUT_LINE(V_LIGNE.NUM_VOY||'   '||V_LIGNE.DAT_VOY);
+          --DBMS_OUTPUT.PUT_LINE(V_LIGNE.NUM_VOY||'   '||V_LIGNE.DAT_VOY);
+          VI:=VI+1;
+        END LOOP;
+   CLOSE C_MACURSOR;
+    DBMS_OUTPUT.PUT_LINE(VI);
+END;
+
+------------------------------------------------------------------------------------
+----------------------CURSOR AVEC BOCLE FOR--------------------------
+
+
+DECLARE  CURSOR C_MACURSOR1
+IS 
+SELECT NUM_VOY,DAT_VOY FROM VOYAGE ;
+
+VI INTEGER;
+BEGIN
+    V:3;
+    FOR  LINE IN  C_MACURSOR1    LOOP
+      DBMS_OUTPUT.PUT_LINE(LINE.NUM_VOY||'   '||LINE.DAT_VOY);
+      DBMS_OUTPUT.PUT_LINE(%ROWCOUNT);
+    END LOOP;
+END;
+
+
+---------------------------------------------------------------------------------------
+-----------------------------EXERCICE  3--------------------------------------------
+
+-----------------------------------------------------------------------------------------
+-------------------------------GESTION DES LINE A AFFCHER--------------------------------
+DECLARE  CURSOR C_MACURSOR1
+IS 
+SELECT NUM_VOY,DAT_VOY FROM VOYAGE ;
+
+VI INTEGER;
+BEGIN
+    VI:=&NUMERO_LINE;
+    FOR  LINE IN  C_MACURSOR1    LOOP
+     -- DBMS_OUTPUT.PUT_LINE(LINE.NUM_VOY||'   '||LINE.DAT_VOY);
+        IF (C_MACURSOR1%ROWCOUNT= VI OR C_MACURSOR1%ROWCOUNT= (VI+1)) THEN
+              DBMS_OUTPUT.PUT_LINE(LINE.NUM_VOY||'   '||LINE.DAT_VOY);
+        END IF;
+    END LOOP;
+EXCEPTION
+WHEN OTHERS THEN
+DBMS_OUTPUT.PUT_LINE('SAISI INCORRECT');
+
+END;
+
+------------------------------------------------------------------------------------------------
+-------------------------------EXERCICE 4------------------------------------------------------
+
+----------------------ETAPE 1------------------------------------------------------------
+ DECLARE 
+ compteur int;
+ 
+ TYPE type_aeroport IS TABLE OF AEROPORT%ROWTYPE INDEX BY BINARY_INTEGER ;
+  tableau_aeroport type_aeroport;
+ CURSOR C_MACURSOR IS
+ SELECT * FROM  AEROPORT;
+ BEGIN 
+ compteur:=0;
+ 
+      FOR  LINE IN  C_MACURSOR    LOOP
+          tableau_aeroport(compteur) :=LINE;
+          DBMS_OUTPUT.PUT_LINE (tableau_aeroport(compteur).lib_aer||' '
+          ||tableau_aeroport(compteur).vil_aer);
+      END LOOP;
+      
+--      j := tableau_aeroport.lib_aer.FIRST;
+--      WHILE i IS NOT NULL LOOP
+--      DBMS_OUTPUT.PUT_LINE (tableau_aeroport(compteur).lib_aer||' '
+--      ||tableau_aeroport(compteur).vil_aer);
+--       i := lib_aer.NEXT(i);
+--     END LOOP;
+END;
+
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+---------------------EXERCICE 5--------------------------------------------------
+--Codez un bloc anonyme PL/SQL qui permet de stocker dans un tableau les numéros de
+--voyage, de vol, le type d’avion et l’aéroport de départ.
+--Affichez dans un second temps le contenu du tableau.
+
+
+ DECLARE 
+ compteur int;
+ 
+ 
+ CURSOR C_MACURSOR IS
+ SELECT num_voy,num_vol,typ_avion FROM  AEROPORT;
+ TYPE type_aeroport IS TABLE OF AEROPORT%ROWTYPE INDEX BY BINARY_INTEGER ;
+  tableau_aeroport type_aeroport;
+ BEGIN 
+ compteur:=0;
+ 
+      FOR  LINE IN  C_MACURSOR    LOOP
+          tableau_aeroport(compteur) :=LINE;
+          DBMS_OUTPUT.PUT_LINE (tableau_aeroport(compteur).lib_aer||' '
+          ||tableau_aeroport(compteur).vil_aer);
+      END LOOP;
+      
+--      j := tableau_aeroport.lib_aer.FIRST;
+--      WHILE i IS NOT NULL LOOP
+--      DBMS_OUTPUT.PUT_LINE (tableau_aeroport(compteur).lib_aer||' '
+--      ||tableau_aeroport(compteur).vil_aer);
+--       i := lib_aer.NEXT(i);
+--     END LOOP;
+END;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

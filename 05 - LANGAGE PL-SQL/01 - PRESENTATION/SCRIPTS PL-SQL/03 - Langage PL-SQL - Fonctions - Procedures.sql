@@ -1078,8 +1078,8 @@ BEGIN
   v_count:=COUNT_IN_TABLE_2('LIGCOM','numcom', '70010');
   dbms_output.put_line('Nombre de lignes : ' || v_count);
 END;
-
 -- Exécution de requêtes et de code PL/SQL avec EXECUTE IMMEDIATE
+
 DECLARE
   sqlString VARCHAR2(200);
   codeBlock VARCHAR2(200);
